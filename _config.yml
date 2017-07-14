@@ -18,8 +18,10 @@ title: Prashant Shrestha - Explore, Exploit, Secure, Share & Suffice!
 email: pms@engineer.com
 description: > # this means to ignore newlines until "baseurl:"
  Explore, Exploit, Secure, Share & Suffice!
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://prashant.me/" # the base hostname & protocol for your site, e.g. http://example.com
+
+url: "https://prashant.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: InvalidxSyntax
 github_username:  intern0t
@@ -34,6 +36,9 @@ markdown: kramdown
 kramdown:
  input: GFM
  syntax_highlighter: rogue
+
+sass:
+ sass_dir: _sass
 
 plugins:
  - jekyll-feed

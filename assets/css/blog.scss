@@ -1,5 +1,358 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
----
 
-@import "blog";
+---
+/* 
+	Copyright © 2017, Prashant Shrestha
+	Document : blog.(s)css
+	Date : 2017-07-13
+*/
+
+@charset "utf-8";
+
+/* Import Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
+
+/* Global Variables */
+$globalFontFamily: "Open Sans", arial, sans-serif;
+$globalFontSize: 1.5em;
+$globalBorderRadius: 2px;
+
+/* Global Color Codes */
+$navyBlue: #006AC8;
+$breakerColor: #F1F1F1;
+$quoteTextColor: #6a737d;
+$quoteBorderColor: #dfe2e5;
+$globalDarkColor: #333333;
+
+/* Screen size for the nav. */
+$smartPhoneScreen: "only screen and (max-width: 320px)";
+
+/* Styling */
+body {
+    font-family: $globalFontFamily;
+
+    /* Links Styling */
+    a {
+        color: $navyBlue;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    /* Main container wrapper for the blog. */
+    .container {
+        /* Sidebar Styling */
+        .sidebar {
+            margin: 20% 0 0 0;
+
+            /* Extra Styling (Global Usage) */
+            .tag-title {
+                font-weight: normal;
+                padding: 4px 0;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                text-align: right;
+                font-size: 1.17em;
+                margin: 0 0 5px 0;
+            }
+
+            .tag-content {
+                text-transform: none;
+                letter-spacing: 0;
+                text-align: right;
+                word-wrap: break-word;
+                padding: 2px 0;
+                font-size: .9em;
+                font-weight: normal;
+            }
+
+            .recent-articles {
+                list-style-type: none;
+                text-align: right;
+            }
+
+            .social-buttons {
+                list-style-type: none;
+                float: right;
+
+                li {
+                    font-size: $globalFontSize - 0.3;
+                    float: right;
+                    text-align: right;
+                    margin: 0 10px 0 0;
+                }
+            }
+
+            .navigation {
+                list-style-type: none;
+                text-align: right;
+            }
+
+            /* Author Information Styling */
+            .author-info {
+                text-align: right;
+
+                /* Image for Author field */
+                .profile-picture {
+                    width: 100px;
+                    opacity: .5;
+                    border-radius: 50%;
+                    text-align: right;
+                    margin: 0 0 20px 0;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+
+        .content {
+            /* Header Styling */
+            .header {
+                text-align: center;
+                padding: 5% 0;
+                margin: 5% 0 40px 0;
+                border-bottom: 1px solid #F1F1F1;
+
+                .site-description {
+                    a, a:visited {
+                        text-decoration: none;
+                        text-transform: none;
+                        color: $globalDarkColor;
+
+                        &:hover {
+                            color: $navyBlue;
+                        }
+                    }
+                }
+            }
+
+            .posts {
+                li {
+                    list-style-type: none;
+
+                    article {
+                        margin: 30px 0 50px 0;
+                        padding: 10px 0;
+
+                        /* Overriding Skeleton.css' Code Tags */
+                        .highlight {
+                            width: 100%;
+                            padding: 0;
+                            margin: 0 0 20px 0;
+                            position: relative;
+                            left: 0;
+                            right: 0;
+
+                            code {
+                                padding: .2rem .5rem;
+                                margin: 0 .2rem;
+                                font-size: 80%;
+                                white-space: nowrap;
+                                background: #F1F1F1;
+                                border: 1px solid #E1E1E1;
+                                border-radius: $globalBorderRadius;
+
+                                &:after {
+                                    font-family: FontAwesome;
+                                    font-style: none;
+                                    font-size: 3em;
+                                    position: absolute;
+                                    content: '\f121';
+                                    opacity: .2;
+                                    right: 2%;
+                                    top: -5px;
+                                }
+                            }
+
+                            pre {
+                                padding: 0;
+                                margin: 0;
+
+                                & > code {
+                                    display: block;
+                                    padding: 1rem 1.5rem;
+                                    white-space: pre;
+                                    border-radius: $globalBorderRadius;
+                                }
+                            }
+                        }
+
+                        code, pre {
+                            border-radius: $globalBorderRadius;
+                        }
+
+                        blockquote {
+                            & > p {
+                                position: relative;
+                                color: $quoteTextColor;
+                                padding: 0 10px;
+                                border-left: 5px solid $quoteBorderColor;
+
+                                &:after {
+                                    font-family: FontAwesome;
+                                    font-style: none;
+                                    font-size: 3em;
+                                    position: absolute;
+                                    content: '\f10d';
+                                    opacity: .1;
+                                    left: 1%;
+                                    top: -20px;
+                                }
+                            }
+                        }
+
+                        /* Embeded Image Styling. */
+                        img {
+                            max-width: 100%;
+                            border-radius: $globalBorderRadius;
+                            opacity: .9;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+
+                        a.title {
+                            word-wrap: break-word;
+                            font-family: $globalFontFamily;
+                            font-weight: normal;
+                            font-size: 1em;
+                            color: $globalDarkColor;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $navyBlue;
+                            }
+                        }
+
+                        .stamp {
+                            word-wrap: break-word;
+                            padding: 0 0 20px 0;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: $globalFontSize - 0.7;
+                            color: $quoteTextColor;
+
+                            i {
+                                margin-right: 10px;
+                            }
+                        }
+
+                        a.post-link {
+                            font-size: .8em;
+                        }
+
+                        /* Article Footer */
+                        .post {
+                            border-top: 1px solid $breakerColor;
+                            border-bottom: 1px solid $breakerColor;
+                            padding: 8px 0;
+                            font-size: .9em;
+                            font-weight: normal;
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            margin: 0 0 100px 0;
+            text-align: center;
+            display: inline-block;
+
+            a, a:visited {
+                text-align: center;
+            }
+        }
+    }
+
+    /* Main Site footer. */
+    footer.site-footer{
+        text-align: center;
+        border-top: 1px solid $breakerColor;
+        padding: 30px 0 50px 0;
+
+        h6{
+            font-size: $globalFontSize - .6;
+            font-weight: normal;
+        }
+        h5{
+            font-size: $globalFontSize - .7;
+            font-weight: normal;
+        }
+    }
+}
+
+/* Full Screen */
+.fullscrNav {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: .9;
+    transition: .5s;
+    display: none;
+    text-align: center;
+
+    a[title="Close"],a:visited[title="Close"]{
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        color: white;
+        font-size: $globalFontSize + .8;
+    }
+
+    img {
+        max-width: 200px;
+        opacity: 1;
+        border-radius: 50%;
+        margin: 10% 0 5% 0;
+        z-index: 2;
+    }
+
+    h6 {
+        font-size: $globalFontSize;
+        color: $quoteBorderColor;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            text-align: center;
+
+            a,a:visited{
+                font-size: $globalFontSize + .5;
+            }
+        }
+    }
+}
+
+$smartphone: "(min-width: 200px) and (max-width: 549px)";
+
+@media #{$smartphone} {
+    .sidebar {
+        display: none;
+    }
+
+    .toggleNav {
+        display: block !important;
+    }
+}
+
+// Import partials.
+
+@import "normalize.css";
+@import "skeleton.css";
+@import "highlight";
+@import "font-awesome.scss";
+@import "lightcase";
