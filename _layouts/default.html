@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+	<!-- Primary Page Layout
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<main class="container" aria-label="Content">
+		<div class="row">
+			{{ content }}
+		</div>
+	</main>
+
+
+	<!-- Scripts Usage
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/* Nicescroll Initialization */
+			$("body").niceScroll({
+				cursorwidth: '7px'
+			});
+
+			/* Image Lightbox Initialization
+				[x] Added 'maxWidth' option to avoid headache with .md
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$('a[data-rel^=lightcase]').lightcase({
+				'maxWidth': '100%'
+			});
+		});
+	</script>
+</body>
+
+</html>

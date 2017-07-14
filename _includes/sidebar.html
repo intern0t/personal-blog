@@ -1,0 +1,48 @@
+<!-- Sidebar -->
+<div class="sidebar three columns">
+    <!-- Author Information (Blog Owner) -->
+    <div class="author-info container">
+        <!-- Profile Picture -->
+        <img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" />
+        <!-- Author Name (Owner) -->
+        <div class="row">
+            <h6 class="u-full-width tag-title">Navigate</h6>
+            <ul class="u-full-width navigation">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">RSS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Recent Posts/Articles -->
+    <div class="recent-articles container">
+        <h6 class="u-full-width tag-title">Recent Articles</h6>
+        <!-- Recent Articles. -->
+        <ul class="u-full-width recent-articles">
+            {% for post in site.posts limit:5 %}
+            
+            <li><a class="title" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Social Buttons/Share/Contact -->
+    <div class="social-share container">
+        <h6 class="u-full-width tag-title">Social</h6>
+        <!-- Recent Articles. -->
+        <ul class="u-full-width social-buttons">
+            <li><a href="#" title="Bitbucket"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
+            <li><a href="#" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#" title="G+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Copyright &copy; Section. -->
+    <div class="copyright container">
+        <h6 class="tag-content">Copyright &copy; 2017, <a href="#">Prashant Shrestha</a>.</h6>
+    </div>
+</div>
