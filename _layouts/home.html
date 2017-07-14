@@ -22,15 +22,23 @@ layout: default
 
 				<!-- Tags Section -->
 				<div class="row post-stamps">
-					{% assign categories = post.categories %} {% if categories != "" %}
+					{% assign categories = post.categories %} 
+					{% assign categoriesCount = categories | size %}
+					
 					<div class="u-full-width stamp categories">
-						<i class="fa fa-sitemap" aria-hidden="true"></i> {% for category in categories %} {{ category }}{% unless forloop.last
-						%} > {% endunless %} {% endfor %}
+						<i class="fa fa-sitemap" aria-hidden="true"></i>
+						{% if categoriesCount < 1 %}
+							Uncategorized
+						{% endif %}
+						{% for category in categories %} 
+							{{ category }}{% unless forloop.last %} > {% endunless %} 
+						{% endfor %}
 					</div>
-					{% endif %} {% assign tags = post.tags %} {% if tags != "" %}
+					{% assign tags = post.tags %}
+					{% assign tagCount = post.tags | size %} 
+					{% if tagCount > 0 %}
 					<div class="u-full-width stamp tags">
-						<i class="fa fa-tags" aria-hidden="true"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %}, {% endunless
-						%} {% endfor %}
+						<i class="fa fa-tags" aria-hidden="true"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %}, {% endunless%} {% endfor %}
 					</div>
 					{% endif %}
 				</div>
@@ -55,7 +63,7 @@ layout: default
 					<span>
 						<a href="{{ post.url | relative_url }}">Permalink</a>
 					</span> • <span>
-						<a target="_blank" href="https://twitter.com/share?url={{ post.url | relative_url }}">Tweet</a>
+						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
 					</span>
 				</footer>
 			</article>
