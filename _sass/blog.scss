@@ -19,6 +19,7 @@ $navyBlue: #006AC8;
 $breakerColor: #F1F1F1;
 $quoteTextColor: #6a737d;
 $quoteBorderColor: #dfe2e5;
+$globalDarkColor: #333333;
 
 /* Styling */
 body {
@@ -109,6 +110,18 @@ body {
                 padding: 5% 0;
                 margin: 5% 0 40px 0;
                 border-bottom: 1px solid #F1F1F1;
+
+                .site-description{
+                    a,a:visited{
+                        text-decoration: none;
+                        text-transform: none;
+                        color: $globalDarkColor;
+
+                        &:hover{
+                            color: $navyBlue;
+                        }
+                    }
+                }
             }
 
             .posts {
@@ -202,7 +215,7 @@ body {
                             font-family: $globalFontFamily;
                             font-weight: normal;
                             font-size: 1em;
-                            color: #333;
+                            color: $globalDarkColor;
                             text-decoration: none;
 
                             &:hover {

@@ -106,6 +106,16 @@ body .container .content .header {
   border-bottom: 1px solid #F1F1F1;
 }
 
+body .container .content .header .site-description a, body .container .content .header .site-description a:visited {
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+}
+
+body .container .content .header .site-description a:hover, body .container .content .header .site-description a:visited:hover {
+  color: #006AC8;
+}
+
 body .container .content .posts li {
   list-style-type: none;
 }
@@ -197,7 +207,7 @@ body .container .content .posts li article a.title {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: normal;
   font-size: 1em;
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 

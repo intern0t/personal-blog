@@ -8,11 +8,11 @@
         <div class="row">
             <h6 class="u-full-width tag-title">Navigate</h6>
             <ul class="u-full-width navigation">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">RSS</a></li>
+                <li><a href="{{ "/projects" | prepend: site.baseurl }}">Projects</a></li>
+                <li><a href="{{ "/contact" | prepend: site.baseurl }}">About</a></li>
+                <li><a href="{{ "/search" | prepend: site.baseurl }}">Search</a></li>
+                <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
+                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
             </ul>
         </div>
     </div>
@@ -23,8 +23,7 @@
         <!-- Recent Articles. -->
         <ul class="u-full-width recent-articles">
             {% for post in site.posts limit:5 %}
-            
-            <li><a class="title" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
+                <li><a class="title" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
             {% endfor %}
         </ul>
     </div>

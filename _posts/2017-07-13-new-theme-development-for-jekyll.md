@@ -18,7 +18,7 @@ I decided to integrate [Lightcase](http://cornel.bopp-art.com/lightcase/) to my 
 
 [![Image](https://i.imgur.com/lv193nK.png)](https://i.imgur.com/lv193nK.png "Markdown Blog Post Example"){:data-rel="lightcase"}
 
-Let's check the `code`, `pre`, `highlighter`, and `color-schemes` layouts. Let me throw in a starting code of my theme's `SASS` file. The color scheme for `_highlight.scss` is using `rougify style github`.
+Let's check the `code`, `pre`, `highlighter`, and `color-schemes` layouts. Let me throw in a starting code of my theme's `SASS` file. The color scheme for `_highlight.scss` is using `rougify style github`. Works great and looks great!
 
 {% highlight scss %}
 /* Global Variables */
