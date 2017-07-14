@@ -16,6 +16,7 @@ body {
   font-family: "Open Sans", arial, sans-serif;
   /* Links Styling */
   /* Main container wrapper for the blog. */
+  /* Main Site footer. */
 }
 
 body a {
@@ -223,6 +224,7 @@ body .container .content .posts li article .stamp {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.8em;
+  color: #6a737d;
 }
 
 body .container .content .posts li article .stamp i {
@@ -252,6 +254,22 @@ body .container .pagination a, body .container .pagination a:visited {
   text-align: center;
 }
 
+body footer.site-footer {
+  text-align: center;
+  border-top: 1px solid #F1F1F1;
+  padding: 30px 0 50px 0;
+}
+
+body footer.site-footer h6 {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+body footer.site-footer h5 {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
 /* Full Screen */
 .fullscrNav {
   width: 0%;
@@ -265,6 +283,14 @@ body .container .pagination a, body .container .pagination a:visited {
   transition: .5s;
   display: none;
   text-align: center;
+}
+
+.fullscrNav a[title="Close"], .fullscrNav a:visited[title="Close"] {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  color: white;
+  font-size: 2.3em;
 }
 
 .fullscrNav img {

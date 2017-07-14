@@ -12,6 +12,7 @@
 		</div>
 	</main>
 
+	{% include footer.html %}
 
 	<!-- Scripts Usage
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,9 +36,9 @@
 				return false;
 			});
 
-			$('.fullscrNav').on('click', function(e){
+			$('.nav-close').on('click', function(e){
 				e.preventDefault();
-				$(this).css('width', '0').toggle();
+				$('.fullscrNav').css('width', '0').toggle();
 				return false;
 			})
 		});
