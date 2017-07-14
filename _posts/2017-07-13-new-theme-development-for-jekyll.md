@@ -35,5 +35,8 @@ $quoteBorderColor: #dfe2e5;
 
 Responsiveness looks OK for now, I suppose! Will add more features if I do not get too lazy.
 
-[![Image](https://i.imgur.com/XBbKf6W.png){:width="353px"}](https://i.imgur.com/XBbKf6W.png "Responsive Theme Developed for Jekyll"){:data-rel="lightcase:themedevps"}{:width="353px"}
+[![Image](https://i.imgur.com/XBbKf6W.png){:width="353px"}](https://i.imgur.com/XBbKf6W.png "Responsive Theme Developed for Jekyll"){:data-rel="lightcase:themedevps"}
 [![Image](https://i.imgur.com/rjv6Fvb.png){:width="353px"}](https://i.imgur.com/rjv6Fvb.png "Smartphone & Tablet screen demo"){:data-rel="lightcase:themedevps"}
+[![Image](https://i.imgur.com/a8OyTp6.png)](https://i.imgur.com/a8OyTp6.png "Jekyll Theme &copy; 2017, Prashant Shrestha."){:data-rel="lightcase"}
+
+I achieved what I wanted in a blog - simple, minimal, professional yet light. The theme is still under development therefore you might reach `127.0.0.1` quite often while surfing around!
