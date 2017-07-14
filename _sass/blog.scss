@@ -252,6 +252,17 @@ body {
                 }
             }
         }
+
+        /* Pagination Styling */
+        .pagination{
+            margin: 0 0 100px 0;
+            text-align: center;
+            display: inline-block;
+
+            a, a:visited{
+                text-align: center;
+            }
+        }
     }
 }
 

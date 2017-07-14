@@ -28,6 +28,7 @@ body a:hover {
 
 body .container {
   /* Sidebar Styling */
+  /* Pagination Styling */
 }
 
 body .container .sidebar {
@@ -238,6 +239,16 @@ body .container .content .posts li article .post {
   font-size: .9em;
   font-weight: normal;
   clear: both;
+}
+
+body .container .pagination {
+  margin: 0 0 100px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+body .container .pagination a, body .container .pagination a:visited {
+  text-align: center;
 }
 
 .highlight table td {

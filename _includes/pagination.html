@@ -1,0 +1,12 @@
+<!-- Pagination -->
+
+<div class="u-full-width pagination">
+	{% if paginator.page_trail %} 
+			{% for trail in paginator.page_trail %}
+				{% if page.url== trail.path %}
+					<a class="button button-primary" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+				{% endif %}
+					<a class="button" title="{{trail.title}}" href="{{ trail.path | prepend: site.baseurl }}">{{ trail.num }}</a>
+			{% endfor %} 
+		{% endif %}
+</div>
