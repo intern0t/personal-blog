@@ -21,6 +21,9 @@ $quoteTextColor: #6a737d;
 $quoteBorderColor: #dfe2e5;
 $globalDarkColor: #333333;
 
+/* Screen size for the nav. */
+$smartPhoneScreen: "only screen and (max-width: 320px)";
+
 /* Styling */
 body {
     font-family: $globalFontFamily;
@@ -111,13 +114,13 @@ body {
                 margin: 5% 0 40px 0;
                 border-bottom: 1px solid #F1F1F1;
 
-                .site-description{
-                    a,a:visited{
+                .site-description {
+                    a, a:visited {
                         text-decoration: none;
                         text-transform: none;
                         color: $globalDarkColor;
 
-                        &:hover{
+                        &:hover {
                             color: $navyBlue;
                         }
                     }
@@ -201,7 +204,7 @@ body {
 
                         /* Embeded Image Styling. */
                         img {
-                            width: 100%;
+                            max-width: 100%;
                             border-radius: $globalBorderRadius;
                             opacity: .9;
 
@@ -254,15 +257,67 @@ body {
         }
 
         /* Pagination Styling */
-        .pagination{
+        .pagination {
             margin: 0 0 100px 0;
             text-align: center;
             display: inline-block;
 
-            a, a:visited{
+            a, a:visited {
                 text-align: center;
             }
         }
+    }
+}
+
+/* Full Screen */
+.fullscrNav {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: .9;
+    transition: .5s;
+    display: none;
+    text-align: center;
+
+    img {
+        max-width: 200px;
+        opacity: 1;
+        border-radius: 50%;
+        margin: 10% 0 5% 0;
+        z-index: 2;
+    }
+
+    h6 {
+        font-size: $globalFontSize;
+        color: $quoteBorderColor;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            text-align: center;
+
+            a,a:visited{
+                font-size: $globalFontSize + .5;
+            }
+        }
+    }
+}
+
+$smartphone: "(min-width: 200px) and (max-width: 549px)";
+
+@media #{$smartphone} {
+    .sidebar {
+        display: none;
+    }
+
+    .toggleNav {
+        display: block !important;
     }
 }
 

@@ -403,7 +403,11 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) and (max-width: 549px){
+  .sidebar{
+    display: none;
+  }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}

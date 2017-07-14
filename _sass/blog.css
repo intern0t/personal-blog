@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
 /* Global Variables */
 /* Global Color Codes */
+/* Screen size for the nav. */
 /* Styling */
 @import url(/home/scarecr0w/Documents/Blog/Themer/_sass/normalize.css);
 @import url(/home/scarecr0w/Documents/Blog/Themer/_sass/skeleton.css);
@@ -194,7 +195,7 @@ body .container .content .posts li article blockquote > p:after {
 }
 
 body .container .content .posts li article img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 2px;
   opacity: .9;
 }
@@ -249,6 +250,55 @@ body .container .pagination {
 
 body .container .pagination a, body .container .pagination a:visited {
   text-align: center;
+}
+
+/* Full Screen */
+.fullscrNav {
+  width: 0%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: black;
+  opacity: .9;
+  transition: .5s;
+  display: none;
+  text-align: center;
+}
+
+.fullscrNav img {
+  max-width: 200px;
+  opacity: 1;
+  border-radius: 50%;
+  margin: 10% 0 5% 0;
+  z-index: 2;
+}
+
+.fullscrNav h6 {
+  font-size: 1.5em;
+  color: #dfe2e5;
+}
+
+.fullscrNav ul {
+  list-style-type: none;
+}
+
+.fullscrNav ul li {
+  text-align: center;
+}
+
+.fullscrNav ul li a, .fullscrNav ul li a:visited {
+  font-size: 2em;
+}
+
+@media (min-width: 200px) and (max-width: 549px) {
+  .sidebar {
+    display: none;
+  }
+  .toggleNav {
+    display: block !important;
+  }
 }
 
 .highlight table td {

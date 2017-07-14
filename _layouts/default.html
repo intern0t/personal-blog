@@ -22,14 +22,24 @@
 				cursorwidth: '7px'
 			});
 
-
-
 			/* Image Lightbox Initialization
 				[x] Added 'maxWidth' option to avoid headache with .md
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 			$('a[data-rel^=lightcase]').lightcase({
 				'maxWidth': '100%'
 			});
+
+			$('.toggleNav').on('click', function(e){
+				e.preventDefault();
+				$('.fullscrNav').width('100%').toggle();
+				return false;
+			});
+
+			$('.fullscrNav').on('click', function(e){
+				e.preventDefault();
+				$(this).css('width', '0').toggle();
+				return false;
+			})
 		});
 
 	</script>
