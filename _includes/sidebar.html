@@ -8,10 +8,10 @@
         <div class="row">
             <h6 class="u-full-width tag-title">Navigate</h6>
             <ul class="u-full-width navigation">
-                <li><a href="{{ "/projects" | prepend: site.url }}">Projects</a></li>
-                <li><a href="{{ "/contact" | prepend: site.url }}">Contact</a></li>
-                <li><a href="{{ "/search" | prepend: site.url }}">Search</a></li>
-                <li><a href="{{ "/about" | prepend: site.url }}">About</a></li>
+                <li><a href="{{ "/projects" | prepend: site.baseurl | append: '/' }}">Projects</a></li>
+                <li><a href="{{ "/contact" | prepend: site.baseurl | append: '/' }}">Contact</a></li>
+                <li><a href="{{ "/search" | prepend: site.baseurl | append: '/' }}">Search</a></li>
+                <li><a href="{{ "/about" | prepend: site.baseurl | append: '/' }}">About</a></li>
                 <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
             </ul>
         </div>
