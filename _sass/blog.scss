@@ -116,7 +116,7 @@ body {
                     list-style-type: none;
 
                     article {
-                        margin: 30px 0 0 0;
+                        margin: 30px 0 50px 0;
                         padding: 10px 0;
 
                         /* Overriding Skeleton.css' Code Tags */
@@ -124,6 +124,7 @@ body {
                             width: 100%;
                             padding: 0;
                             margin: 0 0 20px 0;
+                            position: relative;
                             left: 0;
                             right: 0;
 
@@ -135,6 +136,17 @@ body {
                                 background: #F1F1F1;
                                 border: 1px solid #E1E1E1;
                                 border-radius: $globalBorderRadius;
+
+                                &:after {
+                                    font-family: FontAwesome;
+                                    font-style: none;
+                                    font-size: 3em;
+                                    position: absolute;
+                                    content: '\f121';
+                                    opacity: .2;
+                                    right: 2%;
+                                    top: -5px;
+                                }
                             }
 
                             pre {
@@ -150,7 +162,7 @@ body {
                             }
                         }
 
-                        code,pre{
+                        code, pre {
                             border-radius: $globalBorderRadius;
                         }
 
@@ -175,12 +187,12 @@ body {
                         }
 
                         /* Embeded Image Styling. */
-                        img{
+                        img {
                             width: 100%;
                             border-radius: $globalBorderRadius;
                             opacity: .9;
 
-                            &:hover{
+                            &:hover {
                                 opacity: 1;
                             }
                         }
@@ -215,12 +227,13 @@ body {
                         }
 
                         /* Article Footer */
-                        footer.post {
+                        .post {
                             border-top: 1px solid $breakerColor;
                             border-bottom: 1px solid $breakerColor;
-                            padding: 4px 0;
+                            padding: 8px 0;
                             font-size: .9em;
                             font-weight: normal;
+                            clear: both;
                         }
                     }
                 }

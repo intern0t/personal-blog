@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "New theme development for Jekyll!"
+author: Prashant Shrestha
 date:   2017-07-13 21:55:21 -0400
 categories: rant
 tags: jekyll design development blog Liquid
@@ -16,3 +17,18 @@ I am quite glad, I had short but complicated experience with Ghost Blog, both us
 I decided to integrate [Lightcase](http://cornel.bopp-art.com/lightcase/) to my theme because it was very simple and easy to use, I could create my own but maybe in the future!
 
 [![Image](https://i.imgur.com/lv193nK.png)](https://i.imgur.com/lv193nK.png "Markdown Blog Post Example"){:data-rel="lightcase"}
+
+Let's check the `code`, `pre`, `highlighter`, and `color-schemes` layouts. Let me throw in a starting code of my theme's `SASS` file. The color scheme for `_highlight.scss` is using `rougify style github`.
+
+{% highlight scss %}
+/* Global Variables */
+$globalFontFamily: "Open Sans", arial, sans-serif;
+$globalFontSize: 1.5em;
+$globalBorderRadius: 2px;
+
+/* Global Color Codes */
+$navyBlue: #006AC8;
+$breakerColor: #F1F1F1;
+$quoteTextColor: #6a737d;
+$quoteBorderColor: #dfe2e5;
+{% endhighlight %}

@@ -3,7 +3,7 @@
     <!-- Author Information (Blog Owner) -->
     <div class="author-info container">
         <!-- Profile Picture -->
-        <img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" />
+        <a href="{{ site.url }}"><img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" /></a>
         <!-- Author Name (Owner) -->
         <div class="row">
             <h6 class="u-full-width tag-title">Navigate</h6>
@@ -34,7 +34,8 @@
         <h6 class="u-full-width tag-title">Social</h6>
         <!-- Recent Articles. -->
         <ul class="u-full-width social-buttons">
-            <li><a href="#" title="Bitbucket"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
+            {% assign bitbucketuser = site.bitbucket_username %}
+            <li><a href="https://bitbucket.org/" title="Bitbucket"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
             <li><a href="#" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
             <li><a href="#" title="G+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
             <li><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

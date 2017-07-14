@@ -16,18 +16,21 @@
 title: Prashant Shrestha - Explore, Exploit, Secure, Share & Suffice!
 email: pms@engineer.com
 description: > # this means to ignore newlines until "baseurl:"
-  Writeasdfasdf an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Explore, Exploit, Secure, Share & Suffice!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://prashant.me/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: InvalidxSyntax
 github_username:  intern0t
 googleplus_username: Test
+bitbucket_username: intern0t
+# disqus.shortname: prashantshrestha
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rogue
+
 
 gems:
   - jekyll-feed

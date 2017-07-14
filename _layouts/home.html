@@ -9,7 +9,7 @@ layout: default
 	<!-- Header -->
 	<div class="row header">
 		<div class="u-full-width">
-			<h4>Explore, Exploit, Secure, Share &amp; Suffice!</h4>
+			<h4>{{ site.description }}</h4>
 		</div>
 	</div>
 	<div class="row posts">
@@ -49,19 +49,25 @@ layout: default
 				</div>
 
 				<!-- Article Footer -->
-				{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+				{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
 				<footer class="post">
 					<span class="post-meta">
-						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+						<i class="fa fa-calendar-check-o" aria-hidden="true"></i> 
+						<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ post.date | date: date_format }}
 						</time>
-					</span> · <span>
-						<a href="{{ post.url | relative_url }}">Permalink</a>
-					</span> · <span>
-						<a target="_blank" href="https://twitter.com/share?url={{ post.url | relative_url }}">Tweet</a>
-					</span>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>
+					</span> • 
+					{% if post.author %}
+						<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name">{{ post.author }}</span>
+						</span> • 
 					{% endif %}
+					<span>
+						<a href="{{ post.url | relative_url }}">Permalink</a>
+					</span> • <span>
+						<a target="_blank" href="https://twitter.com/share?url={{ post.url | relative_url }}">Tweet</a>
+					</span>
 				</footer>
 			</article>
 			{% endfor %}
