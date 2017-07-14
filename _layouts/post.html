@@ -14,58 +14,56 @@ layout: default
 		</div>
 	</header>
 	<div class="posts">
-		<li>
-			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-				<h4 class="post-title" itemprop="name headline">
-					<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-				</h4>
+		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h4 class="post-title" itemprop="name headline">
+				<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+			</h4>
 
-				<!-- Tags Section -->
-				<div class="row post-stamps">
-					{% assign categories = page.categories %} {% if categories != "" %}
-					<div class="u-full-width stamp categories">
-						<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> {% for category in categories %} {{ category }}{% unless forloop.last
-						%} > {% endunless %} {% endfor %}
-					</div>
-					{% endif %} {% assign tags = page.tags %} {% if tags != "" %}
-					<div class="u-full-width stamp tags">
-						<i class="fa fa-tags" aria-hidden="true" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %}, {% endunless
-						%} {% endfor %}
-					</div>
-					{% endif %}
+			<!-- Tags Section -->
+			<div class="row post-stamps">
+				{% assign categories = page.categories %} {% if categories != "" %}
+				<div class="u-full-width stamp categories">
+					<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> {% for category in categories %} {{ category }}{%
+					unless forloop.last %} > {% endunless %} {% endfor %}
 				</div>
-
-				<div class="post-content" itemprop="articleBody">
-					{{ page.content }}
+				{% endif %} {% assign tags = page.tags %} {% if tags != "" %}
+				<div class="u-full-width stamp tags">
+					<i class="fa fa-tags" aria-hidden="true" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
+					{% endunless %} {% endfor %}
 				</div>
+				{% endif %}
+			</div>
 
-				<!-- Article Footer -->
-				{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
-				<footer class="post">
-					<span class="post-meta">
+			<div class="post-content" itemprop="articleBody">
+				{{ page.content }}
+			</div>
+
+			<!-- Article Footer -->
+			{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
+			<footer class="post">
+				<span class="post-meta">
 						<i class="fa fa-calendar-check-o" aria-hidden="true"></i> 
 						<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ page.date | date: date_format }}
 						</time>
 					</span> • {% if page.author %}
-					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name">{{ page.author }}</span>
-					</span> • {% endif %}
-					<span>
+				</span> • {% endif %}
+				<span>
 						<a href="{{ page.url | relative_url }}">Permalink</a>
 					</span> • <span>
 						<a target="_blank" href="https://twitter.com/share?url={{ page.url | relative_url }}">Tweet</a>
 					</span>
-				</footer>
+			</footer>
 
-				<!-- Disqus -->
-				{% if site.disqus.shortname %}
-				<section class="disqus">
-					{% include disqus_comments.html %}
-				</section>
-				{% endif %}
-			</article>
-		</li>
+			<!-- Disqus -->
+			{% if site.disqus.shortname %}
+			<section class="disqus">
+				{% include disqus_comments.html %}
+			</section>
+			{% endif %}
+		</article>
 	</div>
 </div>

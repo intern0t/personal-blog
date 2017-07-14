@@ -185,6 +185,10 @@ body {
                             border-radius: $globalBorderRadius;
                         }
 
+                        ol{
+                            list-style-type: decimal;
+                        }
+
                         blockquote {
                             & > p {
                                 position: relative;
