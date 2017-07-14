@@ -180,38 +180,6 @@ body {
                         }
                     }
 
-                    p > code {
-                        border-radius: $globalBorderRadius;
-                        font-size: 85%;
-
-                        &:after {
-                            font-family: FontAwesome;
-                            font-style: none;
-                            font-size: 3em;
-                            position: absolute;
-                            content: '\f121';
-                            opacity: .2;
-                            right: 2%;
-                            top: -5px;
-                        }
-                    }
-
-                    pre > code {
-                        border-radius: $globalBorderRadius;
-                        font-size: 80%;
-
-                        &:after {
-                            font-family: FontAwesome;
-                            font-style: none;
-                            font-size: 3em;
-                            position: absolute;
-                            content: '\f121';
-                            opacity: .2;
-                            right: 2%;
-                            top: -5px;
-                        }
-                    }
-
                     ol {
                         list-style: decimal;
                         padding: 0 0 0 3em;
