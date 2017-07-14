@@ -3,7 +3,7 @@
     <!-- Author Information (Blog Owner) -->
     <div class="author-info container">
         <!-- Profile Picture -->
-        <a href="{{ site.url }}"><img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" /></a>
+        <a href="{{ site.url }}{{ site.baseurl }}"><img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" /></a>
         <!-- Author Name (Owner) -->
         <div class="row">
             <h6 class="u-full-width tag-title">Navigate</h6>
@@ -12,7 +12,7 @@
                 <li><a href="{{ "/contact" | prepend: site.url }}">Contact</a></li>
                 <li><a href="{{ "/search" | prepend: site.url }}">Search</a></li>
                 <li><a href="{{ "/about" | prepend: site.url }}">About</a></li>
-                <li><a href="{{ "/feed.xml" | prepend: site.url }}">RSS</a></li>
+                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
             </ul>
         </div>
     </div>
