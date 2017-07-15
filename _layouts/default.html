@@ -4,6 +4,10 @@
 {% include head.html %}
 
 <body>
+	<!-- Rainbow border.
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="rainbow-head"></div>
+
 	<!-- Primary Page Layout
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<main class="container" aria-label="Content">
@@ -12,7 +16,12 @@
 		</div>
 	</main>
 
-	{% include footer.html %}
+	<!-- Scripts Included
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript" src="{{ "assets/js/jquery.min.js " | relative_url }}"></script>
+	<script type="text/javascript" src="{{ "assets/js/jquery.unveil.js " | relative_url }}"></script>
+	<script type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script>
+	<script type="text/javascript" src="{{ "assets/js/jquery.nicescroll.js " | relative_url }}"></script>
 
 	<!-- Scripts Usage
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,7 +29,7 @@
 		$(document).ready(function () {
 			/* Nicescroll Initialization */
 			$("body, pre > code").niceScroll({
-				cursorwidth: '7px'
+				cursorwidth: '8px'
 			});
 
 			/* Image Lightbox Initialization
@@ -30,20 +39,29 @@
 				'maxWidth': '100%'
 			});
 
-			$('.toggleNav').on('click', function(e){
+			/* Lazy Load all Images
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$(".post img").unveil(300);
+
+			/* Responsive Sidebar.
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$('.toggleNav').on('click', function (e) {
 				e.preventDefault();
 				$('.fullscrNav').width('100%').toggle();
 				return false;
 			});
 
-			$('.nav-close').on('click', function(e){
+			$('.nav-close').on('click', function (e) {
 				e.preventDefault();
 				$('.fullscrNav').css('width', '0').toggle();
 				return false;
-			})
+			});
 		});
-
 	</script>
+
+	<!-- Full site-wide Footer
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	{% include footer.html %}
 </body>
 
 </html>

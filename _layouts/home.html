@@ -17,6 +17,7 @@ layout: default
 		{% for post in paginator.posts %}
 		<article class="row post">
 			<h4 class="post-title" itemprop="name headline">
+				<i class="fa fa-file-text" aria-hidden="true"></i>
 				<a class="title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 			</h4>
 
@@ -25,9 +26,11 @@ layout: default
 				{% assign categories = post.categories %} {% assign categoriesCount = categories | size %}
 
 				<div class="u-full-width stamp categories">
-					<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> {% if categoriesCount
-					< 1 %} Uncategorized {% endif
-					 %} {% for category in categories %} {{ category }}{% unless forloop.last %}> {% endunless %} {% endfor %}
+					<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> 
+					{% if categoriesCount < 1 %} Uncategorized {% endif %} 
+					{% for category in categories %} 
+						{{ category }}{% unless forloop.last %}> {% endunless %}
+					{% endfor %}
 				</div>
 				{% assign tags = post.tags %} {% assign tagCount = post.tags | size %} {% if tagCount > 0 %}
 				<div class="u-full-width stamp tags">
@@ -57,7 +60,7 @@ layout: default
 				<span>
 						<a class="permalink" href="{{ post.url | relative_url }}">Permalink</a>
 					</span> • <span>
-						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
+						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
 					</span>
 			</footer>
 		</article>
