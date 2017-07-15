@@ -7,6 +7,8 @@ categories: server
 tags: setup server private media movies shows organize organizer software linux 
 --- 
 
+[![Image](https://i.imgur.com/3MgF158.png)](https://i.imgur.com/3MgF158.png){:data-rel="lightcase"}
+
 Many of us tech enthusiasts dream of having their own media server, at least once in their lifetime. Better serving, high speed and most of all, customized & organized media server. I love watching movies during my free time or while stressed, considering I’ve a whole library of movies makes it easier to save bandwidth and at the same time, have fun! I tried to create my own media server, for streaming movies, TV shows or even music locally with FTP, which didn’t work out well, in short, it wasn’t organized and not flashy/beautiful at all until I heard about [Plex](https://www.plex.tv/).
 
 In my understanding and experience so far with Plex, it is a nifty piece of software written for the very purpose of running a media server (local or remote). Local as in within your network, remote as in outside your network.
