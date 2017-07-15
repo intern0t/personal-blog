@@ -7,7 +7,7 @@ categories: server
 tags: setup server private media movies shows organize organizer software linux 
 --- 
 
-[![Image](https://i.imgur.com/3MgF158.png)](https://i.imgur.com/3MgF158.png){:data-rel="lightcase"}
+[![Image](https://i.imgur.com/oFXuG01.png)](https://i.imgur.com/oFXuG01.png "Image credits to https://home-assistant.io"){:data-rel="lightcase"}
 
 Many of us tech enthusiasts dream of having their own media server, at least once in their lifetime. Better serving, high speed and most of all, customized & organized media server. I love watching movies during my free time or while stressed, considering I’ve a whole library of movies makes it easier to save bandwidth and at the same time, have fun! I tried to create my own media server, for streaming movies, TV shows or even music locally with FTP, which didn’t work out well, in short, it wasn’t organized and not flashy/beautiful at all until I heard about [Plex](https://www.plex.tv/).
 
@@ -89,6 +89,8 @@ Streaming with Plex is as easy as it comes, download the preferred Plex applicat
 
 In case your device isn't supported, head over to the same old browser and go to `http://192.168.1.{Server IP Identifier}:32400/` and stream it from there.
 
+In terms of organizing your media files, Plex is the way to go!
+
 #### My Plex Media Server
 
-In terms of organizing your media files, Plex is the way to go!
+[![Image](https://i.imgur.com/3MgF158.png)](https://i.imgur.com/3MgF158.png){:data-rel="lightcase"}
