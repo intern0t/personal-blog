@@ -9,7 +9,6 @@ tags: setup server private php python upload postman api
 
 #### Why custom image hosting?
 
-
 There are countless free image hosting services out there but having your own, separate image server has different purpose of its own. There are lots of benefits of having your own image hosting, personal, nothing complicated.
 
 A bit of a knowledge is a must, if you wish to modify and better the scripts I wrote but if you simply wish to use it, ignoring the security flaws, be my guest!
@@ -18,7 +17,9 @@ Before you start copy-pasting the codes, please be aware that these scripts that
 
 I also wish to mention that this personal image hosting is completely optional with all these awesome image hosting services out there which are going to be better, faster, secure and optimized compared to our little personal image hosting. Take [Imgur](https://imgur.com/) for example, provides both Non-SSL and SSL linking, which is better for sites such as mine which requires the content to load over SSL rather than Non-SSL to keep the lock intact.
 
-First of all, you are going to need a hosting plan, a server or a remote storage. We are going to achieve our own personal image hosting with 3 different files, normally 2 if you exclude python script used for uploading to our server.
+First of all, you are going to need a hosting plan, a server or a remote storage. We are going to achieve our own personal image hosting with total of 2 files.
+
+[![Image](https://i.imgur.com/eFbN8c9.jpg)](https://i.imgur.com/eFbN8c9.jpg "Server rack!"){:data-rel="lightbox"}
 
 #### Things I used
 
@@ -157,5 +158,7 @@ RewriteCond %{HTTP_HOST} ^prashant.me RewriteRule ^/(.*).png$ [FL]
 This should do the trick, in order to check if it is working or not, just head over to some other domain and try embedding the image to the website. It isn't much but a lot of improvements and updates can be applied to this project, even though if you look at it as a small project.
 
 The scripts have been added to my [Github](https://github.com/intern0t/Image-Hosting) repository therefore feel free to improve and upgrade.
+
+###### Credits to [MemoryPointer](http://memorypointer.com/wp-content/uploads/2014/04/best-hosting-providers.jpg) for the server rack image.
 
 Happy Coding!
