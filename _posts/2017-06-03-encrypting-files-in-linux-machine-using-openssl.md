@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Custom Image Hosting and Upload Script"
+title:  "Encrypting files in Linux machine using OpenSSL."
 author: Prashant Shrestha
 date:   2017-06-03 04:18:33 -400
 categories: development
