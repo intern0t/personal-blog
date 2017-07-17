@@ -1,11 +1,11 @@
---- 
+---
 layout: post
 title: "Running a local media server using PleX." 
 author: Prashant Shrestha 
 date: 2017-02-02 15:20:57 -400 
 categories: server 
 tags: setup server private media movies shows organize organizer software linux 
---- 
+---
 
 [![Image](https://i.imgur.com/oFXuG01.png)](https://i.imgur.com/oFXuG01.png "Image credits to https://home-assistant.io"){:data-rel="lightcase"}
 
