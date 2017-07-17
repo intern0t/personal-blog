@@ -81,4 +81,4 @@ That is all I did to make Varnish Cache working in my server. Finally you can te
 
 [![Image](http://i.imgur.com/n6LUAkB.png)](http://i.imgur.com/n6LUAkB.png "Successfully installed Varnish!"){:data-rel="lightcase"}
 
-~ Good Luck and Namaste!
+~ Good Luck!
