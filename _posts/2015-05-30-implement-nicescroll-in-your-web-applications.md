@@ -28,7 +28,11 @@ unzip jquery.nicescroll.340.zip
 
 Append and add `jquery.nicescroll.min.js` at the end of the `default.hbs` file and in the directory `./public_html/content/themes/<theme-name>/assets/js/`.
 
-`<script src="{{ asset "js/jquery.nicescroll.js"}}"></script>`
+{% highlight html %}
+{% raw %}
+<script src="{{ asset "js/jquery.nicescroll.js"}}"></script>
+{% endraw %}
+{% endhighlight %}
 
 There are various ways to initialize NiceScroll but the way I did was create a `loader` file which loads all the initialized jQuery libraries from one single file. If you do not want to bother creating a file, you may append the `default.hbs` file inside your theme directory and append this code at the bottom of the file.
 
