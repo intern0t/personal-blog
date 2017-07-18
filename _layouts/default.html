@@ -20,17 +20,20 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script type="text/javascript" src="{{ "assets/js/jquery.min.js " | relative_url }}"></script>
 	<script type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script>
-	<!-- <script type="text/javascript" src="{{ "assets/js/blazy.min.js " | relative_url }}"></script> -->
-	<!-- <script type="text/javascript" src="{{ "assets/js/jquery.nicescroll.js " | relative_url }}"></script> -->
+	<!-- <script type="text/javascript" src="{{ "assets/js/jquery.slimscroll.js " | relative_url }}"></script>  -->
+	<script type="text/javascript" src="{{ "assets/js/jquery.nicescroll.min.js " | relative_url }}"></script> 
 
 	<!-- Scripts Usage
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script type="text/javascript">
 		$(document).ready(function () {
-			/* Nicescroll Initialization */
-			$("body, pre > code").niceScroll({
-				cursorwidth: '8px'
-			});
+			/* Perfect Scrollbar */
+			$("body").niceScroll(
+				{
+					cursorwidth: '8px',
+					hwacceleration: true
+				}
+			);
 
 			/* Image Lightbox Initialization
 				[x] Added 'maxWidth' option to avoid headache with .md
@@ -44,13 +47,13 @@
 
 			/* Responsive Sidebar.
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
-			$('.toggleNav').on('click', function (e) {
+			$('.toggleNav > i').on('click', function (e) {
 				e.preventDefault();
 				$('.fullscrNav').width('100%').toggle();
 				return false;
 			});
 
-			$('.nav-close').on('click', function (e) {
+			$('.nav-close > i').on('click', function (e) {
 				e.preventDefault();
 				$('.fullscrNav').css('width', '0').toggle();
 				return false;

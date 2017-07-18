@@ -34,18 +34,7 @@ $smartPhoneScreen: "only screen and (max-width: 320px)";
 body {
     font-family: $globalFontFamily;
 
-    /* Scrollbar Styling (Bye bye NiceScroll) */
-    &::-webkit-scrollbar{
-        width: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb{
-        border-radius: 12px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	    background-color: #555;
-    }
-
-    .rainbow-head{
+    .rainbow-head {
         background: $border-top;
         height: .4em;
     }
@@ -154,8 +143,8 @@ body {
                     margin: 30px 0 50px 0;
                     padding: 10px 0;
 
-                    .post-title{
-                        i{
+                    .post-title {
+                        i {
                             font-size: 50%;
                             vertical-align: middle;
                             margin: 0 10px 5px 0;
@@ -199,6 +188,7 @@ body {
                             margin: 0;
 
                             & > code {
+                                width: 100%;
                                 display: block;
                                 padding: 1rem 1.5rem;
                                 white-space: pre;
@@ -208,10 +198,10 @@ body {
                         }
                     }
 
-                    p{
+                    p {
                         word-wrap: break-word;
-                        
-                        code{
+
+                        code {
                             font-size: 80%;
                             word-wrap: break-word;
                             white-space: inherit;
@@ -301,7 +291,7 @@ body {
                         font-weight: normal;
                     }
 
-                    .disqus{
+                    .disqus {
                         margin-top: 30px;
                     }
                 }
@@ -361,7 +351,7 @@ body {
     }
 
     img {
-        max-width: 200px;
+        max-width: 150px;
         opacity: 1;
         border-radius: 50%;
         margin: 10% 0 5% 0;
