@@ -28,12 +28,10 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			/* Perfect Scrollbar */
-			$("body").niceScroll(
-				{
+			$("body, code").niceScroll({
 					cursorwidth: '8px',
 					hwacceleration: true
-				}
-			);
+			});
 
 			/* Image Lightbox Initialization
 				[x] Added 'maxWidth' option to avoid headache with .md
