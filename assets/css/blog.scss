@@ -161,15 +161,32 @@ body {
                         left: 0;
                         right: 0;
 
-                        code {
-                            padding: .2rem .5rem;
-                            margin: 0 .2rem;
-                            white-space: pre;
-                            font-size: 80%;
-                            white-space: nowrap;
-                            background: #F1F1F1;
-                            border: 1px solid #E1E1E1;
-                            border-radius: $globalBorderRadius;
+                        // code {
+                        //     padding: .2rem .5rem;
+                        //     margin: 0 .2rem;
+                        //     white-space: pre;
+                        //     font-size: 80%;
+                        //     white-space: nowrap;
+                        //     background: #F1F1F1;
+                        //     border: 1px solid #E1E1E1;
+                        //     border-radius: $globalBorderRadius;
+
+                        //     &:after {
+                        //         font-family: FontAwesome;
+                        //         font-style: none;
+                        //         font-size: 3em;
+                        //         position: absolute;
+                        //         content: '\f121';
+                        //         opacity: .2;
+                        //         right: 2%;
+                        //         top: -5px;
+                        //     }
+                        // }
+
+                        pre {
+                            padding: 0;
+                            margin: 0;
+                            overflow: hidden;
 
                             &:after {
                                 font-family: FontAwesome;
@@ -179,19 +196,14 @@ body {
                                 content: '\f121';
                                 opacity: .2;
                                 right: 2%;
-                                top: -5px;
+                                top: -10px;
                             }
-                        }
 
-                        pre {
-                            padding: 0;
-                            margin: 0;
-
-                            & > code {
-                                width: 100%;
+                            code {
+                                width: auto;
                                 display: block;
                                 padding: 1rem 1.5rem;
-                                white-space: pre;
+                                white-space: inherit;
                                 font-size: 80%;
                                 border-radius: $globalBorderRadius;
                             }
