@@ -3,7 +3,7 @@ layout: post
 title: "Implement NiceScroll in your web applications!" 
 author: Prashant Shrestha 
 date: 2015-05-29 20:40:14 -400 
-categories: server 
+categories: development 
 tags: traffic network redirection server administration management redir proxy route
 ---
 
