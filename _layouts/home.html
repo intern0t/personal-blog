@@ -41,7 +41,7 @@ layout: default
 			</div>
 
 			<div class="post-content" itemprop="articleBody">
-				{{ post.content | truncatewords: 100 }} 
+				{{ post.content | strip_html | truncatewords: 100 }} 
 				<br/><br/>
 				<a href="{{ post.url }}" title="{{ post.title | escape }}">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 			</div>
