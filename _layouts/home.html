@@ -41,7 +41,9 @@ layout: default
 			</div>
 
 			<div class="post-content" itemprop="articleBody">
-				{{ post.content }}
+				{{ post.content | truncatewords: 100 }} 
+				<br/>
+				<a href="{{ post.url }}" title="{{ post.title | escape }}">Read More ..</a>
 			</div>
 
 			<!-- Article Footer -->
