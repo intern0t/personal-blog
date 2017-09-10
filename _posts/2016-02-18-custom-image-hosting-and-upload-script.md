@@ -27,7 +27,7 @@ First of all, you are going to need a hosting plan, a server or a remote storage
 2. PHP script (Server side to handle proper file storage)
 
 If you are going to use this for your personal use or just between your friends for hotlinking images to your own website then I suggest using a subdomain and preventing hotlinking to any other hosts except your own.
-
+<!--excerpt-->
 I created a subdomain for my current domain, `cdn.prashant.me` to handle the image storage. Apply the same SSL certificate and key file to the subdomain to have SSL.
 
 Open up your IDE and start with creating a PHP script which will take POST data and generate a random file name and save it to the directory or simply the chroot directory. For me, `cdn.*` will be used only for image hosting therefore, i will simply use the main directory (i know, very unorganized!)

@@ -20,7 +20,7 @@ In order to implement NiceScroll, you first have to download the latest and stab
 Installation is too easy, either follow the guide provided by NiceScroll itself or follow my lead.
 
 Download the release package of your choice, [v3.4.0](https://code.google.com/p/jquery-nicescroll/downloads/detail?name=jquery.nicescroll.340.zip&can=2&q=) for me.
-
+<!--excerpt-->
 {% highlight bash %}
 wget https://jquery-nicescroll.googlecode.com/files/jquery.nicescroll.340.zip
 unzip jquery.nicescroll.340.zip

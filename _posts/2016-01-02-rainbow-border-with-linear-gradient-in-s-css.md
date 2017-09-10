@@ -25,7 +25,7 @@ In your regular HTML file, normally body or header.
 {% endhighlight %}
 
 I use SCSS pre-processor therefore here's the code which can easily be converted to regular CSS.
-
+<!--excerpt-->
 {% highlight sass %}
 $gradient_ : 90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 32%, #9b59b6 32%, #9b59b6 35%, #34495e 35%, #34495e 55%, #f1c40f 55%, #f1c40f 59%, #e67e22 59%, #e67e22 63%, #e74c3c 63%, #e74c3c 82%, #ecf0f1 82%, #ecf0f1 92%, #95a5a6 92%;
 

@@ -30,7 +30,7 @@ Apache + Cloudflare + Varnish       [Tested & Works * for me!]
 {% endhighlight %}
 
 Lets start off by firing our terminal and adding Varnish cache to our server's packet manager and installing Varnish.
-
+<!--excerpt-->
 {% highlight bash %}
 rpm --nosignature -i https://repo.varnish-cache.org/redhat/varnish-4.0.el6.rpm
 yum install varnish

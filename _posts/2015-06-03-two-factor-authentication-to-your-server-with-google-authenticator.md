@@ -22,7 +22,7 @@ I started by updating my servers, mind you, I had **5** simultaneous terminals o
 {% highlight bash %}
 yum -y update
 {% endhighlight %}
-
+<!--excerpt-->
 If you get any errors, execute `yum clean all` command in your terminal. After updating my system, I installed `pam-devel` which is more like a permission set for Linux which manages **authentication policies**.
 
 {% highlight bash %}

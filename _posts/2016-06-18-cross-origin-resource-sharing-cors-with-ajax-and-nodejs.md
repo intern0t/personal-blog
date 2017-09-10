@@ -24,7 +24,7 @@ XMLHttpRequest cannot load http://localhost:1337/track. No 'Access-Control-Allow
 {% endhighlight %}
 
 `:1337/track` is my NodeJS application and `:80/` is my simple HTML-CSS-Javascript website.
-
+<!--excerpt-->
 Fixing this problem is quite simple to be honest, as mentioned in the error, it says, `No 'Access-Control-Allow-Origin' header is present on the requested resource.`. That means the response origin is missing the `Access-Control-Allow-Origin` header, in simple words, our Node application. Let's add the header instruction in our Node application, remember, this is just a test application, your current project and my test demo might differ.
 
 I'll be using [**Express**](http://expressjs.com/) to handle the requests and responses and my client side sending a POST data to our specified API end-point `:1337/track` to calculate and reply with a response.

@@ -36,7 +36,7 @@ Let us move on with the CSS part where we center the `*.gif` into a layer which 
     background: url('../images/cube_preloader.gif') center no-repeat #34495E;
 }
 {% endhighlight %}
-
+<!--excerpt-->
 The `background: url()` can have different parameters than the one I provided above which depends on your directory structure/layout. Once done, compile or simply save the **CSS** file. I changed the overally background color to match the preloading `.gif` background color which is `#34495E`.
 
 Final work is to trigger the event where we want the preloader to pop-up, in our case it will be during the `window.load` event which we shall handle it through jQuery.

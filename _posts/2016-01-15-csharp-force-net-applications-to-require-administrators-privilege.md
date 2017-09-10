@@ -37,7 +37,7 @@ Your `app.manifest` default layout should be like this
 	</assemblyidentity>
 </asmv1:assembly>
 {% endhighlight %}
-
+<!--excerpt-->
 Add the following line in your `app.manifest` file nested inside `<asmv1:assembly manifestversion="1.0">` and `</asmv1:assembly>`.
 
 {% highlight c# %}

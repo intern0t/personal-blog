@@ -22,7 +22,7 @@ echo 'This is my secret string.' >> secret.txt
 {% endhighlight %}
 
 Verify whether the `secret.txt` file was created and the string was successfully appended to our secret file. Once verified, run `openssl aes-256-cbc -e -in secret.txt -out secret.txt.enc` in your terminal where you created your `secret.txt` file.
-
+<!--excerpt-->
 Once the encryption command using AES 256 CBC is executed and completed, you should see an output file with the same name as `secret.txt` but `.enc` in the end. The reason I do this is to keep track of file extensions during the encryption, once again, personal preference! `-out <output_file_name>`, hence you can set the output filename to whatever you want. For small files like `secret.txt`, we don't necessarily need to use `aes-256-cbc` as `aes-128-cbc` works faster `openssl aes-128-cbc -e -in secret.txt -out secret.txt.enc`.
 
 You can test their performance and completion timing yourself using `time` command in front of your main encryption/decryption commands.

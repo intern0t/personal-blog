@@ -26,7 +26,7 @@ this.DragDrop += Main_DragDrop;
 {% endhighlight %}
 
 Add these methods below the constructor or ..
-
+<!--excerpt-->
 {% highlight c# %}
 private void Main_DragDrop(object sender, DragEventArgs e) {
     string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);

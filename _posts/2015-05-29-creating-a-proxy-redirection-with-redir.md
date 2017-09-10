@@ -27,7 +27,7 @@ Using wget, we can download the `.rpm` package ..
 wget http://pkgs.repoforge.org/redir/redir-2.2.1-1.1.*.*.*.rpm
 {% endhighlight %}
 **Please do keep in mind, the asterisk (*) is replaced by your needs and your system infrastructure.**
-
+<!--excerpt-->
 After the package arrives in your system, you may execute the `.rpm` file with ..
 
 {% highlight bash %}

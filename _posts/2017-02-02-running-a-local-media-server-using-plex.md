@@ -18,7 +18,7 @@ In my understanding and experience so far with Plex, it is a nifty piece of soft
 * The players can either be the **Plex Apps** available for [mobile devices](https://en.wikipedia.org/wiki/Mobile_device), [smart TVs](https://en.wikipedia.org/wiki/Smart_TV), and [streaming boxes](https://en.wikipedia.org/wiki/Digital_media_player), or the web UI of the Plex Media Server called Plex Web App, or the old Plex player called Plex Home Theater.
 
 > A premium version of the service, called Plex Pass, is also available and offers advanced features like [file synchronization](https://en.wikipedia.org/wiki/File_synchronization) with mobile devices, access to [cloud storage](https://en.wikipedia.org/wiki/Cloud_storage) providers, up to date and high quality metadata and matchings for music, [multi-users mode](https://en.wikipedia.org/wiki/Multi-user), [parental controls](https://en.wikipedia.org/wiki/Parental_controls), access to high quality trailers and extras, wireless synchronization from mobile devices to the server, access to discounts on partner products and early access. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Client-server_model))
-
+<!--excerpt-->
 #### Backstory 
 
 I've a 45" Samsung TV that has a max resolution of 1080p, iPad Pro and various devices but the catch is I don't transcode, I stream raw (the original quality) therefore I do not need a powerful machine. 

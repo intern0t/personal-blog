@@ -24,7 +24,7 @@ Achieving this wasn't that difficult considering the vast amount of tools found 
 One good thing about ILMerge is it is trusted compared to Libz and any other 3rd party mergers. ILMerge was developed and distributed by **Microsoft** itself.
 
 Download ILMerge, install it and download [ILMerge GUI](https://ilmergegui.codeplex.com/).
-
+<!--excerpt-->
 ILMerge GUI makes your life easier if you are the kind of person who doesn't like CLI and commands.
 
 [![Image](http://i.imgur.com/BvkHqsd.png)](http://i.imgur.com/BvkHqsd.png){:data-rel="lightcase"}

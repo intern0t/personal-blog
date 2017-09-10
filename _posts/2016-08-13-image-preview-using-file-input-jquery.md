@@ -16,7 +16,7 @@ It's just an image tag, components you use in your web applications. For example
 #### Ways to accomplish this
 
 We'll be using Javascript/jQuery for this as it handles client-side contents more efficiently. We will be using two different approaches and two different built-in functions to accomplish this, namely `URL.createObjectURL();` and `new FileReader().readAsDataURL();`, both of these method works great.
-
+<!--excerpt-->
 #### Simple Setup
 
 {% highlight html %}

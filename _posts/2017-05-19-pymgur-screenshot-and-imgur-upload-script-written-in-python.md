@@ -24,7 +24,7 @@ Install `Python`, `pip` and `xclip`. 
 From Python's `pip` install `requests` and `json`. 
 
 Once the installation process is complete, let's create a [SymLink](https://en.wikipedia.org/wiki/Symbolic_link) to our Python Script.
-
+<!--excerpt-->
 #### Creating a SymLink:
 
 Creating SymLink is a very easy task, all we need to know is where to store our file securely and how to create a reference link for it, more like a pointer in `C++`, really! Download the `Pymgur.py` from the source or just copy paste the code and create a file in your system. I like to put the scripts I develop and use in a specific directory at `~/Documents/Scripts/` which is where I've mine `Pymgur.py` stored, easier to backup and easier to share.

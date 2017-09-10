@@ -28,7 +28,7 @@ I found this image which explains better than my words from [Wikimedia](https://
 [![Image](https://i.imgur.com/tAVUzzQ.png)](https://i.imgur.com/tAVUzzQ.png "Ugh"){:data-rel="lightcase"}
 
 As I mentioned before, Seedbox is just a complete system set up in a way to seed the files you already downloaded before, nothing more and nothing less. The difference between your regular machine and a Seedbox is the hardware specifications such as RAM, Storage, Processors and the internet. You can definitely call a Raspberry PI with an Operating System and a BitTorrent client a full fledged Seedbox but the network speed and the system's uptime factors it out of the list, in most cases!
-
+<!--excerpt-->
 #### Setting up a Seedbox -
 
 > Before I move onto the setup of Seedbox, I also wish to make it clear that this tutorial is written for an educational purpose, the way readers put it into practice or use it, does not concern me nor can I be held accountable.

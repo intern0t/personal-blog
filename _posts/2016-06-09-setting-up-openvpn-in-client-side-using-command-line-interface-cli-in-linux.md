@@ -20,7 +20,7 @@ If you are wondering what a VPN (Virtual Private Network) is then do read this s
 That's how it is, if you still think this little citation is confusing, here's the infographic that might help you understand it better.
 
 [![](https://i.imgur.com/xCXmz2U.png)](https://i.imgur.com/xCXmz2U.png)
-
+<!--excerpt-->
 I am not a frequent cafe going person and I know how important a VPN and/or a proxy is when you are accessing public networks, it is as important for surfing internet for regular contents. Couple years ago, VPN was used to stay anonymous, a peace of mind and hide your surf origin (your location) but now it's a whole different ball game. There are regularly used websites who tracks your IP Addresses, DNS, ISP (Internet service provider), region time etc. etc. so much that it makes people feel insecure. Even hoaxes of companies selling Credit cards, email addresses, IP Addresses, Cell phone numbers are pretty scary. Credit cards, email addresses, IP Addresses can be changed with a little to no fees at all but cell phone numbers? houses? apartments? Can't be changed as often.
 
 That's where VPN comes into play but with the increase in VPN usage by **many** users, couple companies started blocking their services to those who use VPN/proxies. Take one of the most popular streaming services as an example - **Netflix**, they have been banning VPN/Proxies for a while now and imagine their loss in customers.
