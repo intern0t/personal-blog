@@ -6,4 +6,26 @@ permalink: /projects/
 
 #### <i class="fa fa-folder-open" aria-hidden="true"></i> Projects 
 
-I'll convert and import these pages soon!
+<table class="u-full-width">
+    <thead>
+        <tr>
+            <th>Project </th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[Pymgur](https://prashant.me/development/2017/05/19/pymgur-screenshot-and-imgur-upload-script-written-in-python.html){:target="_blank"}</td>
+            <td>
+                <p>Screenshot and upload to Imgur script, written in Python which utilizes [xClip](https://github.com/astrand/xclip){:target="_blank"} to handle clipboard and [optipng](http://optipng.sourceforge.net/){:target="_blank"} to natively optimize the screenshot taken to reduce file size before upload.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>[FileSec](//i.imgur.com/MUPVc3Y.mp4){:target="_blank"}</td>
+            <td>
+                <p>FileSec is a AES 256 Encryption utility software written in C# to encrypt any files with a user provided
+                    key.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
