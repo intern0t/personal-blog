@@ -21,7 +21,7 @@ permalink: /projects/
             </td>
         </tr>
         <tr>
-            <td><a href="//i.imgur.com/MUPVc3Y.mp4" data-rel="lightcase">FileSec</a></td>
+            <td><a href="https://i.imgur.com/MUPVc3Y.mp4" data-rel="lightcase">FileSec</a></td>
             <td>
                 <p>FileSec is a AES 256 Encryption utility software written in C# to encrypt and decrypt any files with a user provided key.</p>
             </td>
