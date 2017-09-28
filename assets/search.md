@@ -5,5 +5,15 @@ permalink: /search/
 ---
 
 #### <i class="fa fa-binoculars" aria-hidden="true"></i>  Search
-
-Under development!
+<script>
+  (function() {
+    var cx = '010738197107477130202:cnkjahloicw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
