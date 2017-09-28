@@ -35,3 +35,5 @@ permalink: /projects/
         </tr>
     </tbody>
 </table>
+
+**More projects to be added!**
