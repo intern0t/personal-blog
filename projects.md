@@ -25,11 +25,11 @@ permalink: /projects/
             <td><a href="#">FileSec</a></td>
             <td>
                 <p>FileSec is a AES 256 Encryption utility software written in C# to encrypt and decrypt any files with a user
-                    provided key. <a href="https://i.imgur.com/MUPVc3Y.mp4" data-rel="lightcase">Demo</a>
-                    <br/>
+                    provided key. <a href="https://i.imgur.com/MUPVc3Y.gif" data-rel="lightcase">Demo</a>
+                    <!-- <br/>
                     <video width="100%" controls>
                         <source src="https://i.imgur.com/MUPVc3Y.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
                 </p>
             </td>
         </tr>
