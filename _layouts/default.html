@@ -53,7 +53,7 @@
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 			$(".disqus_trigger").click(function (e) {
 				e.preventDefault();
-				
+
 				// Check if Disqus was already loaded before.
 				if ($("#disqus_thread").text().length > 0) {
 					// Do nothing!?
@@ -61,7 +61,7 @@
 					// Disqus wasn't loaded before.
 					$.ajax({
 						type: "GET",
-						url: "http://{{ site.disqus.shortname }}.disqus.com/embed.js",
+						url: "https://{{ site.disqus.shortname }}.disqus.com/embed.js",
 						dataType: "script",
 						cache: true
 					});
