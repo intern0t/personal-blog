@@ -56,9 +56,28 @@ layout: default
 				<span>
 					<a class="permalink" href="{{ post.url | relative_url }}">Permalink</a>
 				</span> • <span>
+					<a class="disqus" itemprop="disqus" href="#"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+				</span> • <span>
 					<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
 				</span>
 			</footer>
+
+			<script type="text/javascript">
+				$("a.disqus").on('click', function () {
+						// Check if Disqus was already loaded before.
+						if ($("#disqus_thread").text().length > 0) {
+							// Do nothing!?
+						}else{
+							// Disqus wasn't loaded before.
+							$.ajax({
+								type: "GET",
+								url: "http://{{ site.disqus.shortname }}.disqus.com/embed.js",
+								dataType: "script",
+								cache: true
+							});
+						}
+					});
+			</script>
 
 			<!-- Disqus -->
 			{% if site.disqus.shortname %}
