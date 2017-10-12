@@ -20,7 +20,6 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script async type="text/javascript" src="{{ "assets/js/jquery.min.js " | relative_url }}"></script>
 	<script async type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script>
-	<script async type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
 
 	<!-- Scripts Usage
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -77,15 +76,6 @@
 				}
 
 				return false;
-			});
-
-			/* Lazy Load Images..
-			–––––––––––––––––––––––––––––––––––––––––––––––––– */
-			$('img').Lazy({
-				effect: 'fadeIn',
-				onError: function(element){
-					console.log("Error lazy loading => " + element.data('src') + ".");
-				}
 			});
 		});
 	</script>
