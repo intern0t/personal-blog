@@ -83,7 +83,7 @@
 			var toSearch = "https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=";
 			$(".gcse-trigger").click(function(e){
 				e.preventDefault();
-				var searchKey = $(this).val();
+				var searchKey = $('input#toSearch').val();
 
 				if(searchKey.length > 0){
 					window.open(toSearch + searchKey, "_blank");
