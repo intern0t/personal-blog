@@ -10,13 +10,13 @@ layout: default
 	<header class="row header">
 		<div class="u-full-width" style="display: inline-block;">
 			<h4 class="site-description"><a href="{{ site.url }}">{{ site.description }}</a>
-			<a class="toggleNav" style="float: right; display: none;"><i class="fa fa-bars" aria-hidden="true"></i></a></h4>
+			<a class="toggleNav" style="float: right; display: none;"><i class="icon-menu"></i></a></h4>
 		</div>
 	</header>
 	<div class="posts">
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<h4 class="post-title" itemprop="name headline">
-				<i class="fa fa-file-text" aria-hidden="true"></i>
+				<i class="icon-file-text2"></i>
 				<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
 			</h4>
 
@@ -24,12 +24,12 @@ layout: default
 			<div class="row post-stamps">
 				{% assign categories = page.categories %} {% if categories != "" %}
 				<div class="u-full-width stamp categories">
-					<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> {% for category in categories %} {{ category }}{%
+					<i class="icon-tree" title="Categories"></i> {% for category in categories %} {{ category }}{%
 					unless forloop.last %} > {% endunless %} {% endfor %}
 				</div>
 				{% endif %} {% assign tags = page.tags %} {% if tags != "" %}
 				<div class="u-full-width stamp tags">
-					<i class="fa fa-tags" aria-hidden="true" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
+					<i class="icon-price-tags" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
 					{% endunless %} {% endfor %}
 				</div>
 				{% endif %}
@@ -43,7 +43,7 @@ layout: default
 			{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
 			<footer class="post">
 				<span class="post-meta">
-						<i class="fa fa-calendar-check-o" aria-hidden="true"></i> 
+						<i class="icon-calendar"></i>
 						<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ page.date | date: date_format }}
@@ -53,12 +53,11 @@ layout: default
 							<span itemprop="name">{{ page.author }}</span>
 				</span> • {% endif %}
 				<span>
-				<span>
-					<a class="permalink" href="{{ post.url | relative_url }}">Permalink</a>
+					<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><i class="icon-link"></i> Permalink</a>
 				</span> • <span>
-					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus to leave comments." href="#"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus." href="#"><i class="icon-bubbles"></i></a>
 				</span> • <span>
-					<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
+					<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="icon-pocket"></i></a>
 				</span>
 			</footer>
 

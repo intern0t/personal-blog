@@ -4,7 +4,7 @@ title: Search
 permalink: /search/
 ---
 
-#### <i class="fa fa-binoculars" aria-hidden="true"></i>  Search
+#### <i class="icon-binoculars"></i>  Search
 
 <div class="row">
 	<input class="u-full-width" type="text" placeholder="Please enter what you wish to search here." id="toSearch">

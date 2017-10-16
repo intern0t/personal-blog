@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-#### <i class="fa fa-user" aria-hidden="true"></i> About 
+#### <i class="icon-profile"></i> About 
 
 ##### Prashant Shrestha
 

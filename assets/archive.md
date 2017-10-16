@@ -4,7 +4,7 @@ title: Archive
 permalink: /archive/
 ---
 
-#### <i class="fa fa-archive" aria-hidden="true"></i>  Archive ({{ site.posts | size }})
+#### <i class="icon-box-filled"></i>  Archive ({{ site.posts | size }})
 
 {% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
 {% for category in site.categories %}

@@ -17,7 +17,7 @@ layout: default
 		{% for post in paginator.posts %}
 		<article class="row post">
 			<h4 class="post-title" itemprop="name headline">
-				<i class="fa fa-file-text" aria-hidden="true"></i>
+				<i class="icon-file-text2"></i>
 				<a class="title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 			</h4>
 
@@ -26,7 +26,7 @@ layout: default
 				{% assign categories = post.categories %} {% assign categoriesCount = categories | size %}
 
 				<div class="u-full-width stamp categories">
-					<i class="fa fa-sitemap" aria-hidden="true" title="Categories"></i> 
+					<i class="icon-tree" title="Categories"></i> 
 					{% if categoriesCount < 1 %} Uncategorized {% endif %} 
 					{% for category in categories %} 
 						{{ category }}{% unless forloop.last %}> {% endunless %}
@@ -34,7 +34,7 @@ layout: default
 				</div>
 				{% assign tags = post.tags %} {% assign tagCount = post.tags | size %} {% if tagCount > 0 %}
 				<div class="u-full-width stamp tags">
-					<i class="fa fa-tags" aria-hidden="true" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
+					<i class="icon-price-tags" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
 					{% endunless%} {% endfor %}
 				</div>
 				{% endif %}
@@ -45,7 +45,7 @@ layout: default
 				{{ post.excerpt }}
 				
 				{% if post.content contains site.excerpt_separator %}
-					<a href="{{ post.url }}" title="{{ post.title | escape }}">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a><br/><br/>
+					<a href="{{ post.url }}" title="{{ post.title | escape }}">Read More <i class="icon-arrow-right2" title="Read More .."></i></a><br/><br/>
 				{% endif %}
 			</div>
 
@@ -53,7 +53,7 @@ layout: default
 			{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
 			<footer class="post">
 				<span class="post-meta">
-						<i class="fa fa-calendar-check-o" aria-hidden="true"></i> 
+						<i class="icon-calendar"></i>
 						<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ post.date | date: date_format }}
@@ -63,9 +63,9 @@ layout: default
 							<span itemprop="name">{{ post.author }}</span>
 				</span> • {% endif %}
 				<span>
-						<a class="permalink" href="{{ post.url | relative_url }}">Permalink</a>
+						<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><i class="icon-link"></i> Permalink</a>
 					</span> • <span>
-						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="fa fa-get-pocket"></i></a>
+						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="icon-pocket"></i></a>
 					</span>
 			</footer>
 		</article>

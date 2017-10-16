@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/ 
 --- 
 
-#### <i class="fa fa-folder-open" aria-hidden="true"></i> Projects
+#### <i class="icon-folder-open"></i> Projects
 
 <table class="u-full-width">
     <thead>
