@@ -14,6 +14,11 @@
 		<div class="row">
 			{{ content }}
 		</div>
+
+		<!-- Scroll to TOP!
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<a class="toTop" href="#top" title="Scroll to Top!"><span><i class="icon-one-finger-swipe-up"></i></span></a>
+
 	</main>
 
 	<!-- Scripts Included
@@ -78,7 +83,7 @@
 				return false;
 			});
 
-			/* Search trigger.
+			/* Search trigger - using manual button click.
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 			var toSearch = "https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=";
 			$(".gcse-trigger").click(function(e){
@@ -92,6 +97,34 @@
 				return false;
 			});
 
+			/* Search trigger - using keydown event.
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$("input#toSearch").keydown(function(e){
+				var keyPressed = e.which || e.keyCode;
+				var searchKey = $(this).val();
+
+				if(keyPressed === 13 && searchKey.length > 0){
+					window.open(toSearch + searchKey, "_blank");
+				}
+			});
+
+			/* On Window scroll event to calculate the To Top display trigger.
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$(window).scroll(() => {
+				if($(this).scrollTop()){
+					$(".toTop").fadeIn();
+				}else{
+					$(".toTop").fadeOut();
+				}
+			});
+
+			/* On "To Top" button click event.
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			$("a[href='#top']").click(function (e) {
+				e.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+			});
 		});
 	</script>
 
