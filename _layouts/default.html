@@ -34,10 +34,14 @@
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
 			console.log(`%c        ,=""=,
 	   c , _,{
-	   /\  @  )                 __
+	   /\   @ )                 __
 	  /  ^~~^\          <=.,__/ '}=
 	 (_/ ,, ,,)          \\_ _>_/~
-	  ~\_(/-\)'-,_,_,_,-'(_)-(_)  - Prashant says Hi`, "font-family:monospace");
+	  ~\_(/-\)'-,_,_,_,-'  (_)-(_)  - Prashant says Hi`, "font-family:monospace");
+
+			/* Special thanks to..
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+			console.log("Special thanks to SkeletonCSS, Lightcase, Icomoon. ❤");
 
 			/* Image Lightbox Initialization
 			–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -69,7 +73,7 @@
 
 				// Check if Disqus was already loaded before.
 				if ($("#disqus_thread").text().length > 0) {
-					// Do nothing!?
+					$("#disqus_thread").toggle();
 				} else {
 					// Disqus wasn't loaded before.
 					$.ajax({
