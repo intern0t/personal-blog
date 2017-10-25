@@ -51,10 +51,11 @@
 <!-- Full Screen Menu -->
 <div class="fullscrNav">
     <div class="container">
-        <a href="#" class="nav-close" title="Close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <a href="#" class="nav-close" title="Close"><i class="icon-cross"></i></a>
         <img class="u-full-width profile-picture" src="{{ ASSET_PATH }}/assets/images/image.png" />
         <h6 class="u-full-width">Prashant Shrestha</h6>
         <ul class="u-full-width navigation">
+            <li><a href="{{ site.baseurl | append: '/' }}">Home</a></li>
             <li><a href="{{ "/projects" | prepend: site.baseurl | append: '/' }}">Projects</a></li>
             <li><a href="{{ "/archive" | prepend: site.baseurl | append: '/' }}">Archive</a></li>
             <li><a href="{{ "/search" | prepend: site.baseurl | append: '/' }}">Search</a></li>
