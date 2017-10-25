@@ -295,6 +295,20 @@ body {
                         }
                     }
 
+                    .row > div > a > img{
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                        border-radius: $globalBorderRadius;
+                        margin-bottom: 20px;
+                        opacity: .9;
+                        clear: both;
+                        
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+
                     a.title {
                         word-wrap: break-word;
                         font-family: $globalFontFamily;

@@ -160,9 +160,7 @@ At this point, we find the path to our `SpotifyNowPlaying` file created and upda
 
 This is it, an easy yet clean way to add Spotify's currently playing track title to OBS. I decided to add some buttons to start and stop capturing the title, change intervals, etc. I have the updated code in my [Bitbucket](https://bitbucket.org/intern0t/spotify-to-obs) if you ever feel like modifying or updating or even just fiddle around with it.
 
-Those are some of the screenies I took after various feature addition and modifications, nothing advanced. 
-
-The one on the left with bland logo means the Spotify process was not found whereas the right means Spotify process was found.
+Those are some of the screenies I took after various feature addition and modifications, nothing advanced. The one on the left with bland logo means the Spotify process was not found whereas the right means Spotify process was found.
 
 <div class="row">
     <div class="six columns">
