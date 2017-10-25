@@ -173,8 +173,8 @@ The one on the left with bland logo means the Spotify process was not found wher
     </div>
 </div>
 
-Here's a [demo](https://i.imgur.com/EWK7fxU.gifv){: data-rel="lightcase"} of the tool in action.
+Here's a [demo](https://i.imgur.com/EWK7fxU.gif){: data-rel="lightcase"} of the tool in action.
 
-<a href="https://i.imgur.com/EWK7fxU.gifv" data-rel="lightcase"><img src="https://i.imgur.com/EWK7fxU.gifv"></a>
+[![](https://i.imgur.com/EWK7fxU.gif)](https://i.imgur.com/EWK7fxU.gif){: data-rel="lightcase"}
 
 Good luck & Stay creative!
