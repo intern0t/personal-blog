@@ -15,6 +15,13 @@ permalink: /projects/
     </thead>
     <tbody>
         <tr>
+            <td><a href="https://prashant.me/development/2017/10/23/creating-and-integrating-spotify-now-playing-to-open-broadcaster-software.html">Spotify's Now Playing in OBS</a></td>
+            <td>
+                <p>Using OBS's built-in feature to read from file on file's content change event, this tool grabs and writes the currently playing song to display in OBS. <a href="https://i.imgur.com/EWK7fxU.gif" data-rel="lightcase">Demo</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
             <td><a href="https://prashant.me/development/2017/05/19/pymgur-screenshot-and-imgur-upload-script-written-in-python.html">Pymgur</a></td>
             <td>
                 <p>Screenshot and upload to Imgur script, written in Python which utilizes <a href="https://github.com/astrand/xclip">xClip</a>                    to handle clipboard and <a href="http://optipng.sourceforge.net/">optipng</a> to natively optimize the
