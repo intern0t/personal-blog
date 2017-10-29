@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?z7bkpt');
-  src:  url('../fonts/icomoon.eot?z7bkpt#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?z7bkpt') format('truetype'),
-    url('../fonts/icomoon.woff?z7bkpt') format('woff'),
-    url('../fonts/icomoon.svg?z7bkpt#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?4vz2fg');
+  src:  url('../fonts/icomoon.eot?4vz2fg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4vz2fg') format('truetype'),
+    url('../fonts/icomoon.woff?4vz2fg') format('woff'),
+    url('../fonts/icomoon.svg?4vz2fg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-feather:before {
+  content: "\e90d";
+}
+.icon-mail-read:before {
+  content: "\e90e";
+}
 .icon-flame:before {
   content: "\e90b";
 }
@@ -98,6 +104,9 @@ i {
 }
 .icon-reddit:before {
   content: "\eac6";
+}
+.icon-pinterest:before {
+  content: "\ead1";
 }
 .icon-subdirectory_arrow_right:before {
   content: "\e909";

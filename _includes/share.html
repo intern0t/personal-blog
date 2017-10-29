@@ -1,0 +1,34 @@
+<fieldset class="row share">
+    <legend><i class="icon-feather"></i> Share this Post</legend>
+
+    <!-- Icons & buttons container. -->
+    <div class="row">
+        <!-- List -->
+        <ul>
+            <li>
+                <a class="button" href="mailto:?&subject={{ page.title | escape }}&body={{ post.url | relative_url }}">
+                    <i class="icon-mail-read"></i></a>
+            </li>
+            <li>
+                <a class="button" href="https://plus.google.com/share?url={{ post.url | relative_url }}">
+                    <i class="icon-google-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a class="button" href="https://twitter.com/home?status={{ post.url | relative_url }}">
+                    <i class="icon-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a class="button" href="http://www.reddit.com/submit?url={{ post.url | relative_url }}&title={{ page.title | escape }}">
+                    <i class="icon-reddit"></i>
+                </a>
+            </li>
+            <li>
+                <a class="button" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | relative_url }}">
+                    <i class="icon-facebook2"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</fieldset>
