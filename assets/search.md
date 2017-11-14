@@ -11,6 +11,12 @@ permalink: /search/
 	<input class="button-primary" class="gcse-trigger" type="submit" value="Search">
 </div>
 
+<hr>
+
+<div class="row search-result-container">
+	<h5 class="totalSearchResults"></h5>
+</div>
+
 <!-- <script>
   (function() {
     var cx = '010738197107477130202:cnkjahloicw';

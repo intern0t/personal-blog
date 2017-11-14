@@ -93,9 +93,36 @@
 			$(".gcse-trigger").click(function(e){
 				e.preventDefault();
 				var searchKey = $('input#toSearch').val();
+				var searchURL = "https://www.googleapis.com/customsearch/v1?q={0}&cx={1}&key={2}"
+				var apiKey = "AIzaSyAXNi32ZKBfeR6d59kcP7hUfyBxMycVvms";
+				var engineID = "010738197107477130202:cnkjahloicw";
 
-				if(searchKey.length > 0){
-					window.open(toSearch + searchKey, "_blank");
+				// Clear previous search results.
+				$(".search-result-container").empty();
+
+				if(searchKey.length > 3){
+					// Start the search.
+					$.ajax({
+						type: "GET",
+						url: searchURL.replace("{0}", searchKey).replace("{1}", engineID).replace("{2}", apiKey),
+						success: function(result){
+							if(result.items.length > 0){
+								$(".search-result-container").append("<h5 class='totalSearchResults'>" + result.items.length + " results found for '" + searchKey + "' via. Google Search.</h5>");
+
+								$.each(result.items, function(key, value){
+									var initialFormatting = '<div class="row result"><h5><a target="_blank" href="{0}">{1}</a></h5><p>{2}</p></div>';
+									$(".search-result-container").append(
+										initialFormatting.replace("{0}", value.link).replace("{1}", value.title).replace("{2}", value.htmlSnippet));
+								});
+							}else{
+								console.log("No Results");
+							}
+						}
+					})
+
+				}else{
+					// Notify the user regarding the character length requirement.
+					console.log("Not enough character length!");
 				}
 
 				return false;
@@ -108,7 +135,7 @@
 				var searchKey = $(this).val();
 
 				if(keyPressed === 13 && searchKey.length > 0){
-					window.open(toSearch + searchKey, "_blank");
+					$(".gcse-trigger").trigger('click');
 				}
 			});
 
