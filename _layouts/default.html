@@ -105,17 +105,28 @@
 					$.ajax({
 						type: "GET",
 						url: searchURL.replace("{0}", searchKey).replace("{1}", engineID).replace("{2}", apiKey),
-						success: function(result){
-							if(result.items.length > 0){
+						success: function(result){							
+							if(result.hasOwnProperty('items') && result.items.length > 0){
 								$(".search-result-container").append("<h5 class='totalSearchResults'>" + result.items.length + " results found for '" + searchKey + "' via. Google Search.</h5>");
 
 								$.each(result.items, function(key, value){
-									var initialFormatting = '<div class="row result"><h5><a target="_blank" href="{0}">{1}</a></h5><p>{2}</p></div>';
+									var initialFormatting = '<div class="row result"><div class="three columns"><img class="thumbnail" src="{3}"></div><div class="nine columns"><h5><a target="_blank" href="{0}">{1}</a></h5><p>{2}</p></div></div>';
+									var searchResultThumbnail = "";
+
+									if(value.pagemap.hasOwnProperty('cse_thumbnail')){
+										searchResultThumbnail = value.pagemap.cse_thumbnail[0].src;
+									}else if(!value.pagemap.hasOwnProperty('cse_thumbnail') &&
+									 value.pagemap.hasOwnProperty('cse_image')){
+										searchResultThumbnail = value.pagemap.cse_image[0].src;
+									}else{
+										searchResultThumbnail = "https://prashant.me/assets/images/image.png";
+									}
+
 									$(".search-result-container").append(
-										initialFormatting.replace("{0}", value.link).replace("{1}", value.title).replace("{2}", value.htmlSnippet));
+										initialFormatting.replace("{0}", value.link).replace("{1}", value.title).replace("{2}", value.htmlSnippet).replace("{3}", searchResultThumbnail));
 								});
 							}else{
-								console.log("No Results");
+								$(".search-result-container").append("<h5 class='totalSearchResults'>0 results found for '" + searchKey + "' via. Google Search.</h5>");
 							}
 						}
 					})
