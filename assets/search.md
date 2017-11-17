@@ -12,7 +12,7 @@ permalink: /search/
 </div>
 <hr>
 <div class="row search-result-container">
-	<h5 class="totalSearchResults"></h5>
+  <h5 class="totalSearchResults"></h5>
 </div>
 
 <!-- <script>

@@ -15,6 +15,12 @@ permalink: /projects/
     </thead>
     <tbody>
         <tr>
+            <td><a href="https://github.com/intern0t/keykode">Keykode</a></td>
+            <td>
+                <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a></p> 
+            </td>
+        </tr>
+        <tr>
             <td><a href="https://prashant.me/development/2017/10/23/creating-and-integrating-spotify-now-playing-to-open-broadcaster-software.html">Spotify's Now Playing in OBS</a></td>
             <td>
                 <p>Using OBS's built-in feature to read from file on file's content change event, this tool grabs and writes the currently playing song to display in OBS. <a href="https://i.imgur.com/EWK7fxU.gif" data-rel="lightcase">Demo</a>

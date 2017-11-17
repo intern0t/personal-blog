@@ -7,13 +7,13 @@ categories: development
 tags: jquery javascript rest-api google free engine jekyll ajax
 ---
 
-Jekyll is an amazing blogging platform, in terms of simplicity, templating and cleanliness. There are drawbacks for simplicity, lack of essential features. In order to keep my blog clean and minimal, I used Google's Custom Search Engine and forwarded users to Google's custom search's public url however it just seems too unprofessional. Let's say I want to search for the term `node` in my blog, I would simply forward the user to Google's public search [url](https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=node). I tried searching for alternatives which I could integrate the search feature within my blog however it all required me to install and setup a whole different libraries and such.
+Jekyll is an amazing blogging platform, regarding simplicity, templating and cleanliness. There are drawbacks for simplicity, lack of essential features. To keep my blog clean and minimal, I used Google's Custom Search Engine and forwarded users to Google's custom search's public URL however it just seems too unprofessional. Let's say I want to search for the term `node` in my blog; I would simply forward the user to Google's public search [url](https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=node). I tried searching for alternatives which I could integrate the search feature on my blog however it all required me to install and set up a whole different libraries and such.
 
 There are various alternatives that one can use to integrate search feature in their Jekyll powered blog, some, from top of my head would be [Lunr.js](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/), [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search) by [christian-fei](https://github.com/christian-fei), [Algolia](https://www.algolia.com/), [Swifttype](https://swiftype.com/) etc.
 <!--excerpt-->
-Although Google's Custom Search Engine was already used before, I decided to simply use [Google's Search API](https://developers.google.com/custom-search/json-api/v1/using_rest) to extend and display the search results in my blog. It all starts by creating a [custom Google's search](https://cse.google.com/create/new).
+Although Google's Custom Search Engine was already used before, I decided to simply use [Google's Search API](https://developers.google.com/custom-search/json-api/v1/using_rest) to extend and display the search results on my blog. It all starts by creating a [custom Google's search](https://cse.google.com/create/new).
 
-My previous search layout is given as follows.
+
 
 {% highlight html %}
 <div class="row">
