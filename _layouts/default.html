@@ -73,7 +73,7 @@
 
 				// Check if Disqus was already loaded before.
 				if ($("#disqus_thread").text().length > 0) {
-					$("#disqus_thread").toggle();
+					$("#disqus_thread").toggle('display');
 				} else {
 					// Disqus wasn't loaded before.
 					$.ajax({
@@ -109,6 +109,7 @@
 							if(result.hasOwnProperty('items') && result.items.length > 0){
 								var totalSearchResults = 0;
 
+								console.log(result);
 								$(".search-result-container").append("<h5 class='totalSearchResults'></h5>");
 
 								$.each(result.items, function(key, value){
