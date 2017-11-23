@@ -1,0 +1,163 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        /* Hi
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        console.log(`%c        ,=""=,
+   c , _,{
+   /\   @ )                 __
+  /  ^~~^\          <=.,__/ '}=
+ (_/ ,, ,,)          \\_ _>_/~
+  ~\_(/-\)'-,_,_,_,-'  (_)-(_)  - Prashant says Hi`, "font-family:monospace");
+
+        /* Special thanks to..
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        console.log("Special thanks to SkeletonCSS, Lightcase, Icomoon. ❤");
+
+        /* Image Lightbox Initialization
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $('a[data-rel^=lightcase]').lightcase({
+            'maxWidth': '100%'
+        });
+
+        /* Lazy Load all Images - Coming Soon!
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        /* Responsive Sidebar.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $('.toggleNav > i').on('click', function (e) {
+            e.preventDefault();
+            $('.fullscrNav').width('100%').toggle();
+            return false;
+        });
+
+        $('.nav-close > i').on('click', function (e) {
+            e.preventDefault();
+            $('.fullscrNav').css('width', '0').toggle();
+            return false;
+        });
+
+        /* Disqus handling for page load speed.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $(".disqus_trigger").click(function (e) {
+            e.preventDefault();
+
+            // Check if Disqus was already loaded before.
+            if ($("#disqus_thread").text().length > 0) {
+                $("#disqus_thread").toggle('display');
+            } else {
+                // Disqus wasn't loaded before.
+                $.ajax({
+                    type: "GET",
+                    url: "https://{{ site.disqus.shortname }}.disqus.com/embed.js",
+                    dataType: "script",
+                    cache: true
+                });
+            }
+
+            return false;
+        });
+
+        /* Search trigger - using manual button click.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        var toSearch = "https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=";
+        $(".gcse-trigger").click(function (e) {
+            e.preventDefault();
+            var searchKey = $('input#toSearch').val();
+            var searchURL = "https://www.googleapis.com/customsearch/v1?q={0}&cx={1}&key={2}"
+            var apiKey = "AIzaSyAXNi32ZKBfeR6d59kcP7hUfyBxMycVvms";
+            var engineID = "010738197107477130202:cnkjahloicw";
+
+            // Clear previous search results.
+            $(".search-result-container").empty();
+
+            if (searchKey.length > 3) {
+                // Start the search.
+                $.ajax({
+                    type: "GET",
+                    url: searchURL.replace("{0}", searchKey).replace("{1}", engineID).replace("{2}", apiKey),
+                    success: function (result) {
+                        if (result.hasOwnProperty('items') && result.items.length > 0) {
+                            var totalSearchResults = 0;
+
+                            console.log(result);
+                            $(".search-result-container").append("<h5 class='totalSearchResults'></h5>");
+
+                            $.each(result.items, function (key, value) {
+                                var initialFormatting = '<div class="row result"><div class="three columns"><img class="thumbnail" src="{3}"></div><div class="nine columns"><h5><a target="_blank" href="{0}">{1}</a></h5><p>{2}</p></div></div>';
+                                var searchResultThumbnail = "";
+
+                                var urlExtension = value.link.split('.').pop();
+
+                                if (urlExtension === 'html') {
+                                    if (value.pagemap.hasOwnProperty('cse_thumbnail')) {
+                                        searchResultThumbnail = value.pagemap.cse_thumbnail[0].src;
+                                    } else if (!value.pagemap.hasOwnProperty('cse_thumbnail') &&
+                                        value.pagemap.hasOwnProperty('cse_image')) {
+                                        searchResultThumbnail = value.pagemap.cse_image[0].src;
+                                    } else {
+                                        searchResultThumbnail = "https://prashant.me/assets/images/image.png";
+                                    }
+
+                                    $(".search-result-container").append(
+                                        initialFormatting.replace("{0}", value.link)
+                                            .replace("{1}", value.title)
+                                            .replace("{2}", value.htmlSnippet)
+                                            .replace("{3}", searchResultThumbnail)
+                                    );
+
+                                    // Keep track of parsed results.
+                                    totalSearchResults++;
+                                } else { /* Ignore the search result because it contains pagemarks instead of actual search. */ }
+                            });
+
+                            $(".totalSearchResults").text(totalSearchResults + " results found for '" + searchKey + "' via. Google Search.");
+                        } else {
+                            $(".search-result-container").append("<h5 class='totalSearchResults'>0 results found for '" + searchKey + "' via. Google Search.</h5>");
+                        }
+                    }
+                })
+
+            } else {
+                // Notify the user regarding the character length requirement.
+                console.log("Not enough character length!");
+            }
+
+            return false;
+        });
+
+        /* Search trigger - using keydown event.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $("input#toSearch").keydown(function (e) {
+            var keyPressed = e.which || e.keyCode;
+            var searchKey = $(this).val();
+
+            if (keyPressed === 13 && searchKey.length > 0) {
+                $(".gcse-trigger").trigger('click');
+            }
+        });
+
+        /* On Window scroll event to calculate the To Top display trigger.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $(window).scroll(() => {
+            if ($(this).scrollTop()) {
+                $(".toTop").fadeIn();
+            } else {
+                $(".toTop").fadeOut();
+            }
+        });
+
+        /* On "To Top" button click event.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $("a[href='#top']").click(function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+
+        /* External link handling.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        $(".posts a[href^='http://'], a[href^='https://']").click(function () {
+            ($(this).attr("href").indexOf("prashant.me") == -1) ? $(this).attr("target", "_blank") : $(this).attr("target", "");
+        });
+    });
+</script>
