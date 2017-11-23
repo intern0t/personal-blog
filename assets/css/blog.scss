@@ -185,6 +185,24 @@ body {
                 }
             }
 
+            blockquote {
+                position: relative;
+                color: $quoteTextColor;
+                padding: 0 10px;
+                border-left: 5px solid $quoteBorderColor;
+
+                &:after {
+                    font-family: icomoon;
+                    font-style: none;
+                    font-size: 3em;
+                    position: absolute;
+                    content: '\e90a';
+                    opacity: .1;
+                    left: 1%;
+                    top: -20px;
+                }
+            }
+
             .posts {
                 a{
                     color: $navyBlue;
