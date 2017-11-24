@@ -16,7 +16,7 @@ Basically, in clear and understandable words, Seedbox is a server used for **Pee
 Seedbox is just a server with a certain purpose and protocol, seed the files you have stored in your server which is also known as pirating in the eyes of law makers and well, **pirates**!
 
 Not to call myself a pirate, I try my very best to refrain from brushing against the law and the law makers, as a tech fanatic and a student pursuing Engineering & Programming field, Seedbox **piqued** my interest.
-
+<!--excerpt-->
 In the past, I've downloaded large files such as Linux installation files, gigs and gigs of data but one thing I noticed, torrents makes the download so much faster than the regular FTP/HTTP(s) downloads.
 
 Another thing which I noticed is quite important and could make BitTorrent protocol future of Asynchronous downloads is that it checks for chunks and chunks of data before and after you download the files which makes it certain that you shall not end up with the corrupt data or files. I don't think FTP/HTTP(s) downloads does that, the **verification** of files & their check sums.
@@ -28,7 +28,7 @@ I found this image which explains better than my words from [Wikimedia](https://
 [![Image](https://i.imgur.com/tAVUzzQ.png)](https://i.imgur.com/tAVUzzQ.png "Ugh"){:data-rel="lightcase"}
 
 As I mentioned before, Seedbox is just a complete system set up in a way to seed the files you already downloaded before, nothing more and nothing less. The difference between your regular machine and a Seedbox is the hardware specifications such as RAM, Storage, Processors and the internet. You can definitely call a Raspberry PI with an Operating System and a BitTorrent client a full fledged Seedbox but the network speed and the system's uptime factors it out of the list, in most cases!
-<!--excerpt-->
+
 #### Setting up a Seedbox -
 
 > Before I move onto the setup of Seedbox, I also wish to make it clear that this tutorial is written for an educational purpose, the way readers put it into practice or use it, does not concern me nor can I be held accountable.

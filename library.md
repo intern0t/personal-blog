@@ -20,8 +20,15 @@ permalink: /library/
 
 ###### **Programming**
 1. [Racket](https://racket-lang.org/) Cheat Sheet ([*Documentation*](https://docs.racket-lang.org/racket-cheat/index.html))
+2. [Beautiful Soup Docs](https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest)
 
 ###### **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
 2. [x64 Cheat Sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
 3. [Instructions & Examples Compiled](https://scadahacker.com/library/Documents/Cheat_Sheets/Programming%20-%20x86%20Instructions%201.pdf)
+
+###### **Computer Science**
+* Algorithms and Complexity
+  1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
+  2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
+  3. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
