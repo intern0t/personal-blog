@@ -507,8 +507,8 @@ body {
     z-index: 1;
     left: 0;
     top: 0;
-    background: black;
-    opacity: .9;
+    background: white;
+    opacity: 1;
     transition: .5s;
     display: none;
     text-align: center;
@@ -517,7 +517,7 @@ body {
         position: absolute;
         right: 1%;
         top: 1%;
-        color: white;
+        color: black;
         font-size: $globalFontSize + 0.8;
     }
 

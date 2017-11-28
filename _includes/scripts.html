@@ -26,13 +26,13 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         $('.toggleNav > i').on('click', function (e) {
             e.preventDefault();
-            $('.fullscrNav').width('100%').toggle();
+            $('.fullscrNav').animate({ width: 'toggle' }, '100%');
             return false;
         });
 
         $('.nav-close > i').on('click', function (e) {
             e.preventDefault();
-            $('.fullscrNav').css('width', '0').toggle();
+            $('.fullscrNav').animate({ width: 'toggle'}, '0');
             return false;
         });
 
