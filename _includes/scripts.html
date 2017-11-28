@@ -22,11 +22,16 @@
         /* Lazy Load all Images - Coming Soon!
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+        /* Get current window dimensions.
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
         /* Responsive Sidebar.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         $('.toggleNav > i').on('click', function (e) {
             e.preventDefault();
-            $('.fullscrNav').animate({ width: 'toggle' }, '100%');
+            var windowWidth = $(window).width();
+            $('.fullscrNav').animate({ width: 'toggle' }, windowWidth);
             return false;
         });
 
