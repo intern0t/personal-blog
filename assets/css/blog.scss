@@ -501,7 +501,7 @@ body {
 
 /* Full Screen */
 .fullscrNav {
-    width: 100%;
+    width: 0;
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -509,8 +509,6 @@ body {
     top: 0;
     background: white;
     opacity: 1;
-    transition: .5s;
-    display: none;
     text-align: center;
 
     a[title="Close"], a:visited[title="Close"] {

@@ -31,13 +31,15 @@
         $('.toggleNav > i').on('click', function (e) {
             e.preventDefault();
             var windowWidth = $(window).width();
-            $('.fullscrNav').animate({ width: 'toggle' }, windowWidth);
+            $('.fullscrNav').toggle('display');
+            $('.fullscrNav').animate({ width: windowWidth }, 'easeOutBounce');
             return false;
         });
 
         $('.nav-close > i').on('click', function (e) {
             e.preventDefault();
-            $('.fullscrNav').animate({ width: 'toggle'}, '0');
+            $('.fullscrNav').toggle('display');
+            $('.fullscrNav').animate({ width: '0'}, 'easeOutBounce');
             return false;
         });
 
