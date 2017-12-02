@@ -560,8 +560,8 @@ $smartphone: "(min-width: 200px) and (max-width: 549px)";
 
 // Import partials.
 
-@import "normalize.css";
-@import "skeleton.css";
-@import "highlight";
+@import "normalize";
+@import "skeleton";
 @import "lightcase";
-@import "icomoon.css";
+@import "icomoon";
+@import "highlight";
