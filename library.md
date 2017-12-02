@@ -21,6 +21,7 @@ permalink: /library/
 ###### **Programming**
 1. [Racket](https://racket-lang.org/) Cheat Sheet ([*Documentation*](https://docs.racket-lang.org/racket-cheat/index.html))
 2. [Beautiful Soup Docs](https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest)
+3. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [jmcunningham](https://github.com/jmcunningham)
 
 ###### **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
@@ -32,3 +33,4 @@ permalink: /library/
   1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
   2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
   3. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
+* [Geeks For Geeks](http://www.geeksforgeeks.org)
