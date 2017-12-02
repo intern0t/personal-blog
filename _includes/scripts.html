@@ -85,8 +85,6 @@
                     success: function (result) {
                         if (result.hasOwnProperty('items') && result.items.length > 0) {
                             var totalSearchResults = 0;
-
-                            console.log(result);
                             $(".search-result-container").append("<h5 class='totalSearchResults'></h5>");
 
                             $.each(result.items, function (key, value) {
