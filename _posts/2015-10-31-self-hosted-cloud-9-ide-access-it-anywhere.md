@@ -18,7 +18,7 @@ A small excerpt from Wikipedia regarding the [**Web integrated development envir
 >A web integrated development environment (Web IDE or WIDE), also known as cloud IDE, is a browser based IDE that allows for software development or web development. A web IDE can be accessed from a web browser, such as Google Chrome or Internet Explorer, allowing for a portable work environment. A web IDE does not usually contain all of the same features as a traditional, or desktop, IDE, although all of the basic IDE features, such as syntax highlighting, are typically present. ([Source](https://en.wikipedia.org/wiki/Web_integrated_development_environment))
 
 I've been using my private cloud IDE for a while and as a newbie, I can already see the pros-&-cons.
-
+<!--excerpt-->
 #### Online IDE?
 
 Yes, there are many online cloud IDE which provide you with a free workspace with fair amount of hardware specification. Some are listed below and you can check it out yourselves.
@@ -31,7 +31,7 @@ Yes, there are many online cloud IDE which provide you with a free workspace wit
 4. [Nitrous.IO.](https://www.nitrous.io/)
 
 I listed one of the popular ones that the Google considers and the ones that I've tried and liked. If you are planning on using cloud IDE for educational purposes then I would say, self-hosted Cloud IDE is cheaper.
-<!--excerpt-->
+
 ##### Some Pros and Cons
 
 **Pros -**

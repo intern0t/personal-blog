@@ -14,7 +14,7 @@ It gives you an ability to edit/update images with various built-in sets of tool
 Nothing wrong with trying and creating one for yourself, I suppose. The script I wrote makes use of [Imgur's OAuth 2.0 authentication](https://apidocs.imgur.com/#authorization-and-oauth) using `pin` to authorize, confirm and revalidate `access_tokens`. 
 
 All the steps are included in the Python script itself, therefore, I don't think the user will have much trouble configuring things around.
-
+<!--excerpt-->
 #### Install Required Python Packages & Other packages:
 
 You need Python installed in order for Python script to run, it's a given. In addition, we make use of various Python libraries to make our scripting (running) easier. 
@@ -24,7 +24,7 @@ Install `Python`, `pip` and `xclip`. 
 From Python's `pip` install `requests` and `json`. 
 
 Once the installation process is complete, let's create a [SymLink](https://en.wikipedia.org/wiki/Symbolic_link) to our Python Script.
-<!--excerpt-->
+
 #### Creating a SymLink:
 
 Creating SymLink is a very easy task, all we need to know is where to store our file securely and how to create a reference link for it, more like a pointer in `C++`, really! Download the `Pymgur.py` from the source or just copy paste the code and create a file in your system. I like to put the scripts I develop and use in a specific directory at `~/Documents/Scripts/` which is where I've mine `Pymgur.py` stored, easier to backup and easier to share.

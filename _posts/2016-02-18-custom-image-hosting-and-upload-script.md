@@ -7,7 +7,7 @@ categories: development
 tags: setup server private php python upload postman api
 ---
 
-#### Why custom image hosting?
+[![Image](https://i.imgur.com/eFbN8c9.jpg)](https://i.imgur.com/eFbN8c9.jpg "Server rack!"){:data-rel="lightbox"}
 
 There are countless free image hosting services out there but having your own, separate image server has different purpose of its own. There are lots of benefits of having your own image hosting, personal, nothing complicated.
 
@@ -16,10 +16,8 @@ A bit of a knowledge is a must, if you wish to modify and better the scripts I w
 Before you start copy-pasting the codes, please be aware that these scripts that I wrote for my personal use are **not secure enough**, use it at your own risk!
 
 I also wish to mention that this personal image hosting is completely optional with all these awesome image hosting services out there which are going to be better, faster, secure and optimized compared to our little personal image hosting. Take [Imgur](https://imgur.com/) for example, provides both Non-SSL and SSL linking, which is better for sites such as mine which requires the content to load over SSL rather than Non-SSL to keep the lock intact.
-
+<!--excerpt-->
 First of all, you are going to need a hosting plan, a server or a remote storage. We are going to achieve our own personal image hosting with total of 2 files.
-
-[![Image](https://i.imgur.com/eFbN8c9.jpg)](https://i.imgur.com/eFbN8c9.jpg "Server rack!"){:data-rel="lightbox"}
 
 #### Things I used
 
@@ -27,7 +25,7 @@ First of all, you are going to need a hosting plan, a server or a remote storage
 2. PHP script (Server side to handle proper file storage)
 
 If you are going to use this for your personal use or just between your friends for hotlinking images to your own website then I suggest using a subdomain and preventing hotlinking to any other hosts except your own.
-<!--excerpt-->
+
 I created a subdomain for my current domain, `cdn.prashant.me` to handle the image storage. Apply the same SSL certificate and key file to the subdomain to have SSL.
 
 Open up your IDE and start with creating a PHP script which will take POST data and generate a random file name and save it to the directory or simply the chroot directory. For me, `cdn.*` will be used only for image hosting therefore, i will simply use the main directory (i know, very unorganized!)

@@ -12,13 +12,13 @@ tags: setup server private media movies shows organize organizer software linux
 Many of us tech enthusiasts dream of having their own media server, at least once in their lifetime. Better serving, high speed and most of all, customized & organized media server. I love watching movies during my free time or while stressed, considering I’ve a whole library of movies makes it easier to save bandwidth and at the same time, have fun! I tried to create my own media server, for streaming movies, TV shows or even music locally with FTP, which didn’t work out well, in short, it wasn’t organized and not flashy/beautiful at all until I heard about [Plex](https://www.plex.tv/).
 
 In my understanding and experience so far with Plex, it is a nifty piece of software written for the very purpose of running a media server (local or remote). Local as in within your network, remote as in outside your network.
-
+<!--excerpt-->
 > **Plex** is a [client-server](https://en.wikipedia.org/wiki/Client-server_model) [media player](https://en.wikipedia.org/wiki/Media_player_(software)) system and software suite comprising two main components.
 * The **Plex Media Server** either running on [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows), [macOS](https://en.wikipedia.org/wiki/MacOS), [Linux](https://en.wikipedia.org/wiki/Linux), [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD) or a [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) which organizes audio (music) and visual (photos and videos) content from personal media libraries and streams it to their player counterparts. 
 * The players can either be the **Plex Apps** available for [mobile devices](https://en.wikipedia.org/wiki/Mobile_device), [smart TVs](https://en.wikipedia.org/wiki/Smart_TV), and [streaming boxes](https://en.wikipedia.org/wiki/Digital_media_player), or the web UI of the Plex Media Server called Plex Web App, or the old Plex player called Plex Home Theater.
 
 > A premium version of the service, called Plex Pass, is also available and offers advanced features like [file synchronization](https://en.wikipedia.org/wiki/File_synchronization) with mobile devices, access to [cloud storage](https://en.wikipedia.org/wiki/Cloud_storage) providers, up to date and high quality metadata and matchings for music, [multi-users mode](https://en.wikipedia.org/wiki/Multi-user), [parental controls](https://en.wikipedia.org/wiki/Parental_controls), access to high quality trailers and extras, wireless synchronization from mobile devices to the server, access to discounts on partner products and early access. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Client-server_model))
-<!--excerpt-->
+
 #### Backstory 
 
 I've a 45" Samsung TV that has a max resolution of 1080p, iPad Pro and various devices but the catch is I don't transcode, I stream raw (the original quality) therefore I do not need a powerful machine. 

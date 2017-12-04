@@ -10,7 +10,7 @@ tags: traffic network server route ajax nodejs cors call
 With the changes with client side and server side security policy regarding the HTTP requests and responses between two domains (origins), new developers who are just getting the feel of the language can experience hell when it comes to sending a request through jQuery to NodeJS application, whether it be the same server your contents are hosted in or in different servers.
 
 It's a given, once a developer learns how to build an **API** (Application program interface), he or she will try to integrate their API with their client side application. It is not possible to do so because of the **CORS** security policy.
-
+<!--excerpt-->
 If he or she is developing both the web application in single work-space, also known as `localhost`, even then they will not be able to get this to work unless they add certain instructions in their response headers. If you are trying to send a POST data, the other end might receive it but you'll not receive the response. A big challenge for new standalone developers.
 
 Look at the image displayed below, taken from one of my test applications.
@@ -24,7 +24,7 @@ XMLHttpRequest cannot load http://localhost:1337/track. No 'Access-Control-Allow
 {% endhighlight %}
 
 `:1337/track` is my NodeJS application and `:80/` is my simple HTML-CSS-Javascript website.
-<!--excerpt-->
+
 Fixing this problem is quite simple to be honest, as mentioned in the error, it says, `No 'Access-Control-Allow-Origin' header is present on the requested resource.`. That means the response origin is missing the `Access-Control-Allow-Origin` header, in simple words, our Node application. Let's add the header instruction in our Node application, remember, this is just a test application, your current project and my test demo might differ.
 
 I'll be using [**Express**](http://expressjs.com/) to handle the requests and responses and my client side sending a POST data to our specified API end-point `:1337/track` to calculate and reply with a response.
