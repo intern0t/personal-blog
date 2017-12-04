@@ -33,4 +33,4 @@ permalink: /library/
   1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
   2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
   3. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
-* [Geeks For Geeks](http://www.geeksforgeeks.org)
+* [Geeks For Geeks](http://www.geeksforgeeks.org) ~ [My Prep](/cs-prep)
