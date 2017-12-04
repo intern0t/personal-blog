@@ -4,11 +4,11 @@
 @charset "UTF-8";
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto|Open+Sans|PT+Sans');
 
 /* Global Variables */
 $globalFontFamily: 'Fira Sans', sans-serif;
-$firaCodeFontFamily: 'Roboto', sans-serif;
+$_RobotoFontFamily: 'Roboto', sans-serif;
 $globalFontSize: 1.5em;
 $globalBorderRadius: 2px;
 
@@ -33,7 +33,7 @@ $smartPhoneScreen: "only screen and (max-width: 320px)";
 
 /* Styling */
 body {
-    font-family: $globalFontFamily;
+    font-family: $globalFontFamily !important;
 
     .rainbow-head {
         background: $border-top;
