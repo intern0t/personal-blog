@@ -3,7 +3,7 @@
 <div class="u-full-width pagination">
 	{% if paginator.page_trail %} 
 		{% for trail in paginator.page_trail %}
-		{% assign parsedPageURL = page.url | replace:'index.html', '' %}
+		{% assign parsedPageURL = page.url | remove:'index.html' %}
 			<a class="button {% if parsedPageURL == trail.path %}button-primary{% endif %}" href="{{ trail.path | prepend: site.url }}" title="{{trail.title}}">{{ trail.num }}</a>
 		{% endfor %} 
 	{% endif %}
