@@ -77,7 +77,7 @@ RewriteRule ^upload$ /upload.php [L,NS]
 
 I prefer testing our my remote scripts before moving forward, I used a nifty yet handy tool, very essential to web developers named [Postman](https://www.getpostman.com). Amazing, what you can do with it.
 
-[![Image](https://i.imgur.com/M2AkaE4.png)](http://i.imgur.com/M2AkaE4.png "Postman check"){:data-rel="lightcase"}
+[![Image](https://i.imgur.com/M2AkaE4.png)](https://i.imgur.com/M2AkaE4.png "Postman check"){:data-rel="lightcase"}
 
 Now that we know our remote `upload.php` is working great, we shall now write a script to take a screenshot and upload the image to our server and retrieve the image URL, using both Python and Bash!
 

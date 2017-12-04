@@ -40,7 +40,7 @@ For me, before I installed Varnish, it was `Apache to Ghost` with reverse proxy 
 
 I changed the Apache port to Varnish recommended port `82` in `vhosts.conf` which is located in `/usr/local/apache/conf.d/`.
 
-[![Image](http://i.imgur.com/07jpXLJ.png)](http://i.imgur.com/07jpXLJ.png "Changing port."){:data-rel="lightcase"}
+[![Image](https://i.imgur.com/07jpXLJ.png)](https://i.imgur.com/07jpXLJ.png "Changing port."){:data-rel="lightcase"}
 
 After changing the listening port to `82`, restart `httpd` for your server to start listening on port `82` for your site. Try `yourdomain.com:82`.
 
@@ -79,6 +79,6 @@ The disk storage of cache is superb if you have a SSD. I run on 512 MB RAM for t
 
 That is all I did to make Varnish Cache working in my server. Finally you can test it through a nifty website named [Is Varnish Working?](http://www.isvarnishworking.com/) brought to you by [Cadre](https://www.getcadre.com/). Here's my [Is Varnish Working?](http://www.isvarnishworking.com/) result.
 
-[![Image](http://i.imgur.com/n6LUAkB.png)](http://i.imgur.com/n6LUAkB.png "Successfully installed Varnish!"){:data-rel="lightcase"}
+[![Image](https://i.imgur.com/n6LUAkB.png)](https://i.imgur.com/n6LUAkB.png "Successfully installed Varnish!"){:data-rel="lightcase"}
 
 ~ Good Luck!
