@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Archive
+title: Computer Science Problems and Practice
 permalink: /cs-practice/
 ---
 
-### Computer Science Problems & Practice.
+#### <i class="icon-book"></i> Computer Science Problems and Practice
