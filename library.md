@@ -4,7 +4,7 @@ title: Library
 permalink: /library/
 ---
 
-#### <i class="icon-book"></i>  Library/References
+#### <span class="icon-books"></span>  Library/References
 
 >What I have enlisted and compiled here are the libraries and references that I have used and found useful for my future references. Every content listed on this **particular** page is **not** owned by me and shall be linked directly to the source and shall be constantly updated. Feel free to use it, share, if interested, help me add more. Please let me know if I went against your will regarding the sharing of content available in this page; it shall be removed without any hassle.
 

@@ -12,4 +12,6 @@ I am a 21 years old full-time University Student, majoring in Computer Science a
 
 I started programming since I was 11 years old, started off with writing `bat` scripts and learned how to code in no time once I found out about internet and Google. I always had an interest in designing and developing applications, whether it be Windows, Linux or MacOS. I also love playing PC games and have experienced vast awesomeness of new games. I also believe **game-play** and **story-line** are the most important things in a game. The first games I played were Super Mario, Diablo (1 & 2), Warcraft (Frozen Throne) and [Dota 2](http://www.dota2.com/play/). Besides developing applications, I love reading [Comic Books](https://en.wikipedia.org/wiki/Comic_book) and [watching movies]({% post_url 2017-02-02-running-a-local-media-server-using-plex %}) during my free time.
 
-.. More contents to be added!
+##### <i class="icon-envelop"></i> Contact
+
+[![Image](https://i.imgur.com/YBEgKAG.png)](https://i.imgur.com/YBEgKAG.png "Contact Email."){:data-rel="lightcase"}
