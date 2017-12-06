@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?tb3wvd');
-  src:  url('../fonts/icomoon.eot?tb3wvd#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?tb3wvd') format('truetype'),
-    url('../fonts/icomoon.woff?tb3wvd') format('woff'),
-    url('../fonts/icomoon.svg?tb3wvd#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?w1j6e0');
+  src:  url('../fonts/icomoon.eot?w1j6e0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w1j6e0') format('truetype'),
+    url('../fonts/icomoon.woff?w1j6e0') format('woff'),
+    url('../fonts/icomoon.svg?w1j6e0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,91 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-file-binary:before {
+  content: "\e909";
+}
+.icon-books:before {
+  content: "\e920";
+}
+.icon-profile:before {
+  content: "\e923";
+}
+.icon-file-text2:before {
+  content: "\e926";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-drawer:before {
+  content: "\e95c";
+}
+.icon-binoculars:before {
+  content: "\e985";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-tree:before {
+  content: "\e9bc";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+.icon-terminal:before {
+  content: "\ea81";
+}
+.icon-github:before {
+  content: "\eab0";
+}
 .icon-hand-o-up:before {
   content: "\e908";
+}
+.icon-brand5:before {
+  content: "\e902";
+  color: #dc4e41;
+}
+.icon-googleplus:before {
+  content: "\e902";
+  color: #dc4e41;
+}
+.icon-brand4:before {
+  content: "\e903";
+  color: #ff4500;
+}
+.icon-reddit:before {
+  content: "\e903";
+  color: #ff4500;
+}
+.icon-brand3:before {
+  content: "\e904";
+  color: #205081;
+}
+.icon-bitbucket:before {
+  content: "\e904";
+  color: #205081;
+}
+.icon-brand2:before {
+  content: "\e905";
+  color: #c00;
+}
+.icon-jekyll:before {
+  content: "\e905";
+  color: #c00;
 }
 .icon-brand:before {
   content: "\e901";
@@ -75,58 +158,4 @@
 }
 .icon-subdirectory_arrow_right:before {
   content: "\e900";
-}
-.icon-folder-open:before {
-  content: "\e930";
-}
-.icon-price-tags:before {
-  content: "\e936";
-}
-.icon-books:before {
-  content: "\e920";
-}
-.icon-profile:before {
-  content: "\e923";
-}
-.icon-file-text2:before {
-  content: "\e926";
-}
-.icon-folder-open:before {
-  content: "\e930";
-}
-.icon-price-tags:before {
-  content: "\e936";
-}
-.icon-envelop:before {
-  content: "\e945";
-}
-.icon-calendar:before {
-  content: "\e953";
-}
-.icon-drawer:before {
-  content: "\e95c";
-}
-.icon-binoculars:before {
-  content: "\e985";
-}
-.icon-fire:before {
-  content: "\e9a9";
-}
-.icon-tree:before {
-  content: "\e9bc";
-}
-.icon-menu:before {
-  content: "\e9bd";
-}
-.icon-link:before {
-  content: "\e9cb";
-}
-.icon-arrow-up:before {
-  content: "\ea32";
-}
-.icon-terminal:before {
-  content: "\ea81";
-}
-.icon-github:before {
-  content: "\eab0";
 }
