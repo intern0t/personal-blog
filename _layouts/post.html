@@ -9,7 +9,7 @@ layout: default
 	<!-- Header -->
 	<header class="row header">
 		<div class="u-full-width" style="display: inline-block;">
-			<div class="eleven colums"><h4 class="site-description"><a href="{{ site.url }}"><i class="icon-flame"></i>&nbsp;{{ site.description }}</a></h4></div>
+			<div class="eleven colums"><h4 class="site-description"><a href="{{ site.url }}"><span class="icon-fire"></span>&nbsp;{{ site.description }}</a></h4></div>
 			<div class="one colums"><h4 class="site-description"><a class="toggleNav" style="float: right; display: none;"><i class="icon-menu"></i></a></h4></div>
 		</div>
 	</header>
@@ -53,9 +53,9 @@ layout: default
 							<span itemprop="name">{{ page.author }}</span>
 				</span> • {% endif %}
 				<span>
-					<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><i class="icon-link"></i> Permalink</a>
+					<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><span class="icon-link"></span> Permalink</a>
 				</span> • <span>
-					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus." href="#"><i class="icon-bubbles"></i></a>
+					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus." href="#"><span class="icon-messages"></span></a>
 				</span> • <span>
 					<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="icon-pocket"></i></a>
 				</span>
