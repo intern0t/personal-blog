@@ -28,18 +28,14 @@
 
         /* Responsive Sidebar.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        $('.toggleNav > i').on('click', function (e) {
+        $('.toggleNav').on('click', function (e) {
             e.preventDefault();
-            var windowWidth = $(window).width();
-            $('.fullscrNav').toggle('display');
-            $('.fullscrNav').animate({ width: windowWidth }, 'easeOutBounce');
-            return false;
-        });
-
-        $('.nav-close > i').on('click', function (e) {
-            e.preventDefault();
-            $('.fullscrNav').toggle('display');
-            $('.fullscrNav').animate({ width: '0'}, 'easeOutBounce');
+            if ($(".fullscrNav").width() == 0) {
+                // Display the navigation.
+                $('.fullscrNav').width("75%");
+            }else{
+                $('.fullscrNav').width("0");
+            }
             return false;
         });
 
