@@ -14,4 +14,7 @@ I started programming since I was 11 years old, started off with writing `bat` 
 
 ##### <i class="icon-envelop"></i> Contact
 
-[![Image](https://i.imgur.com/YBEgKAG.png)](https://i.imgur.com/YBEgKAG.png "Contact Email."){:data-rel="lightcase"}
+1. via. Email
+  * [![Image](https://i.imgur.com/s8fpwwE.png)](https://i.imgur.com/s8fpwwE.png "Contact Email."){:data-rel="lightcase"}
+2. via. [XMPP](https://xmpp.org/)
+  * [![Image](https://i.imgur.com/ciTa9sG.png)](https://i.imgur.com/ciTa9sG.png "XMPP."){:data-rel="lightcase"}
