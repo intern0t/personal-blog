@@ -46,7 +46,7 @@
 
             // Check if Disqus was already loaded before.
             if (typeof DISQUS === "undefined" &&
-                !$("#disqus_thread").is(':visible')) {
+                !$(".disqus").is(':visible')) {
                 // Disqus container/Disqus itself is not initialized & visible.
                 $.ajax({
                     type: "GET",
@@ -54,10 +54,10 @@
                     dataType: "script",
                     cache: true
                 });
-                $("#disqus_thread").fadeOut();
+                $(".disqus").fadeOut();
             } else {
                 // Disqus is already loaded and visible, hide it.
-                $("#disqus_thread").fadeIn();
+                $(".disqus").fadeIn();
             }
             // Disqus wasn't loaded before.
             // $.ajax({
