@@ -52,7 +52,7 @@
                     dataType: "script",
                     cache: true
                 });
-                $(".disqus").toggle('display');
+                $(".disqus").slideToggle('fast');
             } else {
                 DISQUS.reset({
                     reload: true,
@@ -61,32 +61,8 @@
                         this.page.url = location.href;
                     }
                 });
-                $(".disqus").toggle('display');
+                $(".disqus").slideToggle('fast');
             }
-            // Disqus wasn't loaded before.
-            // $.ajax({
-            //     type: "GET",
-            //     url: "//prashantshrestha.disqus.com/embed.js",
-            //     dataType: "script",
-            //     cache: true
-            // });
-
-            // if(typeof DISQUS === "undefined"){
-            //     var dsq = document.createElement('script');
-            //     dsq.type = "text/javascript";
-            //     dsq.async = true;
-            //     dsq.src = "//prashantshrestha.disqus.com/embed.js";
-
-            //     (document.getElementsByTagName("head")[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            // }else{
-            //     DISQUS.reset({
-            //         reload: true,
-            //         config: function(){
-            //             this.page.identifier = document.title;
-            //             this.page.url = location.href;
-            //         }
-            //     });
-            // }
 
             return false;
         });
