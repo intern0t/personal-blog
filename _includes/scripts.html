@@ -45,6 +45,20 @@
             e.preventDefault();
 
             // Check if Disqus was already loaded before.
+            if (typeof DISQUS === "undefined" &&
+                !$("#disqus_thread").is(':visible')) {
+                // Disqus container/Disqus itself is not initialized & visible.
+                $.ajax({
+                    type: "GET",
+                    url: "//prashantshrestha.disqus.com/embed.js",
+                    dataType: "script",
+                    cache: true
+                });
+                $("#disqus_thread").fadeOut();
+            } else {
+                // Disqus is already loaded and visible, hide it.
+                $("#disqus_thread").fadeIn();
+            }
             // Disqus wasn't loaded before.
             // $.ajax({
             //     type: "GET",
@@ -52,23 +66,23 @@
             //     dataType: "script",
             //     cache: true
             // });
-            
-            if(typeof DISQUS === "undefined"){
-                var dsq = document.createElement('script');
-                dsq.type = "text/javascript";
-                dsq.async = true;
-                dsq.src = "//prashantshrestha.disqus.com/embed.js";
 
-                (document.getElementsByTagName("head")[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            }else{
-                DISQUS.reset({
-                    reload: true,
-                    config: function(){
-                        this.page.identifier = document.title;
-                        this.page.url = location.href;
-                    }
-                });
-            }
+            // if(typeof DISQUS === "undefined"){
+            //     var dsq = document.createElement('script');
+            //     dsq.type = "text/javascript";
+            //     dsq.async = true;
+            //     dsq.src = "//prashantshrestha.disqus.com/embed.js";
+
+            //     (document.getElementsByTagName("head")[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            // }else{
+            //     DISQUS.reset({
+            //         reload: true,
+            //         config: function(){
+            //             this.page.identifier = document.title;
+            //             this.page.url = location.href;
+            //         }
+            //     });
+            // }
 
             return false;
         });
