@@ -45,29 +45,23 @@
             e.preventDefault();
 
             // Check if Disqus was already loaded before.
-            if (!$(".disqus").is(':visible')) {
-                // Disqus container/Disqus itself is not initialized & visible.
-                if (typeof DISQUS === "undefined") {
-                    $.ajax({
-                        type: "GET",
-                        url: "//prashantshrestha.disqus.com/embed.js",
-                        dataType: "script",
-                        cache: true
-                    });
-                    $(".disqus").fadeOut();
-                } else {
-                    DISQUS.reset({
-                        reload: true,
-                        config: function () {
-                            this.page.identifier = document.title;
-                            this.page.url = location.href;
-                        }
-                    });
-                    $(".disqus").fadeOut();
-                }
+            if (typeof DISQUS === "undefined") {
+                $.ajax({
+                    type: "GET",
+                    url: "//prashantshrestha.disqus.com/embed.js",
+                    dataType: "script",
+                    cache: true
+                });
+                $(".disqus").toggle('display');
             } else {
-                // Disqus is already loaded and visible, hide it.
-                $(".disqus").fadeIn();
+                DISQUS.reset({
+                    reload: true,
+                    config: function () {
+                        this.page.identifier = document.title;
+                        this.page.url = location.href;
+                    }
+                });
+                $(".disqus").toggle('display');
             }
             // Disqus wasn't loaded before.
             // $.ajax({
