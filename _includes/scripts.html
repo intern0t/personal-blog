@@ -46,16 +46,26 @@
 
             // Check if Disqus was already loaded before.
             // Disqus wasn't loaded before.
-            $.ajaxSetup({ cache: true, async: true });
-            $.getScript('https://prashantshrestha.disqus.com/embed.js');
-            $.ajaxSetup({ cache: false });
             // $.ajax({
             //     type: "GET",
             //     url: "//prashantshrestha.disqus.com/embed.js",
             //     dataType: "script",
             //     cache: true
             // });
-            $("#disqus_thread").fadeOut();
+            var disqusEmbedContainer = document.createElement("script");
+            disqusEmbedContainer.type = "text/javascript";
+            
+            $.ajax({
+                type: "GET",
+                url: "https://prashantshrestha.disqus.com/embed.js",
+                dataType: "script",
+                cache: true,
+                async: true
+            }).done(function(disqusScript){
+                disqusEmbedContainer.text = disqusScript;
+            });
+
+            $("head").append(disqusEmbedContainer);
 
             return false;
         });
