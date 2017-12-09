@@ -45,16 +45,26 @@
             e.preventDefault();
 
             // Check if Disqus was already loaded before.
-            if (typeof DISQUS === "undefined" &&
-                !$(".disqus").is(':visible')) {
+            if (!$(".disqus").is(':visible')) {
                 // Disqus container/Disqus itself is not initialized & visible.
-                $.ajax({
-                    type: "GET",
-                    url: "//prashantshrestha.disqus.com/embed.js",
-                    dataType: "script",
-                    cache: true
-                });
-                $(".disqus").fadeOut();
+                if (typeof DISQUS === "undefined") {
+                    $.ajax({
+                        type: "GET",
+                        url: "//prashantshrestha.disqus.com/embed.js",
+                        dataType: "script",
+                        cache: true
+                    });
+                    $(".disqus").fadeOut();
+                } else {
+                    DISQUS.reset({
+                        reload: true,
+                        config: function () {
+                            this.page.identifier = document.title;
+                            this.page.url = location.href;
+                        }
+                    });
+                    $(".disqus").fadeOut();
+                }
             } else {
                 // Disqus is already loaded and visible, hide it.
                 $(".disqus").fadeIn();
