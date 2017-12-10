@@ -22,6 +22,7 @@ permalink: /library/
 + General
   1. [Racket](https://racket-lang.org/) Cheat Sheet ([*Documentation*](https://docs.racket-lang.org/racket-cheat/index.html))
   2. [Beautiful Soup Docs](https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest)
+  3. [Python Cheat Sheet(s)](https://ehmatthes.github.io/pcc/cheatsheets/README.html) by [@ehmatthes](https://github.com/ehmatthes)
 + Web Designing & Development
   1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [jmcunningham](https://github.com/jmcunningham)
   2. [Eloquent Javascript](http://eloquentjavascript.net/)
