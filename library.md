@@ -26,6 +26,7 @@ permalink: /library/
 + Web Designing & Development
   1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [jmcunningham](https://github.com/jmcunningham)
   2. [Eloquent Javascript](http://eloquentjavascript.net/)
+  3. [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
 
 ###### **Reverse Engineering**
