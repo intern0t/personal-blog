@@ -33,6 +33,7 @@ permalink: /library/
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
 2. [x64 Cheat Sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
 3. [Instructions & Examples Compiled](https://scadahacker.com/library/Documents/Cheat_Sheets/Programming%20-%20x86%20Instructions%201.pdf)
+4. [Game Hacking Resources](https://github.com/dsasmblr/game-hacking) by [@dsasmblr](https://github.com/dsasmblr)
 
 ###### **Computer Science, [Practices](/cs-practice/)**
 + Algorithms and Complexity
