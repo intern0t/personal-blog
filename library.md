@@ -6,17 +6,15 @@ permalink: /library/
 
 #### <span class="icon-books"></span>  Library/References
 
->What I have enlisted and compiled here are the libraries and references that I have used and found useful for my future references. Every content listed on this **particular** page is **not** owned by me and shall be linked directly to the source and shall be constantly updated. Feel free to use it, share, if interested, help me add more. Please let me know if I went against your will regarding the sharing of content available in this page; it shall be removed without any hassle.
+>What I have enlisted and compiled here are the libraries and references that I have used and found useful for my future references. Every content listed on this **particular** page is **not** owned by me and are linked directly to the source and will be constantly updated.
 
-###### **Regular References**
-1. [Markdown](https://en.wikipedia.org/wiki/Markdown) [Cheatsheet by @adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-  * [Markdown help/tutorial by @commonmark.org](http://commonmark.org/help/tutorial/)
-2. [Git Cheat Sheet - Education](https://education.github.com/git-cheat-sheet-education.pdf)
-
-###### **Linux/Unix**
-1. [Unix/Linux Command Reference (by Fosswire.com)](https://files.fosswire.com/2007/08/fwunixref.pdf)
-2. [Linux Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf)
-3. [Linux-Cheat-Sheet-Sponsored-By-Loggly](https://www.loggly.com/wp-content/uploads/2015/05/Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf)
+###### **Computer Science, [Practices](/cs-practice/)**
++ Algorithms and Complexity
+  1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
+  2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
+  3. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
++ Problems and Practice
+  1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
 ###### **Programming**
 + General
@@ -35,10 +33,13 @@ permalink: /library/
 3. [Instructions & Examples Compiled](https://scadahacker.com/library/Documents/Cheat_Sheets/Programming%20-%20x86%20Instructions%201.pdf)
 4. [Game Hacking Resources](https://github.com/dsasmblr/game-hacking) by [@dsasmblr](https://github.com/dsasmblr)
 
-###### **Computer Science, [Practices](/cs-practice/)**
-+ Algorithms and Complexity
-  1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
-  2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
-  3. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
-+ Problems and Practice
-  1. [Geeks For Geeks](http://www.geeksforgeeks.org)
+###### **Regular References**
+1. [Markdown](https://en.wikipedia.org/wiki/Markdown) [Cheatsheet by @adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  * [Markdown help/tutorial by @commonmark.org](http://commonmark.org/help/tutorial/)
+2. [Git Cheat Sheet - Education](https://education.github.com/git-cheat-sheet-education.pdf)
+
+###### **Linux/Unix**
+1. [Unix/Linux Command Reference (by Fosswire.com)](https://files.fosswire.com/2007/08/fwunixref.pdf)
+2. [Linux Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf)
+3. [Linux-Cheat-Sheet-Sponsored-By-Loggly](https://www.loggly.com/wp-content/uploads/2015/05/Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf)
+
