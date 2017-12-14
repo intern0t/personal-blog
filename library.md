@@ -27,7 +27,7 @@ permalink: /library/
   1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [jmcunningham](https://github.com/jmcunningham)
   2. [Eloquent Javascript](http://eloquentjavascript.net/)
   3. [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
-
+  4. [ReactJS Cheat Sheet](https://reactcheatsheet.com/) & [Learn React](https://learnreact.com/)
 
 ###### **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
