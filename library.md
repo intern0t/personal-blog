@@ -9,6 +9,8 @@ permalink: /library/
 >What I have enlisted and compiled here are the libraries and references that I have used and found useful for my future references. Every content listed on this **particular** page is **not** owned by me and are linked directly to the source and will be constantly updated.
 
 ###### **Computer Science, [Practices](/cs-practice/)**
++ General
+  1. [The Philosophy of Computer Science](https://plato.stanford.edu/entries/computer-science)
 + Algorithms and Complexity
   1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
   2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
@@ -22,7 +24,7 @@ permalink: /library/
   2. [Beautiful Soup Docs](https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest)
   3. [Python Cheat Sheet(s)](https://ehmatthes.github.io/pcc/cheatsheets/README.html) by [@ehmatthes](https://github.com/ehmatthes)
 + Web Designing & Development
-  1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [jmcunningham](https://github.com/jmcunningham)
+  1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [@jmcunningham](https://github.com/jmcunningham)
   2. [Eloquent Javascript](http://eloquentjavascript.net/)
   3. [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
   4. [ReactJS Cheat Sheet](https://reactcheatsheet.com/) & [Learn React](https://learnreact.com/)
@@ -42,4 +44,3 @@ permalink: /library/
 1. [Unix/Linux Command Reference (by Fosswire.com)](https://files.fosswire.com/2007/08/fwunixref.pdf)
 2. [Linux Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf)
 3. [Linux-Cheat-Sheet-Sponsored-By-Loggly](https://www.loggly.com/wp-content/uploads/2015/05/Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf)
-
