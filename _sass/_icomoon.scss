@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?21d0oc');
-  src:  url('../fonts/icomoon.eot?21d0oc#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?21d0oc') format('truetype'),
-    url('../fonts/icomoon.woff?21d0oc') format('woff'),
-    url('../fonts/icomoon.svg?21d0oc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?jew7lc');
+  src:  url('../fonts/icomoon.eot?jew7lc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jew7lc') format('truetype'),
+    url('../fonts/icomoon.woff?jew7lc') format('woff'),
+    url('../fonts/icomoon.svg?jew7lc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-document-code:before {
+  content: "\e90c";
+}
 .icon-left-quote:before {
   content: "\e90b";
 }
@@ -83,6 +86,38 @@
 }
 .icon-hand-o-up:before {
   content: "\e908";
+}
+.icon-brand5:before {
+  content: "\e902";
+  color: #dc4e41;
+}
+.icon-googleplus:before {
+  content: "\e902";
+  color: #dc4e41;
+}
+.icon-brand4:before {
+  content: "\e903";
+  color: #ff4500;
+}
+.icon-reddit:before {
+  content: "\e903";
+  color: #ff4500;
+}
+.icon-brand3:before {
+  content: "\e904";
+  color: #205081;
+}
+.icon-bitbucket:before {
+  content: "\e904";
+  color: #205081;
+}
+.icon-brand2:before {
+  content: "\e905";
+  color: #c00;
+}
+.icon-jekyll:before {
+  content: "\e905";
+  color: #c00;
 }
 .icon-brand:before {
   content: "\e901";
