@@ -11,6 +11,7 @@ permalink: /library/
 ###### **Computer Science, [Practices](/cs-practice/)**
 + General
   1. [The Philosophy of Computer Science](https://plato.stanford.edu/entries/computer-science)
+  2. [Concrete Mathematics: A Foundation for Computer Science](https://www.amazon.com/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025)
 + Algorithms and Complexity
   1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
   2. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
