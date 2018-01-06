@@ -38,11 +38,7 @@ permalink: /projects/
             <td><a href="#">FileSec</a></td>
             <td>
                 <p>FileSec is a AES 256 Encryption utility software written in C# to encrypt and decrypt any files with a user
-                    provided key. <a href="https://i.imgur.com/MUPVc3Y.gif" data-rel="lightcase">Demo</a>
-                    <!-- <br/>
-                    <video width="100%" controls>
-                        <source src="https://i.imgur.com/MUPVc3Y.mp4" type="video/mp4">
-                    </video> -->
+                    provided key. <a href="https://i.imgur.com/MUPVc3Y.gif" data-rel="lightcase">Demo</a> of C# version, [Python](https://bitbucket.org/intern0t/scripts/src/27502bac53d7e96676379f3b89b4a8cfc4591ca6/FileSec.py?at=master&fileviewer=file-view-default) version for Linux.
                 </p>
             </td>
         </tr>
