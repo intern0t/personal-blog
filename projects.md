@@ -42,6 +42,12 @@ permalink: /projects/
                 </p>
             </td>
         </tr>
+        <tr>
+            <td><a href="#">Image Upload (PHP/Python)</a></td>
+            <td>
+                <p>Makes use of PHP and Python to take and upload screenshots to your cloud storage of your choice. Developed to mainly focus on Linux platforms. <a href="https://www.prashant.me/development/2016/02/18/custom-image-hosting-and-upload-script.html">Blog post</a> written to demonstrate how and what of this <a href="https://bitbucket.org/intern0t/scripts/src/a1e0918d4199368325e0dd5a8d81e0ae6c55b036/ImageUpload%20(Custom)/?at=master">project</a>.</p>
+            </td>
+        </tr>
     </tbody>
 </table>
 
