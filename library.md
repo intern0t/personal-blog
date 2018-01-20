@@ -33,6 +33,8 @@ permalink: /library/
   4. [ReactJS Cheat Sheet](https://reactcheatsheet.com/) & [Learn React](https://learnreact.com/)
   5. [Awesome React](https://github.com/enaqx/awesome-react) by [@enaqx](https://github.com/enaqx)
   6. [Free Code Camp](https://www.freecodecamp.org/)
++ Desktop Application Development
+  1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
 
 ###### <span class="icon-section"></span> **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
