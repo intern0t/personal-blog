@@ -10,13 +10,25 @@ permalink: /gallery/
 
 <div class="container">
     <div class="row">
-        <div class="three columns">Test Image 1</div>
-        <div class="three columns">Test Image 2</div>
-        <div class="three columns">Test Image 3</div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
     </div>
     <div class="row">
-        <div class="three columns">Test Image 4</div>
-        <div class="three columns">Test Image 5</div>
-        <div class="three columns">Test Image 6</div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
+        <div class="three columns">
+            <img src="#" alt="#" class="lightcase">
+        </div>
     </div>
 </div>

@@ -213,6 +213,23 @@ body {
                     padding: 0 0 0 20px;
                 }
 
+                ul.row.lang-used{
+                    display: block;
+                    list-style-type: none;
+                    margin: 10px 0 10px 0;
+                    clear: both;
+
+                    li{
+                        width: auto;
+                        float: left;
+                        background: #b4d1f7;
+                        color: white;
+                        border-radius: 2px;
+                        padding: 0px 6px;
+                        margin: 0 5px 0 0;
+                    }
+                }
+
                 article {
                     margin: 30px 0 50px 0;
                     padding: 10px 0;
