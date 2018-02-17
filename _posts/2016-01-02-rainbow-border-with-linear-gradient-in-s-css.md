@@ -13,14 +13,13 @@ As seen in couple websites, I wanted to implement and add rainbow border. Here's
 
 Demo from [JSFiddle](https://jsfiddle.net/intern0t/fp85voue/4/) is provided below -
 
-<iframe width="100%" height="300" src="//jsfiddle.net/intern0t/fp85voue/4/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
+<iframe width="100%" height="auto" src="//jsfiddle.net/Scarecr0w/fp85voue/9/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 In your regular HTML file, normally body or header.
 
 {% highlight html %}
 <body>
-  <h1>Prashant Says hello! - Noninfectio.us</h1>
+  <h1>Prashant Says hello! - <a href="https://www.prashant.me/development/2016/01/03/rainbow-border-with-linear-gradient-in-s-css.html">prashant.me</a></h1>
 </body>
 {% endhighlight %}
 
@@ -31,13 +30,13 @@ $gradient_ : 90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 
 
 $size_  : 100% 7px;
 
-body{
+body{  
     background-image: -webkit-linear-gradient($gradient_);
     background-image: -khtml-linear-gradient($gradient_);
     background-image: -moz-linear-gradient($gradient_);
     background-image: -o-linear-gradient($gradient_);
     background-image: linear-gradient($gradient_);
-    
+
     background-repeat: no-repeat;
     background-position-y: top;
 
@@ -46,9 +45,10 @@ body{
     -moz-background-size: $size_;
     -o-background-size: $size_;
     background-size: $size_;
-    
+
     h1{
         text-align: center;
+        margin: 20px 0 0 0;
     }
 }
 {% endhighlight %}
