@@ -33,6 +33,7 @@ permalink: /library/
   4. [ReactJS Cheat Sheet](https://reactcheatsheet.com/) & [Learn React](https://learnreact.com/)
   5. [Awesome React](https://github.com/enaqx/awesome-react) by [@enaqx](https://github.com/enaqx)
   6. [Free Code Camp](https://www.freecodecamp.org/)
+  7. [ReactJS Sweet Pumpkin Tutorial (CodeCamps, free)](https://sweetpumpkins.codecamps.com/)
 + Desktop Application Development
   1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
 
