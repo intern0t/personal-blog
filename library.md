@@ -18,6 +18,7 @@ permalink: /library/
   4. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
   5. [Think Complexity](http://www.greenteapress.com/compmod/) [v1](http://www.greenteapress.com/compmod/thinkcomplexity.pdf) [v2](http://greenteapress.com/complexity2/thinkcomplexity2.pdf)
   6. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
+  7. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
