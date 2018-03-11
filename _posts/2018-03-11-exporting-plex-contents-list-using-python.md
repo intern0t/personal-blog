@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exporting PleX contents list using Python"
+title: "Exporting PleX contents list using Python."
 author: Prashant Shrestha
 date: 2018-03-11 10:12:22 -400
 categories: server
