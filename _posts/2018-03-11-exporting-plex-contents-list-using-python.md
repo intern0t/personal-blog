@@ -42,7 +42,7 @@ The slab of XML content is provided below, or you could head to your Plex URL an
 </MediaContainer>
 {% endhighlight %}
 
-I am unsure why Plex haven't implemented the **Export** option for a library of any sort yet but it could be that I am unaware of its existence. Out of all these `Directory` nodes, `library`, `servers`, and `statistics` piqued my interest therefore I started browsing through them and noticed `library` node consists of three different sub-nodes, `sections`, `recentlyAdded`, `onDeck`. Out of these **3** nodes, `sections` node holds what we need.
+I am unsure why Plex haven't implemented the **Export** option for a library of any sort yet but it could be that I am unaware of its existence. Out of all these `Directory` nodes, `library`, `servers`, and `statistics` piqued my interest therefore I started browsing through them and noticed `library` node consisted of three different sub-nodes, `sections`, `recentlyAdded`, `onDeck`. Out of these **3** nodes, `sections` node holds what we need.
 
 {% highlight xml %}
 <MediaContainer ..>
