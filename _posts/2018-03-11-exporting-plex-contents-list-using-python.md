@@ -7,7 +7,7 @@ categories: server
 tags: python server plex movies tv-shows list export xml remote local parse
 ---
 
-[![Image](https://i.imgur.com/taHEu7m.png)](https://i.imgur.com/taHEu7m.png "PlexList.txt Range output"){:data-rel="lightcase"}
+[![Image](https://i.imgur.com/phvDLbb.png)](https://i.imgur.com/phvDLbb.png "PlexList.txt Range output"){:data-rel="lightcase"}
 
 It didn't quite start out with my friends and family members asking me what movies or genre of movies I watch but more with a slab of XML content thrown at me when I mistyped my Plex URL in the browser. The difference can easily be noticed, even today, on Plex version `1.12.0.4829-*`.
 
@@ -85,3 +85,5 @@ for child in root.iter('Video'):
 .. and there we have it, we used `urllib` module to get the `plexlist.xml` file from the provided URL, initialized and read through each `Video` node in our XML and retrieved our movie title and saved it to `PlexList.txt` for proper identification of files. I could definitely write and extend the crucial and informative contents that we wish to extract from our XML but for now, movie titles should do the job. 
 
 That's about it, easy as pie!
+
+Poster Image credits to [VENNGAGE](https://infograph.venngage.com/p/112848/importexport)!
