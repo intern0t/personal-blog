@@ -19,7 +19,7 @@ permalink: /library/
   5. [Think Complexity](http://www.greenteapress.com/compmod/) [v1](http://www.greenteapress.com/compmod/thinkcomplexity.pdf) [v2](http://greenteapress.com/complexity2/thinkcomplexity2.pdf)
   6. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
   7. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
-  8. [Idea - nonverbal algorithm assembly instructions](https://idea-instructions.com/)
+  8. [Nonverbal Algorithm Assembly Instructions](https://idea-instructions.com/) by @IDEA.
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
