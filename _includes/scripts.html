@@ -22,9 +22,19 @@
         /* Lazy Load all Images - Coming Soon!
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-        /* Get current window dimensions.
+        /* Hook the scroll event & display the progressbar.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+        $(document).scroll(function(e){
+            var dimensions = {
+                'scrollTop': $(window).scrollTop(),
+                'documentHeight': $(document).height(),
+                'windowHeight': $(window).height()
+            };
+            
+            // Exclude the window to get actual height!
+            var pageScrolledPercentage = (dimensions.scrollTop / (dimensions.documentHeight - dimensions.windowHeight)) * 100;
+            $('.progress').css('width', pageScrolledPercentage + '%');
+        });
 
         /* Responsive Sidebar.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */

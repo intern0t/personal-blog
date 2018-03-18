@@ -36,9 +36,18 @@ $smartPhoneScreen: "only screen and (max-width: 320px)";
 body {
     font-family: $globalFontFamily !important;
 
-    .rainbow-head {
-        background: $border-top;
-        height: .4em;
+    .progress{
+        width: 0;
+        height: 3px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000000;
+        border: 0;
+        box-shadow: -1px 2px 2px -1px #000000;
+        -webkit-box-shadow: -1px 2px 2px -1px #000000;
+        -moz-box-shadow: -1px 2px 2px -1px #000000;
+        z-index: 99;
     }
 
     /* Links Styling */
@@ -302,9 +311,19 @@ body {
                         }
                     }
 
-                    ol {
-                        list-style: decimal;
+                    ol, ul{
+                        //list-style: decimal;
                         padding: 0 0 0 3em;
+
+                        code{
+                            font-size: 80%;
+                            word-wrap: break-word;
+                            white-space: inherit;
+                            background-color: $inlineCodeBColor;
+                            color: $inlineCodeColor;
+                            border-radius: 1px;
+                            border: 0;
+                        }
                     }
 
                     blockquote {
