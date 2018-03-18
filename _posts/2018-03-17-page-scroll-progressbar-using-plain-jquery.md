@@ -4,7 +4,7 @@ title: "Create a page scroll progressbar for websites using plain jQuery."
 author: Prashant Shrestha
 date: 2018-03-17 21:37:00 -400
 categories: development
-tags: sass html jquery javascript design develop website
+tags: sass html jquery javascript design develop website codepen
 ---
 
 [![Poster](https://i.imgur.com/HXiYNvd.jpg)](https://i.imgur.com/HXiYNvd.jpg){:data-rel="lightcase"}
