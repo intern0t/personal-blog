@@ -32,6 +32,7 @@ disqus:
  shortname: prashantshrestha
 
 google_site_verification: 9NmHss7EzpRmvhqhxKCceI0S-vuV-sXxUCL_NBjl4yM
+google_analytics_site_tag: UA-71027847-2
 
 # Build settings
 markdown: kramdown

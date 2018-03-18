@@ -15,7 +15,7 @@ Instead of using a whole different third party library for a simple task as this
 <!--excerpt-->
 My short brainstorming to solve and achieve this progressbar felt very clear and concise but ran into some difficulty with calculations which I will explain later.
 
-We need two things to achieve or implement this scroll progress in your website.
+We need two things to achieve or implement this scroll progress in our website.
 
 ##### Things we need
 
