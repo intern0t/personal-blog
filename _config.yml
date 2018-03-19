@@ -34,6 +34,13 @@ disqus:
 google_site_verification: 9NmHss7EzpRmvhqhxKCceI0S-vuV-sXxUCL_NBjl4yM
 google_analytics_site_tag: UA-71027847-2
 
+# Sitemap generator
+sitemap:
+ lastmod: 2018-02-01
+ priority: 0.7
+ changefreq: 'monthly'
+ exclude: 'yes'
+
 # Build settings
 markdown: kramdown
 kramdown:
