@@ -37,4 +37,8 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 Refers to various asset files within the `assets` directory.
 Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
 
+### Functions
+
+Added [Sitemap Generator](http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/), worked both locally and [remotely](https://www.prashant.me/sitemap.xml).
+
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
