@@ -48,12 +48,12 @@ layout: default
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ page.date | date: date_format }}
 						</time>
-					</span> • {% if page.author %}
+					</span><!-- • {% if page.author %}
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name">{{ page.author }}</span>
-				</span> • {% endif %}
+                </span> • {% endif %}-->
 				<span>
-					<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><span class="icon-link"></span> Permalink</a>
+					 • <a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><span class="icon-link"></span> Permalink</a>
 				</span> • <span>
 					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus." href="#"><span class="icon-messages"></span></a>
 				</span> • <span>
