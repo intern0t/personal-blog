@@ -58,12 +58,12 @@ layout: default
 							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
 							{{ post.date | date: date_format }}
 						</time>
-					</span> • {% if post.author %}
+					</span><!-- • {% if post.author %}
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name">{{ post.author }}</span>
-				</span> • {% endif %}
+                </span> • {% endif %}-->
 				<span>
-						<a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><i class="icon-link"></i> Permalink</a>
+					 • <a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><i class="icon-link"></i> Permalink</a>
 					</span> • <span>
 						<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="icon-pocket"></i></a>
 					</span>
