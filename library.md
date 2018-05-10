@@ -55,3 +55,6 @@ permalink: /library/
 1. [Unix/Linux Command Reference (by Fosswire.com)](https://files.fosswire.com/2007/08/fwunixref.pdf)
 2. [Linux Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf)
 3. [Linux-Cheat-Sheet-Sponsored-By-Loggly](https://www.loggly.com/wp-content/uploads/2015/05/Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf)
+
+###### <span class=""></span> **Tools**
+1. [DevDocs](http://devdocs.io/)
