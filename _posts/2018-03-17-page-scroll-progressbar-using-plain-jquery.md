@@ -28,7 +28,7 @@ Let's start out by creating an empty `div` container in our page, preferably rig
 {% endhighlight %}
 
 Now, let's give it a bit of a style, `box-shadow` and a preferred `background-color` should keep it simple and attractive. Considering my blog consists of dark `foreground` colors, I chose to go with `#000000` *(Hex Black)*.
-{% highlight scss linenos %}
+{% highlight scss  %}
 .progress {
     width: 0;
     height: 3px;
@@ -46,7 +46,7 @@ Now, let's give it a bit of a style, `box-shadow` and a preferred `background-co
 
 Now that we are done creating a styled progressbar for our website, we should add functionality on it by hooking into our document's `scroll` event. Considering I used jQuery, I decided to add my code in jQuery as well.
 
-{% highlight javascript linenos %}
+{% highlight javascript  %}
 $(document).scroll(function(e) {
     var dimensions = {
         'scrollTop': $(window).scrollTop(),
