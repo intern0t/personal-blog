@@ -85,7 +85,11 @@ body {
             }
 
             span{
-                text-align: center;
+                transform: rotate(-90deg);
+                position: absolute;
+                margin: 4px -9px;
+                -ms-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
             }
         }
 
@@ -202,7 +206,7 @@ body {
                     font-style: none;
                     font-size: 3em;
                     position: absolute;
-                    content: '\e90b';
+                    content: '\e908';
                     opacity: .1;
                     left: 1%;
                     top: -20px;
