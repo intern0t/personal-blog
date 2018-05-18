@@ -2,6 +2,7 @@
 layout: post
 title:  "Custom Image Hosting and Upload Script"
 author: Prashant Shrestha
+permalink: /project/customimagehostingandupload
 date:   2016-02-18 06:31:49 -400
 categories: development
 tags: setup server private php python upload postman api
