@@ -2,7 +2,7 @@
 layout: post
 title: "Pymgur - Yet another screenshot and Imgur upload script written in Python." 
 author: Prashant Shrestha
-permalink: "/Pymgur"
+permalink: "project/Pymgur"
 date: 2017-05-19 05:06:05 -400
 categories: development
 tags: programming dev development python imgur upload screenshot capture
