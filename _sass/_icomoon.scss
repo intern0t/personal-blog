@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?qck1bw');
-  src:  url('../fonts/icomoon.eot?qck1bw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?qck1bw') format('truetype'),
-    url('../fonts/icomoon.woff?qck1bw') format('woff'),
-    url('../fonts/icomoon.svg?qck1bw#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?slias7');
+  src:  url('../fonts/icomoon.eot?slias7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?slias7') format('truetype'),
+    url('../fonts/icomoon.woff?slias7') format('woff'),
+    url('../fonts/icomoon.svg?slias7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,6 +78,9 @@
 .icon-tree:before {
   content: "\e9bc";
 }
+.icon-menu:before {
+  content: "\e9bd";
+}
 .icon-link:before {
   content: "\e9cb";
 }
@@ -92,6 +95,13 @@
 }
 .icon-github:before {
   content: "\eab0";
+}
+.icon-codepen:before {
+  content: "\eae8";
+}
+.icon-twitter:before {
+  content: "\e906";
+  color: #1da1f2;
 }
 .icon-bitbucket2:before {
   content: "\e90a";
@@ -109,65 +119,8 @@
   content: "\e901";
   color: #006400;
 }
-.icon-price-tags:before {
-  content: "\e936";
-}
-.icon-envelop:before {
-  content: "\e945";
-}
-.icon-history:before {
-  content: "\e94d";
-}
-.icon-calendar:before {
-  content: "\e953";
-}
-.icon-drawer:before {
-  content: "\e95c";
-}
-.icon-binoculars:before {
-  content: "\e985";
-}
-.icon-fire:before {
-  content: "\e9a9";
-}
-.icon-tree:before {
-  content: "\e9bc";
-}
-.icon-link:before {
-  content: "\e9cb";
-}
-.icon-section:before {
-  content: "\ea76";
-}
-.icon-embed:before {
-  content: "\ea7f";
-}
-.icon-terminal:before {
-  content: "\ea81";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-bitbucket2:before {
-  content: "\e90a";
-  color: #0052cc;
-}
-.icon-jekyll:before {
-  content: "\e909";
-  color: #c00;
-}
 .icon-document-code:before {
   content: "\e902";
-}
-.icon-freecodecamp:before {
-  content: "\e901";
-  color: #006400;
-}
-.icon-document-code:before {
-  content: "\e902";
-}
-.icon-bitbucket:before {
-  content: "\e903";
 }
 .icon-bitbucket:before {
   content: "\e903";
