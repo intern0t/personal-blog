@@ -15,6 +15,22 @@ permalink: /projects/
     </thead>
     <tbody>
         <tr>
+            <td><a href="http://o.prashant.me/">Oblique</a></td>
+            <td>
+                <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source.</p>
+
+                <ul class="row lang-used">
+                    <li>HTML</li>
+                    <li>(S)CSS</li>
+                    <li>jQuery</li>
+                    <li>NodeJS</li>
+                    <li>LowDB</li>
+                    <li>Random Words API</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
             <td><a href="https://github.com/intern0t/keykode">Keykode</a></td>
             <td>
                 <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a></p>
