@@ -17,7 +17,7 @@ permalink: /projects/
         <tr>
             <td><a href="http://o.prashant.me/">Oblique</a></td>
             <td>
-                <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source.</p>
+                <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use.</p>
 
                 <ul class="row lang-used">
                     <li>HTML</li>
