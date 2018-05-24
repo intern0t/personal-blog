@@ -11,6 +11,7 @@ permalink: /library/
 ###### <span class="icon-section"></span> **Computer Science, [Practices](/cs-practice/)**
 + General
   1. [The Philosophy of Computer Science](https://plato.stanford.edu/entries/computer-science)
+  2. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 + Theoretical
   1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
   2. [Concrete Mathematics: A Foundation for Computer Science](https://www.amazon.com/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025)
