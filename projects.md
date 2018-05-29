@@ -15,6 +15,17 @@ permalink: /projects/
     </thead>
     <tbody>
         <tr>
+            <td><a href="https://intern0t.github.io/Trail/">Trail</a></td>
+            <td>
+                <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a task logging web application built to focus on keeping track of what you did, basically a To-Do application. It was designed using ANT.Design's ReactJS framework.</p>
+
+                <ul class="row lang-used">
+                    <li>ReactJS</li>
+                    <li>localStorage</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
             <td><a href="http://o.prashant.me/">Oblique</a></td>
             <td>
                 <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use.</p>
