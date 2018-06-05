@@ -7,7 +7,9 @@ categories: server
 tags: server hosted cloud ide advanced remote code program develop development
 ---
 
+<div class="poster" markdown="1">
 [![Image](https://i.imgur.com/4SZb2Bh.png)](https://i.imgur.com/4SZb2Bh.png "Cloud 9"){:data-rel="lightcase"}
+</div>
 
 Let's keep this simple and precise, as a developer, you cannot have your workplace everywhere, with an increase in the cloud project repositories such as Github and Bitbucket which however requires you to have an access to an IDE or a shell in order to sync your file which can be of a hassle for some.
 

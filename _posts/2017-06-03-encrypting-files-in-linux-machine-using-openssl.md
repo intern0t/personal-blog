@@ -7,7 +7,9 @@ categories: development
 tags: setup server private php python upload postman api
 ---
 
+<div class="poster" markdown="1">
 [![Image](https://i.imgur.com/c5sYvz7.jpg)](https://i.imgur.com/c5sYvz7.jpg "Security!"){:data-rel="lightcase"}
+</div>
 
 What my **Project FileSec** did can be done straight from terminal which is quite nice to hear but CLI isn\'t for everyone, honestly respect their preference however. I am currently using [Ubuntu 17.04](http://releases.ubuntu.com/17.04/) as my main work-space therefore **OpenSSL** is available through official repository.
 

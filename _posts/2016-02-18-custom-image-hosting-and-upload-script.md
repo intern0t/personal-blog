@@ -8,7 +8,9 @@ categories: development
 tags: setup server private php python upload postman api
 ---
 
+<div class="poster" markdown="1">
 [![Image](https://i.imgur.com/eFbN8c9.jpg)](https://i.imgur.com/eFbN8c9.jpg "Server rack!"){:data-rel="lightbox"}
+</div>
 
 There are countless free image hosting services out there but having your own, separate image server has different purpose of its own. There are lots of benefits of having your own image hosting, personal, nothing complicated.
 

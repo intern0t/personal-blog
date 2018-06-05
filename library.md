@@ -13,14 +13,17 @@ permalink: /library/
   1. [The Philosophy of Computer Science](https://plato.stanford.edu/entries/computer-science)
   2. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 + Theoretical
-  1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
-  2. [Concrete Mathematics: A Foundation for Computer Science](https://www.amazon.com/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025)
-  3. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
-  4. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
-  5. [Think Complexity](http://www.greenteapress.com/compmod/) [v1](http://www.greenteapress.com/compmod/thinkcomplexity.pdf) [v2](http://greenteapress.com/complexity2/thinkcomplexity2.pdf)
-  6. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
-  7. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
-  8. [Nonverbal Algorithm Assembly Instructions](https://idea-instructions.com/) by @IDEA.
+    * Prerequisites
+        1. [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+    * Extras
+        1. [Bioinspired Computation in Combinatorial Optimization – Algorithms and Their Computational Complexity](http://www.bioinspiredcomputation.com/self-archived-bookNeumannWitt.pdf)
+        2. [Concrete Mathematics: A Foundation for Computer Science](https://www.amazon.com/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025)
+        3. [Combinatorial Optimization: Algorithms and Complexity](https://www.amazon.com/Combinatorial-Optimization-Algorithms-Complexity-Computer-ebook/dp/B00C8UQZAO)
+        4. [Logic and Complexity](http://www.springer.com/us/book/9781852335656)
+        5. [Think Complexity](http://www.greenteapress.com/compmod/) [v1](http://www.greenteapress.com/compmod/thinkcomplexity.pdf) [v2](http://greenteapress.com/complexity2/thinkcomplexity2.pdf)
+        6. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
+        7. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
+        8. [Nonverbal Algorithm Assembly Instructions](https://idea-instructions.com/) by @IDEA.
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 

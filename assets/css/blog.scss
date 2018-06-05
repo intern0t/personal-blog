@@ -415,6 +415,19 @@ body {
                         & > p:first-child::first-letter {
                             font-size: 150%;
                         }
+
+                        & > .poster{
+                            max-width: 100%;
+                            max-height: 200px;
+                            overflow: hidden;
+                            background-size: cover;
+                            background-position: center;
+                            background-image: url(https://i.imgur.com/HXiYNvd.jpg);
+                            margin: 0 0 20px 0;
+                            opacity: .5;
+                            -webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                        }
                     }
 
                     /* Share Container */

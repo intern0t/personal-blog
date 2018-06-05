@@ -7,8 +7,9 @@ categories: development
 tags: sass html jquery javascript design develop website codepen
 ---
 
+<div class="poster" markdown="1">
 [![Poster](https://i.imgur.com/HXiYNvd.jpg)](https://i.imgur.com/HXiYNvd.jpg){:data-rel="lightcase"}
-
+</div>
 Website scroll progressbar might not be the accurate terminology to describe this **thing** but hopefully can clarify the context I am referring to. It is basically a progressbar which *progresses* as you scroll below and regress as you scroll upwards. I've seen this implemented through a **3<sup>rd</sup>** party plugins and libraries in countless websites.
 
 Instead of using a whole different third party library for a simple task as this, I decided to create my own to implement in this blog and I must say, it looks fairly similar to any other 3rd party plugins out there.

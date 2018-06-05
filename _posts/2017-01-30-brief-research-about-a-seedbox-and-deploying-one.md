@@ -9,7 +9,9 @@ tags: setup server seedbox torrent private bittorrent client
 
 > A seedbox is a remote server hosted in a high-bandwidth data center used for the safely uploading and downloading of digital files. These speeds range from 100Mbps (8MB/s) to 10Gbps (1250MB/s). Persons with access to a seedbox can download these files to their personal computers anonymously. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Seedbox"))
 
+<div class="poster" markdown="1">
 [![Image](https://i.imgur.com/k28EhRc.jpg)](https://i.imgur.com/k28EhRc.jpg "Server"){:data-rel="lightcase"}
+</div>
 
 Basically, in clear and understandable words, Seedbox is a server used for **Peer-to-Peer (P2P) transfers** with the use of [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent") protocol. Seedbox, what it is and how powerful it is, is determined by the hardware it runs on, how secure (anonymous) it is and how **deaf** that hosting company is.
 

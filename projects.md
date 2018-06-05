@@ -17,7 +17,7 @@ permalink: /projects/
         <tr>
             <td><a href="https://intern0t.github.io/Trail/">Trail</a></td>
             <td>
-                <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a task logging web application built to focus on keeping track of what you did, basically a To-Do application. It was designed using ANT.Design's ReactJS framework.</p>
+                <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a personal, open-source project developed using ReactJS which is intended to track your task completion at a given time, creating a collection of logs by the end of the day for you to be proud of. It was designed using <a href="http://ant.design/">Ant Design's</a> ReactJS framework. <strong><a href="https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d">No puppies were harmed</a> while building this tiny project, it was for educational purposes only!</strong></p>
 
                 <ul class="row lang-used">
                     <li>ReactJS</li>
