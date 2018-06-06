@@ -2,9 +2,10 @@
 layout: post
 title: "Importing and exporting files using ReactJS." 
 author: Prashant Shrestha 
-date: 2018-06-04 13:43:14 -400 
+date: 2018-06-04 13:43:14 -400
 categories: development
 tags: reactjs javascript json export file import clientside framework upload 
+featuredImage: https://i.imgur.com/4jqFvB9.jpg
 ---
 
 <div class="poster" markdown="1">
@@ -17,7 +18,8 @@ I reviewed quite a lot of possible projects that I could try while in the proces
 
 Anyways, back to our context of importing files using ReactJS, it's quite similar to Javascript but considering I used [ANT Design](https://ant.design/) [library](https://www.npmjs.com/package/antd), the documentation wasn't quite clear enough, or let's just say incomplete for what I was looking to do. 
 
-> I think, the biggest problem for me was that I was trying to read a `.json` file without completely uploading it to a server (**fully client-sided**).
+> I think, the biggest problem for me was that I was trying to read a `.json` file without completely uploading it to a server (**fully client-sided**). [^1]
+
 <!--excerpt-->
 
 While playing with `antd` [Upload](https://ant.design/components/upload/) component, it was clear enough until importing a file and initializing the `file` but never actually clearly mentioned about `originFileObj`. Let's take any of those components as an example and look through their sample code.
@@ -135,3 +137,7 @@ Pretty funny problem but as long as the solution is quite fun to find, we are go
 Poster photo by [Igor Ovsyannykov](https://unsplash.com/photos/zIAOSvHzvBw) on [Unsplash](https://unsplash.com/).
 
 Happy Coding!
+
+***
+
+[^1]: The reason behind me wanting to read a JSON file completely client side was because of the project I was working on. [Trail](https://trail.prashant.me/) is a task completion web-application developed in [ReactJS](https://reactjs.org/), I wanted to make it as simple as possible as there was no plans to create a way to backup the data.
