@@ -18,3 +18,5 @@ I started programming since I was 11 years old, started off with writing `bat` 
   * [![Image](https://i.imgur.com/s8fpwwE.png)](https://i.imgur.com/s8fpwwE.png "Contact Email."){:data-rel="lightcase"}
 2. via. [XMPP](https://xmpp.org/)
   * [![Image](https://i.imgur.com/WTTZz3T.png)](https://i.imgur.com/WTTZz3T.png "XMPP."){:data-rel="lightcase"}
+3. via. IRC (Freenode)
+  * **Scarecr0w**
