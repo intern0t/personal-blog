@@ -3,6 +3,8 @@
 
 @charset "UTF-8";
 
+@import "mixins";
+
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|PT+Sans|Ropa+Sans');
 
@@ -420,14 +422,16 @@ body {
                             max-width: 100%;
                             max-height: 200px;
                             overflow: hidden;
-                            background-size: cover;
-                            background-position: center;
-                            background-image: url(https://i.imgur.com/HXiYNvd.jpg);
-                            border-radius: 3px;
+                            @include _border_radius(3px);
                             margin: 0 0 20px 0;
                             opacity: .5;
                             -webkit-filter: grayscale(100%);
                             filter: grayscale(100%);
+                            @include _transtion(filter, .3);
+
+                            &:hover{
+                                filter: grayscale(30%);
+                            }
                         }
 
                         & > .footnotes{

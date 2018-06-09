@@ -17,7 +17,7 @@ permalink: /projects/
         <tr>
             <td><a href="https://intern0t.github.io/Trail/">Trail</a></td>
             <td>
-                <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a personal, open-source project developed using ReactJS which is intended to track your task completion at a given time, creating a collection of logs by the end of the day for you to be proud of. It was designed using <a href="http://ant.design/">Ant Design's</a> ReactJS framework. <strong><a href="https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d">No puppies were harmed</a> while building this tiny project, it was for educational purposes only!</strong></p>
+                <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a personal, open-source project developed using ReactJS which is intended to track your task completion at a given time, creating a collection of logs by the end of the day for you to be proud of. It was designed using <a href="http://ant.design/">Ant Design's</a> ReactJS framework. <strong><a href="https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d">No puppies were harmed</a> while building this tiny project, it was for educational purposes only!</strong> It is currently being used as my personal Tasks tracker <a href="https://trail.prashant.me/">here</a>.</p>
 
                 <ul class="row lang-used">
                     <li>ReactJS</li>
@@ -65,7 +65,7 @@ permalink: /projects/
             </td>
         </tr>
         <tr>
-            <td><a href="https://prashant.me/development/2017/05/19/pymgur-screenshot-and-imgur-upload-script-written-in-python.html">Pymgur</a></td>
+            <td><a href="https://www.prashant.me/project/Pymgur">Pymgur</a></td>
             <td>
                 <p>Screenshot and upload to Imgur script, written in Python which utilizes <a href="https://github.com/astrand/xclip">xClip</a>                    to handle clipboard and <a href="http://optipng.sourceforge.net/">optipng</a> to natively optimize the
                     screenshot taken to reduce file size before upload.</p>
@@ -77,10 +77,10 @@ permalink: /projects/
             </td>
         </tr>
         <tr>
-            <td><a href="#">FileSec</a></td>
+            <td><a href="https://www.prashant.me/development/2017/06/03/encrypting-files-in-linux-machine-using-openssl.html">FileSec</a></td>
             <td>
                 <p>FileSec is a AES 256 Encryption utility software written in C# to encrypt and decrypt any files with a user
-                    provided key. <a href="https://i.imgur.com/MUPVc3Y.gif" data-rel="lightcase">Demo</a> of C# version, <a href="https://bitbucket.org/intern0t/scripts/src/b0f803982d240083e981bcbe19fe2e4e5d39cc09/FileSec.py?at=master&fileviewer=file-view-default">Python</a> version for Linux.
+                    provided key. <a href="https://i.imgur.com/MUPVc3Y.gif" data-rel="lightcase">Demo</a> of C# version, <a href="https://www.prashant.me/development/2017/06/03/encrypting-files-in-linux-machine-using-openssl.html">Python</a> version for Linux.
                 </p>
 
                 <ul class="row lang-used">
@@ -89,9 +89,9 @@ permalink: /projects/
             </td>
         </tr>
         <tr>
-            <td><a href="#">Image Upload (CDN)</a></td>
+            <td><a href="https://github.com/intern0t/Image-Hosting">Image Upload (CDN)</a></td>
             <td>
-                <p>Makes use of PHP and Python to take and upload screenshots to your cloud storage of your choice. Developed to mainly focus on Linux platforms. <a href="https://www.prashant.me/development/2016/02/18/custom-image-hosting-and-upload-script.html">Blog post</a> written to demonstrate how and what of this <a href="https://bitbucket.org/intern0t/scripts/src/a1e0918d4199368325e0dd5a8d81e0ae6c55b036/ImageUpload%20(Custom)/?at=master">project</a>.</p>
+                <p>Makes use of PHP and Python to take and upload screenshots to your cloud storage of your choice. Developed to mainly focus on Linux platforms. <a href="https://www.prashant.me/project/hostup">Blog post</a> written to demonstrate how and what of this <a href="https://github.com/intern0t/Image-Hosting">project</a>.</p>
 
                 <ul class="row lang-used">
                     <li>Python</li>

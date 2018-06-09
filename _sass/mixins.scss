@@ -1,0 +1,16 @@
+
+/** Mixins **/
+@mixin _border_radius($radius) {
+    -webkit-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin _transtion($type, $delay) {
+    -webkit-transition: $type $delay ease-in-out;
+    -khtml-transition: $type $delay ease-in-out;
+    -o-transition: $type $delay ease-in-out;
+    transition: $type $delay ease-in-out;
+}
