@@ -32,25 +32,4 @@
 	<meta name="geo.placename" content="Virginia">
 	<!-- Chrome v39+ mobile tab color. -->
     <meta name="theme-color" content="#006ac8">
-    <!-- Google SEO (Structured data for articles) - 2018
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="application/ld+json">
-        {
-            "@context" : "http://schema.org",
-            "@type" : "Article",
-            "author" : {
-              "@type" : "Person",
-              "name" : "Prashant Shrestha"
-            },
-            "datePublished" : {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }},
-            "image" : {{ page.featuredImage }},
-            "articleSection" : {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %},
-            "articleBody" : {{ page.content }},
-            "url" : {{ page.url | replace:'index.html','' | absolute_url }},
-            "publisher" : {
-                "@type" : "Organization",
-                "name" : "Netlify"
-            }
-        }
-    </script>
 </head>
