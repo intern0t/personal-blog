@@ -1,0 +1,17 @@
+---
+layout: null
+---
+{
+    posts: [
+        {% for post in site.posts %}
+            {% unless post.published == false %}
+                {
+                    "title": "{{ post.title }}",
+                    "date": "{{ post.date }}",
+                    "category": "{{ post.categories }}",
+                    "tags": {{ post.tags  | append: "" | join: ', ' }}
+                },
+            {% endunless %}
+        {% endfor %}
+    ]
+}

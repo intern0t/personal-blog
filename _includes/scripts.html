@@ -24,13 +24,13 @@
 
         /* Hook the scroll event & display the progressbar.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        $(document).scroll(function(e){
+        $(document).scroll(function (e) {
             var dimensions = {
                 'scrollTop': $(window).scrollTop(),
                 'documentHeight': $(document).height(),
                 'windowHeight': $(window).height()
             };
-            
+
             // Exclude the window to get actual height!
             var pageScrolledPercentage = (dimensions.scrollTop / (dimensions.documentHeight - dimensions.windowHeight)) * 100;
             $('.progress').css('width', pageScrolledPercentage + '%');
@@ -79,10 +79,19 @@
 
         /* Search trigger - using manual button click.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        var toSearch = "https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=";
+        // var toSearch = "https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=";
+        // var toSearch = "{{ site.baseurl | append: 'posts.json' }}";
         $(".gcse-trigger").click(function (e) {
             e.preventDefault();
             var searchKey = $('input#toSearch').val();
+
+            $.ajax({
+                url: '../posts.json',
+                success: function (json) {
+                    console.log(json);
+                }
+            });
+
             var searchURL = "https://www.googleapis.com/customsearch/v1?q={0}&cx={1}&key={2}"
             var apiKey = "AIzaSyAXNi32ZKBfeR6d59kcP7hUfyBxMycVvms";
             var engineID = "010738197107477130202:cnkjahloicw";
@@ -139,8 +148,6 @@
                 // Notify the user regarding the character length requirement.
                 console.log("Not enough character length!");
             }
-
-            return false;
         });
 
         /* Search trigger - using keydown event.
