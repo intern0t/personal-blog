@@ -516,18 +516,12 @@ body {
                 .search-result-container{
                     .result{
                         border: 1px solid #D1D1D1;
-                        padding: 15px 20px;
+                        padding: 15px 30px 0;
                         margin-bottom: 10px;
                         border-radius: 3px;
 
-                        img.thumbnail{
-                            overflow: hidden;
-                            max-width: 100%;
-                            max-height: 100%;
-                        }
-
                         h5{
-                            font-size: 2rem;
+                            font-size: 1.5rem;
                             text-overflow: ellipsis;
                             overflow: hidden;
                         }
@@ -535,6 +529,7 @@ body {
                         p{
                             overflow: hidden;
                             text-overflow: ellipsis;
+                            font-size: 1.2rem;
                             display: -webkit-box;
                             line-height: 1.6em;
                             max-height: ((1.6) * 2)em;

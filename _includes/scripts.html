@@ -85,69 +85,33 @@
             e.preventDefault();
             var searchKey = $('input#toSearch').val();
 
-            $.ajax({
-                url: '../posts.json',
-                success: function (json) {
-                    console.log(json);
-                }
+            $.getJSON("../posts.json", {}, function (data) {
+                const filteredData = data.posts.filter(post =>
+                    post.title.toLowerCase().includes(searchKey.toLowerCase()) ||
+                    post.tags.join().toLowerCase().includes(searchKey.toLowerCase()) ||
+                    post.category.toLowerCase().includes(searchKey.toLowerCase()));
+                console.log(JSON.stringify(filteredData));
+
+                $(".search-result-container").empty().append("<h5 class='totalSearchResults'>Found " + filteredData.length + " results for " + searchKey + ".</h5>");
+
+                $.each(filteredData, (key, value) => {
+                    var initialFormatting = '<div class="row result">' +
+                        '<div class="u-full-width">' +
+                        '<h5><i class="icon-file-text2"></i>&nbsp;<a target="_blank" href="{0}">{1}</a></h5>' +
+                        '<p><i class="icon-price-tags" title="Tags"></i>&nbsp;&nbsp;{2}</p>' +
+                        '<p><i class="icon-tree" title="Categories"></i>&nbsp;&nbsp;{3}<br/>' +
+                        '<i class="icon-calendar"></i>&nbsp;&nbsp;{4}</p>' +
+                        '</div></div>';
+                    $(".search-result-container").append(
+                        initialFormatting
+                            .replace("{0}", value.link)
+                            .replace("{1}", value.title.replace(searchKey, "<span style='background: yellow;'>" + searchKey + "</span>"))
+                            .replace("{2}", value.tags.join(', ').toUpperCase().replace(searchKey.toUpperCase(), "<span style='background: yellow;'>" + searchKey.toUpperCase() + "</span>"))
+                            .replace("{3}", value.category.toUpperCase().replace(searchKey.toUpperCase(), "<span style='background: yellow;'>" + searchKey.toUpperCase() + "</span>"))
+                            .replace("{4}", value.date.toUpperCase())
+                    );
+                });
             });
-
-            var searchURL = "https://www.googleapis.com/customsearch/v1?q={0}&cx={1}&key={2}"
-            var apiKey = "AIzaSyAXNi32ZKBfeR6d59kcP7hUfyBxMycVvms";
-            var engineID = "010738197107477130202:cnkjahloicw";
-
-            // Clear previous search results.
-            $(".search-result-container").empty();
-
-            if (searchKey.length > 3) {
-                // Start the search.
-                $.ajax({
-                    type: "GET",
-                    url: searchURL.replace("{0}", searchKey).replace("{1}", engineID).replace("{2}", apiKey),
-                    success: function (result) {
-                        if (result.hasOwnProperty('items') && result.items.length > 0) {
-                            var totalSearchResults = 0;
-                            $(".search-result-container").append("<h5 class='totalSearchResults'></h5>");
-
-                            $.each(result.items, function (key, value) {
-                                var initialFormatting = '<div class="row result"><div class="three columns"><img class="thumbnail" src="{3}"></div><div class="nine columns"><h5><a target="_blank" href="{0}">{1}</a></h5><p>{2}</p></div></div>';
-                                var searchResultThumbnail = "";
-
-                                var urlExtension = value.link.split('.').pop();
-
-                                if (urlExtension === 'html') {
-                                    if (value.pagemap.hasOwnProperty('cse_thumbnail')) {
-                                        searchResultThumbnail = value.pagemap.cse_thumbnail[0].src;
-                                    } else if (!value.pagemap.hasOwnProperty('cse_thumbnail') &&
-                                        value.pagemap.hasOwnProperty('cse_image')) {
-                                        searchResultThumbnail = value.pagemap.cse_image[0].src;
-                                    } else {
-                                        searchResultThumbnail = "https://prashant.me/assets/images/image.png";
-                                    }
-
-                                    $(".search-result-container").append(
-                                        initialFormatting.replace("{0}", value.link)
-                                            .replace("{1}", value.title)
-                                            .replace("{2}", value.htmlSnippet)
-                                            .replace("{3}", searchResultThumbnail)
-                                    );
-
-                                    // Keep track of parsed results.
-                                    totalSearchResults++;
-                                } else { /* Ignore the search result because it contains pagemarks instead of actual search. */ }
-                            });
-
-                            $(".totalSearchResults").text(totalSearchResults + " results found for '" + searchKey + "' via. Google Search.");
-                        } else {
-                            $(".search-result-container").append("<h5 class='totalSearchResults'>0 results found for '" + searchKey + "' via. Google Search.</h5>");
-                        }
-                    }
-                })
-
-            } else {
-                // Notify the user regarding the character length requirement.
-                console.log("Not enough character length!");
-            }
         });
 
         /* Search trigger - using keydown event.
