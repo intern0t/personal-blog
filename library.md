@@ -44,6 +44,8 @@ permalink: /library/
   8. [Scrimba](https://scrimba.com)
 + Desktop Application Development
   1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
+  2. [Starting Out with C++ from Control Structures to Objects](https://www.amazon.com/Starting-Out-Control-Structures-Objects/dp/0134498372) by [Tony Gaddis](https://media.pearsoncmg.com/bc/abp/cs-resources/products/series.html#series,series=Gaddis)
+        * Multiple series available from the author.
 
 ###### <span class="icon-section"></span> **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
