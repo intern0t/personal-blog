@@ -23,7 +23,7 @@ permalink: /library/
     7. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
     8. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
     9. [Nonverbal Algorithm Assembly Instructions](https://idea-instructions.com/) by @IDEA.
-    10. [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf) by [MIT Open Courseware](https://ocw.mit.edu/index.htm) ![Currently Reading](https://i.imgur.com/YMcI4h9.png)
+    10. [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf) by [MIT Open Courseware](https://ocw.mit.edu/index.htm) ![Currently Reading](https://i.imgur.com/YMcI4h9.png){:width="20px" :title="Currently reading - Sun Jun 24 21:17:08 EDT 2018"}
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
