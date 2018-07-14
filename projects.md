@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/ 
---- 
+---
 
 #### <i class="icon-folder-open"></i> Projects
 
@@ -14,6 +14,25 @@ permalink: /projects/
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><a href="https://trackmovies.net/">Track Movies</a></td>
+            <td>
+                <p><a href="https://trackmovies.net/" title="Release website">Track Movies</a> is a private project developed using ReactJS by me and <a href="https://github.com/justgoof9">Nischal Shrestha</a> which reflects our learning phase and accomplishment of working with <a href="https://www.themoviedb.org/documentation/api">The Movie Database's API Endpoints</a> which allows users to search and discover movies, add them to their favorites or watch list which the user can later export and import them accordingly, and create a personal backup in the location they desire. <a href="https://i.imgur.com/mUkeacR.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Homepage (Right Click > Open image in new tab to view the preview in its original size.">Image Preview</a>.</p>
+                <a href="https://i.imgur.com/MyKuTcz.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Dashboard (Right Click > Open image in new tab to view the preview in its original size." hidden>2nd Image Preview</a>
+                <a href="https://i.imgur.com/LY5Vb6a.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Import/Export (Right Click > Open image in new tab to view the preview in its original size." hidden>3rd Image Preview</a>
+                <a href="https://i.imgur.com/pQ9vurY.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies movie detail's page (Right Click > Open image in new tab to view the preview in its original size." hidden>4th Image Preview</a>
+
+                <ul class="row lang-used">
+                    <li>ReactJS</li>
+                    <li>TMDB API</li>
+                    <li>Movie Quotes API</li>
+                    <li>localStorage</li>
+                    <li>ClipboardJS</li>
+                    <li>Icomoon</li>
+                    <li>Icons8</li>
+                </ul>
+            </td>
+        </tr>
         <tr>
             <td><a href="https://intern0t.github.io/Trail/">Trail</a></td>
             <td>
@@ -45,7 +64,7 @@ permalink: /projects/
             <td><a href="https://github.com/intern0t/keykode">Keykode</a></td>
             <td>
                 <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a></p>
-            
+
                 <ul class="row lang-used">
                     <li>HTML</li>
                     <li>(S)CSS</li>
@@ -69,7 +88,7 @@ permalink: /projects/
             <td>
                 <p>Screenshot and upload to Imgur script, written in Python which utilizes <a href="https://github.com/astrand/xclip">xClip</a>                    to handle clipboard and <a href="http://optipng.sourceforge.net/">optipng</a> to natively optimize the
                     screenshot taken to reduce file size before upload.</p>
-                
+
                 <ul class="row lang-used">
                     <li>Python</li>
                     <li>Imgur API</li>
@@ -100,6 +119,7 @@ permalink: /projects/
             </td>
         </tr>
     </tbody>
+
 </table>
 
 **More projects to be added!**
