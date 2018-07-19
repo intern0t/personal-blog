@@ -63,7 +63,10 @@ permalink: /projects/
         <tr>
             <td><a href="https://github.com/intern0t/keykode">Keykode</a></td>
             <td>
-                <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a></p>
+                <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a>, <a href="https://i.imgur.com/MZwACFl.png" data-rel="lightcase:projectkeykode" data-lc-caption="Decoded raw Base64 encoded string.">Image Preview</a>.</p>
+                <a href="https://i.imgur.com/Od9j4ZK.png" data-rel="lightcase:projectkeykode" data-lc-caption="Generated encoded URLs." hidden>2nd Image Preview</a>
+                <a href="https://i.imgur.com/DoYyDsp.png" data-rel="lightcase:projectkeykode" data-lc-caption="Can decode raw Base64 encoded text but not the generated URLs." hidden>3rd Image Preview</a>
+                <a href="https://i.imgur.com/FUd3qDo.png" data-rel="lightcase:projectkeykode" data-lc-caption="ClipboardJS in action." hidden>4th Image Preview</a>
 
                 <ul class="row lang-used">
                     <li>HTML</li>
