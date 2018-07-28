@@ -23,7 +23,7 @@ permalink: /library/
     7. [Introduction to Theory of Computation](http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf) by [Anil Maheshwari and Michiel Smid](http://cglab.ca/~michiel/TheoryOfComputation/)
     8. [The Little Schemer](https://mitpress.mit.edu/books/little-schemer) by [@Daniel P. Friedman](https://mitpress.mit.edu/authors/daniel-p-friedman)
     9. [Nonverbal Algorithm Assembly Instructions](https://idea-instructions.com/) by @IDEA.
-    10. [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf) by [MIT Open Courseware](https://ocw.mit.edu/index.htm) ![Currently Reading](https://i.imgur.com/YMcI4h9.png "Currently reading - Sun Jun 24 21:17:08 EDT 2018"){:width="20px"}
+    10. [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf) by [MIT Open Courseware](https://ocw.mit.edu/index.htm) <span class="icon-book" title="Currently reading - Sun Jun 24+ 21:17:08 EDT 2018"></span>
     11. [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) by [MIT Press](https://mitpress.mit.edu/)
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
@@ -49,6 +49,10 @@ permalink: /library/
   1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
   2. [Starting Out with C++ from Control Structures to Objects](https://www.amazon.com/Starting-Out-Control-Structures-Objects/dp/0134498372) by [Tony Gaddis](https://media.pearsoncmg.com/bc/abp/cs-resources/products/series.html#series,series=Gaddis)
         * Multiple series available from the author.
+
+###### <span class="icon-section"></span> **Academics**
++ Mathematics
+    1. [Applied Statistics and Probability for Engineers 6E.](https://www.amazon.com/Applied-Statistics-Probability-Engineers-Montgomery/dp/1118539710) by Montgomery & Runger <span class="icon-books" title="Completed, Jan-May (STAT 344) Spring 2018"></span>
 
 ###### <span class="icon-section"></span> **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
