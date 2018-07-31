@@ -57,10 +57,6 @@ body {
     a {
         color: $navyBlue;
         text-decoration: none;
-
-        // &:hover {
-        //     text-decoration: underline;
-        // }
     }
 
     /* Main container wrapper for the blog. */
@@ -306,6 +302,7 @@ body {
 
                     p {
                         word-wrap: break-word;
+                        font-family: $PTSansFontFamily;
 
                         code {
                             font-size: 80%;
@@ -385,7 +382,7 @@ body {
                         word-wrap: break-word;
                         font-family: $RopaFontFamily;
                         font-weight: normal;
-                        font-size: 1em;
+                        font-size: 25px;
                         color: $globalDarkColor;
                         text-decoration: none;
 
@@ -399,7 +396,7 @@ body {
                         padding: 0 0 20px 0;
                         text-transform: uppercase;
                         text-decoration: none;
-                        font-size: $globalFontSize - .5;
+                        font-size: 13px;
                         color: $quoteTextColor;
                         font-family: $RopaFontFamily;
                         letter-spacing: .5px;
