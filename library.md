@@ -70,5 +70,8 @@ permalink: /library/
 2. [Linux Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf)
 3. [Linux-Cheat-Sheet-Sponsored-By-Loggly](https://www.loggly.com/wp-content/uploads/2015/05/Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf)
 
-###### <span class="icon-section"></span> **Tools**
-1. [DevDocs](http://devdocs.io/)
+###### <span class="icon-section"></span> **Tools & Resources**
++ Software & Tools
+    1. [DevDocs](http://devdocs.io/)
++ Icons
+    1. [The Noun Project](https://thenounproject.com) for **Icons & SVG**, free & premium options.
