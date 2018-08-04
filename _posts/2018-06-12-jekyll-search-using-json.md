@@ -56,7 +56,7 @@ Our `posts.json` file does not necessarily need `category` and `tags` JSON keys 
 
 Our next process includes writing a search trigger which I already made a long time ago when Google Search was still being used for this blog, therefore, all I had to do was modify the search function. There are two conditions we need to focus on, to be able to search our `title`, `tags` and `categories`. I achieved this by using the `.filter()` method.
 
-If we consider `data` to be the contents from our `posts.json`, our **search**/**filter** should something similar to the code below as I wanted the readers to be able to search my blog posts by their `title, `tags` and `categories`.
+If we consider `data` to be the contents from our `posts.json`, our **search**/**filter** should be similar to the code below as I wanted the readers to be able to search my blog posts by their `title`, `tags` and `categories`.
 
 {% highlight javascript %}
 const filteredData = data.posts.filter(post =>
