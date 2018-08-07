@@ -275,6 +275,7 @@ body {
                         position: relative;
                         left: 0;
                         right: 0;
+                        font-size: $globalFontSize - 1;
                         border-radius: 3px;
                         -moz-border-radius: 3px;
                         -khtml-border-radius: 3px;
@@ -302,7 +303,7 @@ body {
                                 display: block;
                                 padding: 1rem 1.5rem;
                                 white-space: inherit;
-                                font-size: 80%;
+                                font-size: 77%;
                             }
                         }
                     }
@@ -312,7 +313,7 @@ body {
                         font-size: $globalFontSize;
 
                         code {
-                            font-size: 80%;
+                            font-size: 77%;
                             word-wrap: break-word;
                             white-space: inherit;
                             background-color: $inlineCodeBColor;
@@ -322,6 +323,7 @@ body {
 
                             &:hover{
                                 border-bottom: 1px solid;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -330,13 +332,17 @@ body {
                         padding: 0 0 0 3em;
 
                         code{
-                            font-size: 80%;
+                            font-size: 77%;
                             word-wrap: break-word;
                             white-space: inherit;
                             background-color: $inlineCodeBColor;
                             color: $inlineCodeColor;
-                            border-radius: 1px;
+                            border-radius: 2px;
                             border: 0;
+
+                            &:hover{
+                                border-bottom: 1px solid;
+                            }
                         }
                     }
 
