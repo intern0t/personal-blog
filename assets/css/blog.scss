@@ -6,13 +6,13 @@
 @import "mixins";
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|PT+Sans|Ropa+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Spectral');
 
 /* Global Variables */
-$globalFontFamily: 'Fira Sans', sans-serif;
-$RopaFontFamily: 'Ropa Sans', sans-serif;
 $PTSansFontFamily: 'PT Sans', sans-serif;
-$globalFontSize: 1.5em;
+$SpectralFontFamily: 'Spectral','Georgia', 'Times New Roman', 'Times', serif;
+$globalFontFamily: $SpectralFontFamily;
+$globalFontSize: 16px;
 $globalBorderRadius: 2px;
 
 /* Global Color Codes */
@@ -37,6 +37,7 @@ $smartPhoneScreen: "only screen and (max-width: 320px)";
 /* Styling */
 body {
     font-family: $globalFontFamily !important;
+    font-size: $globalFontSize !important;
 
     .progress{
         width: 0;
@@ -57,6 +58,7 @@ body {
     a {
         color: $navyBlue;
         text-decoration: none;
+        font-family: $globalFontFamily;
 
         // &:hover {
         //     text-decoration: underline;
@@ -189,7 +191,8 @@ body {
                         text-decoration: none;
                         text-transform: none;
                         color: $globalDarkColor;
-                        font-family: $RopaFontFamily;
+                        font-family: $globalFontFamily;
+                        font-size: 90%;
 
                         &:hover {
                             color: $navyBlue;
@@ -233,6 +236,7 @@ body {
                     display: block;
                     list-style-type: none;
                     margin: 10px 0 10px 0;
+                    font-family: $PTSansFontFamily;
                     clear: both;
 
                     li{
@@ -299,13 +303,13 @@ body {
                                 padding: 1rem 1.5rem;
                                 white-space: inherit;
                                 font-size: 80%;
-                                // border-radius: $globalBorderRadius;
                             }
                         }
                     }
 
                     p {
                         word-wrap: break-word;
+                        font-size: $globalFontSize;
 
                         code {
                             font-size: 80%;
@@ -313,13 +317,16 @@ body {
                             white-space: inherit;
                             background-color: $inlineCodeBColor;
                             color: $inlineCodeColor;
-                            border-radius: 1px;
-                            border: 0;
+                            border-radius: 2px;
+                            border: 1;
+
+                            &:hover{
+                                border-bottom: 1px solid;
+                            }
                         }
                     }
 
                     ol, ul{
-                        //list-style: decimal;
                         padding: 0 0 0 3em;
 
                         code{
@@ -383,9 +390,9 @@ body {
 
                     a.title {
                         word-wrap: break-word;
-                        font-family: $RopaFontFamily;
+                        font-family: $globalFontFamily;
                         font-weight: normal;
-                        font-size: 1em;
+                        font-size: $globalFontSize + 9;
                         color: $globalDarkColor;
                         text-decoration: none;
 
@@ -399,10 +406,10 @@ body {
                         padding: 0 0 20px 0;
                         text-transform: uppercase;
                         text-decoration: none;
-                        font-size: $globalFontSize - .5;
+                        font-size: $globalFontSize - 3;
                         color: $quoteTextColor;
-                        font-family: $RopaFontFamily;
-                        letter-spacing: .5px;
+                        font-family: $PTSansFontFamily;
+                        letter-spacing: 0.5px;
 
                         i {
                             margin-right: 10px;
