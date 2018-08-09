@@ -12,6 +12,8 @@ featuredImage: https://i.imgur.com/mu5rtPo.png
 [![Poster](https://i.imgur.com/mu5rtPo.png)](https://i.imgur.com/mu5rtPo.png){:data-rel="lightcase"}
 </div>
 
+> Check what was [updated](#updated). - *Wed Aug  8 20:36:45 EDT 2018*
+
 I remember using and integrating Google Search results in various web projects of mine, including this blog but never did occur to me that using Google Search for Jekyll was pretty painful. It wasn't the feature Google was providing their **free** users; it wasn't the idea behind the implementation but rather the various factors required to implement it correctly. A small mistake in proper configurations could make our end goal turn south.
 
 I did not notice this problem until a week after I wrote a blog post - [Importing and exporting files using ReactJS.]({% post_url 2018-06-04-importing-and-exporting-files-using-reactjs %}) and noticed that while searching for `import` or `export` in my [search page](/search), the blog post was not included in the search results.
@@ -107,6 +109,67 @@ $(".gcse-trigger").click(function (e) {
 The outcome I decided to settle with, I am pretty satisfied with it.
 
 [![Search Demo](https://i.imgur.com/9zMOUWA.png)](https://i.imgur.com/9zMOUWA.png){:data-rel="lightcase"}
+
+***
+
+##### Updated
+
+I wanted to search not only blog post's title, tags or categories but a bit of an excerpt from the blog post as well and this is what I came up with. The most significant constraint on searching the post content is the performance, having to search big post contents and not only that, the amount of blog posts creates even bigger performance issues. I didn't quite overcome this problem yet and have to rethink this approach.
+
+.. but, for the meantime, I decided to add a certain amount of words in our `posts.json` file to quickly search the given `searchKey` in our excerpt. The `posts.json` is changed to the following. Those make up a properly formatted JSON entry for our search file.
+
+{% highlight json %}{% raw %}
+"title": "{{ post.title }}",
+"date": "{{ post.date }}",
+"category": "{{ post.categories }}",
+"link": "{{ post.url | replace:'index.html','' | absolute_url }}",
+"excerpt": "{{ post.content | markdownify | strip_html | truncatewords: 70 | escape }}",
+"tags": {{ post.tags | append: "" | join: ', ' }}
+{% endraw %}{% endhighlight %}
+
+Similarly, our search function has a bit of an addition.
+
+{% highlight javascript %}
+/* Search trigger - using manual button click.
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$(".gcse-trigger").click(function (e) {
+    e.preventDefault();
+    var searchKey = $('input#toSearch').val();
+    console.log(searchKey);
+    $.getJSON("../posts.json", {}, function (data) {
+        const filteredData = data.posts.filter(post =>
+            post.title.toLowerCase().includes(searchKey.toLowerCase()) ||
+            post.tags.join().toLowerCase().includes(searchKey.toLowerCase()) ||
+            post.category.toLowerCase().includes(searchKey.toLowerCase()) ||
+            post.excerpt.indexOf(searchKey) > 0);
+        console.log(JSON.stringify(filteredData));
+        $(".search-result-container").empty().append("<h5 class='totalSearchResults'>Found " + filteredData.length + " results for " + searchKey + ".</h5>");
+        $.each(filteredData, (key, value) => {
+            var initialFormatting = '<div class="row result">' +
+                '<div class="u-full-width">' +
+                '<h5><i class="icon-file-text2"></i>&nbsp;<a target="_blank" href="{0}">{1}</a></h5>' +
+                '<p><i class="icon-price-tags" title="Tags"></i>&nbsp;&nbsp;{2}</p>' +
+                '<p>{5}</p>' +
+                '<p><i class="icon-tree" title="Categories"></i>&nbsp;&nbsp;{3}<br/>' +
+                '<i class="icon-calendar"></i>&nbsp;&nbsp;{4}</p>' +
+                '</div></div>';
+            $(".search-result-container").append(
+                initialFormatting
+                    .replace("{0}", value.link)
+                    .replace("{1}", value.title.replace(searchKey, "<span style='background: yellow;'>" + searchKey + "</span>"))
+                    .replace("{2}", value.tags.join(', ').toUpperCase().replace(searchKey.toUpperCase(), "<span style='background: yellow;'>" + searchKey.toUpperCase() + "</span>"))
+                    .replace("{3}", value.category.toUpperCase().replace(searchKey.toUpperCase(), "<span style='background: yellow;'>" + searchKey.toUpperCase() + "</span>"))
+                    .replace("{4}", value.date.toUpperCase())
+                    .replace("{5}", value.excerpt.replace(searchKey, "<span style='background: yellow;'>" + searchKey + "</span>"))
+            );
+        });
+    });
+});
+{% endhighlight %}
+
+That's about it; I'm trying to implement searching of words, without caring about its **case** - upper, lower or capitalized. I shall update the post once again!
+
+[![Updated Demo](https://i.imgur.com/fNJgkIw.png)](https://i.imgur.com/fNJgkIw.png){:data-rel="lightcase"}
 
 [![Simplicity](https://i.imgur.com/TYyB9gP.png)](https://i.imgur.com/TYyB9gP.png){:data-rel="lightcase"}
 

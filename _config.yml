@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Prashant Shrestha - Explore, Exploit, Secure, Share & Suffice!
-email: pms@engineer.com
+email: contact@prashant.me
 description: > # this means to ignore newlines until "baseurl:"
  Explore, Exploit, Secure, Share & Suffice!
 
@@ -46,6 +46,7 @@ sitemap:
 markdown: kramdown
 kramdown:
  input: GFM
+ auto_ids: true
  syntax_highlighter: rogue
 
 sass:
