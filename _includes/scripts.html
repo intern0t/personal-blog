@@ -141,9 +141,10 @@
 
         /* On "To Top" button click event.
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        $("a[href='#top']").click(function (e) {
+        $("a[href*='#']:not([href='#']),a[href='#top']").click(function (e) {
             e.preventDefault();
-            $("html, body").animate({ scrollTop: 0 }, "slow");
+            var componentToScrollTo = $($(this).attr("href")).offset().top;
+            $("html, body").animate({ scrollTop: componentToScrollTo }, "slow");
             return false;
         });
 
