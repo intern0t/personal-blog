@@ -26,6 +26,8 @@ permalink: /library/
     10. [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf) by [MIT Open Courseware](https://ocw.mit.edu/index.htm) <span class="icon-book" title="Currently reading - Sun Jun 24+ 21:17:08 EDT 2018"></span>
     11. [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) by [MIT Press](https://mitpress.mit.edu/)
     12. [Data Structures and Algorithms: Annotated Reference with Examples](https://www.goodreads.com/book/show/18308002-data-structures-and-algorithms) by *G. Barnett and L. D. Tongo* <span class="icon-books" title="Finished Reading July 20th-Aug 07th, 2018 Summer."></span>
+    13. [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) by Steven S. Skiena
+    14. [The Art of Readable Code](https://www.amazon.com/Art-Readable-Code-Practical-Techniques-ebook/dp/B0064CZ1XE) by Dustin Boswell & Trevor Foucher
 + Problems and Practice
   1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
