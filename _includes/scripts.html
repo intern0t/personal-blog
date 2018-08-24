@@ -95,7 +95,7 @@ _)      \.___.,|     .'
             e.preventDefault();
             var searchKey = $('input#toSearch').val();
 
-            if (searchKey !== null | searchKey !== undefined | searchKey !== "") {
+            if (searchKey !== null | searchKey !== undefined | searchKey !== "" | searchKey.length > 2) {
                 $.getJSON("../posts.json", {}, function (data) {
                     const filteredData = data.posts.filter(post =>
                         post.title.toLowerCase().includes(searchKey.toLowerCase()) ||
