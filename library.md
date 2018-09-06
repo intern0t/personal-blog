@@ -28,8 +28,6 @@ permalink: /library/
     12. [Data Structures and Algorithms: Annotated Reference with Examples](https://www.goodreads.com/book/show/18308002-data-structures-and-algorithms) by *G. Barnett and L. D. Tongo* <span class="icon-books" title="Finished Reading July 20th-Aug 07th, 2018 Summer."></span>
     13. [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) by Steven S. Skiena
     14. [The Art of Readable Code](https://www.amazon.com/Art-Readable-Code-Practical-Techniques-ebook/dp/B0064CZ1XE) by Dustin Boswell & Trevor Foucher
-+ Problems and Practice
-  1. [Geeks For Geeks](http://www.geeksforgeeks.org)
 
 ###### <span class="icon-section"></span> **Programming**
 + General
@@ -57,13 +55,19 @@ permalink: /library/
 + Mathematics
     1. [Applied Statistics and Probability for Engineers 6E.](https://www.amazon.com/Applied-Statistics-Probability-Engineers-Montgomery/dp/1118539710) by Montgomery & Runger <span class="icon-books" title="Completed, Jan-May (STAT 344) Spring 2018"></span>
 
+###### <span class="icon-section"></span> **Competitive Programming**
+1. [CodeForces](https://codeforces.com/)
+2. [HackerRank](https://www.hackerrank.com)
+3. [Code Chef](https://www.codechef.com/)
+4. [Geeks For Geeks](http://www.geeksforgeeks.org)
+
 ###### <span class="icon-section"></span> **Reverse Engineering**
 1. [x86 Opcode and Instruction Reference](http://ref.x86asm.net/)
 2. [x64 Cheat Sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
 3. [Instructions & Examples Compiled](https://scadahacker.com/library/Documents/Cheat_Sheets/Programming%20-%20x86%20Instructions%201.pdf)
 4. [Game Hacking Resources](https://github.com/dsasmblr/game-hacking) by [@dsasmblr](https://github.com/dsasmblr)
 
-###### <span class="icon-section"></span> **Regular References**
+###### <span class="icon-section"></span> **General References**
 1. [Markdown](https://en.wikipedia.org/wiki/Markdown) [Cheatsheet by @adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
   * [Markdown help/tutorial by @commonmark.org](http://commonmark.org/help/tutorial/)
 2. [Git Cheat Sheet - Education](https://education.github.com/git-cheat-sheet-education.pdf)
