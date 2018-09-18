@@ -47,7 +47,7 @@ permalink: /projects/
         <tr>
             <td><a href="http://o.prashant.me/">Oblique</a></td>
             <td>
-                <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use. <a href="https://i.imgur.com/NGARoVP.gif" data-rel="lightcase:BASHscriptpreview" data-lc-caption="Bash Script to shorten long URLs via command line. (Right Click > Open image in new tab to view the preview in its original size.)">Bash Script Preview</a></p>
+                <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use. <a href="https://i.imgur.com/NGARoVP.gif" data-rel="lightcase:BASHscriptpreview" data-lc-caption="Bash Script to shorten long URLs via command line. (Right Click > Open image in new tab to view the preview in its original size.)">Bash Script Preview</a>.</p>
 
                 <ul class="row lang-used">
                     <li>HTML</li>
@@ -89,8 +89,7 @@ permalink: /projects/
         <tr>
             <td><a href="https://www.prashant.me/project/Pymgur">Pymgur</a></td>
             <td>
-                <p>Screenshot and upload to Imgur script, written in Python which utilizes <a href="https://github.com/astrand/xclip">xClip</a>                    to handle clipboard and <a href="http://optipng.sourceforge.net/">optipng</a> to natively optimize the
-                    screenshot taken to reduce file size before upload.</p>
+                <p>Screenshot and upload to Imgur script, written in Python which utilizes <a href="https://github.com/astrand/xclip">xClip</a> to handle clipboard and <a href="http://optipng.sourceforge.net/">optipng</a> to natively optimize the screenshot taken to reduce file size before upload. <a href="https://i.imgur.com/QVjNSbi.gif" data-rel="lightcase">Demo</a>.</p>
 
                 <ul class="row lang-used">
                     <li>Python</li>
