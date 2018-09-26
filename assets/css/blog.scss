@@ -2,44 +2,50 @@
 ---
 
 @charset "UTF-8";
-
-@import "mixins";
-
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Spectral');
-
-/* Global Variables */
-$PTSansFontFamily: 'PT Sans', sans-serif;
-$SpectralFontFamily: 'Spectral','Georgia', 'Times New Roman', 'Times', serif;
+@import "mixins"; /* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Spectral"); /* Global Variables */
+$PTSansFontFamily: "PT Sans", sans-serif;
+$SpectralFontFamily: "Spectral", "Georgia", "Times New Roman", "Times", serif;
 $globalFontFamily: $SpectralFontFamily;
 $globalFontSize: 16px;
-$globalBorderRadius: 2px;
-
-/* Global Color Codes */
-$navyBlue: #006AC8;
-$breakerColor: #F1F1F1;
+$globalBorderRadius: 2px; /* Global Color Codes */
+$navyBlue: #006ac8;
+$breakerColor: #f1f1f1;
 $quoteTextColor: #6a737d;
 $quoteBorderColor: #dfe2e5;
 $globalDarkColor: #333333;
 $inlineCodeColor: #c7254e;
 $inlineCodeBColor: #f9f2f4;
-$border-top: linear-gradient(90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 32%, #9b59b6 32%, #9b59b6 35%, #34495e 35%, #34495e 55%, #f1c40f 55%, #f1c40f 59%, #e67e22 59%, #e67e22 63%, #e74c3c 63%, #e74c3c 82%, #ecf0f1 82%, #ecf0f1 92%, #95a5a6 92%);
-
-/* Social Share Color Codes */
-$googleplus: #DE5E53;
-$twitter: #1DA1F2;
-$facebook: #3B579D;
-$reddit: #282C34;
-
-/* Screen size for the nav. */
-$smartPhoneScreen: "only screen and (max-width: 320px)";
-
-/* Styling */
+$border-top: linear-gradient(
+    90deg,
+    #1abc9c 15%,
+    #2ecc71 15%,
+    #2ecc71 12%,
+    #3498db 12%,
+    #3498db 32%,
+    #9b59b6 32%,
+    #9b59b6 35%,
+    #34495e 35%,
+    #34495e 55%,
+    #f1c40f 55%,
+    #f1c40f 59%,
+    #e67e22 59%,
+    #e67e22 63%,
+    #e74c3c 63%,
+    #e74c3c 82%,
+    #ecf0f1 82%,
+    #ecf0f1 92%,
+    #95a5a6 92%
+); /* Social Share Color Codes */
+$googleplus: #de5e53;
+$twitter: #1da1f2;
+$facebook: #3b579d;
+$reddit: #282c34; /* Screen size for the nav. */
+$smartPhoneScreen: "only screen and (max-width: 320px)"; /* Styling */
 body {
-    font-family: $globalFontFamily !important;
+    @include font($globalFontFamily, 400, normal);
     font-size: $globalFontSize !important;
-
-    .progress{
+    .progress {
         width: 0;
         height: 3px;
         position: fixed;
@@ -51,24 +57,21 @@ body {
         -webkit-box-shadow: -1px 2px 2px -1px $navyBlue;
         -moz-box-shadow: -1px 2px 2px -1px $navyBlue;
         z-index: 99;
-        opacity: .2;
+        opacity: 0.2;
     }
-
     /* Links Styling */
     a {
         color: $navyBlue;
         text-decoration: none;
-        font-family: $globalFontFamily;
-
+        @include font($globalFontFamily, 400, normal);
         // &:hover {
-        //     text-decoration: underline;
+        // text-decoration: underline;
         // }
     }
-
     /* Main container wrapper for the blog. */
     .container {
         /* To the top button */
-        .toTop{
+        .toTop {
             width: 50px;
             height: 30px;
             position: fixed;
@@ -83,13 +86,11 @@ body {
             z-index: 9999;
             font-size: 20px;
             cursor: pointer;
-            opacity: .9;
-
-            &:hover{
+            opacity: 0.9;
+            &:hover {
                 opacity: 1;
             }
-
-            span{
+            span {
                 transform: rotate(-90deg);
                 position: absolute;
                 margin: 4px -9px;
@@ -97,47 +98,40 @@ body {
                 -webkit-transform: rotate(-90deg);
             }
         }
-
         /* Sidebar Styling */
         .sidebar {
             margin: 20% 0 0 0;
-
             /* Extra Styling (Global Usage) */
             .tag-title {
                 font-weight: normal;
                 padding: 4px 0;
                 text-transform: uppercase;
-                letter-spacing: .3px;
+                letter-spacing: 0.3px;
                 text-align: right;
                 font-size: 1.17em;
                 margin: 0 0 5px 0;
             }
-
             .tag-content {
                 text-transform: none;
                 letter-spacing: 0;
                 text-align: right;
                 word-wrap: break-word;
                 padding: 2px 0;
-                font-size: .9em;
+                font-size: 0.9em;
                 font-weight: normal;
             }
-
             .recent-articles {
                 list-style-type: none;
                 text-align: right;
-
-                a{
-                    &:hover{
+                a {
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
             }
-
             .social-buttons {
                 list-style-type: none;
                 float: right;
-
                 li {
                     font-size: $globalFontSize - 0.3;
                     float: right;
@@ -145,101 +139,90 @@ body {
                     margin: 0 10px 0 0;
                 }
             }
-
             .navigation {
                 list-style-type: none;
                 text-align: right;
-
                 /* Link Underline Enabled */
-                a,a:visited{
+                a,
+                a:visited {
                     color: $navyBlue;
-                    &:hover{
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
             }
-
             /* Author Information Styling */
             .author-info {
                 text-align: right;
-
                 /* Image for Author field */
                 .profile-picture {
                     width: 100px;
-                    opacity: .5;
+                    opacity: 0.5;
                     border-radius: 50%;
                     text-align: right;
                     margin: 0 0 20px 0;
-
                     &:hover {
-                        opacity: .7;
+                        opacity: 0.7;
                     }
                 }
             }
         }
-
         .content {
+			@include font($globalFontFamily, 400, normal);
             /* Header Styling */
             .header {
                 text-align: center;
                 padding: 5% 0;
                 margin: 5% 0 40px 0;
-                border-bottom: 1px solid #F1F1F1;
-
+                border-bottom: 1px solid #f1f1f1;
                 .site-description {
-                    a, a:visited {
+                    a,
+                    a:visited {
                         text-decoration: none;
                         text-transform: none;
                         color: $globalDarkColor;
-                        font-family: $globalFontFamily;
+						@include font($globalFontFamily, 400, normal);
                         font-size: 90%;
-
                         &:hover {
                             color: $navyBlue;
                         }
                     }
                 }
             }
-
             blockquote {
                 position: relative;
                 color: $quoteTextColor;
                 padding: 0 10px;
                 border-left: 5px solid $quoteBorderColor;
-
                 &:after {
                     font-family: icomoon;
                     font-style: none;
                     font-size: 3em;
                     position: absolute;
-                    content: '\e908';
-                    opacity: .1;
+                    content: "\e908";
+                    opacity: 0.1;
                     left: 1%;
                     top: -20px;
                 }
             }
-
             .posts {
-                a{
+                a {
                     color: $navyBlue;
-
-                    &:hover{
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
-
-                ol, ul{
+                ol,
+                ul {
                     padding: 0 0 0 20px;
                 }
-
-                ul.row.lang-used{
+                ul.row.lang-used {
                     display: block;
                     list-style-type: none;
                     margin: 10px 0 10px 0;
-                    font-family: $PTSansFontFamily;
+					@include font($PTSansFontFamily, 400, normal);
                     clear: both;
-
-                    li{
+                    li {
                         width: auto;
                         float: left;
                         background: #6e99c1;
@@ -253,20 +236,17 @@ body {
                         text-transform: uppercase;
                     }
                 }
-
                 article {
                     margin: 30px 0 50px 0;
                     padding: 10px 0;
-
                     .post-title {
                         i {
                             font-size: 50%;
                             vertical-align: middle;
                             margin: 0 10px 5px 0;
-                            opacity: .8;
+                            opacity: 0.8;
                         }
                     }
-
                     /* Overriding Skeleton.css' Code Tags */
                     .highlight {
                         width: 100%;
@@ -281,23 +261,20 @@ body {
                         -khtml-border-radius: 3px;
                         -o-border-radius: 3px;
                         -webkit-border-radius: 3px;
-
                         pre {
                             padding: 0;
                             margin: 0;
                             overflow: auto;
-
                             &:after {
                                 font-family: icomoon;
                                 font-style: none;
                                 font-size: 2em;
                                 position: absolute;
                                 content: "\ea81";
-                                opacity: .17;
+                                opacity: 0.17;
                                 right: 2%;
                                 top: 0;
                             }
-
                             code {
                                 width: auto;
                                 display: block;
@@ -307,11 +284,9 @@ body {
                             }
                         }
                     }
-
                     p {
                         word-wrap: break-word;
                         font-size: $globalFontSize;
-
                         code {
                             font-size: 77%;
                             word-wrap: break-word;
@@ -320,18 +295,16 @@ body {
                             color: $inlineCodeColor;
                             border-radius: 2px;
                             border: 1;
-
-                            &:hover{
+                            &:hover {
                                 border-bottom: 1px solid;
                                 cursor: pointer;
                             }
                         }
                     }
-
-                    ol, ul{
+                    ol,
+                    ul {
                         padding: 0 0 0 3em;
-
-                        code{
+                        code {
                             font-size: 77%;
                             word-wrap: break-word;
                             white-space: inherit;
@@ -339,31 +312,27 @@ body {
                             color: $inlineCodeColor;
                             border-radius: 2px;
                             border: 0;
-
-                            &:hover{
+                            &:hover {
                                 border-bottom: 1px solid;
                             }
                         }
                     }
-
                     blockquote {
                         position: relative;
                         color: $quoteTextColor;
                         padding: 0 10px;
                         border-left: 5px solid $quoteBorderColor;
-
                         &:after {
                             font-family: icomoon;
                             font-style: none;
                             font-size: 3em;
                             position: absolute;
-                            content: '\e908';
-                            opacity: .1;
+                            content: "\e908";
+                            opacity: 0.1;
                             left: 1%;
                             top: -20px;
                         }
                     }
-
                     /* Embeded Image Styling. */
                     p > a {
                         & > img {
@@ -371,42 +340,36 @@ body {
                             display: block;
                             margin: 0 auto;
                             border-radius: $globalBorderRadius;
-                            opacity: .9;
+                            opacity: 0.9;
                             clear: both;
-
                             &:hover {
                                 opacity: 1;
                             }
                         }
                     }
-
-                    .row > div > a > img{
+                    .row > div > a > img {
                         max-width: 100%;
                         display: block;
                         margin: 0 auto;
                         border-radius: $globalBorderRadius;
                         margin-bottom: 20px;
-                        opacity: .9;
+                        opacity: 0.9;
                         clear: both;
-                        
                         &:hover {
                             opacity: 1;
                         }
                     }
-
                     a.title {
                         word-wrap: break-word;
-                        font-family: $globalFontFamily;
+						@include font($globalFontFamily, 400, normal);
                         font-weight: normal;
                         font-size: $globalFontSize + 9;
                         color: $globalDarkColor;
                         text-decoration: none;
-
                         &:hover {
                             color: $navyBlue;
                         }
                     }
-
                     .stamp {
                         word-wrap: break-word;
                         padding: 0 0 20px 0;
@@ -414,184 +377,158 @@ body {
                         text-decoration: none;
                         font-size: $globalFontSize - 3;
                         color: $quoteTextColor;
-                        font-family: $PTSansFontFamily;
+						@include font($PTSansFontFamily, 400, normal);
                         letter-spacing: 0.5px;
-
                         i {
                             margin-right: 10px;
                         }
                     }
-
                     a.post-link {
-                        font-size: .8em;
+                        font-size: 0.8em;
                     }
-
                     /* 1st character uppercase + bigger size. */
-                    .post-content{
+                    .post-content {
                         & > p:first-child::first-letter {
                             font-size: 150%;
                         }
-
-                        & > .poster{
+                        & > .poster {
                             max-width: 100%;
                             max-height: 200px;
                             overflow: hidden;
                             @include _border_radius(3px);
                             margin: 0 0 20px 0;
-                            opacity: .5;
+                            opacity: 0.5;
                             -webkit-filter: grayscale(100%);
                             filter: grayscale(100%);
-                            @include _transtion(filter, .3);
-
-                            &:hover{
+                            @include _transtion(filter, 0.3);
+                            &:hover {
                                 filter: grayscale(30%);
                             }
                         }
-
-                        & > .footnotes{
+                        & > .footnotes {
                             background-image: url(https://png.icons8.com/ios-glyphs/80/000000/assignment-late.png);
                             background-position: top left;
                             background-repeat: no-repeat;
                             background-size: 20px 20px;
                             opacity: 0.5;
-                            opacity: .8;
-
-                            ul, ol{
+                            opacity: 0.8;
+                            ul,
+                            ol {
                                 list-style: decimal;
                             }
                         }
                     }
-
                     /* Share Container */
-                    fieldset.share{
+                    fieldset.share {
                         border: 1px solid $breakerColor;
                         margin: 0;
                         padding: 0 20px 0 20px;
                         margin: 0 0 20px 0;
-                        
-                        legend{
+                        legend {
                             padding: 0 10px 0 10px;
                         }
-
-                        div{
+                        div {
                             text-align: center;
-
-                            ul{
+                            ul {
                                 margin: 0;
                                 padding: 0;
                                 list-style-type: none;
                                 vertical-align: middle;
-    
-                                li{
+                                li {
                                     float: left;
                                     text-align: center;
                                     margin: 0 3px 0 0;
-    
-                                    a.button{
+                                    a.button {
                                         text-align: center;
                                         padding: 0 12px;
                                         font-size: 13px;
-    
-                                        &:hover{
+                                        &:hover {
                                             text-decoration: none;
-                                            opacity: .8;
+                                            opacity: 0.8;
                                         }
                                     }
                                 }
                             }
                         }
                     }
-
                     /* Article Footer */
                     footer.post {
                         border-top: 1px solid $breakerColor;
                         border-bottom: 1px solid $breakerColor;
                         padding: 8px 0;
                         margin: 0 0 30px 0;
-                        font-size: .9em;
+                        font-size: 0.9em;
                         font-weight: normal;
-
-                        a,a:visited{
+                        a,
+                        a:visited {
                             text-decoration: none;
-
-                            &:hover{
-                                opacity: .6;
+                            &:hover {
+                                opacity: 0.6;
                             }
                         }
                     }
-
                     .disqus {
                         margin-top: 30px;
                         display: none;
                     }
                 }
-
                 /* Search Page styling */
-                .search-result-container{
-                    .result{
-                        border: 1px solid #D1D1D1;
+                .search-result-container {
+                    .result {
+                        border: 1px solid #d1d1d1;
                         padding: 15px 30px 0;
                         margin-bottom: 10px;
                         border-radius: 3px;
-
-                        h5{
+                        h5 {
                             font-size: 1.5rem;
                             text-overflow: ellipsis;
                             overflow: hidden;
                         }
-
-                        p{
+                        p {
                             overflow: hidden;
                             text-overflow: ellipsis;
                             font-size: 1.2rem;
                             display: -webkit-box;
                             line-height: 1.6em;
-                            max-height: ((1.6) * 2)em;
+                            max-height: ((1.6) * 2) em;
                         }
                     }
                 }
             }
         }
-
         /* Pagination Styling */
         .pagination {
             margin: 0 0 100px 0;
             text-align: center;
             display: inline-block;
-
-            .button.button-primary{
+            .button.button-primary {
                 background: $navyBlue;
                 border-color: $navyBlue;
-
-                &:hover{
-                    opacity: .7;
+                &:hover {
+                    opacity: 0.7;
                 }
             }
-
-            a, a:visited {
+            a,
+            a:visited {
                 text-align: center;
             }
         }
     }
-
     /* Main Site footer. */
     footer.site-footer {
         text-align: center;
         border-top: 1px solid $breakerColor;
         padding: 30px 0 50px 0;
-
         h6 {
             font-size: $globalFontSize - 0.6;
             font-weight: normal;
         }
-
         h5 {
             font-size: $globalFontSize - 0.7;
             font-weight: normal;
         }
     }
 }
-
 /* Full Screen */
 .fullscrNav {
     height: 100%;
@@ -605,90 +542,79 @@ body {
     padding-top: 60px;
     text-align: center;
     transition: 0.5s;
-    -webkit-box-shadow: 5px 0px 21px -2px rgba(0,0,0,0.67);
-    -moz-box-shadow: 5px 0px 21px -2px rgba(0,0,0,0.67);
-    box-shadow: 5px 0px 21px -2px rgba(0,0,0,0.67);
-
-    a[title="Close"], a:visited[title="Close"] {
+    -webkit-box-shadow: 5px 0px 21px -2px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 5px 0px 21px -2px rgba(0, 0, 0, 0.67);
+    box-shadow: 5px 0px 21px -2px rgba(0, 0, 0, 0.67);
+    a[title="Close"],
+    a:visited[title="Close"] {
         position: absolute;
         right: 1%;
         top: 1%;
         color: black;
         font-size: 2em;
     }
-
     img {
         max-width: 120px;
-        opacity: .9;
+        opacity: 0.9;
         // border-radius: 50%;
         margin: 5% 0 10% 0;
         z-index: 2;
-        transition: .4s;
-
-        &:hover{
+        transition: 0.4s;
+        &:hover {
             opacity: 1;
         }
     }
-
     h6 {
         font-size: $globalFontSize;
         color: $quoteBorderColor;
     }
-
     ul {
         width: 100%;
         position: absolute;
         list-style-type: none;
-
         li {
             width: 100%;
             text-align: center;
             vertical-align: middle;
-            transition: .6s;
+            transition: 0.6s;
             margin: 0;
             left: 0;
             padding: 5px 5px;
-            opacity: .8;
-            font-size: $globalFontSize + .4;
-
-            &:hover{
+            opacity: 0.8;
+            font-size: $globalFontSize + 0.4;
+            &:hover {
                 background: white;
                 opacity: 1;
-
-                & > a,a:visited{
+                & > a,
+                a:visited {
                     color: black;
                     border-right: 4px solid #111;
                 }
             }
-
-            a, a:visited {
+            a,
+            a:visited {
                 color: white;
                 display: inline-block;
                 width: 95%;
                 height: 100%;
                 border-right: 4px solid white;
-
-                span{
+                span {
                     margin: 0 10px 0 0;
-                    font-size: $globalFontSize - .7;
+                    font-size: $globalFontSize - 0.7;
                 }
             }
         }
     }
 }
-
 $smartphone: "(min-width: 200px) and (max-width: 549px)";
-
 @media #{$smartphone} {
     .sidebar {
         display: none;
     }
-
     .toggleNav {
         display: block !important;
     }
 }
-
 // Import partials.
 @import "normalize";
 @import "skeleton";

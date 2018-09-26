@@ -71,7 +71,7 @@ The remaining task is to format the `filteredData` in an organized manner, depen
 
 {% highlight javascript %}
 /* Search trigger - using manual button click.
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 $(".gcse-trigger").click(function (e) {
     e.preventDefault();
     var searchKey = $('input#toSearch').val();
@@ -131,7 +131,7 @@ Similarly, our search function has a bit of an addition.
 
 {% highlight javascript %}
 /* Search trigger - using manual button click.
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 $(".gcse-trigger").click(function (e) {
     e.preventDefault();
     var searchKey = $('input#toSearch').val();
@@ -175,7 +175,7 @@ That's about it; I'm trying to implement searching of words, without caring abou
 
 Enjoy & Happy Coding!
 
-**Photo by [João Silas](https://unsplash.com/@joaosilas) on [Unsplash](https://unsplash.com).**
+**Photo by [JoÃ£o Silas](https://unsplash.com/@joaosilas) on [Unsplash](https://unsplash.com).**
 
 * Edited a little, didn't want the full-sized photo.
 
