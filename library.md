@@ -48,8 +48,8 @@ permalink: /library/
     6. [Free Code Camp](https://www.freecodecamp.org/)
     7. [ReactJS Sweet Pumpkin Tutorial (CodeCamps, free)](https://sweetpumpkins.codecamps.com/)
     8. [Scrimba](https://scrimba.com)
-    9. [The Road to learn React: Your journey to master plain yet pragmatic React.js](https://www.amazon.com/gp/product/1986338827/) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1)<span class="icon-books" title="Completed, Summer & Fall 2018"></span>
-    10. [Taming the State in React: Your journey to master Redux and MobX](https://www.amazon.com/dp/B07CYKDQ5S) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1)<span class="icon-books" title="Started, Fall 2018"></span>
+    9. [The Road to learn React: Your journey to master plain yet pragmatic React.js](https://www.amazon.com/gp/product/1986338827/) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1) <span class="icon-books" title="Completed, Summer & Fall 2018"></span>
+    10. [Taming the State in React: Your journey to master Redux and MobX](https://www.amazon.com/dp/B07CYKDQ5S) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1) <span class="icon-book" title="Started, Fall 2018"></span>
 -   Desktop Application Development
     1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
     2. [Starting Out with C++ from Control Structures to Objects](https://www.amazon.com/Starting-Out-Control-Structures-Objects/dp/0134498372) by [Tony Gaddis](https://media.pearsoncmg.com/bc/abp/cs-resources/products/series.html#series,series=Gaddis)
