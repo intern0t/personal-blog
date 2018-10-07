@@ -5,11 +5,11 @@ author: Prashant Shrestha
 date: 2018-06-12 11:39:14 -400
 categories: development
 tags: javascript json search build file clientside jquery
-featuredImage: https://i.imgur.com/mu5rtPo.png
+featuredImage: https://i.imgur.com/mOtENKW.png
 ---
 
 <div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/mu5rtPo.png)](https://i.imgur.com/mu5rtPo.png){:data-rel="lightcase"}
+[![Poster](https://i.imgur.com/mOtENKW.png)](https://i.imgur.com/mOtENKW.png){:data-rel="lightcase"}
 </div>
 
 > Check what was [updated](#updated). - *Wed Aug  8 20:36:45 EDT 2018*
