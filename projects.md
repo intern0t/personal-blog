@@ -1,7 +1,7 @@
---- 
+---
 layout: page
 title: Projects
-permalink: /projects/ 
+permalink: /projects/
 ---
 
 #### <i class="icon-folder-open"></i> Projects
@@ -15,12 +15,35 @@ permalink: /projects/
     </thead>
     <tbody>
         <tr>
+            <td><a href="https://news.prashant.me/">Curated</a></td>
+            <td>
+                <p>Curated is an <a href="https://github.com/intern0t/curated">Open Source</a> news curation & bookmarking project written in ReactJS, utilizes Redux to store and consume <a href="https://newsapi.org/account">NewsAPI.org's</a> API endpoints. Any user who wishes to use their own NewsAPI's API key can set and save their API key in local storage to prevent exhaustion to my API key's daily limit. <a href="https://i.imgur.com/TbqJGR8.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Header (Right Click > Open image in new tab to view the preview in its original size.">Image Preview</a>.</p>
+<a href="https://i.imgur.com/oquHKVm.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Set News API (Right Click > Open image in new tab to view the preview in its original size." hidden>2nd Image Preview</a>
+<a href="https://i.imgur.com/QZxvdTu.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Homepage (Top-Headlines) (Right Click > Open image in new tab to view the preview in its original size." hidden>3rd Image Preview</a>
+<a href="https://i.imgur.com/cknqP2X.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Footer (Right Click > Open image in new tab to view the preview in its original size." hidden>4th Image Preview</a>
+
+    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="icon-history"></span>&nbsp;Oct 12 - Oct 21, 2018</span>
+
+                <ul class="row lang-used">
+                    <li>ReactJS</li>
+                    <li>Redux</li>
+                    <li>React-Lazyload</li>
+                    <li>NewsAPI</li>
+                    <li>Unsplash</li>
+                    <li>Icomoon</li>
+                    <li>localStorage</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
             <td><a href="https://trackmovies.net/">Track Movies</a></td>
             <td>
                 <p><a href="https://trackmovies.net/" title="Release website">Track Movies</a> is a private project developed using ReactJS by me and <a href="https://github.com/justgoof9">Nischal Shrestha</a> which reflects our learning phase and accomplishment of working with <a href="https://www.themoviedb.org/documentation/api">The Movie Database's API Endpoints</a> which allows users to search and discover movies, add them to their favorites or watch list which the user can later export and import them accordingly, and create a personal backup in the location they desire. <a href="https://i.imgur.com/mUkeacR.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Homepage (Right Click > Open image in new tab to view the preview in its original size.">Image Preview</a>.</p>
                 <a href="https://i.imgur.com/MyKuTcz.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Dashboard (Right Click > Open image in new tab to view the preview in its original size." hidden>2nd Image Preview</a>
                 <a href="https://i.imgur.com/LY5Vb6a.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Import/Export (Right Click > Open image in new tab to view the preview in its original size." hidden>3rd Image Preview</a>
                 <a href="https://i.imgur.com/pQ9vurY.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies movie detail's page (Right Click > Open image in new tab to view the preview in its original size." hidden>4th Image Preview</a>
+
+    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="icon-history"></span>&nbsp;Jun 01 - Jul 12, 2018</span>
 
                 <ul class="row lang-used">
                     <li>ReactJS</li>
@@ -38,6 +61,8 @@ permalink: /projects/
             <td>
                 <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a personal, open-source project developed using ReactJS which is intended to track your task completion at a given time, creating a collection of logs by the end of the day for you to be proud of. It was designed using <a href="http://ant.design/">Ant Design's</a> ReactJS framework. <strong><a href="https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d">No puppies were harmed</a> while building this tiny project, it was for educational purposes only!</strong> It is currently being used as my personal Tasks tracker <a href="https://trail.prashant.me/">here</a>.</p>
 
+    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;May 25 - Jun 6, 2018</span>
+
                 <ul class="row lang-used">
                     <li>ReactJS</li>
                     <li>localStorage</li>
@@ -48,6 +73,8 @@ permalink: /projects/
             <td><a href="http://o.prashant.me/">Oblique</a></td>
             <td>
                 <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use. <a href="https://i.imgur.com/NGARoVP.gif" data-rel="lightcase:BASHscriptpreview" data-lc-caption="Bash Script to shorten long URLs via command line. (Right Click > Open image in new tab to view the preview in its original size.)">Bash Script Preview</a>.</p>
+
+    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;May 20 - Aug 20, 2018</span>
 
                 <ul class="row lang-used">
                     <li>HTML</li>
@@ -67,6 +94,8 @@ permalink: /projects/
                 <a href="https://i.imgur.com/Od9j4ZK.png" data-rel="lightcase:projectkeykode" data-lc-caption="Generated encoded URLs." hidden>2nd Image Preview</a>
                 <a href="https://i.imgur.com/DoYyDsp.png" data-rel="lightcase:projectkeykode" data-lc-caption="Can decode raw Base64 encoded text but not the generated URLs." hidden>3rd Image Preview</a>
                 <a href="https://i.imgur.com/FUd3qDo.png" data-rel="lightcase:projectkeykode" data-lc-caption="ClipboardJS in action." hidden>4th Image Preview</a>
+
+    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;Nov 16 2017 - Apr 18, 2018</span>
 
                 <ul class="row lang-used">
                     <li>HTML</li>

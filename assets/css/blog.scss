@@ -219,7 +219,7 @@ body {
                 ul.row.lang-used {
                     display: block;
                     list-style-type: none;
-                    margin: 10px 0 10px 0;
+                    margin: 10px 0;
 					@include font($PTSansFontFamily, 400, normal);
                     clear: both;
                     li {
@@ -235,7 +235,16 @@ body {
                         vertical-align: middle;
                         text-transform: uppercase;
                     }
-                }
+				}
+				span.completion{
+					display: block;
+					@include font($PTSansFontFamily, bold, normal);
+                    margin: 10px 0;
+					text-align: center;
+					font-size: $globalFontSize - 4;
+					letter-spacing: .3px;
+                    clear: both;
+				}
                 article {
                     margin: 30px 0 50px 0;
                     padding: 10px 0;
