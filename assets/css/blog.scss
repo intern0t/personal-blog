@@ -168,7 +168,7 @@ body {
             }
         }
         .content {
-			@include font($globalFontFamily, 400, normal);
+            @include font($globalFontFamily, 400, normal);
             /* Header Styling */
             .header {
                 text-align: center;
@@ -181,7 +181,7 @@ body {
                         text-decoration: none;
                         text-transform: none;
                         color: $globalDarkColor;
-						@include font($globalFontFamily, 400, normal);
+                        @include font($globalFontFamily, 400, normal);
                         font-size: 90%;
                         &:hover {
                             color: $navyBlue;
@@ -220,7 +220,7 @@ body {
                     display: block;
                     list-style-type: none;
                     margin: 10px 0;
-					@include font($PTSansFontFamily, 400, normal);
+                    @include font($PTSansFontFamily, 400, normal);
                     clear: both;
                     li {
                         width: auto;
@@ -235,16 +235,58 @@ body {
                         vertical-align: middle;
                         text-transform: uppercase;
                     }
-				}
-				span.completion{
-					display: block;
-					@include font($PTSansFontFamily, bold, normal);
+                }
+                table.projects {
+                    thead {
+                        tr {
+                            display: flex;
+                            justify-content: flex-start;
+                            th {
+                                &:first-child {
+                                    min-width: 120px;
+                                    word-break: break-word;
+                                    max-width: 125px;
+                                    text-align: center;
+                                }
+                                &:last-child {
+                                    flex: 1;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            border-bottom: 1px solid #e1e1e1;
+                            td {
+                                border: 0;
+                                &:first-child {
+                                    min-width: 120px;
+                                    word-break: break-word;
+                                    max-width: 125px;
+                                    text-align: center;
+                                }
+                                &:last-child {
+                                    flex: 1;
+                                    justify-content: center;
+                                    align-items: center;
+                                    align-content: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                span.completion {
+                    display: block;
+                    @include font($PTSansFontFamily, bold, normal);
                     margin: 10px 0;
-					text-align: center;
-					font-size: $globalFontSize - 4;
-					letter-spacing: .3px;
+                    text-align: center;
+                    font-size: $globalFontSize - 4;
+                    letter-spacing: 0.3px;
                     clear: both;
-				}
+                }
                 article {
                     margin: 30px 0 50px 0;
                     padding: 10px 0;
@@ -370,7 +412,7 @@ body {
                     }
                     a.title {
                         word-wrap: break-word;
-						@include font($globalFontFamily, 400, normal);
+                        @include font($globalFontFamily, 400, normal);
                         font-weight: normal;
                         font-size: $globalFontSize + 9;
                         color: $globalDarkColor;
@@ -386,7 +428,7 @@ body {
                         text-decoration: none;
                         font-size: $globalFontSize - 3;
                         color: $quoteTextColor;
-						@include font($PTSansFontFamily, 400, normal);
+                        @include font($PTSansFontFamily, 400, normal);
                         letter-spacing: 0.5px;
                         i {
                             margin-right: 10px;
