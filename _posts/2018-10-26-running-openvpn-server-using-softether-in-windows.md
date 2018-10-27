@@ -45,7 +45,7 @@ Setting up SoftEther is pretty simple as well however it gets confusing sometime
 
 [![New User](https://i.imgur.com/pQkMky4.png)](https://i.imgur.com/pQkMky4.png){:data-rel="lightcase"}
 
-* Once done with adding a new user, close the **Create New User** window and launch **Virtual NAT and Virtual DHCP Server (SecureNAT)** window from **Management of Virtual Hub** window. Enable SecureNAT.
+* Once done with adding a new user, close the **Create New User** window and launch **Virtual NAT[^1] and Virtual DHCP Server (SecureNAT)** window from **Management of Virtual Hub** window. Enable SecureNAT.
 
 >This was the most important feature SoftEther provided in my situtation because I had almost no access to manage NAT in my Windows server.
 
@@ -55,7 +55,7 @@ Setting up SoftEther is pretty simple as well however it gets confusing sometime
 
 [![OpenVPN](https://i.imgur.com/dTzPpzH.png)](https://i.imgur.com/dTzPpzH.png){:data-rel="lightcase"}
 
-* I used SoftEther's `Dynamic DNS Setting` to enable dynamic DNS function, free of charge. This is completely optional!
+* I used SoftEther's `Dynamic DNS Setting` to enable dynamic DNS[^2] function, free of charge. This is completely optional!
 
 [![Dynamic DNS](https://i.imgur.com/0Ah0xfi.png)](https://i.imgur.com/0Ah0xfi.png){:data-rel="lightcase"}
 
@@ -65,7 +65,7 @@ Setting up SoftEther is pretty simple as well however it gets confusing sometime
 
 1. Extract and open the sample configuration file we generated from `OpenVPN / MS-SSTP Setting` window, there should be **two** files. Ignoring the PC Name from the filename `_openvpn_remote_access_l3.ovpn` and `_openvpn_site_to_site_bridge_l2.ovpn`. We need the first one for the **remote access**.
 
-2. Open it with a text editor of your choice. The content inside is pretty clear and contains comment blocks to explain what the settings mean which you can refer to OpenVPN Documentation for further in-detail understanding.
+2. Open it with a text editor of your choice. The content inside is pretty clear and contains comment blocks to explain what the settings mean which you can refer to [OpenVPN Documentation](https://openvpn.net/community-resources/how-to/) for further in-detail understanding.
 
 3. The generated sample configuration file with `_openvpn_remote_access_l3.ovpn` on its name will be our client configuration that you can download however, we need to edit our hostname in that file.
 
@@ -93,3 +93,8 @@ sudo openvpn --config client.ovpn
 [![OpenVPN Terminal](https://i.imgur.com/CDxrryj.gif)](https://i.imgur.com/CDxrryj.gif){:data-rel="lightcase"}
 
 Good Luck & stay safe!
+
+---
+
+[^1]: NAT refers to Network Address Translation is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device. **Source**: [Wikipedia](https://en.wikipedia.org/wiki/Network_address_translation)
+[^2]: Dynamic DNS functionality refers to the method of assigning a permanent address to the dynamic hostname, acts like a pointer.
