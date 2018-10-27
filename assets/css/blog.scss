@@ -216,6 +216,9 @@ body {
                 ul {
                     padding: 0 0 0 20px;
                 }
+                ol {
+                    list-style-type: decimal;
+                }
                 ul.row.lang-used {
                     display: block;
                     list-style-type: none;

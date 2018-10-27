@@ -1,0 +1,95 @@
+---
+layout: post
+title: "Running OpenVPN server using SoftEther in Windows."
+author: Prashant Shrestha
+date: 2018-10-26 9:54:14 -400
+categories: server
+tags: traffic network server management route vpn openvpn encryption privacy
+---
+<div class="poster" markdown="1">
+[![Poster](https://i.imgur.com/fbMxEd0.jpg)](https://i.imgur.com/fbMxEd0.jpg){:data-rel="lightcase"}
+</div>
+
+I always thought about setting up and using my VPN server was complicated, not that I use VPN that often but it can be put to great use for several things. The process of setting up an OpenVPN server in Windows is pretty straightforward but can't quite guarantee the setup to go smoothly and without any headache.
+
+The headache, I am referring to is specifically the [NAT](https://en.wikipedia.org/wiki/Network_address_translation) set up in my Windows server, didn't have the administrative rights to set up the NAT routing for OpenVPN, plan to set up my VPN server **HALTED**!
+<!--excerpt-->
+
+After a bit of searching, I came across [SoftEther](https://www.softether.org/) which is not a VPN solution per say but more of a compilation of multi-protocol VPN software that allows you to configure and run the VPN server of your choice and availability. Best thing about SoftEther is that it is completely free!
+
+##### SoftEther Installation
+
+Installation of SoftEther is probably the easiest process, especially in Windows platform, you can simply download and install [**SoftEther VPN Server**](https://www.softether.org/5-download) or go directly to the download [page](https://www.softether-download.com/en.aspx?product=softether). Simply select the platform and runtime environment. Download and install, process is pretty simple and straight-forward.
+
+##### Setting Up
+
+Setting up SoftEther is pretty simple as well however it gets confusing sometimes.
+
+* Run **SoftEther VPN Server Manager** and set up a new setting if nothing exists already. Secure your settings with a strong password if your server is shared among others.
+
+[![SoftEther VPN Server Manager](https://i.imgur.com/VF2RHn8.png)](https://i.imgur.com/VF2RHn8.png){:data-rel="lightcase"}
+
+[![Edit Server Settings](https://i.imgur.com/KSF9Jd6.png)](https://i.imgur.com/KSF9Jd6.png){:data-rel="lightcase"}
+
+* Press **Connect** and if no Virtual Hub exists, **Create a Virtual Hub**. Try and enter as strong password as possible.
+
+[![Create a Virtual Hub](https://i.imgur.com/QI62BoW.png)](https://i.imgur.com/QI62BoW.png){:data-rel="lightcase"}
+
+[![New Hub](https://i.imgur.com/lDm093t.png)](https://i.imgur.com/lDm093t.png){:data-rel="lightcase"}
+
+* Once you have created and set up a *Virtual Hub*, click **Manage Virtual Hub** button.
+
+[![Manage Virtual Hub](https://i.imgur.com/eKvtq2T.png)](https://i.imgur.com/eKvtq2T.png){:data-rel="lightcase"}
+
+* Create a new User with strong password (this username and password) can be used to authenticate to our server via. our OpenVPN client. **Password Authentication** is recommended.
+
+[![New User](https://i.imgur.com/pQkMky4.png)](https://i.imgur.com/pQkMky4.png){:data-rel="lightcase"}
+
+* Once done with adding a new user, close the **Create New User** window and launch **Virtual NAT and Virtual DHCP Server (SecureNAT)** window from **Management of Virtual Hub** window. Enable SecureNAT.
+
+>This was the most important feature SoftEther provided in my situtation because I had almost no access to manage NAT in my Windows server.
+
+[![Enable SecureNAT](https://i.imgur.com/IokGtwt.png)](https://i.imgur.com/IokGtwt.png){:data-rel="lightcase"}
+
+* Head back to Manage Server window > `OpenVPN / MS-SSTP Setting` and enable OpenVPN server. Feel free to generate sample configuration file for your OpenVPN clients from the same window to avoid returning.
+
+[![OpenVPN](https://i.imgur.com/dTzPpzH.png)](https://i.imgur.com/dTzPpzH.png){:data-rel="lightcase"}
+
+* I used SoftEther's `Dynamic DNS Setting` to enable dynamic DNS function, free of charge. This is completely optional!
+
+[![Dynamic DNS](https://i.imgur.com/0Ah0xfi.png)](https://i.imgur.com/0Ah0xfi.png){:data-rel="lightcase"}
+
+* That should be it for the VPN set up part.
+
+##### Configuring Client's `.ovpn` file.
+
+1. Extract and open the sample configuration file we generated from `OpenVPN / MS-SSTP Setting` window, there should be **two** files. Ignoring the PC Name from the filename `_openvpn_remote_access_l3.ovpn` and `_openvpn_site_to_site_bridge_l2.ovpn`. We need the first one for the **remote access**.
+
+2. Open it with a text editor of your choice. The content inside is pretty clear and contains comment blocks to explain what the settings mean which you can refer to OpenVPN Documentation for further in-detail understanding.
+
+3. The generated sample configuration file with `_openvpn_remote_access_l3.ovpn` on its name will be our client configuration that you can download however, we need to edit our hostname in that file.
+
+4. Change `remote .. 1194` to the dynamic DNS domain provided by SoftEther, e.g. `vpn8******.softether.net` in our set-up [process](https://i.imgur.com/0Ah0xfi.png){:data-rel="lightcase"}.
+
+5. Once done, edit a field in the configuration file named `auth-user-pass` to `auth-user-pass auth.txt`, rename the file to something simpler, for example `client.ovpn` and download it to your client machine.
+
+##### Creating `auth.txt`
+
+In the same directory where your `client.ovpn` resides, create another file `auth.txt` with the username and password you [set up](https://i.imgur.com/pQkMky4.png){:data-rel="lightcase"}. Your `auth.txt` content layout should have username in first line, password on the second, that's all.
+
+{% highlight bash %}
+username
+password
+{% endhighlight %}
+
+##### Connecting to our OpenVPN Server
+
+Connecting to our OpenVPN server is quite simple, you can use an OpenVPN client to import your `client.ovpn` or if you are a terminal preferring user like myself, a simple command like so can get the job done.
+
+{% highlight bash %}
+sudo openvpn --config client.ovpn
+{% endhighlight %}
+
+[![OpenVPN Terminal](https://i.imgur.com/CDxrryj.gif)](https://i.imgur.com/CDxrryj.gif){:data-rel="lightcase"}
+
+Good Luck & stay safe!
