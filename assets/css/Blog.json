@@ -2,9 +2,59 @@
   "metadata": {
     "name": "Blog",
     "lastOpened": 0,
-    "created": 1529888695753
+    "created": 1540682338849
   },
   "iconSets": [
+    {
+      "selection": [
+        {
+          "order": 1,
+          "id": 0,
+          "prevSize": 32,
+          "code": 59662,
+          "name": "power",
+          "tempChar": ""
+        }
+      ],
+      "id": 10,
+      "metadata": {
+        "name": "Afiado (subset)",
+        "designer": "Susana Passinhas",
+        "designerURL": "http://www.toicon.com/authors/4",
+        "url": "http://www.toicon.com/series/afiado",
+        "license": "CC BY 4.0",
+        "licenseURL": "http://www.toicon.com/license",
+        "iconsHash": 1993638885,
+        "importSize": {
+          "width": 32,
+          "height": 32
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M832 736h-192v160h-256v-160h-192v-384h128v-256h128v256h128v-256h128v256h128v384z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "power",
+            "enter",
+            "light",
+            "connect"
+          ],
+          "grid": 16
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
     {
       "selection": [
         {
@@ -13,7 +63,7 @@
           "prevSize": 24,
           "code": 59659,
           "name": "messages",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 1,
@@ -21,7 +71,7 @@
           "prevSize": 24,
           "code": 59655,
           "name": "arrow-shuffle",
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 9,
@@ -83,11 +133,27 @@
       "selection": [
         {
           "order": 1,
+          "id": 4,
+          "prevSize": 32,
+          "code": 59663,
+          "name": "lamp",
+          "tempChar": ""
+        },
+        {
+          "order": 2,
+          "id": 3,
+          "prevSize": 32,
+          "code": 59664,
+          "name": "lamp1",
+          "tempChar": ""
+        },
+        {
+          "order": 1,
           "id": 2,
           "prevSize": 32,
           "code": 59661,
           "name": "book",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -123,6 +189,38 @@
       "height": 1024,
       "prevSize": 32,
       "icons": [
+        {
+          "id": 4,
+          "paths": [
+            "M567.904 448.544c-40 17.984-128.704-26.080-128.704-26.080-103.936-62.304 39.040 194.336 39.040 194.336s2.976 80.096 20.96 90.080c149.984-210.016 108.704-276.352 68.704-258.336zM513.92 647.68c-12.128 0-63.104-152.928-57.088-184.928 40.032 4 77.088 19.104 99.104 7.104 61.984-28.096-28.032 177.824-42.016 177.824zM638.464 766.304c3.68-233.76 129.472-323.712 129.472-462.912 0-118.784-81.28-270.4-251.84-270.4-170.528 0-260.032 145.056-260.032 271.488 0 141.952 127.776 231.168 127.776 463.296h129.376c0 0 121.536-1.472 125.248-1.472zM409.888 736.64c0-216.672-123.776-299.936-123.776-432.416 0-118.016 80.32-241.792 229.536-241.792s222.336 129.92 222.336 240.768c0 129.92-122.048 215.744-125.312 433.92-3.264 0-99.552-0.512-99.552-0.512h-103.232zM624.16 800.448h-224c-8.832 0-16 7.168-16 16s7.168 16 16 16h224c8.8 0 16-7.168 16-16s-7.2-16-16-16zM624.16 864.448h-224c-8.832 0-16 7.168-16 16s7.168 16 16 16h224c8.8 0 16-7.168 16-16s-7.2-16-16-16zM415.904 929.376c0 0 0 10.688 0 28.8s14.208 32.8 31.744 32.8h128.992c17.568 0 31.744-14.688 31.744-32.8s-1.984-28.8-1.984-28.8h-190.496z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "lamp",
+            "light"
+          ],
+          "grid": 32
+        },
+        {
+          "id": 3,
+          "paths": [
+            "M516.16 56.992c-171.872 0-262.080 135.552-262.080 258.88 0 138.368 128.768 225.376 128.768 451.648h130.4c0 0 122.464 0.576 126.176 0.576 3.712-227.936 130.496-317.6 130.496-453.312 0.032-115.808-81.888-257.792-253.76-257.792zM623.168 800.992h-224c-8.832 0-16 7.168-16 16s7.168 16 16 16h224c8.8 0 16-7.168 16-16s-7.2-16-16-16zM623.168 864.992h-224c-8.832 0-16 7.168-16 16s7.168 16 16 16h224c8.8 0 16-7.168 16-16s-7.2-16-16-16zM415.168 928.992c0 0 0 14.304 0 32 0 17.664 14.304 32 32 32h128.448c17.696 0 32-14.336 32-32 0-17.696 0-32 0-32h-192.448z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "lamp",
+            "light"
+          ],
+          "grid": 32
+        },
         {
           "id": 2,
           "paths": [
@@ -183,7 +281,7 @@
           "prevSize": 32,
           "code": 59656,
           "name": "left-quote",
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 7,
@@ -231,7 +329,7 @@
           "name": "subdirectory_arrow_right",
           "prevSize": 24,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 6,
@@ -278,7 +376,7 @@
           "prevSize": 32,
           "code": 59654,
           "name": "twitter",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -294,7 +392,7 @@
           "prevSize": 32,
           "code": 59658,
           "name": "bitbucket2",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 1,
@@ -302,7 +400,7 @@
           "name": "jekyll",
           "prevSize": 32,
           "code": 59657,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 1,
@@ -310,7 +408,7 @@
           "name": "reddit",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 1,
@@ -318,7 +416,7 @@
           "name": "freecodecamp",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 5,
@@ -533,7 +631,7 @@
           "name": "document-code",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 4,
@@ -604,7 +702,7 @@
           "name": "bitbucket",
           "prevSize": 28,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 3,
@@ -699,7 +797,7 @@
           "name": "pocket",
           "prevSize": 24,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 2,
@@ -821,7 +919,7 @@
           "id": 13,
           "prevSize": 32,
           "code": 59660,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "image, picture",
@@ -944,7 +1042,7 @@
           "id": 33,
           "prevSize": 32,
           "code": 59680,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "library2, bank",
@@ -965,7 +1063,7 @@
           "id": 36,
           "prevSize": 32,
           "code": 59683,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "file-empty, file3",
@@ -986,7 +1084,7 @@
           "id": 39,
           "prevSize": 32,
           "code": 59686,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "file-picture, file5",
@@ -1049,7 +1147,7 @@
           "id": 49,
           "prevSize": 32,
           "code": 59696,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "folder-plus, directory3",
@@ -1088,7 +1186,7 @@
           "id": 55,
           "prevSize": 32,
           "code": 59702,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "barcode",
@@ -1181,7 +1279,7 @@
           "id": 70,
           "prevSize": 32,
           "code": 59717,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "pushpin, pin",
@@ -1232,7 +1330,7 @@
           "id": 78,
           "prevSize": 32,
           "code": 59725,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "clock, time2",
@@ -1271,7 +1369,7 @@
           "id": 84,
           "prevSize": 32,
           "code": 59731,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "printer, print",
@@ -1328,7 +1426,7 @@
           "id": 93,
           "prevSize": 32,
           "code": 59740,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "drawer2, box2",
@@ -1577,7 +1675,7 @@
           "id": 134,
           "prevSize": 32,
           "code": 59781,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "search, magnifier",
@@ -1796,7 +1894,7 @@
           "id": 170,
           "prevSize": 32,
           "code": 59817,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "lab, beta",
@@ -1913,7 +2011,7 @@
           "id": 189,
           "prevSize": 32,
           "code": 59836,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "menu, list3",
@@ -1922,7 +2020,7 @@
           "id": 190,
           "prevSize": 32,
           "code": 59837,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "menu2, options2",
@@ -2009,7 +2107,7 @@
           "id": 204,
           "prevSize": 32,
           "code": 59851,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "flag, report",
@@ -3038,7 +3136,7 @@
           "id": 375,
           "prevSize": 32,
           "code": 60022,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "paragraph-left, wysiwyg25",
@@ -3095,7 +3193,7 @@
           "id": 384,
           "prevSize": 32,
           "code": 60031,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "embed2, code2",
@@ -3110,7 +3208,7 @@
           "id": 386,
           "prevSize": 32,
           "code": 60033,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "share2, social",
@@ -3395,7 +3493,7 @@
           "id": 433,
           "prevSize": 32,
           "code": 60080,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "npm",
@@ -3743,7 +3841,7 @@
           "id": 489,
           "prevSize": 32,
           "code": 60136,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "svg",
@@ -11273,7 +11371,8 @@
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
-      "classSelector": ".icon"
+      "classSelector": ".icon",
+      "name": "icomoon"
     },
     "historySize": 50,
     "showCodes": true,

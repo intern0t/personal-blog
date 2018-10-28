@@ -1,0 +1,15 @@
+---
+---
+
+@import "_variables";
+
+$Aztec: #101e26;
+$PaleSky: #6a737d;
+$Iron: #d3d4d4;
+
+$globalBackgroundColor: $Aztec;
+$globalLinkColor: $navyBlue;
+$globalLinkHover: 10px;
+$globalFontColor: $Iron;
+
+@import 'blog';

@@ -1,50 +1,14 @@
----
----
 
 @charset "UTF-8";
 @import "mixins"; /* Import Fonts */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|Spectral"); /* Global Variables */
-$PTSansFontFamily: "PT Sans", sans-serif;
-$SpectralFontFamily: "Spectral", "Georgia", "Times New Roman", "Times", serif;
-$globalFontFamily: $SpectralFontFamily;
-$globalFontSize: 16px;
-$globalBorderRadius: 2px; /* Global Color Codes */
-$navyBlue: #006ac8;
-$breakerColor: #f1f1f1;
-$quoteTextColor: #6a737d;
-$quoteBorderColor: #dfe2e5;
-$globalDarkColor: #333333;
-$inlineCodeColor: #c7254e;
-$inlineCodeBColor: #f9f2f4;
-$border-top: linear-gradient(
-    90deg,
-    #1abc9c 15%,
-    #2ecc71 15%,
-    #2ecc71 12%,
-    #3498db 12%,
-    #3498db 32%,
-    #9b59b6 32%,
-    #9b59b6 35%,
-    #34495e 35%,
-    #34495e 55%,
-    #f1c40f 55%,
-    #f1c40f 59%,
-    #e67e22 59%,
-    #e67e22 63%,
-    #e74c3c 63%,
-    #e74c3c 82%,
-    #ecf0f1 82%,
-    #ecf0f1 92%,
-    #95a5a6 92%
-); /* Social Share Color Codes */
-$googleplus: #de5e53;
-$twitter: #1da1f2;
-$facebook: #3b579d;
-$reddit: #282c34; /* Screen size for the nav. */
-$smartPhoneScreen: "only screen and (max-width: 320px)"; /* Styling */
+
 body {
     @include font($globalFontFamily, 400, normal);
-    font-size: $globalFontSize !important;
+	font-size: $globalFontSize !important;
+	background: $globalBackgroundColor;
+	color: $globalFontColor !important;
+
     .progress {
         width: 0;
         height: 3px;
@@ -76,7 +40,7 @@ body {
             height: 30px;
             position: fixed;
             background: $navyBlue;
-            color: white;
+            color: $white;
             display: none;
             right: 0;
             bottom: 100px;
@@ -97,7 +61,26 @@ body {
                 -ms-transform: rotate(-90deg);
                 -webkit-transform: rotate(-90deg);
             }
-        }
+		}
+		
+		.pinned-down{
+            width: 50px;
+            height: 30px;
+            position: fixed;
+            background: $navyBlue;
+            color: $white;
+            // display: none;
+            right: 0;
+            bottom: 50px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            text-align: center;
+            z-index: 9999;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0.9;
+		}
+
         /* Sidebar Styling */
         .sidebar {
             margin: 20% 0 0 0;
@@ -174,13 +157,13 @@ body {
                 text-align: center;
                 padding: 5% 0;
                 margin: 5% 0 40px 0;
-                border-bottom: 1px solid #f1f1f1;
+                border-bottom: 1px solid $breakerColor;
                 .site-description {
                     a,
                     a:visited {
                         text-decoration: none;
                         text-transform: none;
-                        color: $globalDarkColor;
+                        color: $globalFontColor;
                         @include font($globalFontFamily, 400, normal);
                         font-size: 90%;
                         &:hover {
@@ -228,8 +211,8 @@ body {
                     li {
                         width: auto;
                         float: left;
-                        background: #6e99c1;
-                        color: #fff;
+                        background: rgba($navyBlue, .8);
+                        color: $white;
                         border-radius: 2px;
                         padding: 4px 6px;
                         margin: 0 5px 5px 0;
@@ -418,7 +401,7 @@ body {
                         @include font($globalFontFamily, 400, normal);
                         font-weight: normal;
                         font-size: $globalFontSize + 9;
-                        color: $globalDarkColor;
+                        color: $globalFontColor;
                         text-decoration: none;
                         &:hover {
                             color: $navyBlue;
@@ -511,8 +494,9 @@ body {
                         border-bottom: 1px solid $breakerColor;
                         padding: 8px 0;
                         margin: 0 0 30px 0;
-                        font-size: 0.9em;
-                        font-weight: normal;
+                        font-size: .8em;
+						font-weight: normal;
+						
                         a,
                         a:visited {
                             text-decoration: none;
@@ -557,7 +541,8 @@ body {
             display: inline-block;
             .button.button-primary {
                 background: $navyBlue;
-                border-color: $navyBlue;
+				border-color: $navyBlue;
+				color: $globalFontColor;
                 &:hover {
                     opacity: 0.7;
                 }
