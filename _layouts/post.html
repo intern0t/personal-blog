@@ -67,6 +67,16 @@ layout: default
 				{% include disqus_comments.html %}
 			</section>
 			{% endif %}
+
+			<!-- Navigate other posts -->
+			<section class="more-posts">
+				{% if page.previous.url %}
+				<a class="nav-button" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
+				{% endif %}
+				{% if page.next.url %}
+				<a class="nav-button" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline"> Post</span> &rarr;</a>
+				{% endif %}
+			</section>
 		</article>
 	</div>
 </div>

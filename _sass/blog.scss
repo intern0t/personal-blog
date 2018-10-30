@@ -130,7 +130,8 @@ body {
                 a:visited {
                     color: $navyBlue;
                     &:hover {
-                        text-decoration: underline;
+						text-decoration: underline;
+						color: $linkHover;
                     }
                 }
             }
@@ -149,7 +150,8 @@ body {
                     }
                 }
             }
-        }
+		}
+		
         .content {
             @include font($globalFontFamily, 400, normal);
             /* Header Styling */
@@ -167,7 +169,7 @@ body {
                         @include font($globalFontFamily, 400, normal);
                         font-size: 90%;
                         &:hover {
-                            color: $navyBlue;
+                            color: $linkHover;
                         }
                     }
                 }
@@ -192,7 +194,8 @@ body {
                 a {
                     color: $navyBlue;
                     &:hover {
-                        text-decoration: underline;
+						text-decoration: underline;
+						color: $linkHover;
                     }
                 }
                 ol,
@@ -404,7 +407,7 @@ body {
                         color: $globalFontColor;
                         text-decoration: none;
                         &:hover {
-                            color: $navyBlue;
+                            color: $linkHover;
                         }
                     }
                     .stamp {
@@ -508,7 +511,27 @@ body {
                     .disqus {
                         margin-top: 30px;
                         display: none;
-                    }
+					}
+					.more-posts{
+						display: flex;
+						justify-content: center;
+						align-content: center;
+						align-items: center;
+
+						.nav-button{
+							margin: 5px;
+							padding: 15px;
+							width: 100%;
+							text-align: center;
+							border: 1px solid $breakerColor;
+							border-radius: 2px;
+
+							&:hover{
+								color: $linkHover;
+								text-decoration: none;
+							}
+						}
+					}
                 }
                 /* Search Page styling */
                 .search-result-container {
