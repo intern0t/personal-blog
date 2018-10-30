@@ -39,6 +39,7 @@ permalink: /library/
     4. [Automate the Boring Stuff with Python](http://automatetheboringstuff.com/) by [Al Sweigart](https://twitter.com/AlSweigart)
     5. [Getting GIT right](https://www.atlassian.com/git) by @[Atlassian Bitbucket](https://www.atlassian.com)
     6. [Pro Git](https://git-scm.com/book/) by _Scott Chacon and Ben Straub and published by Apress_
+    7. [Serverless Stack with AWS](https://serverless-stack.com/)
 -   Web Designing & Development
     1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [@jmcunningham](https://github.com/jmcunningham)
     2. [Eloquent Javascript](http://eloquentjavascript.net/)
