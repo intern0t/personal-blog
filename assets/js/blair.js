@@ -11,14 +11,15 @@ $(document).ready(function() {
         e.preventDefault();
         // Check if Disqus was already loaded before.
         if (typeof DISQUS === "undefined") {
+            $(".disqus").slideToggle("fast");
             $.ajax({
                 type: "GET",
                 url: "//prashantshrestha.disqus.com/embed.js",
                 dataType: "script",
                 cache: true
             });
-            $(".disqus").slideToggle("fast");
         } else {
+            $(".disqus").slideToggle("fast");
             DISQUS.reset({
                 reload: true,
                 config: function() {
@@ -26,7 +27,6 @@ $(document).ready(function() {
                     this.page.url = location.href;
                 }
             });
-            $(".disqus").slideToggle("fast");
         }
         return false;
     });

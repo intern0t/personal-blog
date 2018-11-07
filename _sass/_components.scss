@@ -38,7 +38,7 @@ figure.highlight {
         position: absolute;
         right: 15px;
         top: 15px;
-		opacity: 0.2;
+        opacity: 0.2;
     }
 
     pre {
@@ -164,8 +164,8 @@ blockquote {
     background: rgba($Iron, 0.1);
     color: $Iron;
     position: relative;
-    background-color: #101e26;
-    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    background-color: $Aztec;
+    background-image: url("/assets/images/3px-tile.png");
 
     &::before {
         content: "\f10d";
@@ -174,7 +174,7 @@ blockquote {
         position: absolute;
         top: 10px;
         left: 15px;
-		opacity: 0.2;
+        opacity: 0.2;
     }
 }
 
@@ -271,9 +271,9 @@ i {
 
         .post-misc {
             font-size: $globalFontSize - 2;
-			color: $Iron;
-			@include flex;
-			flex-direction: column;
+            color: $Iron;
+            @include flex;
+            flex-direction: column;
         }
     }
 }

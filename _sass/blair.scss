@@ -181,8 +181,14 @@ body {
                     width: 100%;
                     text-align: center;
                     padding: 20px 0;
+                    margin: 20px 0;
                     display: block;
                     cursor: pointer;
+                    border: 1px solid $globalLinkColor;
+
+                    &:hover {
+                        border: 1px solid $globalLinkHoverColor;
+                    }
                 }
             }
 
@@ -228,11 +234,11 @@ body {
                 -ms-flex-align: center;
                 align-items: center;
                 margin: 30px 0;
-                border-top: 1px dotted $PaleSky;
-                border-bottom: 1px dotted $PaleSky;
+                border-top: 1px dashed $globalLinkColor;
+                border-bottom: 1px dashed $globalLinkColor;
 
                 &-container {
-                    max-width: 50%;
+                    max-width: 45%;
                     @include flex;
                     -webkit-box-pack: center;
                     -ms-flex-pack: center;
@@ -253,6 +259,23 @@ body {
                         display: block;
                         overflow: hidden;
                     }
+                }
+            }
+
+            .footnotes {
+                background-color: $Aztec;
+                background-image: url("/assets/images/3px-tile.png");
+                padding: 10px 0;
+                position: relative;
+
+                &::before {
+                    @include font(FontAwesome);
+                    content: "\f0c6";
+                    font-size: $globalFontSize * 3;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    opacity: 0.4;
                 }
             }
         }
