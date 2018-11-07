@@ -1,0 +1,351 @@
+/**
+ * Copyright (c) 2018, Prashant Shrestha
+ * Document: _variables.scss
+ * Developer: Prashant Shrestha (www.prashant.me)
+ * Date: Sat Nov  3 16:11:50 EDT 2018
+ */
+
+@import "_reset", "_fonts", "_colors", "_mixins", "variables", "_highlight",
+    "_components";
+
+body {
+    @include font($MerriweatherSans);
+    font-size: $globalFontSize;
+    background: $globalDarkColor;
+    color: $globalForegroundColor;
+    border-top: 5px solid $globalLinkColor;
+
+    // Link Colors
+    a,
+    a:visited {
+        color: $globalLinkColor;
+        text-decoration: none;
+
+        &:hover {
+            color: $globalLinkHoverColor;
+        }
+    }
+
+    .side-small {
+        font-size: $globalFontSize - 3;
+    }
+
+    .progress {
+        position: fixed;
+        height: 4px;
+        top: 0;
+        left: 0;
+        background: $globalLinkColor;
+        z-index: 999;
+    }
+
+    .to-top {
+        position: fixed;
+        bottom: 0;
+        right: 5px;
+        background: $globalLinkColor;
+        color: $Iron;
+        padding: 10px;
+        display: none;
+        font-size: $globalFontSize - 2;
+        text-transform: uppercase;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        z-index: 99;
+
+        &:hover {
+            color: $Iron;
+        }
+    }
+
+    .container {
+        max-width: $containerMaxWidth;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        header {
+            width: 100%;
+            border-bottom: 3px solid $PaleSky;
+            margin: 20px 0;
+            padding: 15px 0;
+            @include flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            .header-section {
+                .logo {
+                    color: $globalLinkColor;
+                    font-family: $globalFontFamily;
+                    font-size: $globalFontSize * 1.5;
+                    letter-spacing: 0.5px;
+
+                    &:hover {
+                        color: $globalLinkHoverColor;
+                    }
+                }
+
+                ul {
+                    @include flex;
+                    -webkit-box-pack: space-evenly;
+                    -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+
+                    li {
+                        padding: 5px;
+                        margin-left: 20px;
+
+                        a,
+                        a:visited {
+                            width: 100%;
+                            display: block;
+                            text-align: right;
+                            color: $globalLinkColor;
+
+                            &:hover {
+                                color: $globalLinkHoverColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        article {
+            @include flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 10px 0 20px 0;
+
+            a.title {
+                text-decoration: none;
+            }
+
+            .poster {
+                max-width: 100%;
+                margin: 40px 0;
+                overflow: hidden;
+
+                a {
+                    width: 100%;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .read-more {
+                text-decoration: none;
+                margin: 10px 0;
+
+                i {
+                    vertical-align: middle;
+                }
+            }
+
+            .center {
+                text-align: center !important;
+            }
+
+            .right {
+                text-align: right !important;
+            }
+
+            .left {
+                text-align: left !important;
+            }
+
+            img[src*="#avatar"] {
+                width: 150px;
+                @include border-radius(50%);
+                opacity: 0.4;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            .post-content {
+                .disqus-trigger {
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px 0;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+
+            .post-misc {
+                @include flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+
+                .post-meta {
+                    @include flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+
+                    .categories,
+                    .post-published {
+                        font-size: $globalFontSize - 3;
+                        letter-spacing: 0.3px;
+                    }
+                }
+            }
+
+            .more-posts {
+                @include flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin: 30px 0;
+                border-top: 1px dotted $PaleSky;
+                border-bottom: 1px dotted $PaleSky;
+
+                &-container {
+                    max-width: 50%;
+                    @include flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+
+                    .more-posts-button {
+                        padding: 10px;
+                        font-size: $globalFontSize;
+                        text-decoration: none;
+                        letter-spacing: 0.5px;
+                        display: block;
+                        line-height: $globalFontSize * 2;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        article.page {
+            ul {
+                li {
+                    span {
+                        font-size: $globalFontSize - 3;
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            @include flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 25px;
+            color: $Iron;
+
+            &-button {
+                @include font($globalFontFamily);
+                @include border-radius(2px);
+                font-size: $globalFontSize - 4;
+                background: $TePapaGreen;
+                text-decoration: none;
+                padding: 10px;
+                margin: 10px;
+                color: $Iron;
+
+                &:hover {
+                    background: $Denim;
+                    color: $Iron;
+                }
+            }
+
+            .active {
+                background: $Astral;
+                color: $Iron;
+            }
+        }
+
+        .home-post {
+            border-bottom: 1px dashed $PaleSky;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+
+        footer {
+            width: 100%;
+            border-top: 3px solid $PaleSky;
+
+            .footer-container {
+                @include flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                padding: 15px 0;
+                font-size: $globalFontSize - 1;
+
+                .footer-section {
+                    margin: 20px 0;
+                    line-height: $globalFontSize + 5;
+
+                    &:last-child {
+                        text-align: right;
+                        line-height: 25px;
+                        margin-left: auto;
+                    }
+                }
+
+                .socials {
+                    @include flex;
+                    justify-content: space-around;
+                    align-content: center;
+                    align-items: center;
+
+                    a,
+                    a:visited {
+                        padding: 10px;
+                        font-size: $globalFontSize + 1;
+                    }
+                }
+            }
+        }
+    }
+}

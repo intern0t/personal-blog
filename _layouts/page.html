@@ -1,19 +1,5 @@
---- 
+---
 layout: default
 ---
 
-{% include sidebar.html %}
-
-<!-- Blog Page -->
-<div class="content nine columns">
-	<!-- Header -->
-	<header class="row header">
-		<div class="u-full-width" style="display: inline-block;">
-			<h4 class="site-description"><a href="{{ site.url }}"><span class="icon-fire"></span>&nbsp;{{ site.description }}</a>
-			<a class="toggleNav" style="float: right; display: none;"><span class="icon-menu"></span></a></h4>
-		</div>
-	</header>
-	<div class="posts">
-		{{ content }}
-	</div>
-</div>
+{{ content }}

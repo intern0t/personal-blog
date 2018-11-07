@@ -1,0 +1,342 @@
+/**
+ * Copyright (c) 2018, Prashant Shrestha
+ * Document: _components.scss
+ * Developer: Prashant Shrestha (www.prashant.me)
+ * Date: Sat Nov  3 16:11:50 EDT 2018
+ */
+
+$TwoPix: 2px;
+
+code {
+    @include font($globalCodeFontFamily);
+    box-shadow: inset 0 0 3px #000000;
+    background: $OuterSpace;
+    padding: ($TwoPix * 3) - 1;
+    border-radius: $TwoPix;
+    font-size: ($TwoPix * 6);
+    color: $Iron;
+    vertical-align: middle;
+}
+
+p {
+    line-height: $globalFontSize * 1.9;
+    margin: 10px 0;
+}
+
+figure.highlight {
+    background: $EbonyClay !important;
+    padding: ($TwoPix * 4);
+    margin: ($TwoPix * 10) 0;
+    @include border-radius(2px);
+    @include font($globalCodeFontFamily);
+    position: relative;
+
+    &::before {
+        content: "\f121";
+        @include font(FontAwesome);
+        font-size: $globalFontSize + 6;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+		opacity: 0.2;
+    }
+
+    pre {
+        padding: ($TwoPix * 3);
+        overflow: auto;
+        background: $EbonyClay !important;
+
+        code {
+            background: transparent;
+            color: inherit;
+            font-size: $globalFontSize - 2;
+            line-height: $globalFontSize * 2;
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+ol {
+    list-style-type: decimal;
+    padding: ($TwoPix * 3) ($TwoPix * 20);
+
+    li {
+        font-size: $globalFontSize;
+        line-height: $globalFontSize * 2;
+    }
+}
+
+ul {
+    list-style-type: square;
+    padding: ($TwoPix * 3) ($TwoPix * 20);
+
+    li {
+        font-size: $globalFontSize;
+        line-height: $globalFontSize * 2;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font($globalFontFamily);
+    letter-spacing: 0.3px;
+    margin: ($TwoPix * 10) 0;
+    line-height: $globalFontSize * 2;
+    width: 100%;
+    color: $Iron;
+    font-weight: bold;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+$initialHeaderFontSize: $globalFontSize - 7;
+
+h1 {
+    font-size: $initialHeaderFontSize * 4.5;
+}
+h2 {
+    font-size: $initialHeaderFontSize * 4;
+}
+h3 {
+    font-size: $initialHeaderFontSize * 3.5;
+}
+h4 {
+    font-size: $initialHeaderFontSize * 3;
+}
+h5 {
+    font-size: $initialHeaderFontSize * 2.5;
+}
+h6 {
+    font-size: $initialHeaderFontSize * 2;
+}
+
+dl {
+    width: 100%;
+    @include flex;
+    flex-wrap: wrap;
+    overflow: visible;
+
+    dt {
+        flex: 0 0 30%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: right;
+        font-weight: bold;
+    }
+    dd {
+        flex: 0 0 65%;
+        margin-left: auto;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    dt,
+    dd {
+        margin-bottom: 10px;
+    }
+}
+
+blockquote {
+    padding: ($TwoPix * 5) ($TwoPix * 10);
+    margin: 15px 0 15px 0;
+    border-left: ($TwoPix + 2) solid $globalLinkColor;
+    background: rgba($Iron, 0.1);
+    color: $Iron;
+    position: relative;
+    background-color: #101e26;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+
+    &::before {
+        content: "\f10d";
+        @include font(FontAwesome);
+        font-size: $globalFontSize * 3;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+		opacity: 0.2;
+    }
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+table {
+    width: 100%;
+
+    thead {
+        background: $TePapaGreen;
+
+        tr {
+            th {
+                padding: 15px 5px;
+                font-weight: bold;
+                color: $Iron;
+
+                &:first {
+                    border-top-left-radius: 3px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 3px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background: rgba($PaleSky, 0.1);
+            }
+
+            td {
+                padding: 15px 5px;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            border-top: 2px solid $PaleSky;
+
+            td {
+                padding: 15px 5px;
+            }
+        }
+    }
+}
+
+hr {
+    width: 100%;
+    border: 1px solid $PaleSky;
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+.wrapper {
+    width: 100%;
+    @include flex;
+}
+
+.search-result-container {
+    width: 100%;
+    @include flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    .result {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid $PaleSky;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .post-misc {
+            font-size: $globalFontSize - 2;
+			color: $Iron;
+			@include flex;
+			flex-direction: column;
+        }
+    }
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    background: $TePapaGreen;
+    color: $PaleSky;
+    @include font($globalFontFamily);
+    @include border-radius(2px);
+}
+
+.button {
+    min-width: 80px;
+    padding: 10px;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    background: $TePapaGreen;
+    color: $PaleSky;
+    @include font($globalFontFamily);
+    @include border-radius(2px);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    background: $Astral;
+    color: $Iron;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.tags {
+    @include flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+    a,
+    a:visited,
+    .tag {
+        font-size: $globalFontSize - 5;
+        padding: 5px 10px;
+        margin: 5px 10px 5px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        background: $TePapaGreen;
+        color: $Iron;
+        @include border-radius(2px);
+        text-decoration: none;
+
+        i {
+            margin-right: 7px;
+        }
+    }
+}

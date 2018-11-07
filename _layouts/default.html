@@ -1,47 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 {% include head.html %}
 
 <body>
-	<!-- Scroll Progress, replaced Rainbow border.
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div id="top"></div>
-    <div class="progress"></div>
+	{% include fixedButtons.html %}
 
-	<!-- Primary Page Layout
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<main class="container" aria-label="Content">
-		<div class="row">
-			{{ content }}
-		</div>
+	<div class="container">
+		{% include header.html %}
 
-		<!-- Scroll to TOP!
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<a class="toTop" href="#top" title="Scroll to Top!">
-			<span class="icon-arrow-shuffle"></span>
-		</a>
-		<a class="pinned-down" href="#" title="Toggle Theme">
-			<span class="icon-lamp1 themeToggleButton"></span>
-		</a>
-	</main>
-	
-	<!-- Scripts Included
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script>
+		{{ content }}
 
-	<!-- MathJax disabled for now.
-	–––––––––––––––––––––––––––––––––––––––––––––––––– 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async async="async"></script>	-->
+		{% include footer.html %}
+	</div>
 
-	<!-- Scripts Usage
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	{% include scripts.html %}
-
-	<!-- Full site-wide Footer
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	{% include footer.html %}
 </body>
 
 </html>

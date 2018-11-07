@@ -1,7 +1,38 @@
-<footer class="site-footer container">
-	<div class="u-full-width">
-		<h6>Proudly powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll <span class="icon-jekyll"></span></a> and served by <a href="https://netlify.com">Netlify <img src='{{ "/assets/images/netlify-logomark-rsz.png" | relative_url }}' alt='{{ "/assets/images/netlify-logomark-rsz.png" | relative_url }}'></a>.</h6>
-		<h5><span class="icon-history"></span>&nbsp;<a href="http://uptime.prashant.me/">Uptime</a> logged by <a href="https://updown.io">Updown.IO</a>.</h5>
-		<h5>Theme designed by <a href="{{ site.url }}" target="_blank">Prashant Shrestha</a>.</h5>
+<footer>
+	<div class="footer-container">
+		<!-- Maybe add social links here. -->
+		<div class="footer-section socials">
+			{% assign socialEnabled = site.social.enabled %}
+			{% if socialEnabled %}
+				{% if site.social.homepage %}
+				<a href="{{ site.social.homepage }}" title="Homepage"><i class="fas fa-globe"></i></a>
+				{% endif %}
+				{% if site.social.twitter_username %}
+				<a href="{{ site.social.twitter_username | prepend: 'https://twitter.com/' }}" title="Twitter"><i class="fab fa-twitter"></i></a>
+				{% endif %}
+				{% if site.social.github_username %}
+				<a href="{{ site.social.github_username | prepend: 'https://github.com/' }}" title="Github"><i class="fab fa-github-alt"></i></a>
+				{% endif %}
+				{% if site.social.facebook_username %}
+				<a href="{{ site.social.facebook_username | prepend: 'https://facebook.com/' }}" title="Facebook"><i class="fab fa-facebook"></i></a>
+				{% endif %}
+				{% if site.social.bitbucket_username %}
+				<a href="{{ site.social.bitbucket_username | prepend: 'https://bitbucket.org/' }}" title="Bitbucket"><i class="fab fa-bitbucket"></i></a>
+				{% endif %}
+				{% if site.social.gitlab_username %}
+				<a href="{{ site.social.gitlab_username | prepend: 'https://gitlab.com/' }}" title="Gitlab"><i class="fab fa-gitlab"></i></a>
+				{% endif %}
+				{% if site.social.instagram_username %}
+				<a href="{{ site.social.instagram_username | prepend: 'https://www.instagram.com/' }}" title="Instagram"><i class="fab fa-instagram"></i></a>
+				{% endif %}
+			{% endif %}
+		</div>
+
+		<!-- Copyright & Powered by .. DO NOT REMOVE OR CHANGE BELOW THIS !!!
+		--------------------------------------------------------------------------------------------->
+		<div class="footer-section">
+			Powered by <a href="https://jekyllrb.com/">Jekyll</a>.<br />
+			Copyright <a href="https://github.com/intern0t/blair-jekyll-theme">Blair</a> &copy; 2018
+		</div>
 	</div>
 </footer>

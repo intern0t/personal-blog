@@ -5,9 +5,8 @@ author: Prashant Shrestha
 date: 2018-03-11 10:12:22 -400
 categories: server
 tags: python server plex movies tv-shows list export xml remote local parse
+poster: https://i.imgur.com/phvDLbb.png
 ---
-
-[![Image](https://i.imgur.com/phvDLbb.png)](https://i.imgur.com/phvDLbb.png "PlexList.txt Range output"){:data-rel="lightcase"}
 
 It didn't quite start out with my friends and family members asking me what movies or genre of movies I watch but more with a slab of XML content thrown at me when I mistyped my Plex URL in the browser. The difference can easily be noticed, even today, on Plex version `1.12.0.4829-*`.
 

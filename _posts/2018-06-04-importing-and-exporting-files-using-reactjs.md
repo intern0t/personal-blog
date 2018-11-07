@@ -5,12 +5,8 @@ author: Prashant Shrestha
 date: 2018-06-04 13:43:14 -400
 categories: development
 tags: reactjs javascript json export file import clientside framework upload 
-featuredImage: https://i.imgur.com/4jqFvB9.jpg
+poster: https://i.imgur.com/4jqFvB9.jpg
 ---
-
-<div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/Xyvaliz.jpg)](https://i.imgur.com/4jqFvB9.jpg){:data-rel="lightcase"}
-</div>
 
 While learning [ReactJS](https://reactjs.org/) over this summer and one of the biggest mistakes I made was using a third-party library to outline my layouts, just because I didn't want to go through all the hassle of designing a whole website.
 

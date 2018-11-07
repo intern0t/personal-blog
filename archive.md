@@ -4,18 +4,16 @@ title: Archive
 permalink: /archive/
 ---
 
-#### <span class="icon-drawer"></span>  Archive ({{ site.posts | size }})
+<article class="page">
+<h3><i class="fas fa-archive"></i>  Archive ({{ site.posts | size }})</h3>
 
-{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
-{% for category in site.categories %}
-##### {{ category | first | capitalize }}
-<ul>
-    {% for posts in category %}
-        {% for post in posts %}
-            {% if post.title %}
-                <li><a title="{{ post.title }}" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><span> - {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</span></li>
-            {% endif %}
-        {% endfor %}
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in postsByYear %}
+	<h3>{{ year.name }}</h3>
+	<ul>
+    {% for post in year.items %}
+		<li><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a> <span>{{ post.date | date_to_string: "ordinal", "US" }}</span></li>
     {% endfor %}
-</ul>
+	</ul>
 {% endfor %}
+</article>

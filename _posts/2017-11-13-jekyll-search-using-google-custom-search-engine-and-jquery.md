@@ -5,6 +5,7 @@ author: Prashant Shrestha
 date: 2017-11-15 11:54:27 -400 
 categories: development
 tags: jquery javascript api google search engine jekyll ajax filter
+poster: https://images.unsplash.com/photo-1453563391321-df71955e9289?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=92ca1d9f6cc83f9be89e6b19116fa77c&auto=format&fit=crop&w=1650&q=80
 ---
 
 Jekyll is an amazing blogging platform, regarding simplicity, templating and cleanliness. There are drawbacks for simplicity, lack of essential features. To keep my blog clean and minimal, I used Google's Custom Search Engine and forwarded users to Google's custom search's public URL however it just seems too unprofessional. Let's say I want to search for the term `node` in my blog; I would simply forward the user to Google's public search [url](https://cse.google.com/cse/publicurl?cx=010738197107477130202:cnkjahloicw&q=node). I tried searching for alternatives which I could integrate the search feature on my blog however it all required me to install and set up a whole different libraries and such.
@@ -153,3 +154,8 @@ The code snippets posted in this blog entry can be viewed live at work [here](ht
 Although this is an alternative, self-made code, it might not be the best approach to implement a search feature in Jekyll powered site.
 
 Feel free to update, improve, test, and share!
+
+---
+
+#### Credits
+1. [Unsplash](https://unsplash.com/photos/kSLNVacFehs) for the poster image.

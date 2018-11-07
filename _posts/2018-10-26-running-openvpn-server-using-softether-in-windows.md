@@ -5,14 +5,12 @@ author: Prashant Shrestha
 date: 2018-10-26 9:54:14 -400
 categories: server
 tags: traffic network server management route vpn openvpn encryption privacy
+poster: https://i.imgur.com/fbMxEd0.jpg
 ---
-<div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/fbMxEd0.jpg)](https://i.imgur.com/fbMxEd0.jpg){:data-rel="lightcase"}
-</div>
 
 I always thought about setting up and using my VPN server was complicated, not that I use VPN that often but it can be put to great use for several things. The process of setting up an OpenVPN server in Windows is pretty straightforward but can't quite guarantee the setup to go smoothly and without any headache.
 
-The headache, I am referring to is specifically the [NAT](https://en.wikipedia.org/wiki/Network_address_translation) set up in my Windows server, didn't have the administrative rights to set up the NAT routing for OpenVPN, plan to set up my VPN server **HALTED**!
+The headache, I am referring to is specifically the [NAT](https://en.wikipedia.org/wiki/Network_address_translation) set up in my Windows server, didn't have the administrative rights to set up the NAT routing for OpenVPN which **halted** my plan to setup a personal VPN server.
 <!--excerpt-->
 
 After a bit of searching, I came across [SoftEther](https://www.softether.org/) which is not a VPN solution per say but more of a compilation of multi-protocol VPN software that allows you to configure and run the VPN server of your choice and availability. Best thing about SoftEther is that it is completely free!

@@ -2,81 +2,80 @@
 layout: default
 ---
 
-{% include sidebar.html %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h3 itemprop="name headline">
+		<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+	</h3>
 
-<!-- Blog posts -->
-<div class="content nine columns">
-	<!-- Header -->
-	<header class="row header">
-		<div class="u-full-width" style="display: inline-block;">
-			<div class="eleven colums"><h4 class="site-description"><a href="{{ site.url }}"><span class="icon-fire"></span>&nbsp;{{ site.description }}</a></h4></div>
-			<div class="one colums"><h4 class="site-description"><a class="toggleNav" style="float: right; display: none;"><i class="icon-menu"></i></a></h4></div>
-		</div>
-	</header>
-	<div class="posts">
-		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<h4 class="post-title" itemprop="name headline">
-				<i class="icon-file-text2"></i>
-				<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-			</h4>
-
-			<!-- Tags Section -->
-			<div class="row post-stamps">
-				{% assign categories = page.categories %} {% if categories != "" %}
-				<div class="u-full-width stamp categories">
-					<i class="icon-tree" title="Categories"></i> {% for category in categories %} {{ category }}{%
-					unless forloop.last %} > {% endunless %} {% endfor %}
-				</div>
-				{% endif %} {% assign tags = page.tags %} {% if tags != "" %}
-				<div class="u-full-width stamp tags">
-					<i class="icon-price-tags" title="Tags"></i> {% for tag in tags %} {{ tag }}{% unless forloop.last %},
-					{% endunless %} {% endfor %}
-				</div>
-				{% endif %}
+	<div class="post-misc">
+		<div class="post-meta">
+			{% assign categories = page.categories %} {% if categories != "" %}
+			<div class="categories">
+				<i class="fas fa-sitemap" title="category"></i> {% for category in categories %} {{ category | upcase }}{%
+				unless forloop.last %} <i class="fas fa-angle-right"></i> {% endunless %} {% endfor %}
 			</div>
-
-			<div class="post-content" itemprop="articleBody">
-				{{ page.content }}
-			</div>
-
-			<!-- Article Footer -->
-			{% assign date_format = site.minima.date_format | default: "%b %d %Y" %}
-			<footer class="post">
-				<span class="post-meta">
-						<i class="icon-calendar"></i>
-						<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
-							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} 
-							{{ page.date | date: date_format }}
-						</time>
-					</span><!-- • {% if page.author %}
-				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-							<span itemprop="name">{{ page.author }}</span>
-                </span> • {% endif %}-->
-				<span>
-					 • <a class="permalink" href="{{ post.url | relative_url }}" title="Permalink"><span class="icon-link"></span> Permalink</a>
-				</span> • <span>
-					<a class="disqus_trigger" itemprop="disqus" title="Load Disqus." href="#"><span class="icon-messages"></span></a>
-				</span> • <span>
-					<a title="Save to Pocket" href="https://getpocket.com/edit?url={{ post.url | relative_url | prepend: site.url }}" data-lang="en" data-save-url="{{ post.url | relative_url }}" data-pocket-count="none" data-pocket-align="left"><i class="icon-pocket"></i></a>
-				</span>
-			</footer>
-
-			<!-- Disqus -->
-			{% if site.disqus.shortname %}
-			<section class="disqus">
-				{% include disqus_comments.html %}
-			</section>
 			{% endif %}
-
-			<!-- Navigate other posts -->
-			<section class="more-posts">
-				{% if page.previous.url %}
-				<a class="nav-button" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
-				{% endif %}
-				{% if page.next.url %}
-				<a class="nav-button" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline"> Post</span> &rarr;</a>
-				{% endif %}
-			</section>
-		</article>
+			<div class="post-published">
+				<i class="far fa-calendar-alt"></i>
+				<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
+					{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+					{{ page.date | date: date_format }}
+				</time>
+			</div>
+		</div>
+		{% assign tags = page.tags %}
+		{% if tags != "" %}
+		<div class="tags">
+			{% for tag in tags %} <div class="tag"><i class="fas fa-tag" title="{{ tag | upcase }}"></i>{{ tag | upcase }}</div>{%
+			unless
+			forloop.last %}
+			{% endunless %} {% endfor %}
+		</div>
+		{% endif %}
 	</div>
-</div>
+
+	<div class="post-content" itemprop="articleBody">
+		{% assign poster = page.poster %}
+		{% if poster %}
+		<div class="poster">
+			<a href="{{ poster }}" data-rel="lightcase">
+				<img src="{{ poster }}" />
+			</a>
+		</div>
+		{% endif %}
+		{{ page.content }}
+
+		{% if site.social.disqus_username %}
+		<div>
+			<a class="disqus-trigger" title="Toggle Disqus Comments">
+				<i class="fas fa-comments"></i>&nbsp; Toggle Disqus Comments
+			</a>
+		</div>
+		{% endif %}
+	</div>
+
+	<!-- Disqus -->
+	{% if site.social.disqus_username %}
+	<section class="disqus">
+		{% include disqus_comments.html %}
+	</section>
+	{% endif %}
+
+	<!-- Navigate other posts -->
+	<section class="more-posts">
+		<div class="more-posts-container">
+			{% if page.previous.url %}
+			<i class="fas fa-angle-left"></i>
+			<a class="more-posts-button" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+			 data-placement="top" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+			{% endif %}
+		</div>
+		<div class="more-posts-container">
+			{% if page.next.url %}
+			<a class="more-posts-button" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+			 data-placement="top" title="{{ page.next.title }}">{{ page.next.title }}</a>
+			<i class="fas fa-angle-right"></i>
+			{% endif %}
+		</div>
+	</section>
+</article>

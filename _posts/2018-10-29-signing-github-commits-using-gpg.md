@@ -5,11 +5,8 @@ author: Prashant Shrestha
 date: 2018-10-29 19:25:27 +400
 categories: security
 tags: Linux signed commit GitHub git verified gpg security trusted
+poster: https://static.goanywhere.com/images/products/mft/GoAnywhereMFT_OpenPGP-Diagram_web.png
 ---
-
-<div class="poster" markdown="1">
-[![Poster](https://static.goanywhere.com/images/products/mft/GoAnywhereMFT_OpenPGP-Diagram_web.png)](https://static.goanywhere.com/images/products/mft/GoAnywhereMFT_OpenPGP-Diagram_web.png){:data-rel="lightcase"}
-</div>
 
 [GnuPG (GPG)](https://www.gnupg.org/) is a command line tool to integrate standard implementation of [OpenPGP](https://www.openpgp.org/) to address an integrity of data which is also accepted by [Github](https://github.com) to verify the integrity of the source the commits are pushed from.
 
@@ -22,7 +19,7 @@ Before generating a new GPG key, it is imperative for a person to check if he/sh
 gpg --list-secret-keys --keyid-format LONG
 {% endhighlight %}
 
-##### Generate a new GPG key
+#### Generate a new GPG key
 
 Considering generating a new GPG key is pretty straightforward, we need to know that Github accepts GPG key of size `4096` bits. Another thing to take into consideration is the GPG's **version**, `gpg --version`. At the time of this writing, my versions of required libraries and modules were as follows.
 
@@ -54,7 +51,7 @@ ssb   rsa4096/598E4AA9F1C7AE98 2018-10-28 [E] [expires: 2020-10-27]
 
 Take note of the 3rd line, `rsa4096/47E29D1BEAA33061` where `47E29D1BEAA33061` is our public GPG key ID.
 
-##### Generate a private key to use with Github
+#### Generate a private key to use with Github
 
 Once we have our GPG key ID, we now need to generate a private key that is accepted by Github to verify our GPG key ID which can be done so by the command below.
 
@@ -64,7 +61,7 @@ gpg --armor --export 47E29D1BEAA33061
 
 Once it is done generating the private key, copy everything, including `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `-----END PGP PUBLIC KEY BLOCK-----` and head over to Github's Personal Settings > [`SSH and GPG keys`](https://github.com/settings/keys) and add the block in there.
 
-##### Creating Signed Commits
+#### Creating Signed Commits
 
 Creating signed commits requires a bit of a set up in the cloned repository directory. Head to the directory and let `git` know that we are going to be signing our commits using the following command.
 
@@ -88,7 +85,7 @@ Good Luck!
 
 ---
 
-##### Credits
+#### Credits
 
 1. [Poster image](https://www.goanywhere.com/managed-file-transfer/encryption/gnupg-gpg) of encryption/decryption process used in this blog post to GoAnywhere.com
 2. Github

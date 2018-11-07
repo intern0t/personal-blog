@@ -5,12 +5,8 @@ author: Prashant Shrestha
 date: 2018-06-12 11:39:14 -400
 categories: development
 tags: javascript json search build file clientside jquery
-featuredImage: https://i.imgur.com/mOtENKW.png
+poster: https://i.imgur.com/mOtENKW.png
 ---
-
-<div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/mOtENKW.png)](https://i.imgur.com/mOtENKW.png){:data-rel="lightcase"}
-</div>
 
 > Check what was [updated](#updated). - *Wed Aug  8 20:36:45 EDT 2018*
 
@@ -71,7 +67,7 @@ The remaining task is to format the `filteredData` in an organized manner, depen
 
 {% highlight javascript %}
 /* Search trigger - using manual button click.
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+========================================================= */
 $(".gcse-trigger").click(function (e) {
     e.preventDefault();
     var searchKey = $('input#toSearch').val();
@@ -131,7 +127,7 @@ Similarly, our search function has a bit of an addition.
 
 {% highlight javascript %}
 /* Search trigger - using manual button click.
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+========================================================= */
 $(".gcse-trigger").click(function (e) {
     e.preventDefault();
     var searchKey = $('input#toSearch').val();

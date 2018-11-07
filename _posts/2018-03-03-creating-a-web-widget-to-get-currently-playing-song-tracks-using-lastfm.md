@@ -5,9 +5,8 @@ author: Prashant Shrestha
 date: 2018-03-04 08:57:27 -500 
 categories: development
 tags: jquery scss web html codepen ajax auto lastfm music widget development
+poster: https://i.imgur.com/U1EtR40.png
 ---
-
-[![Image](https://i.imgur.com/U1EtR40.png)](https://i.imgur.com/U1EtR40.png "Final product sample!"){:data-rel="lightcase"}
 
 It all started with my cousin asking what kind of songs I listen to, a simple question with simple answer. This is where the idea of *Now Playing* integration on my website came from. Considering I already used [Last.fm](https://www.last.fm) which is the last stop for music enthusiasts, I kid you not; it is amazing to create and compile a library with an amazing and accurate recommendation. I am currently using it to Scrobble my Spotify's Now Playing tracks and loving it so far. I noticed Last.fm provides free-to-use [API](https://www.last.fm/api), although requires an API key [generated](https://www.last.fm/api/account/create) specifically for you to access the API Endpoints, it is free nonetheless. I was occasionally fiddling around with my music clients, namely [**CMUS**](), [**Spotify**]() and [**QMMP**]() and noticed they have Last.FM integration, built-in or in plugin form. 
 
