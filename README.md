@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Prashant Shrestha (Blog)
 
 The theme used in this blog is for personal use only for [https://prashant.me](https://prashant.me). Is it not shared nor developed for commercial use.
@@ -43,7 +42,3 @@ Contains the `main.scss` that imports sass files from within the `_sass` directo
 Added [Sitemap Generator](http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/), worked both locally and [remotely](https://www.prashant.me/sitemap.xml).
 
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
-=======
-# personal-blog
-My personal Jekyll powered blog.
->>>>>>> 9a8715e354ca0f03c3c424f3a8e400a38f8d1525
