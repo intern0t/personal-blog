@@ -1,24 +1,51 @@
 <header>
-	<!-- Logo Container -->
-	<div class="header-section">
-		<h3><a href="/" class="logo">{{ site.title | escape }}</a></h3>
-	</div>
+    <!-- Logo Container -->
+    <div class="header-section">
+        <h3>
+            <a href="/" class="logo">{{ site.title | escape }}</a>
+        </h3>
+    </div>
 
-	<!-- Navigation Links -->
-	<div class="header-section">
-		<ul>
-			<li>
-				<h6><a href="/archive">Archives</a></h6>
-			</li>
-			<li>
-				<h6><a href="/explore">Explore</a></h6>
-			</li>
-			<li>
-				<h6><a href="/search">Search</a></h6>
-			</li>
-			<li>
-				<h6><a href="/about">About</a></h6>
-			</li>
-		</ul>
-	</div>
+    <!-- Navigation Links -->
+    <div class="header-section">
+        <a href="#" class="navigation-button"> <i class="fas fa-bars"></i> </a>
+        <ul>
+            <li>
+                <h6><a href="/archive">Archives</a></h6>
+            </li>
+            <li>
+                <h6><a href="/explore">Explore</a></h6>
+            </li>
+            <li>
+                <h6><a href="/search">Search</a></h6>
+            </li>
+            <li>
+                <h6><a href="/about">About</a></h6>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <a href="#" class="nav-closer"> <i class="far fa-times-circle"></i></a>
+        <a href="/" class="logo">
+            <img src="{{ '/assets/images/image.png' }}" alt="Logo" />
+        </a>
+        <ul>
+            <li>
+                <a href="/"><i class="fas fa-house-damage"></i> Home</a>
+            </li>
+            <li>
+                <a href="/archive"><i class="fas fa-archive"></i> Archive</a>
+            </li>
+            <li>
+                <a href="/projects"><i class="fas fa-terminal"></i> Projects</a>
+            </li>
+            <li>
+                <a href="/search"><i class="fas fa-search"></i> Search</a>
+            </li>
+            <li>
+                <a href="/about"><i class="fas fa-user"></i> About</a>
+            </li>
+        </ul>
+    </div>
 </header>

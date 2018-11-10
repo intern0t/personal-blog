@@ -32,8 +32,8 @@ figure.highlight {
     position: relative;
 
     &::before {
+		font-family: $fontAwesome;
         content: "\f121";
-        @include font(FontAwesome);
         font-size: $globalFontSize + 6;
         position: absolute;
         right: 15px;
@@ -168,8 +168,8 @@ blockquote {
     background-image: url("/assets/images/3px-tile.png");
 
     &::before {
+		font-family: $fontAwesome;
         content: "\f10d";
-        @include font(FontAwesome);
         font-size: $globalFontSize * 3;
         position: absolute;
         top: 10px;

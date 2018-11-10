@@ -6,7 +6,7 @@
  */
 
 @import "_reset", "_fonts", "_colors", "_mixins", "variables", "_highlight",
-    "_components";
+    "_components", "_responsiveness";
 
 body {
     @include font($MerriweatherSans);
@@ -40,21 +40,117 @@ body {
     }
 
     .to-top {
+        $to-top-border-radius: 3px;
+
         position: fixed;
         bottom: 0;
         right: 5px;
         background: $globalLinkColor;
-        color: $Iron;
-        padding: 10px;
-        display: none;
+        color: $Iron !important;
         font-size: $globalFontSize - 2;
         text-transform: uppercase;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
         z-index: 99;
+        @include flex;
+        border-top-left-radius: $to-top-border-radius;
+        border-top-right-radius: $to-top-border-radius;
+        display: none;
 
         &:hover {
             color: $Iron;
+        }
+
+        i {
+            background: $TePapaGreen;
+            padding: 8px 10px;
+            border-top-left-radius: $to-top-border-radius;
+        }
+
+        span {
+            padding: 8px 15px;
+            border-top-right-radius: $to-top-border-radius;
+        }
+    }
+
+    .navigation {
+        width: 85%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-right: ($globalFontSize * 2);
+        background: $TePapaGreen;
+        border-top: 5px solid $globalLinkColor;
+        z-index: 999;
+        @include flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        overflow: auto;
+        box-shadow: 3px 0px 13px -2px rgba($Aztec, 0.75);
+        display: none;
+
+        .nav-closer {
+            position: absolute;
+            top: 58px;
+            right: 20px;
+            font-size: $globalFontSize * 1.5;
+            color: $Iron;
+
+            i {
+                display: block;
+            }
+        }
+
+        .logo {
+            margin: 50px auto;
+            opacity: 0.6;
+
+            img {
+                @include border-radius(50%);
+                display: block;
+                max-width: 128px;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        ul {
+            width: 90%;
+            list-style-type: none;
+
+            li {
+                width: 100%;
+                border-bottom: 1px dashed $PaleSky;
+
+                a,
+                a:visited {
+                    width: 100%;
+                    display: block;
+                    padding: 10px 5px;
+                    font-size: $globalFontSize;
+                    letter-spacing: 0.3px;
+                    text-transform: capitalize;
+                    color: $Iron;
+
+                    i {
+                        margin: 0 10px;
+                    }
+                }
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background: $Aztec;
+                }
+            }
         }
     }
 
@@ -88,6 +184,27 @@ body {
                     &:hover {
                         color: $globalLinkHoverColor;
                     }
+
+                    i {
+                        font-size: $globalFontSize * 2;
+                    }
+                }
+
+                .navigation-button {
+                    font-size: $globalFontSize * 1.5;
+                    display: none;
+                    color: $Boulder;
+                    background: $OuterSpace;
+                    padding: 4px 6px;
+                    @include border-radius(2px);
+
+                    @include breakpoint(xs) {
+                        display: block;
+                    }
+
+                    i {
+                        display: block;
+                    }
                 }
 
                 ul {
@@ -98,6 +215,10 @@ body {
                     -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
                     list-style-type: none;
+
+                    @include breakpoint(xs) {
+                        display: none;
+                    }
 
                     li {
                         padding: 5px;
@@ -269,7 +390,7 @@ body {
                 position: relative;
 
                 &::before {
-                    @include font(FontAwesome);
+                    font-family: $fontAwesome;
                     content: "\f0c6";
                     font-size: $globalFontSize * 3;
                     position: absolute;

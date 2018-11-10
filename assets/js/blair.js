@@ -213,4 +213,16 @@ $(document).ready(function() {
             console.log("[Search] - Empty search instruction received.");
         }
     });
+
+    /* 	Navigation Triggers
+		–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    $(".navigation-button").on("click", function(e) {
+        e.preventDefault();
+        $(".navigation").animate({ width: "toggle" }, "85%");
+    });
+
+    $(".nav-closer").on("click", function(e) {
+        e.preventDefault();
+        $(".navigation").animate({ width: "toggle" }, "0");
+    });
 });

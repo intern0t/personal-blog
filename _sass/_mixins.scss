@@ -26,7 +26,7 @@
 }
 
 @mixin border-radius($radii) {
-    border-radius: $radii;
+    border-radius: $radii !important;
 }
 
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
