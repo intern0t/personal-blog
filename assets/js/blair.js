@@ -160,7 +160,6 @@ $(document).ready(function() {
                         '<p class="post-misc"><span><i class="fas fa-sitemap"></i>&nbsp;&nbsp;{3}</span>' +
                         '<span><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;{4}</span></p>' +
                         "</div>";
-
                     $(".search-result-container").append(
                         initialFormatting
                             .replace("{0}", value.link)
