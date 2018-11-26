@@ -40,6 +40,7 @@ permalink: /library/
     5. [Getting GIT right](https://www.atlassian.com/git) by @[Atlassian Bitbucket](https://www.atlassian.com)
     6. [Pro Git](https://git-scm.com/book/) by _Scott Chacon and Ben Straub and published by Apress_
     7. [Serverless Stack with AWS](https://serverless-stack.com/)
+    8. [OhShitGit!](https://ohshitgit.com)
 -   Web Designing & Development
     1. [AngularJS references](https://github.com/jmcunningham/AngularJS-Learning) compiled by [@jmcunningham](https://github.com/jmcunningham)
     2. [Eloquent Javascript](http://eloquentjavascript.net/)
