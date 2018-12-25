@@ -159,6 +159,34 @@ body {
         margin: 0 auto;
         padding: 0 20px;
 
+        table {
+            width: 100%;
+            overflow: hidden;
+            overflow-x: scroll;
+
+            thead {
+                tr {
+                    th {
+                        &:first-child {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        align-items: center;
+
+                        &:first-child {
+                            @include flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+
         header {
             width: 100%;
             border-bottom: 3px solid $PaleSky;

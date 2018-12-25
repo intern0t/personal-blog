@@ -32,7 +32,7 @@ figure.highlight {
     position: relative;
 
     &::before {
-		font-family: $fontAwesome;
+        font-family: $fontAwesome;
         content: "\f121";
         font-size: $globalFontSize + 6;
         position: absolute;
@@ -168,7 +168,7 @@ blockquote {
     background-image: url("/assets/images/3px-tile.png");
 
     &::before {
-		font-family: $fontAwesome;
+        font-family: $fontAwesome;
         content: "\f10d";
         font-size: $globalFontSize * 3;
         position: absolute;
@@ -338,5 +338,35 @@ i {
         i {
             margin-right: 7px;
         }
+    }
+}
+
+.completion {
+    padding: 10px;
+    font-size: $globalFontSize - 4px;
+
+    .fas {
+        margin: 0 5px 0 0;
+    }
+}
+
+.lang-used {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include flex;
+    flex-wrap: wrap;
+
+    li {
+        margin: 5px;
+        padding: 5px;
+        @include border-radius(2px);
+        background: $TePapaGreen;
+        color: $Iron;
+        font-size: $globalFontSize - 5px;
+        line-height: $globalFontSize;
+        letter-spacing: .5px;
+        text-transform: uppercase;
     }
 }

@@ -16,7 +16,7 @@ permalink: /projects/
     <tbody>
         <tr>
             <td><a href="https://news.prashant.me/">Curated</a>
-    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="icon-history"></span>&nbsp;Oct, 2018</span></td>
+    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="fas fa-calendar-check"></span>Oct, 2018</span></td>
             <td>
                 <p>Curated is an <a href="https://github.com/intern0t/curated">Open Source</a> news curation & bookmarking project written in ReactJS, utilizes Redux to store and consume <a href="https://newsapi.org/account">NewsAPI.org's</a> API endpoints. Any user who wishes to use their own NewsAPI's API key can set and save their API key in local storage to prevent exhaustion to my API key's daily limit. <a href="https://i.imgur.com/TbqJGR8.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Header (Right Click > Open image in new tab to view the preview in its original size.">Image Preview</a>.</p>
 <a href="https://i.imgur.com/oquHKVm.png" data-rel="lightcase:curatedpreviewalbum" data-lc-caption="Curated Set News API (Right Click > Open image in new tab to view the preview in its original size." hidden>2nd Image Preview</a>
@@ -36,7 +36,7 @@ permalink: /projects/
         </tr>
         <tr>
             <td><a href="https://trackmovies.net/">Track Movies</a>
-    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="icon-history"></span>&nbsp;Jun-Jul, 2018</span></td>
+    			<span class="completion" title="Project timeframe" title="Project timeframe"><span class="fas fa-calendar-check"></span>Jun-Jul, 2018</span></td>
             <td>
                 <p><a href="https://trackmovies.net/" title="Release website">Track Movies</a> is a private project developed using ReactJS by me and <a href="https://github.com/justgoof9">Nischal Shrestha</a> which reflects our learning phase and accomplishment of working with <a href="https://www.themoviedb.org/documentation/api">The Movie Database's API Endpoints</a> which allows users to search and discover movies, add them to their favorites or watch list which the user can later export and import them accordingly, and create a personal backup in the location they desire. <a href="https://i.imgur.com/mUkeacR.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Homepage (Right Click > Open image in new tab to view the preview in its original size.">Image Preview</a>.</p>
                 <a href="https://i.imgur.com/MyKuTcz.png" data-rel="lightcase:trackmoviesalbum" data-lc-caption="Track Movies Dashboard (Right Click > Open image in new tab to view the preview in its original size." hidden>2nd Image Preview</a>
@@ -57,7 +57,7 @@ permalink: /projects/
         <tr>
             <td><a href="https://intern0t.github.io/Trail/">Trail</a>
 
-    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;May-Jun, 2018</span></td>
+    			<span class="completion" title="Project timeframe"><span class="fas fa-calendar-check"></span>May-Jun, 2018</span></td>
             <td>
                 <p><a href="https://github.com/intern0t/Trail" title="Github Repository">Trail</a> is a personal, open-source project developed using ReactJS which is intended to track your task completion at a given time, creating a collection of logs by the end of the day for you to be proud of. It was designed using <a href="http://ant.design/">Ant Design's</a> ReactJS framework. <strong><a href="https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d">No puppies were harmed</a> while building this tiny project, it was for educational purposes only!</strong> It is currently being used as my personal Tasks tracker <a href="https://trail.prashant.me/">here</a>.</p>
 
@@ -69,7 +69,7 @@ permalink: /projects/
         </tr>
         <tr>
             <td><a href="http://o.prashant.me/">Oblique</a>
-    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;May-Aug, 2018</span></td>
+    			<span class="completion" title="Project timeframe"><span class="fas fa-calendar-check"></span>May-Aug, 2018</span></td>
             <td>
                 <p><a href="https://github.com/intern0t/Oblique" title="Github Repository">Project Oblique</a> is a URL shortener that uses API Endpoints developed in NodeJS to shorten and store long URL. Project Oblique started out as a private project but decided to go open-source. Feel free to clone, modify, and use for personal use. <a href="https://i.imgur.com/NGARoVP.gif" data-rel="lightcase:BASHscriptpreview" data-lc-caption="Bash Script to shorten long URLs via command line. (Right Click > Open image in new tab to view the preview in its original size.)">Bash Script Preview</a>.</p>
 
@@ -85,7 +85,7 @@ permalink: /projects/
         </tr>
         <tr>
             <td><a href="https://github.com/intern0t/keykode">Keykode</a>
-    			<span class="completion" title="Project timeframe"><span class="icon-history"></span>&nbsp;Nov-Apr, 2017-2018</span></td>
+    			<span class="completion" title="Project timeframe"><span class="fas fa-calendar-check"></span>Nov-Apr, 17-18</span></td>
             <td>
                 <p>KeyKode is tiny project which makes use of built-in Javascript libraries and in addition, Clipboard.JS to encode a URL using Base64 and creates a shareable link which is decoded clientside. Pros: All private, no server required, no metadata stored and all client-sided. Cons: It uses Base64. <a href="https://intern0t.github.io/keykode/" target="_blank">Demo</a>, <a href="https://i.imgur.com/MZwACFl.png" data-rel="lightcase:projectkeykode" data-lc-caption="Decoded raw Base64 encoded string.">Image Preview</a>.</p>
                 <a href="https://i.imgur.com/Od9j4ZK.png" data-rel="lightcase:projectkeykode" data-lc-caption="Generated encoded URLs." hidden>2nd Image Preview</a>
@@ -117,6 +117,7 @@ permalink: /projects/
 
                 <ul class="row lang-used">
                     <li>Python</li>
+                    <li>Optipng</li>
                     <li>Imgur API</li>
                 </ul>
             </td>
@@ -130,6 +131,8 @@ permalink: /projects/
 
                 <ul class="row lang-used">
                     <li>C#</li>
+                    <li>AES 128</li>
+                    <li>AES 256</li>
                 </ul>
             </td>
         </tr>
