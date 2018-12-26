@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-#### <i class="icon-folder-open"></i> Projects
+#### <i class="fas fa-flask"></i> Projects
 
 <table class="u-full-width projects">
     <thead>

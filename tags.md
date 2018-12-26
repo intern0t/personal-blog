@@ -33,7 +33,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 {% endfor %}
 
 <article>
-	<h3>Tags Cloud</h3>
+	<h3><span class="fas fa-tags"/>&nbsp;Tags Cloud</h3>
 	<div class="post-misc">
 		<div class="tags">
 			{% for tag in tags %}
