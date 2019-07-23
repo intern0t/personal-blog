@@ -8,17 +8,18 @@ tags: setup server seedbox torrent private bittorrent client
 ---
 
 > A seedbox is a remote server hosted in a high-bandwidth data center used for the safely uploading and downloading of digital files. These speeds range from 100Mbps (8MB/s) to 10Gbps (1250MB/s). Persons with access to a seedbox can download these files to their personal computers anonymously. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Seedbox"))
+> 
+Basically, in clear and understandable words, Seedbox is a server used for **Peer-to-Peer (P2P) transfers** with the use of [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent") protocol. Seedbox, what it is and how powerful it is, is determined by the hardware it runs on, how secure (anonymous) it is and how **deaf** that hosting company is.
 
+<!--excerpt-->
 <div class="poster" markdown="1">
 [![Image](https://i.imgur.com/k28EhRc.jpg)](https://i.imgur.com/k28EhRc.jpg "Server"){:data-rel="lightcase"}
 </div>
 
-Basically, in clear and understandable words, Seedbox is a server used for **Peer-to-Peer (P2P) transfers** with the use of [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent") protocol. Seedbox, what it is and how powerful it is, is determined by the hardware it runs on, how secure (anonymous) it is and how **deaf** that hosting company is.
-
 Seedbox is just a server with a certain purpose and protocol, seed the files you have stored in your server which is also known as pirating in the eyes of law makers and well, **pirates**!
 
 Not to call myself a pirate, I try my very best to refrain from brushing against the law and the law makers, as a tech fanatic and a student pursuing Engineering & Programming field, Seedbox **piqued** my interest.
-<!--excerpt-->
+
 In the past, I've downloaded large files such as Linux installation files, gigs and gigs of data but one thing I noticed, torrents makes the download so much faster than the regular FTP/HTTP(s) downloads.
 
 Another thing which I noticed is quite important and could make BitTorrent protocol future of Asynchronous downloads is that it checks for chunks and chunks of data before and after you download the files which makes it certain that you shall not end up with the corrupt data or files. I don't think FTP/HTTP(s) downloads does that, the **verification** of files & their check sums.
@@ -39,18 +40,18 @@ I wish to let my readers know that there are plenty of services out there which 
 
 #### Pros and Cons of buying a Seedbox
 
-###### Buying a Seedbox service -- Pros
+#### Buying a Seedbox service -- Pros
 
 1. Security, responsibility and hard works are all taken care of, for a price.
 1. Amazing network, pooled or dedicated, the speed is amazing.
 1. You show your contribution towards the file sharing, hopefully legally.
 1. You won't be wasting your home bandwidth. Mine's 250GB per month, my custom Seedbox has unmetered bandwidth (imagine the fun!)
 
-###### Buying a Seedbox service -- Cons
+#### Buying a Seedbox service -- Cons
 
 1. I could see only **one** disadvantage of buying a Seedbox service, the expense. Good Seedbox price ranges from $5-7, Better Seedbox ranges from $10-$15, Awesome ones needs more investment.
 
-###### Creating your custom Seedbox -- Pros
+#### Creating your custom Seedbox -- Pros
 
 1. Knowledge and understanding of Peer-2-Peer transfer protocols.
 2. The network and hardware performance depends on the kind of Seedbox you build and the existing service you have or have been provided with.
@@ -58,7 +59,7 @@ I wish to let my readers know that there are plenty of services out there which 
 1. Easily transferable to different systems by taking a snapshot of your system with 0 torrents and complete setup.
 1. You can use VPN (Virtual Private Network) on your custom Seedbox to stay out of radar and sometimes increase your Seedbox's performance.
 
-###### Creating your custom Seedbox service -- Cons
+#### Creating your custom Seedbox service -- Cons
 
 1. Probably the biggest disadvantage of setting up your custom Seedbox is the amount of work you put into it while setting it up.
 2. Economy? Not so much but does require maintenance and some post-setup problems.

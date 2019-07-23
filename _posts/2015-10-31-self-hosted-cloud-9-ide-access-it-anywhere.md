@@ -5,22 +5,19 @@ author: Prashant Shrestha
 date: 2015-10-31 13:38:33 -400
 categories: server
 tags: server hosted cloud ide advanced remote code program develop development
+poster: https://i.imgur.com/4SZb2Bh.png
 ---
-
-<div class="poster" markdown="1">
-[![Image](https://i.imgur.com/4SZb2Bh.png)](https://i.imgur.com/4SZb2Bh.png "Cloud 9"){:data-rel="lightcase"}
-</div>
 
 Let's keep this simple and precise, as a developer, you cannot have your workplace everywhere, with an increase in the cloud project repositories such as Github and Bitbucket which however requires you to have an access to an IDE or a shell in order to sync your file which can be of a hassle for some.
 
 This is where your private Cloud IDE comes into play and is very useful if you have a budget server such as mine and a fair amount of bandwidth. 
-
+<!--excerpt-->
 A small excerpt from Wikipedia regarding the [**Web integrated development environment**](https://en.wikipedia.org/wiki/Web_integrated_development_environment) might clarify my words better.
 
 >A web integrated development environment (Web IDE or WIDE), also known as cloud IDE, is a browser based IDE that allows for software development or web development. A web IDE can be accessed from a web browser, such as Google Chrome or Internet Explorer, allowing for a portable work environment. A web IDE does not usually contain all of the same features as a traditional, or desktop, IDE, although all of the basic IDE features, such as syntax highlighting, are typically present. ([Source](https://en.wikipedia.org/wiki/Web_integrated_development_environment))
 
 I've been using my private cloud IDE for a while and as a newbie, I can already see the pros-&-cons.
-<!--excerpt-->
+
 #### Online IDE?
 
 Yes, there are many online cloud IDE which provide you with a free workspace with fair amount of hardware specification. Some are listed below and you can check it out yourselves.
@@ -34,7 +31,7 @@ Yes, there are many online cloud IDE which provide you with a free workspace wit
 
 I listed one of the popular ones that the Google considers and the ones that I've tried and liked. If you are planning on using cloud IDE for educational purposes then I would say, self-hosted Cloud IDE is cheaper.
 
-##### Some Pros and Cons
+#### Some Pros and Cons
 
 **Pros -**
 
@@ -49,7 +46,7 @@ I listed one of the popular ones that the Google considers and the ones that I'v
 
 I therefore decided to use Cloud9 IDE (Open Source) as my private IDE in CentOS 6.
 
-##### Preparing for the Cloud9 Installation.
+#### Preparing for the Cloud9 Installation.
 
 * wget 
 {% highlight bash %}
@@ -107,7 +104,7 @@ cd ~
 git clone git://github.com/c9/core.git c9sdk
 {% endhighlight %}
 
-##### Installation should be simple & easy as.
+#### Installation should be simple & easy as.
 
 {% highlight bash %}
 cd c9sdk && scripts/install-sdk.sh
@@ -155,7 +152,7 @@ I did not bother configuring the reverse proxy port with my domain or a subdomai
 --no-cache       Don't use the cached version of CSS
 {% endhighlight %}
 
-##### Thing I learned -
+#### Thing I learned -
 
 If you ran the server regularly with no special parameters, I suggest you to create a directory inside `./core` with the name `Workspaces` and launch the server again with the following command to have a better and clean directory to work in.
 

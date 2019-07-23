@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {% include head.html %}
 
 <body>
-	{% include fixedButtons.html %}
+    <!-- Top anchor -->
+    <div id="top"></div>
 
-	<div class="container">
-		{% include header.html %}
+    <div class="main-wrapper" aria-label="Content">
+        {{ content }}
+    </div>
 
-		{{ content }}
-
-		{% include footer.html %}
-	</div>
-
-	{% include scripts.html %}
+    <!-- Include all scripts. -->
+    {% include scripts.html %}
 </body>
 
 </html>

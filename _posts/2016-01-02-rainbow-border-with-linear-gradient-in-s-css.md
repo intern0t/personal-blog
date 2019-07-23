@@ -9,8 +9,8 @@ tags: scheme color design css scss style code snippet
 
 As seen in couple websites, I wanted to implement and add rainbow border. Here's how to do it.
 
+<!--excerpt-->
 [![Image](https://i.imgur.com/xU8cjQ3.png)](https://i.imgur.com/xU8cjQ3.png "Demo"){:data-rel="lightcase"}
-
 Demo from [JSFiddle](https://jsfiddle.net/intern0t/fp85voue/4/) is provided below -
 
 <iframe width="100%" height="auto" src="//jsfiddle.net/Scarecr0w/fp85voue/9/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -24,7 +24,7 @@ In your regular HTML file, normally body or header.
 {% endhighlight %}
 
 I use SCSS pre-processor therefore here's the code which can easily be converted to regular CSS.
-<!--excerpt-->
+
 {% highlight sass %}
 $gradient_ : 90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 32%, #9b59b6 32%, #9b59b6 35%, #34495e 35%, #34495e 55%, #f1c40f 55%, #f1c40f 59%, #e67e22 59%, #e67e22 63%, #e74c3c 63%, #e74c3c 82%, #ecf0f1 82%, #ecf0f1 92%, #95a5a6 92%;
 

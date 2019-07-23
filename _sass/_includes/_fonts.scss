@@ -1,0 +1,38 @@
+/**
+ * Copyright (c) 2019, Prashant Shrestha
+ * Document: fonts.scss
+ * Developer: Prashant Shrestha
+ * Date: Tue Jan 15 08:20:30 EST 2019
+ */
+
+// @import url("https://fonts.googleapis.com/css?family=Crimson+Text|Rosario|Inconsolata");
+
+@font-face {
+	font-family: "Serenade";
+	src: url("../fonts/hinted-Serenade.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Yorkten-NorReg";
+	src: url("../fonts/hinted-Yorkten-NorReg.woff2") format("woff2"),
+		url("../fonts/hinted-Yorkten-NorReg.woff") format("woff"),
+		url("../fonts/hinted-Yorkten-NorReg.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$Yorkten: "Yorkten-NorReg";
+$Serenade: "Serenade";
+$Rosario: "Rosario", sans-serif;
+$CrimsonText: "Crimson Text", serif;
+$Inconsolata: "Inconsolata", monospace;
+$Monospace: monospace;
+
+$defaultFontFamily: $Yorkten;
+$_defaultFontFamily: $CrimsonText;
+$defaultCodeFontFamily: $Inconsolata;
+$codeFont: $Monospace;
+
+$defaultFontSize: 18px;

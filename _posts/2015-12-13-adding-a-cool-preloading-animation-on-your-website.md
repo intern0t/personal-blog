@@ -13,7 +13,7 @@ I shall be honest to you, I tried to create my own animation through Adobe Photo
 <!--excerpt-->
 One of the most professional one I found, liked and currently am considering to use it for my next public project is displayed below.
 
-[![Preloader Professional](https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e153020180373.562e6fcb9c769.gif)](https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e153020180373.562e6fcb9c769.gif){:data-rel="lightcase"}
+[![Preloader Professional]({{ site.ph }}){:data-src="{{ site.ip | append: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e153020180373.562e6fcb9c769.gif" }}" .lazy}](https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e153020180373.562e6fcb9c769.gif){:data-rel="lightcase"}
 
 I did not use third party image hosting site in order to keep the ownership of the image intact.
 
@@ -53,8 +53,8 @@ That's it, of course you will require jQuery dependency in your project which yo
 
 Some cool Preloading gifs I found online are listed below, choose the one you want and don't forget to mention/thank the creator.
 
-[![](https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif)](https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif){:data-rel="lightcase"}
-[![](http://netdna.webdesignerdepot.com/uploads/2013/07/dribble_gif.gif)](http://netdna.webdesignerdepot.com/uploads/2013/07/dribble_gif.gif){:data-rel="lightcase"}
-[![](http://netdna.webdesignerdepot.com/uploads/2013/07/bike.gif)](http://netdna.webdesignerdepot.com/uploads/2013/07/bike.gif){:data-rel="lightcase"}
+[![]({{ site.ph }}){:data-src="{{ site.ip | append: "https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif" }}" .lazy}](https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif){:data-rel="lightcase"}
+[![]({{ site.ph }}){:data-src="{{ site.ip | append: "http://netdna.webdesignerdepot.com/uploads/2013/07/dribble_gif.gif" }}" .lazy}](http://netdna.webdesignerdepot.com/uploads/2013/07/dribble_gif.gif){:data-rel="lightcase"}
+[![]({{ site.ph }}){:data-src="{{ site.ip | append: "http://netdna.webdesignerdepot.com/uploads/2013/07/bike.gif" }}" .lazy}](http://netdna.webdesignerdepot.com/uploads/2013/07/bike.gif){:data-rel="lightcase"}
 
 Good Luck!

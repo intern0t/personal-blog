@@ -1,6 +1,9 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
- crossorigin="anonymous">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightcase@2.5.0/src/js/lightcase.min.js"></script>
-<!-- <script type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script> -->
-<script type="text/javascript" src="{{ "assets/js/blair.js " | relative_url }}"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+<script type="text/javascript" src="{{ "assets/js/lightcase.js " | relative_url }}"></script>
+<script type="text/javascript" src="{{ "assets/js/main.js " | relative_url }}"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/3863182d64.js"></script>
+{% if jekyll.environment == "development" %}
+<script src="http://localhost:35729/livereload.js"></script>
+{% endif %}

@@ -2,4 +2,21 @@
 layout: default
 ---
 
-{{ content }}
+<div class="container">
+    <div class="container-inner">
+        <!-- Header -->
+        {% include header.html %}
+
+        <!-- Body/Content -->
+        <div class="container-inner-body">
+            <div class="container-inner-body-post">
+                <div class="post-content">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        {% include footer.html %}
+    </div>
+</div>

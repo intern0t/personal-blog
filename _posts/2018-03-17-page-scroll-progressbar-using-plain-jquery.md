@@ -16,7 +16,7 @@ My short brainstorming to solve and achieve this progressbar felt very clear and
 
 We need two things to achieve or implement this scroll progress in our website.
 
-##### Things we need
+#### Things we need
 
  1. A `div` container on top of our page.
  2. A hook to manage our document's `scroll` event.

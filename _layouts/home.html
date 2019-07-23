@@ -2,59 +2,20 @@
 layout: default
 ---
 
-{{ content }}
+<!-- {{ content }} -->
 
-<div class="posts">
-	{% for post in paginator.posts %}
-	<article class="post home-post">
-		<h3>
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-		</h3>
+<div class="container">
+    <div class="container-inner">
+        <!-- Header -->
+        {% include header.html %}
 
-		<div clsss="meta">
-			<div class="post-misc">
-				<div class="post-meta">
-					{% assign categories = post.categories %} {% if categories != "" %}
-					<div class="categories">
-						<i class="fas fa-sitemap" title="category"></i> {% for category in categories %} {{ category | upcase }}{%
-						unless forloop.last %} <i class="fas fa-angle-right"></i> {% endunless %} {% endfor %}
-					</div>
-					{% endif %}
-					<div class="post-published">
-						<i class="far fa-calendar-alt"></i>
-						<time datetime="{{ post.date | date_to_rfc822 }}" itemprop="datePublished">
-							{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-							{{ post.date | date: date_format }}
-						</time>
-					</div>
-				</div>
-				{% assign tags = post.tags %}
-				{% if tags != "" %}
-				<div class="tags">
-					{% for tag in tags %} <div class="tag"><i class="fas fa-tag" title="{{ tag | upcase }}"></i>{{ tag | upcase }}</div>{%
-					unless
-					forloop.last %}
-					{% endunless %} {% endfor %}
-				</div>
-				{% endif %}
-			</div>
-		</div>
+        <div class="container-inner-body" style="justify-content: center; align-content: center; align-items: center;">
+            <div class="container-inner-body-logo">
+                Prashant Shrestha
+            </div>
+        </div>
 
-		<div class="entry">
-			{{ post.excerpt }}
-		</div>
-
-		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
-	</article>
-	{% endfor %}
-</div>
-
-<div class="pagination">
-	{% if paginator.page_trail %}
-	{% for trail in paginator.page_trail %}
-	{% assign parsedPageURL = page.url %}
-	<a class="pagination-button {% if parsedPageURL == trail.path %}active{% endif %}" href="{{ trail.path | prepend: site.url }}"
-	 title="{{trail.title}}">{{ trail.num }}</a>
-	{% endfor %}
-	{% endif %}
+        <!-- Footer -->
+        {% include footer.html %}
+    </div>
 </div>

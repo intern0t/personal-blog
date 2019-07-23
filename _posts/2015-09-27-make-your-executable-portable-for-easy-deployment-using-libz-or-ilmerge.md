@@ -10,7 +10,7 @@ tags: setup portable executable build deployment libz ilmerge c#
 Here again, writing another post about a feat I achieved against a problem while sharing one of my program with my friends and the problem I came across was the ease of deployment, not that it was making my work difficult but it just looked very weird for a small program to have many dependencies and all these files with it.
 
 The version of program I shared with my friends before turning it into portable executable.
-
+<!--excerpt-->
 [![Image](https://i.imgur.com/xSqa6ex.png)](https://i.imgur.com/xSqa6ex.png){:data-rel="lightcase"}
 
 And the one after the libraries merge is shown below with only one executable which makes the portability easier, smaller, faster and cleaner.
@@ -24,7 +24,7 @@ Achieving this wasn't that difficult considering the vast amount of tools found 
 One good thing about ILMerge is it is trusted compared to Libz and any other 3rd party mergers. ILMerge was developed and distributed by **Microsoft** itself.
 
 Download ILMerge, install it and download [ILMerge GUI](https://ilmergegui.codeplex.com/).
-<!--excerpt-->
+
 ILMerge GUI makes your life easier if you are the kind of person who doesn't like CLI and commands.
 
 [![Image](https://i.imgur.com/BvkHqsd.png)](https://i.imgur.com/BvkHqsd.png){:data-rel="lightcase"}

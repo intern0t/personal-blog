@@ -5,11 +5,8 @@ author: Prashant Shrestha
 date: 2017-10-23 18:09:27 -400 
 categories: development
 tags: c# csharp develop .net visualstudio spotify music capture file obs recorder stream
+poster: https://i.imgur.com/Ipq5fKi.png
 ---
-
-<div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/Ipq5fKi.png)](https://i.imgur.com/Ipq5fKi.png){:data-rel="lightcase"}
-</div>
 
 Most of us, an avid music listeners out there are familiar with [Spotify](http://www.spotify.com/), a subscription based music streaming service with large collection of music. I listen to relaxing and focus music while developing or playing games. A distant friend, a game streamer insisted that I help him out with setting [Open Broadcaster Software (OBS)](https://obsproject.com/) to dispaly the music that he plays in his stream. After couple exchange of words, he said that some of his viewers gave him this idea, maybe they liked the music but had difficulty finding the title.
 
@@ -27,13 +24,13 @@ After no luck with retrieving the track from the Spotify's title bar, I decided 
 
 Considering those Spotify instances have varying `Process ID`, not all of them possesses the current playing track information.
 
-##### Finding the right approach.
+#### Finding the right approach.
 
 The biggest hurdle with finding the right approach yet keeping the process simple takes quite a long time as I had to enlist various options and test it all out. I tried using [Win32 hooks](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644960(v=vs.85).aspx), [unmanaged APIs](https://docs.microsoft.com/en-us/dotnet/framework/unmanaged-api/) and [interops](http://www.pinvoke.net/) but the easiest one yet built-in was `Process` [class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process(v=vs.110).aspx) in C#.
 
 `Process` class' various built-in functions and properties can easily help me capture the Window's title. The ones I used are `GetProcessesByName()`, `MainWindowTitle`, and `GetProcessById()`.
 
-##### Finding the right Spotify process.
+#### Finding the right Spotify process.
 
 Spotify had multiple instances; I am sure they are helping the main instance with certain task. However, I needed to differentiate between each one and grab the right one. In order to do so, I made use of `GetProcessesByName()` function under `Process` class. The reason is that, for all the instances of Spotify, the process ID is re-assigned after opening Spotify client, it never stays the same or constant. If we fire up our [Task Manager](https://i.imgur.com/rZ0ePMh.png){: data-rel="lightcase"} and observe all the process IDs for those instances, it is pretty obvious that they aren't the same.
 
@@ -66,7 +63,7 @@ public void GetSpotifyProcesses()
 
 Now that I know that the variable `spotifyProcessID` holds either `0`, a failure to find the right process or the right process whose title did not have a whitespace, in simple words, a valid non-empty string. In addition, I called the `GetSpotifyProcesses()` function in my Window Form's `Load` event.
 
-##### Obtaining the Track title.
+#### Obtaining the Track title.
 
 This is the easiest process of all as I already have the title from `Process.MainWindowTitle` property but a little different as we are trying to avoid the loop through of finding the right Spotify process, the very reason I initialized and assigned `spotifyProcessID` which can now be directly accessed using our yet another built-in `Process` class' method, `GetProcessById()`. Keeping it organized, I created yet another function to get just the track title.
 
@@ -83,7 +80,7 @@ public string GetSpotifyTrack(int _procID)
 }
 {% endhighlight %}
 
-##### Creating and Updating our source file.
+#### Creating and Updating our source file.
 
 This is easily achieved using `WriteAllText()` method in a built-in `File` class. I created a separate function to create or update our file, considering the tool I am developing, this function shall be invoked in the certain interval if certain set conditions are met.
 
@@ -118,7 +115,7 @@ public void UpdateSong()
 }
 {% endhighlight %}
 
-##### Adding Interval for `UpdateSong()` method.
+#### Adding Interval for `UpdateSong()` method.
 
 I kept this process simple by using our Window Form's component called `Timer`, all I had to worry about is what function to call and in what interval to call. Initialized a new `Timer` variable and a separate one for an interval.
 
@@ -144,7 +141,7 @@ T.Interval = captureInterval * 1000;
 T.Enabled = true;
 {% endhighlight %}
 
-##### Adding Text Source to OBS.
+#### Adding Text Source to OBS.
 
 I am not trying to just get the track's title but to display it on OBS, make it seem/act like as if one of the OBS's source is hooked to Spotify itself. For this very purpose, I fiddled around a bit with OBS myself; it's all fun and games. OBS allows adding Text (GDI+/FreeType 2) as a source, exactly what I needed and what I used as it seemed to be a lot more convenient for my purpose.
 
@@ -160,20 +157,14 @@ Editing our recently added Text (GDI+) source, two things to look for. `Read fro
 
 At this point, we find the path to our `SpotifyNowPlaying` file created and updated by `UpdateSong()` function which will by default created in the executable's path.
 
-##### Modifications and Updates.
+#### Modifications and Updates.
 
 This is it, an easy yet clean way to add Spotify's currently playing track title to OBS. I decided to add some buttons to start and stop capturing the title, change intervals, etc. I have the updated code in my [Bitbucket](https://bitbucket.org/intern0t/spotify-to-obs) if you ever feel like modifying or updating or even just fiddle around with it.
 
 Those are some of the screenies I took after various feature addition and modifications, nothing advanced. The one on the left with bland logo means the Spotify process was not found whereas the right means Spotify process was found.
 
-<div class="row">
-    <div class="six columns">
-        <a href="https://i.imgur.com/VcD7WGU.png" data-rel="lightcase"><img src="https://i.imgur.com/VcD7WGU.png"></a>
-    </div>
-    <div class="six columns">
-        <a href="https://i.imgur.com/GyAyQDO.png" data-rel="lightcase"><img src="https://i.imgur.com/GyAyQDO.png"></a>
-    </div>
-</div>
+[![](https://i.imgur.com/VcD7WGU.png)](https://i.imgur.com/VcD7WGU.png){: data-rel="lightcase"}
+[![](https://i.imgur.com/GyAyQDO.png)](https://i.imgur.com/GyAyQDO.png){: data-rel="lightcase"}
 
 Here's a [demo](https://i.imgur.com/EWK7fxU.gif){: data-rel="lightcase"} of the tool in action.
 

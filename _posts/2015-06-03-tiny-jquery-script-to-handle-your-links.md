@@ -8,11 +8,11 @@ tags: redirect target blank window development javascript jquery
 ---
 
 To make a website that is favored by others various components comes into play, Search Engines Optimizations (SEO), looks, stability, smooth surfing, clean and many more which even I am not aware of. **Very small** features can help your visitors by making their visit to your website fun and smooth while keeping it professional on the side.
-
+<!--excerpt-->
 When I first launched my [Ghost](https://ghost.org/) [blog](http://www.nepirates.com/), there was no link handlers. In simple words, the external and internal links acted the same. For example - Before, when I post a link from [Reddit](https://www.reddit.com/) and a link to one of my post or some [static page](http://www.nepirates.com/contact-me/), it would open both of them in the current tab which means, if my visitor wants to continue reading, he would have to go through a hassle of clicking the `back` button in the browser or `backspace` key in their keyboard however last week, I changed it to open all links a **new tab** which I think annoyed them more (from their mails), each and every links in my post would open in a new tab. Not just the links inside a post but static page links as well. Today I decided to change the way my links work the way I want to and hopefully my readers will have a smooth surf in my blog.
 
 I used jQuery for this task as I have yet to explore the `PHP` usage in this blogging platform. This is the way I did it.
-<!--excerpt-->
+
 {% highlight javascript %}
 // Handle all URLs - Prashant M. Shrestha - Needs more customization!
 var yourDomain = "prashant.me";

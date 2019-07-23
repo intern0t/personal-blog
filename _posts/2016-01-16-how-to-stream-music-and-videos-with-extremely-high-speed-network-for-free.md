@@ -8,7 +8,7 @@ tags: misc server isp service online watch movies tv-shows collaborative chat vi
 ---
 
 As an adherent streamer, I do always love to surf with high speed networks and just surf away. Sadly, it is not currently possible with my current home network. Streaming Youtube videos, Netflix, Hulu+, Crunchyroll and many other video providers has been my daily habit. I sit on my computer quite a lot, researching and such but I will always have something playing in the background or one of my display monitors whether it be a music, relaxing to rock or movies and TV Shows.
-
+<!--excerpt-->
 [![](https://i.imgur.com/44M8rFH.png)](https://i.imgur.com/44M8rFH.png){:data-rel="lightcase"}
 
 I recently found about about [Rabbit Beta](https://rabb.it/intern0t?i=-Tpuc_rz34Fb) (non-referral [link](https://rabb.it/)) and I think it is helping me save quite a bit of bandwidth per month and the speed it streams the content with is beyond the imagination of network I wish to have.
@@ -18,7 +18,7 @@ I recently found about about [Rabbit Beta](https://rabb.it/intern0t?i=-Tpuc_rz34
 >Rabbit is about sharing your everyday. Watch your favorite shows with your friends, without being in the same room (or even the same city!). Collaborate with your coworkers when you’re all on the road. Shop together for a birthday present for Mom, then sing her “happy birthday” with family far away. The possibilities are endless.
 
 >Rabbit started with an idea: people sharing experiences online from wherever they are. We began with an app for Mac in February 2013. Then in August 2014 we launched a web-based version of Rabbit. In February 2015, we were named one of the Top 10 Most Innovative Companies in Video by Fast Company. And in October 2015, we launched an app for iOS. But this is only the start: we’ve got big plans.
-<!--excerpt-->
+
 #### How to make use of their awesome network?
 
 * Head over to [Rabb.it](https://rabb.it/intern0t?i=-Tpuc_rz34Fb) ([Non-ref](https://rabb.it/)).

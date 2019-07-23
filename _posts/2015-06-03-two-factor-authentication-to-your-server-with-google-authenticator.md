@@ -10,7 +10,7 @@ tags: security server administrator setup lock block google authenticator time
 A web server is a place which holds various important stuffs, chunks and chunks of data and such which are very essential to keep a website up and running! For me, personally I need much larger **space for privacy** when it comes to the things that I own whether it be a server, a car, an apartment or whatever!
 
 I personally cannot secure everything that I own but definitely have tried my best and with my utmost knowledge to protect my hard-work. I would definitely not want someone else accessing my server, not because I've some super secret stuff but I just don't like people crossing my boundaries of privacy. Therefore, today I installed a great module in all 5 servers that I own, hardening the security and such which I think is very secure as I am trusting my server access handling to [Google](https://www.google.com/)!
-
+<!--excerpt-->
 The security of our servers is of an essence and not everyone can afford to have a bunker like server. Even if a medium such as Email verification codes are to be used, we have **no** idea of who accesses it and personally I believe to be very vulnerable.  I am not saying it is very easy to get in someone else's email address by any means, it's just that they are able to.
 
 I own 5 different servers, 2 in United States and other 3 somewhere else and I feel insecure about my servers as its been couple months I started using Linux and I am not that good yet. Today I learned about [**Two-factor Google Authentication system**](https://github.com/google/google-authenticator) which requires you to have an operable server and a smartphone! **That's it!**
@@ -22,7 +22,7 @@ I started by updating my servers, mind you, I had **5** simultaneous terminals o
 {% highlight bash %}
 yum -y update
 {% endhighlight %}
-<!--excerpt-->
+
 If you get any errors, execute `yum clean all` command in your terminal. After updating my system, I installed `pam-devel` which is more like a permission set for Linux which manages **authentication policies**.
 
 {% highlight bash %}

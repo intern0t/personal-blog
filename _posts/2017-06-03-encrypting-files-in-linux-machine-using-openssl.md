@@ -5,11 +5,8 @@ author: Prashant Shrestha
 date:   2017-06-03 04:18:33 -400
 categories: development
 tags: setup server private php python upload postman api
+poster: https://i.imgur.com/c5sYvz7.jpg
 ---
-
-<div class="poster" markdown="1">
-[![Image](https://i.imgur.com/c5sYvz7.jpg)](https://i.imgur.com/c5sYvz7.jpg "Security!"){:data-rel="lightcase"}
-</div>
 
 What my **Project FileSec** did can be done straight from terminal which is quite nice to hear but CLI isn\'t for everyone, honestly respect their preference however. I am currently using [Ubuntu 17.04](http://releases.ubuntu.com/17.04/) as my main work-space therefore **OpenSSL** is available through official repository.
 
@@ -137,4 +134,4 @@ It uses 256 bits and `cbc` encryption by default which you can change if you pre
 
 Enjoy.
 
-###### Credits: Blog Image - [d.ibtimes](https://d.ibtimes.co.uk/en/full/1508674/encryption.jpg).
+#### Credits: Blog Image - [d.ibtimes](https://d.ibtimes.co.uk/en/full/1508674/encryption.jpg).

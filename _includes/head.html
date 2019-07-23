@@ -1,12 +1,38 @@
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-	<link rel="icon" type="image/png" href="{{ '/assets/images/favicons/favicon-16x16.png' }}">
-	<link rel="stylesheet" type="text/css" href="{{ '/assets/css/blair.min.css' | relative_url }}">
-	<link rel="stylesheet" type="text/css" href="{{ '/assets/css/lightcase.css' | relative_url }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title & Description -->
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description"
+        content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <!-- For SEO purposes -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}"
+        href="{{ "/feed.xml" | relative_url }}">
+
+    <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "assets/images/favicon-16x16.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "assets/images/favicon-32x32.png" | relative_url }}">
+
+    <!-- Stylings -->
+    <link rel="stylesheet" href="{{ "assets/styles/light.css" | relative_url }}">
+
+    <!-- Extra Metadata
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow">
+    <!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow">
+    <!-- Google Specific -->
+    <meta name="google" content="notranslate">
+    <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    <meta name="generator" content="Jekyll, SCSS, Javascript + Visual Studio Code">
+    <meta http-equiv="x-dns-prefetch-control" content="off">
+    <!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+    <meta name="geo.region" content="US">
+    <!-- eg. content="New York City" -->
+    <meta name="geo.placename" content="Virginia">
+    <!-- Chrome v39+ mobile tab color. -->
+    <meta name="theme-color" content="#006ac8">
 </head>
