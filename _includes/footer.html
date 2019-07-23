@@ -1,38 +1,53 @@
-<footer>
-	<div class="footer-container">
-		<!-- Maybe add social links here. -->
-		<div class="footer-section socials">
-			{% assign socialEnabled = site.social.enabled %}
-			{% if socialEnabled %}
-				{% if site.social.homepage %}
-				<a href="{{ site.social.homepage }}" title="Homepage"><i class="fas fa-globe"></i></a>
-				{% endif %}
-				{% if site.social.twitter_username %}
-				<a href="{{ site.social.twitter_username | prepend: 'https://twitter.com/' }}" title="Twitter"><i class="fab fa-twitter"></i></a>
-				{% endif %}
-				{% if site.social.github_username %}
-				<a href="{{ site.social.github_username | prepend: 'https://github.com/' }}" title="Github"><i class="fab fa-github-alt"></i></a>
-				{% endif %}
-				{% if site.social.facebook_username %}
-				<a href="{{ site.social.facebook_username | prepend: 'https://facebook.com/' }}" title="Facebook"><i class="fab fa-facebook"></i></a>
-				{% endif %}
-				{% if site.social.bitbucket_username %}
-				<a href="{{ site.social.bitbucket_username | prepend: 'https://bitbucket.org/' }}" title="Bitbucket"><i class="fab fa-bitbucket"></i></a>
-				{% endif %}
-				{% if site.social.gitlab_username %}
-				<a href="{{ site.social.gitlab_username | prepend: 'https://gitlab.com/' }}" title="Gitlab"><i class="fab fa-gitlab"></i></a>
-				{% endif %}
-				{% if site.social.instagram_username %}
-				<a href="{{ site.social.instagram_username | prepend: 'https://www.instagram.com/' }}" title="Instagram"><i class="fab fa-instagram"></i></a>
-				{% endif %}
-			{% endif %}
-		</div>
-
-		<!-- Copyright & Powered by .. DO NOT REMOVE OR CHANGE BELOW THIS !!!
-		--------------------------------------------------------------------------------------------->
-		<div class="footer-section">
-			Powered by <a href="https://jekyllrb.com/">Jekyll</a>.<br />
-			Copyright <a href="https://github.com/intern0t/blair-jekyll-theme">Blair</a> &copy; 2018
-		</div>
-	</div>
-</footer>
+<div class="container-inner-footer">
+    <!-- Social Icons -->
+    <div class="container-inner-footer-socials">
+        {% if site.socials.email %}
+        <a href="{{ site.socials.email | prepend: 'mailto:' }}" title="Contact me via. Email" target="_blank">
+            <i class="far fa-envelope"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.github %}
+        <a href="{{ site.socials.github | prepend: 'https://github.com/' }}" title="Github Profile" target="_blank">
+            <i class="fab fa-github-alt"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.bitbucket %}
+        <a href="{{ site.socials.bitbucket | prepend: 'https://bitbucket.com/' }}" title="Bitbucket Profile"
+            target="_blank">
+            <i class="fab fa-bitbucket"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.gitlab %}
+        <a href="{{ site.socials.gitlab | prepend: 'https://gitlab.com/' }}" title="Gitlab Profile" target="_blank">
+            <i class="fab fa-gitlab"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.twitter %}
+        <a href="{{ site.socials.twitter | prepend: 'https://twitter.com/' }}" title="Twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.linkedin %}
+        <a href="{{ site.socials.linkedin | prepend: 'https://linkedin.com/' }}" title="LinkedIn Profile"
+            target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        {% endif %}
+        {% if site.socials.uptime %}
+        <a href="{{ site.socials.uptime }}" title="Uptime status" target="_blank">
+            <i class="fas fa-chart-area"></i>
+        </a>
+        {% endif %}
+    </div>
+    <!-- Copyright Information -->
+    <div class="container-inner-footer-copyright">
+        Copyright &copy; 2019+,
+        <a href="#" title="Copyright &copy; 2019, Prashant Shrestha">
+            Prashant Shrestha
+        </a>
+    </div>
+    <!-- To the Top button -->
+    <a href="#" class="to-top">
+        <i class="far fa-hand-point-up"></i>
+    </a>
+</div>

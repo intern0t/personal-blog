@@ -1,51 +1,36 @@
-<header>
-    <!-- Logo Container -->
-    <div class="header-section">
-        <h3>
-            <a href="/" class="logo">{{ site.title | escape }}</a>
-        </h3>
+<div class="container-inner-header">
+    <!-- Navigation menu -->
+    <div class="container-inner-header-navigation">
+        <!-- Regular navigation menu -->
+        <div class="container-inner-header-navigation-links">
+            <a href="/" title="">Home</a>
+            <a href="/blog" title="">Blog</a>
+            <a href="/projects" title="">Projects</a>
+            <a href="/library" title="">Library</a>
+            <a href="/about" title="">About</a>
+        </div>
+        <!-- Navigation Menu handler for smaller screen devices -->
+        <div class="container-inner-header-navigation-menu">
+            <a href="#" class="nav-trigger-expand">
+                <i class="far fa-compass"></i>
+            </a>
+            <!-- Full screen responsive nav. menu -->
+            <div class="container-inner-header-navigation-menu-full">
+                <div class="container-inner-header-navigation-menu-full-buttons">
+                    <a href="#" class="nav-trigger-close"><i class="far fa-window-close"></i></a>
+                </div>
+                <div class="container-inner-header-navigation-menu-full-menu">
+                    <a href="/" title="">Home</a>
+                    <a href="/blog" title="">Blog</a>
+                    <a href="/projects" title="">Projects</a>
+                    <a href="/library" title="">Library</a>
+                    <a href="/about" title="">About</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Navigation Links -->
-    <div class="header-section">
-        <a href="#" class="navigation-button"> <i class="fas fa-bars"></i> </a>
-        <ul>
-            <li>
-                <h6><a href="/archive">Archives</a></h6>
-            </li>
-            <li>
-                <h6><a href="/explore">Explore</a></h6>
-            </li>
-            <li>
-                <h6><a href="/search">Search</a></h6>
-            </li>
-            <li>
-                <h6><a href="/about">About</a></h6>
-            </li>
-        </ul>
+    <!-- Theme Toggling (Dark & Light mode) -->
+    <div class="container-inner-header-adjust">
+        <a href="#" title="Toggle Light & Dark Theme" class="theme-adjust"><i class="fas fa-adjust"></i></a>
     </div>
-
-    <div class="navigation">
-        <a href="#" class="nav-closer"> <i class="far fa-times-circle"></i></a>
-        <a href="/" class="logo">
-            <img src="{{ '/assets/images/image.png' }}" alt="Logo" />
-        </a>
-        <ul>
-            <li>
-                <a href="/"><i class="fas fa-house-damage"></i> Home</a>
-            </li>
-            <li>
-                <a href="/archive"><i class="fas fa-archive"></i> Archive</a>
-            </li>
-            <li>
-                <a href="/projects"><i class="fas fa-terminal"></i> Projects</a>
-            </li>
-            <li>
-                <a href="/search"><i class="fas fa-search"></i> Search</a>
-            </li>
-            <li>
-                <a href="/about"><i class="fas fa-user"></i> About</a>
-            </li>
-        </ul>
-    </div>
-</header>
+</div>

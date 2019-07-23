@@ -26,9 +26,9 @@ Let us start with designing the button itself, a trigger in simple words. A comp
 
 Don't mind the comments, makes it easier for us later in the future if any changes are required. Moving onto SASS/CSS portion.
 
-##### SASS
+#### SASS
 
-{% highlight sass %}
+{% highlight scss %}
 .toTop{
     width: 50px;
     height: 30px;
@@ -59,7 +59,7 @@ Don't mind the comments, makes it easier for us later in the future if any chang
 
 A little [mixin](http://sass-lang.com/guide#topic-6) to handle our `border-radius` in various browsers.
 
-{% highlight sass %}
+{% highlight scss %}
 @mixin border-left-radius(3px) {
     -webkit-border-bottom-left-radius: $radius;
     -webkit-border-top-left-radius: $radius;
@@ -68,7 +68,7 @@ A little [mixin](http://sass-lang.com/guide#topic-6) to handle our `border-radiu
 }
 {% endhighlight %}
 
-##### CSS
+#### CSS
 
 This plain CSS is for those who are not familiar with SASS Preprocessor.
 
@@ -104,7 +104,7 @@ This plain CSS is for those who are not familiar with SASS Preprocessor.
 
 Customize and serve your website locally to check and see whether the design is favorable, once you are done customizing the button, we move onto the Javascript section.
 
-##### Javascript/jQuery
+#### Javascript/jQuery
 
 In order to meet my simplicity purposes, I decided to use built-in [method](https://api.jquery.com/scrollTop/), `.scrollTop()` and jQuery documentation describes this method as follows.
 

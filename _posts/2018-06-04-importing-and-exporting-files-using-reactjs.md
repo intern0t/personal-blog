@@ -12,15 +12,15 @@ While learning [ReactJS](https://reactjs.org/) over this summer and one of the b
 
 I reviewed quite a lot of possible projects that I could try while in the process of learning ReactJS and also stumbled upon this [frightful post about puppy dieing](https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d) when someone builds a [To-do](https://intern0t.github.io/Trail/) list applications. It's whatever at this point, if building a To-do application teaches me quite a lot of things about ReactJS, **why not?!**
 
+<!--excerpt-->
+
 Anyways, back to our context of importing files using ReactJS, it's quite similar to Javascript but considering I used [ANT Design](https://ant.design/) [library](https://www.npmjs.com/package/antd), the documentation wasn't quite clear enough, or let's just say incomplete for what I was looking to do. 
 
 > I think, the biggest problem for me was that I was trying to read a `.json` file without completely uploading it to a server (**fully client-sided**). [^1]
 
-<!--excerpt-->
-
 While playing with `antd` [Upload](https://ant.design/components/upload/) component, it was clear enough until importing a file and initializing the `file` but never actually clearly mentioned about `originFileObj`. Let's take any of those components as an example and look through their sample code.
 
-{% highlight javascript %}
+{% highlight react %}
 const props = {
   name: 'file',
   multiple: true,
@@ -43,7 +43,7 @@ I then started searching for answers about why `info.file` wasn't returning an a
 
 We have two options to access our actual file object, we could use either `info.file.originFileObj` or `info.fileList[..].originFileObj`. Below is the code I used in my To-do tasks application.
 
-{% highlight javascript %}
+{% highlight react %}
 render(){
     const { visible, onCancel, onCreate, onImport } = this.props;
 
@@ -99,7 +99,7 @@ render(){
 
 Exporting files as **JSON** is pretty easy as well after reading some documentations.
 
-{% highlight javascript %}
+{% highlight react %}
 /** Exporting a Tasks list. */
 exportTasks = () => {
     /**

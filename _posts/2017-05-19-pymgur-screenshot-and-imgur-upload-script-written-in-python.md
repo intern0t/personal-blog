@@ -6,11 +6,8 @@ permalink: "project/Pymgur"
 date: 2017-05-19 05:06:05 -400
 categories: development
 tags: programming dev development python imgur upload screenshot capture
+poster: https://i.imgur.com/7XoGM0k.jpg
 ---
-
-<div class="poster" markdown="1">
-[![Poster](https://i.imgur.com/7XoGM0k.jpg)](https://i.imgur.com/7XoGM0k.jpg){:data-rel="lightcase"}
-</div>
 
 After using Shutter for almost a year or more if I recall correctly, I got fed up of it's broken Imgur upload plugin, considering those upload plugins are written in Pearl Scripts `.pm` I guess I could have tried and edited the script. For those who aren't familiar with what Imgur is, it is an image host, free, fast, optimized, secure and very resourceful for image sharing. It started from Reddit and now it is one of the most amazing image hosts out there, probably the best if you ignore Google+ Photos.
 

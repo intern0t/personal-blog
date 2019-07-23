@@ -4,10 +4,9 @@ title: "Running a local media server using PleX."
 author: Prashant Shrestha 
 date: 2017-02-02 15:20:57 -400 
 categories: server 
-tags: setup server private media movies shows organize organizer software linux 
+tags: setup server private media movies shows organize organizer software linux
+poster: https://i.imgur.com/oFXuG01.png
 ---
-
-[![Image](https://i.imgur.com/oFXuG01.png)](https://i.imgur.com/oFXuG01.png "Image credits to https://home-assistant.io"){:data-rel="lightcase"}
 
 Many of us tech enthusiasts dream of having their own media server, at least once in their lifetime. Better serving, high speed and most of all, customized & organized media server. I love watching movies during my free time or while stressed, considering I’ve a whole library of movies makes it easier to save bandwidth and at the same time, have fun! I tried to create my own media server, for streaming movies, TV shows or even music locally with FTP, which didn’t work out well, in short, it wasn’t organized and not flashy/beautiful at all until I heard about [Plex](https://www.plex.tv/).
 
@@ -45,7 +44,7 @@ I am serving raw contents to my devices which I'll discuss later.
 
 Removed the stock Operating System (Snow Leopard) and installed [Ubuntu Minimal](https://help.ubuntu.com/community/Installation/MinimalCD) instead. This is still an overkill for *my* purposes but what the hell right?
 
-##### Setup
+#### Setup
 
 There's not much to talk about regarding the setup, you go with the Operating System you are familiar with, I like Linux, I went with Ubuntu Minimal to save resources that are normally used for contrasting graphics or GUI (that way I've loads of available RAM & other resources). 
 

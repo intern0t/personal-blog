@@ -1,0 +1,1386 @@
+/**
+ * Copyright (c) 2019, Prashant Shrestha
+ * Document: prashant.scss
+ * Developer: Prashant Shrestha
+ * Date: Tue Jan 15 08:20:30 EST 2019
+ */
+
+@import "./_includes/reset", "./_includes/fonts", "./_includes/pygments",
+	"./_includes/lightcase", "./_includes/mixins", "./_includes/responsiveness";
+
+/**
+ * Variables
+ */
+$linkBorderBottomHeight: 3px;
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	@include Font($defaultFontFamily);
+	scroll-behavior: smooth;
+}
+
+body {
+	@include Font($defaultFontFamily);
+	font-size: $defaultFontSize;
+	color: $primaryForeground;
+
+	sup,
+	sub {
+		a,
+		a:visited {
+			color: $colorLightPowderedBlue;
+		}
+	}
+
+	.main-wrapper {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		@include Flex(row);
+		background: $colorMineShaft;
+
+		.sidebar {
+			height: 100%;
+			background: $Black;
+			color: $primaryForeground;
+			@include Flex(column);
+			justify-content: space-between;
+
+			&-logo {
+				padding: 20px;
+				margin: 10px 0 0 0;
+
+				a,
+				a:visited {
+					text-decoration: none;
+					text-transform: none;
+					@include Font($defaultFontFamily);
+					font-weight: bold;
+					text-align: center;
+					letter-spacing: 2px;
+					padding: 6px;
+					border: 2px solid $primaryForeground;
+					@include BorderRadius(2px, all);
+					cursor: pointer;
+					@include Transition(border, 0.4s, ease-in-out);
+					color: $primaryForeground;
+
+					&:hover {
+						border: 2px solid $primaryIndexed;
+					}
+				}
+			}
+
+			&-list {
+				list-style-type: none;
+				@include Flex(column);
+				align-content: center;
+
+				li {
+					display: block;
+					position: relative;
+					border-left: 4px solid transparent;
+					@include Transition(border-left, 0.3s, ease-in-out);
+
+					a,
+					a:visited {
+						@include Transform(270deg);
+						text-align: center;
+						color: $primaryForeground;
+						text-decoration: none;
+						@include Font($defaultFontFamily);
+						font-weight: bold;
+						letter-spacing: 2px;
+						font-size: $defaultFontSize - 3;
+						text-transform: uppercase;
+						display: block;
+						padding: 35px 0px;
+					}
+
+					&:hover {
+						border-left: 4px solid $primaryIndexed;
+					}
+				}
+			}
+
+			&-footer {
+				margin-bottom: 30px;
+
+				&-list {
+					@include Flex(column);
+					align-items: center;
+					list-style-type: none;
+
+					li {
+						width: 100%;
+						font-size: $defaultFontSize + 3;
+
+						a,
+						a:visited {
+							display: block;
+							color: $primaryFooterColor;
+							text-align: center;
+							padding: 10px;
+							@include Transition(color, 0.3s, ease-in-out);
+						}
+
+						&:hover {
+							a,
+							a:visited {
+								color: $primaryIndexed;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.container {
+			flex: 1;
+			overflow: auto;
+			background: $primaryBackground;
+			@include Flex(column);
+			min-height: 100vh;
+
+			&-inner {
+				flex: 1;
+				@include Flex(column);
+				@include breakpoint(xs) {
+					padding: 30px;
+				}
+				@include breakpoint(sm) {
+					padding: 70px;
+				}
+
+				&-header {
+					@include Flex(row);
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+					&-logo {
+						@include Font($Serenade);
+						font-size: 60px;
+						align-self: center;
+						text-decoration: none;
+						color: $colorMineShaft;
+					}
+
+					&-navigation {
+						flex: 1;
+						@include Flex(row);
+						justify-content: center;
+						align-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+
+						&-links {
+							flex: 1;
+							@include Flex(row);
+							justify-content: center;
+							align-content: center;
+							align-items: center;
+							flex-wrap: wrap;
+
+							@include breakpoint(xs) {
+								display: none;
+							}
+							@include breakpoint(sm) {
+								display: none;
+							}
+							@include breakpoint(md) {
+								display: flex;
+							}
+							@include breakpoint(lg) {
+								display: flex;
+							}
+
+							// Styled Links
+							@include HeaderLink;
+						}
+
+						&-menu {
+							flex: 1;
+							display: none;
+							@include Flex(row);
+							justify-content: flex-start;
+
+							@include breakpoint(xs) {
+								display: flex;
+							}
+							@include breakpoint(sm) {
+								display: flex;
+							}
+							@include breakpoint(md) {
+								display: none;
+							}
+							@include breakpoint(lg) {
+								display: none;
+							}
+
+							a,
+							a:visited {
+								margin: 0;
+								padding: 0;
+								border-bottom: 0;
+								transition: none;
+								color: $primaryForeground;
+
+								i {
+									font-size: $defaultFontSize + 5;
+								}
+
+								&:hover {
+									border-bottom: 0;
+									transition: none;
+								}
+							}
+
+							&-full {
+								@include Flex(column);
+								justify-content: flex-start;
+								position: fixed;
+								width: 100%;
+								z-index: 9999;
+								top: 0;
+								left: 0;
+								bottom: 0;
+								right: 0;
+								background: rgba($Black, 0.9);
+								color: white;
+								overflow: auto;
+								display: none;
+
+								&-buttons {
+									padding: 20px;
+									@include Flex(row);
+									justify-content: flex-end;
+
+									a,
+									a:visited {
+										flex: 1;
+										@include Font($defaultFontFamily);
+										font-size: $defaultFontSize * 2;
+										text-decoration: none;
+										color: $primaryBackground;
+										text-align: right;
+									}
+								}
+
+								&-menu {
+									padding: 20px;
+									@include Flex(column);
+									justify-content: space-between;
+									flex: 1;
+
+									a,
+									a:visited {
+										padding: 20px 0;
+										@include Font($defaultFontFamily);
+										font-size: $defaultFontSize * 2;
+										text-decoration: none;
+										color: $primaryBackground;
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+
+					&-adjust {
+						@include Flex(row);
+						justify-content: center;
+						align-content: center;
+						align-items: center;
+
+						&:hover {
+							a,
+							a:visited {
+								-moz-transform: scaleX(-1);
+								-webkit-transform: scaleX(-1);
+								-o-transform: scaleX(-1);
+								transform: scaleX(-1);
+								-ms-filter: fliph; /*IE*/
+								filter: fliph; /*IE*/
+							}
+						}
+
+						a,
+						a:visited {
+							font-size: 18px;
+							color: $primaryHeaderColor;
+							align-self: center;
+						}
+					}
+				}
+
+				&-body {
+					flex: 1;
+					max-width: 700px;
+					@include breakpoint(sm) {
+						margin: 0 auto;
+					}
+					@include Flex(column);
+					font-size: 20px;
+
+					&-logo {
+						@include Font($Serenade);
+						@include breakpoint(xs) {
+							font-size: 75px;
+						}
+						@include breakpoint(sm) {
+							font-size: 150px;
+						}
+						align-self: center;
+						text-align: center;
+					}
+
+					.container-blog-header {
+						margin: 50px 0 0;
+						@include Flex(column);
+						justify-content: center;
+						align-content: center;
+						align-items: center;
+
+						h1 {
+							font-weight: bold;
+							font-size: $defaultFontSize * 1.8;
+						}
+					}
+
+					&-post-header {
+						margin: 50px 0 0 0;
+
+						.post-background-header {
+							@include Flex(column);
+							justify-content: center;
+							align-items: center;
+							align-content: center;
+
+							.post-title {
+								margin: $defaultFontSize 0;
+								align-self: flex-start;
+
+								i {
+									font-size: $defaultFontSize * 1.8;
+								}
+
+								span {
+									font-size: $defaultFontSize * 1.7;
+									line-height: $defaultFontSize * 2.5;
+									margin-left: $defaultFontSize - 8;
+								}
+							}
+
+							.post-meta {
+								time {
+									font-size: $defaultFontSize - 3;
+									color: $colorGray;
+									text-transform: uppercase;
+									letter-spacing: 0.3px;
+								}
+							}
+
+							.post-misc-meta {
+								@include Flex(column);
+								justify-content: center;
+								align-content: center;
+								align-items: center;
+								margin-bottom: $defaultFontSize - 3;
+
+								&-categories {
+									span {
+										i {
+											margin: 0 5px;
+										}
+
+										margin: 0 10px 0 0;
+										background: $primaryForeground;
+										color: $primaryBackground;
+										font-size: $defaultFontSize - 4;
+										padding: 7px 9px;
+										@include BorderRadius(3px);
+										text-transform: uppercase;
+										letter-spacing: 0.5px;
+									}
+								}
+
+								&-tags {
+									@include Flex(row);
+									justify-content: flex-start;
+									align-content: center;
+									align-items: center;
+									flex-wrap: wrap;
+
+									span {
+										margin: 0 10px 10px 0;
+										border: 1px solid $primaryForeground;
+										color: $primaryForeground;
+										font-size: $defaultFontSize - 6;
+										line-height: $defaultFontSize;
+										padding: 5px 9px;
+										@include BorderRadius(3px);
+										text-transform: uppercase;
+										letter-spacing: 0.5px;
+
+										i {
+											margin-right: 4px;
+										}
+
+										&:hover {
+											border: 1px solid transparent;
+											background: $primaryForeground;
+											color: $primaryBackground;
+											cursor: pointer;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					&-post {
+						width: 100%;
+
+						.post-content {
+							max-width: 700px;
+
+							@include breakpoint(xs) {
+								width: 100%;
+							}
+							@include breakpoint(sm) {
+								width: 700px;
+							}
+							@include breakpoint(md) {
+								width: 700px;
+							}
+							@include breakpoint(lg) {
+								width: 700px;
+							}
+
+							code {
+								text-transform: none;
+								@include BorderRadius(3px);
+								background: rgba($primaryIndexed, 0.2);
+								padding: 3px 8px;
+								font-size: $defaultFontSize - 3;
+								line-height: $defaultFontSize - 2;
+								font-weight: normal;
+								letter-spacing: 0.2px;
+								@include Font($codeFont);
+								color: rgba($primaryIndexed, 1);
+							}
+
+							p {
+								margin: 20px 0;
+								font-size: $defaultFontSize;
+								line-height: $defaultFontSize + 12;
+
+								a,
+								a:visited {
+									display: unset;
+									color: $colorLightPowderedBlue;
+									text-decoration: none;
+									border-bottom: 2px solid transparent;
+									@include Transition(
+										border-bottom,
+										0.3s,
+										ease-in-out
+									);
+									max-width: 100%;
+
+									&:hover {
+										border-bottom: 2px solid
+											rgba($colorLightPowderedBlue, 0.5);
+									}
+
+									img {
+										max-width: 100%;
+										overflow: hidden;
+									}
+								}
+							}
+
+							a[data-rel="lightcase"] {
+								&:first-child:not(img) {
+									& {
+										margin: 20px 0;
+										@include Flex(row);
+										justify-content: center;
+										align-content: center;
+										align-content: center;
+										border: 0;
+
+										img {
+											max-width: 100%;
+											align-self: center;
+										}
+									}
+								}
+							}
+
+							h1,
+							h2,
+							h3,
+							h4,
+							h5,
+							h6 {
+								text-transform: capitalize;
+								letter-spacing: 0.5px;
+								color: $primaryForeground;
+								margin: 15px 0;
+								padding: $defaultFontSize 0;
+								font-weight: bold;
+
+								@include Link;
+							}
+
+							h1 {
+								font-size: $defaultFontSize * 1.7;
+							}
+							h2 {
+								font-size: $defaultFontSize * 1.5;
+							}
+							h3 {
+								font-size: $defaultFontSize * 1.3;
+							}
+							h4 {
+								font-size: $defaultFontSize * 1.1;
+							}
+							h5 {
+								font-size: $defaultFontSize * 0.9;
+							}
+							h6 {
+								font-size: $defaultFontSize * 0.7;
+							}
+
+							ul {
+								list-style-type: square;
+							}
+
+							ol {
+								list-style-type: decimal;
+							}
+
+							ul,
+							ol {
+								padding: 0 30px;
+								margin-left: 20px;
+
+								li {
+									font-size: $defaultFontSize;
+									line-height: $defaultFontSize + 12;
+									@include Link;
+
+									&::before {
+										content: "";
+										color: $colorGray;
+									}
+
+									span {
+										font-size: $defaultFontSize - 3;
+										color: $colorGray;
+									}
+								}
+							}
+
+							strong {
+								font-weight: bold;
+							}
+
+							figure {
+								padding: $defaultFontSize + 2;
+								margin: ($defaultFontSize + 2) 0;
+								overflow: auto;
+
+								pre {
+									code {
+										background: unset;
+										color: unset;
+										padding: unset;
+										margin: unset;
+										font-size: $defaultFontSize - 3;
+										line-height: $defaultFontSize + 3;
+										@include Font($codeFont);
+									}
+								}
+							}
+
+							blockquote {
+								padding: 10px 20px;
+								margin: ($defaultFontSize * 2) 0
+									($defaultFontSize * 2) 0;
+								border-left: 7px solid $colorDarkCrimson;
+								position: relative;
+								background-color: $colorMineShaft;
+
+								&::before {
+									color: $primaryBackground;
+									font-family: FontAwesome;
+									content: "\f10d";
+									font-size: $defaultFontSize * 2.5;
+									position: absolute;
+									top: 10px;
+									left: 15px;
+									opacity: 0.1;
+								}
+
+								p {
+									color: rgba($primaryBackground, 0.6);
+									padding: 0 10px;
+									@include Font($codeFont);
+									font-size: $defaultFontSize - 3;
+								}
+
+								ol,
+								ul {
+									margin-bottom: 20px;
+
+									li {
+										color: rgba($primaryForeground, 0.6);
+										font-size: $defaultFontSize - 3;
+										@include Font($codeFont);
+									}
+
+									li > a,
+									a:visited {
+										font-size: $defaultFontSize - 3;
+										@include Font($codeFont);
+									}
+								}
+							}
+
+							img {
+								align-self: center;
+							}
+
+							em {
+								font-style: italic;
+							}
+
+							sup,
+							sub {
+								text-decoration: none;
+								position: relative;
+								margin: 5px;
+
+								a,
+								a:visited {
+									position: absolute;
+									margin: -7px 0 0 -2px;
+									font-size: $defaultFontSize - 4;
+									font-weight: bold;
+									transition: none;
+									border-bottom: 2px transparent;
+
+									&:hover {
+										border-bottom: 2px transparent;
+									}
+								}
+							}
+
+							/**
+                             * Project page styling ..
+                             */
+							.projects {
+								width: 100%;
+								max-width: 700px;
+								@include Flex(column);
+								justify-content: flex-start;
+								flex: 1;
+
+								&-entry {
+									width: 100%;
+									border-bottom: 1px dashed
+										rgba($primaryForeground, 0.3);
+
+									&:last-child {
+										border-bottom: 0;
+									}
+
+									h4 {
+										@include Flex(row);
+										justify-content: space-between;
+										align-content: center;
+										align-items: center;
+										flex-wrap: wrap;
+
+										strong {
+											font-weight: normal;
+											color: rgba(
+												$primaryForeground,
+												0.5
+											);
+											font-size: $defaultFontSize - 4;
+											margin-left: $defaultFontSize;
+											text-transform: uppercase;
+										}
+									}
+
+									&-tags {
+										@include Flex(row);
+										justify-content: flex-start;
+										align-content: center;
+										align-items: center;
+										flex-wrap: wrap;
+
+										span {
+											margin: 0 10px 10px 0;
+											border: 1px solid $primaryForeground;
+											color: $primaryForeground;
+											font-size: $defaultFontSize - 6;
+											line-height: $defaultFontSize;
+											padding: 5px 9px;
+											@include BorderRadius(3px);
+											text-transform: uppercase;
+											letter-spacing: 0.5px;
+
+											i {
+												margin-right: 4px;
+											}
+
+											&:hover {
+												border: 1px solid transparent;
+												background: $primaryForeground;
+												color: $primaryBackground;
+												cursor: pointer;
+											}
+										}
+									}
+
+									&-previews {
+										@include Flex(column);
+										justify-content: flex-start;
+										align-content: flex-start;
+										align-items: flex-start;
+										flex-wrap: wrap;
+										margin: 0 0 20px 0;
+
+										&-entry {
+											margin: 10px 0;
+
+											strong {
+												margin: 0 20px 0 0;
+												font-size: $defaultFontSize - 1;
+												color: rgba(
+													$primaryForeground,
+													0.5
+												);
+												font-weight: normal;
+											}
+
+											a {
+												margin: 0 20px 0 0;
+												color: $primaryForeground;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					&-post-navigation {
+						@include Flex(row);
+						justify-content: space-between;
+						align-content: center;
+						align-items: center;
+						overflow: hidden;
+						width: 100%;
+						margin-top: 25px;
+						border-top: 1px solid $primaryForeground;
+
+						a,
+						a:visited {
+							flex: 1;
+							padding: 20px 0;
+							font-size: $defaultFontSize - 3;
+							text-transform: uppercase;
+							overflow: hidden;
+							text-decoration: none;
+							color: $primaryForeground;
+							letter-spacing: 0.3px;
+							flex-basis: 50%;
+
+							&:first-child {
+								text-align: left;
+							}
+							&:nth-child(2) {
+								text-align: right;
+							}
+
+							// For the icon.
+							i {
+								&:first-child {
+									margin-right: 5px;
+								}
+								&:nth-child(1) {
+									margin-left: 5px;
+								}
+							}
+						}
+					}
+				}
+
+				&-footer {
+					@include Flex(row);
+					justify-content: space-between;
+					align-items: center;
+					align-content: center;
+					flex-wrap: wrap;
+
+					@include breakpoint(xs) {
+						margin: 20px 0 0 0;
+					}
+					@include breakpoint(sm) {
+						margin: 20px 0 0 0;
+					}
+					@include breakpoint(md) {
+						margin: 20px 0 0 0;
+					}
+					@include breakpoint(lg) {
+						margin: 50px 0 0 0;
+					}
+
+					&-socials {
+						flex: 1 auto;
+						flex-wrap: nowrap;
+						@include breakpoint(xs) {
+							text-align: center;
+							margin: 20px 0;
+						}
+						@include breakpoint(sm) {
+							text-align: center;
+							margin: 20px 0;
+						}
+
+						a,
+						a:visited {
+							font-size: 22px;
+							text-decoration: none;
+							color: $primaryFooterColor;
+							margin: 0 25px 0 0;
+
+							&:hover {
+								color: rgba($primaryFooterColor, 0.7);
+							}
+						}
+					}
+
+					&-copyright {
+						flex: 1 auto;
+						font-size: $defaultFontSize - 2;
+
+						@include breakpoint(xs) {
+							margin: 20px 0;
+							text-align: center;
+						}
+						@include breakpoint(sm) {
+							margin: 20px 0;
+							text-align: center;
+						}
+
+						a,
+						a:visited {
+							display: unset;
+							color: $colorLightPowderedBlue;
+							text-decoration: none;
+							border-bottom: 2px solid transparent;
+							@include Transition(
+								border-bottom,
+								0.3s,
+								ease-in-out
+							);
+
+							&:hover {
+								border-bottom: 2px solid
+									rgba($colorLightPowderedBlue, 0.5);
+							}
+						}
+					}
+
+					.to-top {
+						position: fixed;
+						bottom: 80px;
+						right: -3px;
+						border-left: 5px solid $primaryForeground;
+						border-bottom: 1px solid $primaryForeground;
+						border-top: 1px solid $primaryForeground;
+						@include BorderRadius(3px);
+						padding: 7px 20px;
+						z-index: 9999;
+						opacity: 0.3;
+						@include Transition(opacity, 0.2s, ease-in-out);
+						display: none;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			&-post-with-header {
+				margin-top: 0;
+			}
+
+			&-projects {
+				@include Flex(column);
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				padding: 20px;
+				@include breakpoint(xs) {
+					padding: 0;
+				}
+				@include breakpoint(sm) {
+					padding: 0;
+				}
+				@include breakpoint(md) {
+					padding: 20px;
+				}
+
+				&-entry {
+					// flex: 0 0 48%;
+					// @include breakpoint(xs) {
+					// 	flex: 1;
+					// 	flex-basis: auto;
+					// }
+					// @include breakpoint(sm) {
+					// 	flex: 1;
+					// 	flex-basis: auto;
+					// }
+					// @include breakpoint(md) {
+					// 	flex: 0 0 48%;
+					// }
+					// background: $colorMineShaft;
+					// margin: 10px;
+					// @include Flex(column);
+					// @include BorderRadius(3px, all);
+					// @include Transition(box-shadow, 0.3s, ease-in-out);
+
+					// &-poster {
+					// 	background-size: cover;
+					// 	background-position: center;
+					// 	min-height: 250px;
+					// 	max-height: 250px;
+					// 	overflow: hidden;
+					// 	opacity: 0.7;
+					// 	cursor: pointer;
+					// 	@include BorderRadius(3px, top);
+
+					// 	&:hover {
+					// 		opacity: 0.9;
+					// 	}
+					// }
+
+					// &-info {
+					// 	padding: 15px;
+					// 	flex: 1;
+
+					// 	h1 {
+					// 		@include Font($defaultFontFamily);
+					// 		font-size: $defaultFontSize + 2;
+					// 		letter-spacing: 0.6px;
+					// 		margin: 10px 0;
+
+					// 		a,
+					// 		a:visited {
+					// 			color: $colorLightPowderedBlue;
+					// 			text-decoration: none;
+					// 			border-bottom: 2px solid transparent;
+					// 			@include Transition(
+					// 				border-bottom,
+					// 				0.3s,
+					// 				ease-in-out
+					// 			);
+
+					// 			&:hover {
+					// 				border-bottom: 2px solid
+					// 					rgba($colorLightPowderedBlue, 0.8);
+					// 			}
+					// 		}
+					// 	}
+
+					// 	p {
+					// 		color: $colorGray;
+					// 		@include Font($defaultFontFamily);
+					// 		font-size: $defaultFontSize;
+					// 		letter-spacing: 0.5px;
+					// 		line-height: $defaultFontSize * 1.3;
+					// 		margin: 10px 0;
+
+					// 		a,
+					// 		a:visited {
+					// 			color: $colorLightPowderedBlue;
+					// 			text-decoration: none;
+					// 			border-bottom: 2px solid transparent;
+					// 			@include Transition(
+					// 				border-bottom,
+					// 				0.3s,
+					// 				ease-in-out
+					// 			);
+
+					// 			&:hover {
+					// 				border-bottom: 2px solid
+					// 					rgba($colorLightPowderedBlue, 0.8);
+					// 			}
+					// 		}
+					// 	}
+
+					// 	&-misc {
+					// 		font-size: $defaultFontSize - 1;
+					// 		@include Flex(column);
+					// 		flex: 1;
+					// 		justify-content: space-between;
+
+					// 		.used {
+					// 			@include Flex(row);
+					// 			list-style-type: none !important;
+					// 			justify-content: center;
+					// 			flex-wrap: wrap;
+					// 			overflow: hidden;
+					// 			margin: 5px 0;
+
+					// 			li {
+					// 				background: rgba(
+					// 					$colorLightPowderedBlue,
+					// 					0.8
+					// 				);
+					// 				padding: 4px 5px;
+					// 				margin: 3px;
+					// 				@include BorderRadius(2px, all);
+					// 				font-size: $defaultFontSize - 4;
+					// 				text-transform: uppercase;
+					// 				letter-spacing: 0.3px;
+					// 				color: $primaryForeground;
+					// 			}
+					// 		}
+
+					// 		.time {
+					// 			color: $colorGray;
+					// 			padding: 5px;
+					// 		}
+					// 	}
+					// }
+
+					// &:hover {
+					// 	@include Box-Shadow(0px 0px 5px 0px rgba($Black, 0.3));
+					// }
+				}
+			}
+
+			&-blog-menu {
+				width: 270px;
+				height: 100%;
+				background: $primaryBackground;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0px;
+				margin-right: -275px;
+				@include Flex(column);
+				transition: all 0.3s ease-in;
+				// @include Box-Shadow(-1px 0px 10px 1px $Black);
+
+				h1 {
+					font-size: $defaultFontSize + 15;
+					padding: 20px;
+					cursor: pointer;
+				}
+
+				ul {
+					list-style-type: none !important;
+					width: 100%;
+					@include Flex(column);
+					align-content: center;
+					align-items: center;
+					margin: 20px 0 !important;
+
+					li {
+						width: 100%;
+
+						a,
+						a:visited {
+							display: block;
+							color: $primaryForeground;
+							text-decoration: none;
+							font-size: $defaultFontSize + 5;
+							@include Font($defaultFontFamily);
+							font-weight: bold;
+							text-transform: uppercase;
+							letter-spacing: 1px;
+							padding: 20px;
+							margin: 0 !important;
+							@include Transition(background, 0.4s, ease-in-out);
+							text-align: center;
+
+							i[class^="fa"] {
+								margin-right: 10px;
+							}
+
+							&:hover {
+								background: rgba($colorDarkCrimson, 0.2);
+							}
+						}
+					}
+				}
+			}
+
+			&-search {
+				@include Flex(column);
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				padding: 20px;
+				@include breakpoint(xs) {
+					padding: 0;
+				}
+				@include breakpoint(sm) {
+					padding: 0;
+				}
+				@include breakpoint(md) {
+					padding: 20px;
+				}
+
+				form {
+					@include Flex(column);
+					margin-bottom: 10px;
+
+					div {
+						@include Flex(row);
+
+						input[type="text"] {
+							display: block;
+							width: 100%;
+							overflow: hidden;
+							height: 40px;
+							background: rgba($_colorMineShaft, 0.65);
+							outline: 0;
+							border: 0;
+							@include BorderRadius(20px, all);
+							padding: 0 20px;
+							color: $colorGray;
+							@include Font($defaultFontFamily);
+							@include Transition(all, 0.3s, ease-in-out);
+							font-size: $defaultFontSize + 2;
+							justify-content: flex-start;
+							align-content: center;
+							align-items: center;
+
+							&:focus {
+								@include Box-Shadow(
+									0px 0px 20px 1px rgba($Black, 0.1)
+								);
+							}
+						}
+
+						.button {
+							@include Font($defaultFontFamily);
+							margin: 0 0 0 20px;
+							@include Flex(row);
+							min-width: 100px;
+							justify-content: center;
+							align-items: center;
+							align-content: center;
+							border: 0;
+							outline: 0;
+							@include BorderRadius(4px, all);
+							background: $primaryBackground;
+							border: 2px solid $_colorMineShaft;
+							cursor: pointer;
+							color: $colorGray;
+							font-size: $defaultFontSize + 1;
+							@include Transition(all, 0.3s, ease-in-out);
+
+							&:hover {
+								border: 2px solid $primaryForeground;
+								color: $primaryForeground;
+							}
+						}
+					}
+				}
+
+				.search-result {
+					padding: 20px 0;
+					@include Flex(row);
+					justify-content: center;
+					align-content: center;
+					align-items: center;
+					@include Font($defaultFontSize);
+					font-size: $defaultFontSize * 1.6;
+
+					code {
+						background: $colorDarkCrimson;
+						color: $primaryForeground;
+						margin-left: 10px;
+						padding: 5px 7px;
+						@include BorderRadius(2px, all);
+					}
+				}
+
+				&-result-wrapper {
+					margin: 20px 0;
+					padding: 20px;
+					@include Flex(row);
+					flex-wrap: wrap;
+
+					h5 {
+						flex: 1;
+					}
+
+					&-entry {
+						flex: 0 0 45%;
+						background: $colorMineShaft;
+						margin: 10px;
+						@include Flex(column);
+						padding: 20px;
+						@include BorderRadius(3px, all);
+
+						h5 {
+							font-size: $defaultFontSize + 3;
+							line-height: $defaultFontSize * 1.8;
+							@include Flex(row);
+							flex-wrap: nowrap;
+							overflow: hidden;
+							align-content: center;
+							align-items: center;
+							justify-content: flex-start;
+
+							a,
+							a:visited {
+								@include Font($defaultFontFamily);
+								font-size: $defaultFontSize + 3;
+								line-height: $defaultFontSize + 10;
+								color: $primaryForeground;
+								text-decoration: none;
+								letter-spacing: 0.5px;
+								margin: 10px 15px;
+								@include Transition(color, 0.3s, ease-in-out);
+
+								&:hover {
+									color: $colorDarkCrimson;
+								}
+							}
+						}
+
+						.tags {
+							@include Flex(row);
+							justify-content: flex-start;
+							flex-wrap: wrap;
+							align-content: center;
+							align-items: center;
+							margin: 5px 0;
+
+							.tag {
+								padding: 5px 7px;
+								background: $LimedSpruce;
+								font-size: $defaultFontSize - 5;
+								margin: 5px;
+								letter-spacing: 0.5px;
+								@include BorderRadius(2px, all);
+
+								i[class^="fa"] {
+									margin-right: 5px;
+									font-size: $defaultFontSize - 5;
+								}
+							}
+						}
+
+						p {
+							@include Font($defaultFontFamily);
+							font-size: $defaultFontSize;
+							color: $colorGray;
+							letter-spacing: 0.5px;
+							line-height: $defaultFontSize + 5;
+							margin: 5px 0;
+						}
+
+						.post-misc {
+							margin: 5px 0;
+							@include Flex(row);
+							justify-content: space-between;
+
+							span {
+								@include Font($defaultFontFamily);
+								font-size: $defaultFontSize - 2;
+								text-transform: capitalize;
+								color: $primaryForeground;
+
+								i[class^="fa"] {
+									margin-right: 5px;
+									font-size: $defaultFontSize - 3;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.pagination {
+				margin: 50px 0;
+				@include Flex(row);
+				justify-content: center;
+
+				a,
+				a:visited {
+					color: $colorLightPowderedBlue;
+					text-decoration: none;
+					padding: 15px;
+					margin: 10px;
+					background: $colorMineShaft;
+					color: $primaryForeground;
+					@include BorderRadius(3px, all);
+					line-height: $defaultFontSize + 1;
+					@include Transition(border, 0.3s, ease-in-out);
+					border: 2px solid transparent;
+
+					&:hover {
+						border: 2px solid $colorGray;
+					}
+				}
+
+				.active-page {
+					border: 2px solid $colorDarkCrimson !important;
+				}
+			}
+		}
+	}
+
+	.toTop {
+		$bestNumber: 25px;
+
+		position: fixed;
+		bottom: $bestNumber;
+		right: $bestNumber;
+		padding: 10px $bestNumber - 10px;
+		border: 1px solid $primaryForeground;
+		font-size: $defaultFontSize * 2.5;
+		text-transform: uppercase;
+		z-index: 99;
+		@include Flex(row);
+		@include BorderRadius(4px);
+		text-decoration: none;
+		color: $primaryForeground;
+		@include Box-Shadow(0 0 10px 5px rgba($Black, 0.6));
+		display: none;
+	}
+
+	// Animations
+	.fade {
+		animation-name: fade;
+		animation-duration: 2s;
+	}
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}

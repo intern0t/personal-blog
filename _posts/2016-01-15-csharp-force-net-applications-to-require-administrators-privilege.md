@@ -14,7 +14,7 @@ This process is as easy as it comes and totally defies a famous quote.
 I use [**Visual Studio**](\"https://www.visualstudio.com/\") [Ultimate 2013]("https://www.visualstudio.com/en-us/products/visual-studio-ultimate-with-msdn-vs.aspx") therefore, this small snippet is the follow up I did after adding this feature in one of my personal project. Forcing administrative privilege requirement on an application built using [.NET frameworks]("https://msdn.microsoft.com/en-us/vstudio/aa496123.aspx") sounds quite difficult or do the lengthy way, `Right Click > Run as Administrator`.
 
 In order to achieve this, you should modify the default manifest file which the Visual Studio generates during the compile process.
-
+<!--excerpt-->
 1. Right Click on your Project (in Visual Studio).
 2. Add or (Press `Ctrl + Shift + A`)
 3. New Item.
@@ -37,7 +37,7 @@ Your `app.manifest` default layout should be like this
 	</assemblyidentity>
 </asmv1:assembly>
 {% endhighlight %}
-<!--excerpt-->
+
 Add the following line in your `app.manifest` file nested inside `<asmv1:assembly manifestversion="1.0">` and `</asmv1:assembly>`.
 
 {% highlight c# %}

@@ -23,7 +23,7 @@ gpg --list-secret-keys --keyid-format LONG
 
 Considering generating a new GPG key is pretty straightforward, we need to know that Github accepts GPG key of size `4096` bits. Another thing to take into consideration is the GPG's **version**, `gpg --version`. At the time of this writing, my versions of required libraries and modules were as follows.
 
-{% highlight bash %}
+{% highlight plain %}
 gpg (GnuPG) 2.2.4
 libgcrypt 1.8.1
 {% endhighlight %}
@@ -36,11 +36,11 @@ libgcrypt 1.8.1
 6. Secure your key with a passphrase.
 7. **Verify** that key is created using `gpg --list-secret-keys --keyid-format LONG` command.
 
-[![Unverified Commit](https://i.imgur.com/FWL3XNR.png)](https://i.imgur.com/FWL3XNR.png){:data-rel="lightcase"}
+[![Unverified Commit]({{ site.ph }}){:data-src="https://i.imgur.com/FWL3XNR.png" .lazy}](https://i.imgur.com/FWL3XNR.png){:data-rel="lightcase"}
 
 You should see an output similar to this.
 
-{% highlight bash %}
+{% highlight plain %}
 /home/scarecr0w/.gnupg/pubring.kbx
 ----------------------------------
 sec   rsa4096/47E29D1BEAA33061 2018-10-28 [SC] [expires: 2020-10-27]
@@ -79,7 +79,7 @@ git commit -S -am "Yay, signed message test."
 
 If everything went well, your signed and verified commit in Github should look similar to this.
 
-[![Verified Commit](https://i.imgur.com/oDVZ2rv.png)](https://i.imgur.com/oDVZ2rv.png){:data-rel="lightcase"}
+[![Verified Commit]({{ site.ph }}){:data-src="https://i.imgur.com/oDVZ2rv.png" .lazy}](https://i.imgur.com/oDVZ2rv.png){:data-rel="lightcase"}
 
 Good Luck!
 

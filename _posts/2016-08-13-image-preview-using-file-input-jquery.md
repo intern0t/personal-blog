@@ -8,7 +8,7 @@ tags: image jquery javascript preview setup upload design html snippet source
 ---
 
 If you are a web designer and a developer, you might have come across this problem before. You want to allow users to upload their avatar, let's say and there is a criteria that you set during development such as specific width, height, size (file size) etc but you receive a complaint about it for being a little messy and difficult to get used to. Image that the users uploaded did not center correctly? The image is flat, blanks on the sides, in simple words, not what the user expected it to look. I did not receive any complaints but I did see a post in Google Plus regarding this issue and hence, here I am writing what I think will help you approach this problem in civil manner and I have used it in couple projects of mine before.
-
+<!--excerpt-->
 #### What is an Image Preview?
 
 It's just an image tag, components you use in your web applications. For example an avatar, banner or logo. What we are trying to accomplish here is to let the user know what the image file will look like in our web application after the user uploads it, before he uploads it. The word **preview** itself should explain the cause of this blog post.
@@ -16,7 +16,7 @@ It's just an image tag, components you use in your web applications. For example
 #### Ways to accomplish this
 
 We'll be using Javascript/jQuery for this as it handles client-side contents more efficiently. We will be using two different approaches and two different built-in functions to accomplish this, namely `URL.createObjectURL();` and `new FileReader().readAsDataURL();`, both of these method works great.
-<!--excerpt-->
+
 #### Simple Setup
 
 {% highlight html %}

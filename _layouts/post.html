@@ -2,80 +2,76 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<h3 itemprop="name headline">
-		<a class="title" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-	</h3>
+<div class="container">
+    <div class="container-inner">
+        <!-- Header -->
+        {% include header.html %}
 
-	<div class="post-misc">
-		<div class="post-meta">
-			{% assign categories = page.categories %} {% if categories != "" %}
-			<div class="categories">
-				<i class="fas fa-sitemap" title="category"></i> {% for category in categories %} {{ category | upcase }}{%
-				unless forloop.last %} <i class="fas fa-angle-right"></i> {% endunless %} {% endfor %}
-			</div>
-			{% endif %}
-			<div class="post-published">
-				<i class="far fa-calendar-alt"></i>
-				<time datetime="{{ page.date | date_to_rfc822 }}" itemprop="datePublished">
-					{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-					{{ page.date | date: date_format }}
-				</time>
-			</div>
-		</div>
-		{% assign tags = page.tags %}
-		{% if tags != "" %}
-		<div class="tags">
-			{% for tag in tags %} <div class="tag"><i class="fas fa-tag" title="{{ tag | upcase }}"></i>{{ tag | upcase }}</div>{%
-			unless
-			forloop.last %}
-			{% endunless %} {% endfor %}
-		</div>
-		{% endif %}
-	</div>
+        <div class="container-inner-body" style="justify-content: center; align-content: center; align-items: center;">
+            <header class="container-inner-body-post-header">
+                <!-- <div class="post-background-poster" style="{% if page.poster %} background-image: url({{
+                        page.poster
+                    }}) {% endif %}"></div> -->
+                <div class="post-background-header">
+                    <!-- Post Title -->
+                    <h1 class="post-title" itemprop="name headline">
+                        <i class="far fa-file-alt"></i> <span>{{ page.title | escape }}</span>
+                    </h1>
+                    <!-- Categories and Tags -->
+                    <div class="post-misc-meta">
+                        <!-- Tags -->
+                        {% assign tags = page.tags %} {% if tags != "" %}
+                        <div class="post-misc-meta-tags">
+                            {% for tag in tags %}<span><i class="fas fa-tag"></i> {{ tag | strip }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        <!-- Categories 
+                        {% assign categories = page.categories %} {% if categories != ""
+                        %}
+                        <div class="post-misc-meta-categories">
+                            {% for category in categories %}
+                            <span><i class="fas fa-archive"></i>
+                                {{ category | strip }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}-->
+                    </div>
+                    <!-- Post Date -->
+                    <p class="post-meta">
+                        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                            itemprop="datePublished">
+                            {%- assign date_format = site.minima.date_format | default:
+                            "%b %-d, %Y" -%} {{ page.date | date: date_format }}
+                        </time>
+                    </p>
+                </div>
+            </header>
+            <article class="container-inner-body-post {% if page.poster %} container-post-with-header {% endif %}">
+                <div class="post-content" itemprop="articleBody">{{ content }}</div>
 
-	<div class="post-content" itemprop="articleBody">
-		{% assign poster = page.poster %}
-		{% if poster %}
-		<div class="poster">
-			<a href="{{ poster }}" data-rel="lightcase">
-				<img src="{{ poster }}" />
-			</a>
-		</div>
-		{% endif %}
-		{{ page.content }}
+                {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%}
+                {%- endif -%}
 
-		{% if site.social.disqus_username %}
-		<div>
-			<a class="disqus-trigger" title="Toggle Disqus Comments">
-				<i class="fas fa-comments"></i>&nbsp; Toggle Disqus Comments
-			</a>
-		</div>
-		{% endif %}
-	</div>
+                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+            </article>
+            <hr>
+            <!-- Next and Previous posts. -->
+            <section class="container-inner-body-post-navigation">
+                <!-- Previous Post -->
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" style="text-align: left;"><i
+                        class="fas fa-angle-double-left"></i> Previous Post</a>
+                {% endif %}
+                <!-- Next Post -->
+                {% if page.next.url %}
+                <a href="{{ page.next.url }}" title="{{ page.next.title }}" style="text-align: right;">Next Post <i
+                        class="fas fa-angle-double-right"></i></a>
+                {% endif %}
+            </section>
+        </div>
 
-	<!-- Disqus -->
-	{% if site.social.disqus_username %}
-	<section class="disqus">
-		{% include disqus_comments.html %}
-	</section>
-	{% endif %}
-
-	<!-- Navigate other posts -->
-	<section class="more-posts">
-		<div class="more-posts-container">
-			{% if page.previous.url %}
-			<i class="fas fa-angle-left"></i>
-			<a class="more-posts-button" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-			 data-placement="top" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
-			{% endif %}
-		</div>
-		<div class="more-posts-container">
-			{% if page.next.url %}
-			<a class="more-posts-button" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-			 data-placement="top" title="{{ page.next.title }}">{{ page.next.title }}</a>
-			<i class="fas fa-angle-right"></i>
-			{% endif %}
-		</div>
-	</section>
-</article>
+        <!-- Footer -->
+        {% include footer.html %}
+    </div>
+</div>

@@ -8,11 +8,11 @@ tags: jquery scss news announcements ticker animated web html codepen
 ---
 
 We come across multiple websites with news ticker now-a-days, mainly on the websites dedicated to serving news to the readers. It sounds very simple but its simplicity is what makes it even more desirable. In the end of the day, animation draws the reader's attention towards the ticker, constantly if I might add, which is a good thing. Whether we have a static ticker with constant data or dynamic data, ticker makes it beautiful in a way to view newly added/updated contents.
-
+<!--excerpt-->
 [![Image](https://i.imgur.com/dfOiWdt.jpg)](https://i.imgur.com/dfOiWdt.jpg "News & Announcements Ticker"){:data-rel="lightcase"}
 
 I would like to clarify beforehand that the terminologies used, such as *"announcements", "news"* are meant for similar purposes for this tutorial. You can name it whichever or whatever, I named it **announcement** because this is my personal blog and not a news website.
-<!--excerpt-->
+
 That being said, let us start by creating a layout using **HTML**, fairly simple one, a box with a title and a list of unordered list with our data.
 
 {% highlight html %}

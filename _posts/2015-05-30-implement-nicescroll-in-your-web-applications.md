@@ -10,7 +10,7 @@ tags: traffic network redirection server administration management redir proxy r
 Normally, a web designer can grasp scrolling effects and the scrollbar looks between [Google Chrome](http://www.google.com/chrome/) and [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/). First difference anyone might quickly grasp would be the scrolling effect, that smooth scrolling effect of Mozilla. If you have yet to experience the smooth scroll, follow this path in Mozilla ..
 
 `Tools > Options > Advanced > General Tab`
-
+<!--excerpt-->
 [![Smooth Scrolling](https://i.imgur.com/046MlAe.png)](https://i.imgur.com/046MlAe.png "Smooth Scrolling."){:data-rel="lightcase"}
 
 Similar yet customizable feature can be added in any web application making it scroll friendly. I used [NiceScroll](http://areaaperta.com/nicescroll/) to achieve this in my current blog powered by [Ghost](https://ghost.org/). This current one isn't the default scroll as I played with NiceScroll's settings a little.
@@ -20,7 +20,7 @@ In order to implement NiceScroll, you first have to download the latest and stab
 Installation is too easy, either follow the guide provided by NiceScroll itself or follow my lead.
 
 Download the release package of your choice, [v3.4.0](https://code.google.com/p/jquery-nicescroll/downloads/detail?name=jquery.nicescroll.340.zip&can=2&q=) for me.
-<!--excerpt-->
+
 {% highlight bash %}
 wget https://jquery-nicescroll.googlecode.com/files/jquery.nicescroll.340.zip
 unzip jquery.nicescroll.340.zip

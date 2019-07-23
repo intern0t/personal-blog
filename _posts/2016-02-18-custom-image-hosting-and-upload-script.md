@@ -6,11 +6,8 @@ permalink: /project/hostup
 date:   2016-02-18 06:31:49 -400
 categories: development
 tags: setup server private php python upload postman api
+poster: https://i.imgur.com/eFbN8c9.jpg
 ---
-
-<div class="poster" markdown="1">
-[![Image](https://i.imgur.com/eFbN8c9.jpg)](https://i.imgur.com/eFbN8c9.jpg "Server rack!"){:data-rel="lightbox"}
-</div>
 
 There are countless free image hosting services out there but having your own, separate image server has different purpose of its own. There are lots of benefits of having your own image hosting, personal, nothing complicated.
 
@@ -160,6 +157,6 @@ This should do the trick, in order to check if it is working or not, just head o
 
 The scripts have been added to my [Github](https://github.com/intern0t/Image-Hosting) repository therefore feel free to improve and upgrade.
 
-###### Credits to [MemoryPointer](http://memorypointer.com/wp-content/uploads/2014/04/best-hosting-providers.jpg) for the server rack image.
+#### Credits to [MemoryPointer](http://memorypointer.com/wp-content/uploads/2014/04/best-hosting-providers.jpg) for the server rack image.
 
 Happy Coding!

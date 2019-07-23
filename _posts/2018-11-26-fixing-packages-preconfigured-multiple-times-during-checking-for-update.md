@@ -13,7 +13,7 @@ After recently upgrading my workspace' operating system to Ubuntu 18.04 LTS, I w
 Next day, as usual, I try and update my installed packages, and I get hit by the weirdest error ever about how my packages are preconfigured multiple times. At least the good news was they provided where the possible source of the error might be.
 <!--excerpt-->
 
-{% highlight bash %}
+{% highlight no-highlight %}
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google.list:1
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google.list:1
 W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google.list:1
@@ -44,7 +44,7 @@ W: Target Translations (main/i18n/Translation-en) is configured multiple times i
 
 It simply means you have duplicate sources in multiple source files. You can simply remove `google.list` from `/etc/apt/sources.list.d/` with the following command.
 
-{% highlight bash %}
+{% highlight zsh %}
 sudo rm -rf /etc/apt/sources.list.d/google.list*
 {% endhighlight %}
 

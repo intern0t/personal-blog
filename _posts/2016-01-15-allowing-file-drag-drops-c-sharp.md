@@ -10,7 +10,7 @@ tags: C# CSharp .NET Framework Windows Development snippet gui
 Today, during my personal coding session, I stumbled upon an annoying repetitive thing called browsing for files from the program I was developing. I am sure, I could have just provided a path to the file and not bother with browsing for the file.
 
 Nonetheless, that coding session went well, ignored the annoyance and continued with coding. This morning, as I am typing this blog post, I decided to have a file Drag and Drop feature, might save a little time, but **who** knows if it will really save any amount of time.
-
+<!--excerpt-->
 I'll keep it simple and show you the steps to enable Drag and Drop in your form.
 
 Depending on your form component, **choose** the component you wish to enable Drag and Drop. It can be any component, I believe! You can also enable Drag and Drop in the whole form as well.
@@ -26,7 +26,7 @@ this.DragDrop += Main_DragDrop;
 {% endhighlight %}
 
 Add these methods below the constructor or ..
-<!--excerpt-->
+
 {% highlight c# %}
 private void Main_DragDrop(object sender, DragEventArgs e) {
     string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);

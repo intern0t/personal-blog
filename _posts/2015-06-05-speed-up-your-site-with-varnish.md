@@ -10,7 +10,7 @@ tags: traffic network server cache memory speed website
 [Varnish Cache](https://www.varnish-cache.org/) is a module which I believe is specifically developed for TEXT/HTML based hosting systems which enhances the performance of the hosted website significantly from either your RAM or the hard drive. According to **[Varnish Administrator Document](https://www.varnish-cache.org/docs/4.0/)** ..
 
 > Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy. You install it in front of any server that speaks HTTP and configure it to cache the contents. Varnish Cache is really, really fast. It typically speeds up delivery with a factor of 300 - 1000x, depending on your architecture.
-
+<!--excerpt-->
 Varnish Cache is **very** easy to install and configure if you have a default web hosting setup. If you have a messy setup like mine, you **might** experience some confusion during the configuration process. I am currently using CentOS Web-panel which I am loving it so far which is using Apache and I haven't moved to Nginx yet, not for this server at least. For me personally, the biggest problem was understanding how Varnish works and making correct configuration for it to work with **all** the domains hosted in this server. Not only that, I've to worry about keeping this [blog](http://www.nepirates.com/) running.
 
 > I understand, not everyone uses [CWP](http://centos-webpanel.com/) so I will try my best to provide the alternative ways to accomplish the same result.
@@ -30,7 +30,7 @@ Apache + Cloudflare + Varnish       [Tested & Works * for me!]
 {% endhighlight %}
 
 Lets start off by firing our terminal and adding Varnish cache to our server's packet manager and installing Varnish.
-<!--excerpt-->
+
 {% highlight bash %}
 rpm --nosignature -i https://repo.varnish-cache.org/redhat/varnish-4.0.el6.rpm
 yum install varnish

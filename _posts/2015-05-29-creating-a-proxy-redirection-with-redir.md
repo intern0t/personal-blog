@@ -10,7 +10,7 @@ tags: traffic network redirection server administration management redir proxy r
 When you **normally** launch or host a website through Linux Web Server Software such as [Apache](http://httpd.apache.org), [Lighttpd](http://www.lighttpd.net/download/) or [Nginx](http://nginx.org/en/download.html), you will be freely publicizing your server's IP Address unless you use a 3<sup>rd</sup> party DNS service to conceal your server's IP.
 
 There are various ways to conceal your server's IP Address from **normal** consumers to protect yourself from *raw* intrusions however that requires quite a bit of funding. One service which is quite big, widely known and provides free DNS nameserver for disposal is [Cloudflare](http://cloudflare.com/). Cloudflare provides their consumer with 3-4 [packages](https://www.cloudflare.com/plans) - Basic (free), Pro ($20/m.), Business ($200+/m.) and Enterprise ($5000/m.).
-
+<!--excerpt-->
 If your server is **not** DDoS protected and if your server suffers an attack, you will go down easy, it is the same for the server hosting this blog as well. No DDoS protection nor have I tried to hide my server's IP Address.
 
 To keep the blog short, proxy redirection uses a small server compared to your main server, around ***1-2 GB*** RAM and ***couple*** gigs hard disk space should suffice and would be great if it also has a full fledged DDoS Protection.
@@ -27,7 +27,7 @@ Using wget, we can download the `.rpm` package ..
 wget http://pkgs.repoforge.org/redir/redir-2.2.1-1.1.*.*.*.rpm
 {% endhighlight %}
 **Please do keep in mind, the asterisk (*) is replaced by your needs and your system infrastructure.**
-<!--excerpt-->
+
 After the package arrives in your system, you may execute the `.rpm` file with ..
 
 {% highlight bash %}

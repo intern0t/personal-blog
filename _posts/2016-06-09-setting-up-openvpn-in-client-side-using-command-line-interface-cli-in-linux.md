@@ -5,20 +5,17 @@ author: Prashant Shrestha
 date: 2016-06-09 18:42:27 -400
 categories: security
 tags: openvpn encryption traffic network local wifi aes ovpn config setup security
+poster: https://i.imgur.com/CLOpk3A.jpg
 ---
-
-<div class="poster" markdown="1">
-[![Image](https://i.imgur.com/CLOpk3A.jpg)](https://i.imgur.com/CLOpk3A.jpg "Credits to Privatoria."){:data-rel="lightcase"}
-</div>
 
 As many citizens became knowledgeable about privacy, VPN, private network, tunnels, why, how, disadvantages and all, the VPN companies developed advanced client software to make client's work easier, especially for Windows platform but for Linux platform with no Network Manager or simple CLI fans out there have to go through painful steps to setup a VPN.
 
 If you are wondering what a VPN (Virtual Private Network) is then do read this small excerpt I pulled from [Wikipedia](https://en.wikipedia.org/wiki/Virtual_private_network).
-
+<!--excerpt-->
 > A virtual private network (VPN) extends a private network across a public network or internet. It enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
 
 >VPNs can provide functionality, security and/or network management benefits to the user. But they can also lead to new issues, and some VPN services, especially "free" ones, can actually violate their users' privacy by logging their usage and making it available without their consent, or make money by selling the user's bandwidth to other users. (**Source** : [Wikipedia](https://en.wikipedia.org/wiki/Virtual_private_network))
-<!--excerpt-->
+
 That's how it is, if you still think this little citation is confusing, here's the infographic that might help you understand it better.
 
 [![](https://i.imgur.com/xCXmz2U.png)](https://i.imgur.com/xCXmz2U.png)
