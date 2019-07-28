@@ -19,7 +19,6 @@ $linkBorderBottomHeight: 3px;
 }
 
 html {
-	@include Font($defaultFontFamily);
 	scroll-behavior: smooth;
 }
 
@@ -637,10 +636,10 @@ body {
 
 								ol,
 								ul {
-									margin-bottom: 20px;
+									margin: 20px;
 
 									li {
-										color: rgba($primaryForeground, 0.6);
+										color: rgba($primaryBackground, 0.6);
 										font-size: $defaultFontSize - 3;
 										@include Font($codeFont);
 									}

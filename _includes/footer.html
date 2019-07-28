@@ -33,6 +33,12 @@
             <i class="fab fa-linkedin-in"></i>
         </a>
         {% endif %}
+        {% if site.socials.reddit %}
+        <a href="{{ site.socials.reddit | prepend: 'https://www.reddit.com/user/' | append: '/' }}"
+            title="Reddit Profile" target="_blank">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        {% endif %}
         {% if site.socials.uptime %}
         <a href="{{ site.socials.uptime }}" title="Uptime status" target="_blank">
             <i class="fas fa-chart-area"></i>
