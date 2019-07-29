@@ -617,16 +617,20 @@ body {
 								position: relative;
 								background-color: $colorMineShaft;
 
-								&::before {
+								&:before {
+                                    font-style: normal;
+                                    font-variant: normal;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
 									color: $primaryBackground;
-									font-family: FontAwesome;
+									font-family: $FontAwesome;
 									content: "\f10d";
 									font-size: $defaultFontSize * 2.5;
 									position: absolute;
-									top: 10px;
+									top: 20px;
 									left: 15px;
-                                    opacity: 0.1;
-                                    font-weight: 900;
+									opacity: 0.1;
+									font-weight: 900;
 								}
 
 								p {
