@@ -477,6 +477,7 @@ body {
 								margin: 20px 0;
 								font-size: $defaultFontSize;
 								line-height: $defaultFontSize + 12;
+								word-break: break-word;
 
 								a,
 								a:visited {

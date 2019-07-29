@@ -53,7 +53,7 @@
 		"demo": {
 			"images": [],
 			"previews": [],
-			"live": "https://trackmovies.net/"
+			"live": "https://trail.prashant.me/"
 		},
 		"used": ["ReactJS", "localStorage"],
 		"date": "May-Jun, 2018"
@@ -87,7 +87,7 @@
 				"https://i.imgur.com/FUd3qDo.png"
 			],
 			"previews": [],
-			"live": "https://intern0t.github.io/keykode/"
+			"live": "https://keykode.prashant.me/"
 		},
 		"used": [
 			"HTML",
