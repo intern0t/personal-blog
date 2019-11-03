@@ -57,10 +57,13 @@ permalink: /library/
     9. [The Road to learn React: Your journey to master plain yet pragmatic React.js](https://www.amazon.com/gp/product/1986338827/) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1) <span class="fas fa-book" title="Completed, Summer & Fall 2018"></span>
     10. [Taming the State in React: Your journey to master Redux and MobX](https://www.amazon.com/dp/B07CYKDQ5S) by [Robin Wieruch](https://www.amazon.com/Robin-Wieruch/e/B07BBS273X/ref=dp_byline_cont_ebooks_1) <span class="fas fa-book" title="Completed, Fall 2018 - Spring 2019 (Jan 15)"></span>
     11. [The Road to GraphQL](https://leanpub.com/the-road-to-graphql) by Robin Wieruch. <span class="fas fa-book" title="Completed, Jun-Jul Summer 2019"></span>
+    12. [Node.js in Action, Second Edition](https://www.manning.com/books/node-js-in-action-second-edition) by Manning Publications <span class="fas fa-book" title="Completed, October 31 2019"></span>
 -   Desktop Application Development
     1. [Awesome Electron](https://github.com/sindresorhus/awesome-electron) by [@sindresorhus](https://github.com/sindresorhus/)
     2. [Starting Out with C++ from Control Structures to Objects](https://www.amazon.com/Starting-Out-Control-Structures-Objects/dp/0134498372) by [Tony Gaddis](https://media.pearsoncmg.com/bc/abp/cs-resources/products/series.html#series,series=Gaddis)
         - Multiple series available from the author.
+-   Application Development
+    1. [React Native in Action](https://www.manning.com/books/react-native-in-action) by Nader Dabit. <span class="fas fa-book" title="Completed, October 11, 2019"></span>
 
 #### <span class="fas fa-layer-group"></span> **Academics**
 
@@ -104,6 +107,7 @@ permalink: /library/
     1. [DevDocs](http://devdocs.io/)
 -   Icons
     1. [The Noun Project](https://thenounproject.com) for **Icons & SVG**, free & premium options.
+    2. [Feather Icons](https://feathericons.com/)
 
 </div>
 </div>
