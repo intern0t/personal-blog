@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="container-blog-header">
-    <h1><i class="fas fa-flask"></i> <span>Projects</span></h1>
+    <h1><i class="fas fa-flask"></i> <span>Projects {{ site.data.projects | size | prepend : "(" | append : ")" }}</span></h1>
 </div>
 
 <div class="projects">
