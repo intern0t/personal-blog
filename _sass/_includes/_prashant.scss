@@ -757,8 +757,8 @@ body {
 									}
 
 									&-previews {
-										@include Flex(column);
-										justify-content: flex-start;
+										@include Flex(row);
+										justify-content: space-between;
 										align-content: flex-start;
 										align-items: flex-start;
 										flex-wrap: wrap;
