@@ -1,5 +1,22 @@
 [
     {
+        "title": "SVG Weather Icons Library",
+        "description": "A React component library for SVG weather icons. <a href='https://intern0t.github.io/react-weather-icons/' target='_blank'>View icons preview</a>.",
+        "demo": {
+            "images": [
+                "https://github.com/intern0t/react-weather-icons/blob/master/screenshots/icons-black.png?raw=true",
+                "https://github.com/intern0t/react-weather-icons/blob/master/screenshots/icons-blue-dark-bg.png?raw=true",
+                "https://github.com/intern0t/react-weather-icons/blob/master/screenshots/icons-red-dark-bg.png?raw=true",
+                "https://github.com/intern0t/react-weather-icons/blob/master/screenshots/icons-white-dark-bg.png?raw=true"
+            ],
+            "previews": [],
+            "live": "https://www.npmjs.com/package/@intern0t/react-weather-icons",
+            "repository": "https://github.com/intern0t/react-weather-icons"
+        },
+        "used": ["ReactJS", "SVG", "Javascript", "Python", "Prettier"],
+        "date": "Dec, 2019"
+    },
+    {
         "title": "Curated",
         "description": "Curated is an Open Source news curation & bookmarking project written in ReactJS, utilizes Redux to store and consume NewsAPI.org's API endpoints. Any user who wishes to use their own NewsAPI's API key can set and save their API key in local storage to prevent exhaustion to my API key's daily limit.",
         "demo": {
