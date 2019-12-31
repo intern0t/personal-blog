@@ -22,28 +22,27 @@ permalink: /projects/
             <!-- Image Previews -->
             {% if project.demo.images.size > 0 %}
             <div class="projects-entry-previews-entry">
-                <strong>Image Preview(s)</strong>
                 {% for img_previews in project.demo.images %}
                     <a href="{{ img_previews }}" data-rel="{{ project.title | prepend: 'lightcase:'}}"><i class="far fa-image"></i></a>
                 {% endfor %}
+                <!-- GIF/Demo Previews -->
+                {% if project.demo.previews.size > 0 %}
+                    {% for img_previews in project.demo.previews %}
+                        <a href="{{ img_previews }}" data-rel="{{ project.title | prepend: 'lightcase:'}}"><i class="fas fa-photo-video"></i></a>
+                    {% endfor %}
+                {% endif %}
             </div>
             {% endif %}
-            <!-- GIF/Demo Previews -->
-            {% if project.demo.previews.size > 0 %}
             <div class="projects-entry-previews-entry">
-                <strong>Other Preview(s)</strong>
-                {% for img_previews in project.demo.previews %}
-                    <a href="{{ img_previews }}" data-rel="{{ project.title | prepend: 'lightcase:'}}"><i class="fas fa-photo-video"></i></a>
-                {% endfor %}
-            </div>
-            {% endif %}
-            <!-- Live/Deployed -->
-            {% if project.demo.live != "" %}
-            <div class="projects-entry-previews-entry">
-                <strong>Live Demo</strong>
+                <!-- Live/Deployed -->
+                {% if project.demo.live != "" %}
                 <a href="{{ project.demo.live }}"><i class="fas fa-globe"></i></a>
+                {% endif %}
+                <!-- Repository if available -->
+                {% if project.demo.repository != "" %}
+                <a href="{{ project.demo.repository }}"><i class="fas fa-code-branch"></i></a>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
     </div>
     {% endfor %}

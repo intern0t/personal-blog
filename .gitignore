@@ -4,3 +4,4 @@ _site
 .bundle
 .cache
 .gem
+.jekyll-cache
