@@ -145,6 +145,12 @@ body {
 			@include Flex(column);
 			min-height: 100vh;
 
+			.header {
+				border: 1px solid red;
+				background-color: $primaryBackground;
+				height: 150px;
+			}
+
 			&-inner {
 				flex: 1;
 				@include Flex(column);

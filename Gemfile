@@ -26,9 +26,9 @@ gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-livereload'
 
-#group :development do
-#  gem 'guard-livereload', '~> 2.5', require: false
-#end
+group :development do
+ gem 'guard-livereload', '~> 2.5', require: false
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
